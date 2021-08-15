@@ -1,0 +1,9 @@
+.maps-area{
+    position: relative;
+    .map-right-img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+}

@@ -1,0 +1,116 @@
+.services-area{
+    margin: 0 85px;
+    @media #{$laptop}{
+        margin: 0 0px;
+    }
+    @media #{$lg}{
+        margin: 0 30px;
+    }
+    @media #{$xs}{
+        margin: 0 0px;
+    }
+    @media #{$sm}{
+        margin: 0 0px;
+    }
+    @media #{$md}{
+        margin: 0 0px;
+    }
+    &.services-area2{
+        margin-top: 0;
+    }
+    .single-services {
+        &.single-services2 {
+            background: #F3FFF2;
+        }
+        display: flex;
+        // @media #{$lg}{
+        //     padding: 18px 14px;
+        // }
+        .features-img{
+            img {
+                width: 100%;
+                height: 460px;
+            }
+            &.features-img2{
+                padding: 15px;
+                img {
+                    width: 100%;
+                    height: 290px;
+                }
+            }
+        }
+        
+        .features-caption {
+            background: #F3FFF2;
+            padding: 60px 40px;
+            height: 460px;
+            @media #{$laptop}{
+                padding: 60px 31px;
+            }
+            @media #{$sm}{
+                height: 389px;
+            }
+            &.features-caption2 {
+                padding: 47px 40px;
+                height: 318px;
+                background: none;
+                @media #{$lg}{
+                    padding: 14px 21px;
+                }
+                @media #{$md}{
+                    padding: 10px 10px;
+                    height: 329px;
+                    background: none;
+                }
+                @media #{$sm}{
+                    height: 398px;
+                }
+                @media #{$xs}{
+                    height: 400px;
+                    padding: 35px 16px;
+                }
+               
+            }
+            @media #{$xs}{
+                height: 398px;
+            }
+            @media #{$xs}{
+                padding: 41px 20px;
+            }
+            span{
+                font-size: 16px;
+                color: #234821;
+                margin-bottom: 30px;
+                display: block;
+
+            }
+            h3 {
+                a{
+                    font-size: 30px;
+                    line-height: 1.2;
+                    margin-bottom: 20px;
+                    font-weight: 700;
+                    display: block;
+                    &:hover{
+                        color: $theme-color !important;
+                    }
+                }
+
+            }
+            p {
+                font-size: 18px;
+                line-height: 1.5;
+                color: #285D25;
+                margin-bottom: 30px;
+               
+                @media #{$lg}{
+                    font-size: 15px;
+                }
+                @media #{$xs}{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+

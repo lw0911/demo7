@@ -1,0 +1,48 @@
+.count-down-area{
+    @media #{$md}{
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    @media #{$sm}{
+        adding-bottom: 0;
+        padding-top: 60px;
+    }
+    @media #{$xs}{
+        padding-bottom: 0;
+        padding-top: 50px;
+    }
+    .count-down-wrapper{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .single-counter{
+            margin-bottom: 10px;
+            .counter{
+                color: #234821;
+                font-size: 50px;
+                font-weight: 700;
+                font-family: $font_1;
+                line-height: 1;
+                margin-bottom: 12px;
+                display: inline-block;
+
+                text-transform: uppercase;
+            }
+            p{
+                color: #234821;
+                font-size: 50px;
+                font-weight: 700;
+                line-height: 1;
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                font-family: $font_1;
+
+            }
+            .pera-count p {
+                color: #285D25;
+                font-size: 18px;
+            }
+        }
+    }
+}
