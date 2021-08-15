@@ -1,0 +1,388 @@
+.untree_co--hero {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+	&, & > .container > .row {
+		height: 100vh;
+		min-height: 650px;
+	}
+	&.overlay {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			@include media-breakpoint-down(md) {
+				background: rgba($white, .6);	
+			}
+		}
+	}
+	.intro {
+		strong { 
+			font-weight: 700;
+		}
+		h1 {
+			font-size: 60px;
+			color: $black;
+			@include media-breakpoint-down(md) {
+				font-size: 38px;
+			}
+
+		}
+		p {
+			font-size: 20px;
+			color: rgba($black, .5);
+			@include media-breakpoint-down(md) {
+				color: $black;
+			}
+		}
+		.intro-desc {
+			max-width: 490px;
+			margin: 0 auto;
+
+			position: relative;
+			padding-left: 30px;
+			@include media-breakpoint-down(md) {
+				padding-left: 0px;
+			}
+			a {
+				border-bottom: 1px solid $primary;
+			}
+			.btn {
+				border-bottom: none;
+			}
+			.play-btn {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background:$black;
+				color: $white;
+				position: relative;
+				transition: .3s all ease;
+				border-bottom: none;
+				> span {
+					position: absolute;
+					top: 50%;
+					left: 55%;
+					transform: translate(-50%, -50%);
+				}
+				&:hover {
+					background-color: $white;
+					color: $black;
+					
+				}
+			}
+		}
+	}
+}
+.untree_co-section {
+	padding: 100px 0;
+	position: relative;
+	@include media-breakpoint-down(md) {
+		padding: 50px 0;
+	}
+
+	.heading {
+		font-size: 50px;
+		strong {
+			font-weight: 700;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 30px;
+		}		
+
+		&.border-b {
+			position: relative;
+			&:before {
+				width: 100px;
+				height: 1px;
+				background: $black;
+				left: 0;
+				content: "";
+			}
+		}
+	}
+}
+
+.service-sm {
+	font-size: 16px;
+	.text {
+		color: $primary;
+		span {
+			font-size: 14px;
+			color: $text_light_color;
+		}
+	}
+	.wrap-icon {
+		flex: 0 0 70px;
+		width: 70px;
+		height: 70px;
+		position: relative;
+		border-radius: 50%;
+		background-color: rgba($white, .2);
+		margin-right: 20px;
+		> span {
+			color: $white;
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			font-size: 30px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 30px;
+		}
+	}
+}
+
+.js-hover-focus-one {
+	a {
+		opacity: 1;
+		&.unfocus {
+			opacity: .4!important;
+		}
+	}
+}
+
+.more {
+	position: relative;
+	padding-right: 30px;
+	display: inline-block;
+	span {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		font-size: 12px;
+		transform: translateY(-50%);
+		width: 20px;
+		height: 20px;
+		background: transparent;
+		color: $white;
+		line-height: 1.6;
+		text-align: center;
+		transition: .3s all ease;
+	}
+	&:hover {
+		color: $white;
+		span {
+			background: $primary;
+		}
+	}
+
+	&.dark {
+		color: $black;
+		> span {
+			color: $black;
+		}
+		&:hover {
+			color: $primary;
+			span {
+				color: $white;
+				background: $primary;
+			}
+		}
+	}
+}
+
+.display-2 {
+	@include media-breakpoint-down(md) {
+		font-size: 5rem;
+	}
+}
+
+.bg-primary-dark {
+	background: darken($bg_color, 4%);
+}
+
+.untree_co-testimonial {
+	margin-bottom: 30px;
+	blockquote {
+		color: $black;
+		background: $white;
+		padding: 30px 30px 30px 30px;
+		position: relative;
+		.bubble {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			transform: translateY(70%);
+		}
+	}
+}
+
+.author {
+	margin-left: 20px;
+	.pic {
+		flex: 0 0 50px;
+		margin-right: 20px;
+		img {
+			border-radius: 50%;
+		}
+	}
+	strong {
+		font-weight: 400;
+		color: $white;
+	}
+	.text {
+		line-height: 1.2;
+	}
+	.position {
+		color: rgba($white, .4);
+		font-size: 14px;
+	}
+}
+
+.service {
+	background: $white;
+	padding: 30px;
+	border-radius: 7px;
+	.wrap-icon {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: $primary;
+		margin-bottom: 20px;
+		position: relative;
+		span {
+			color: $white;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	h3 {
+		font-size: 16px;
+	}
+	p {
+		font-size: 14px;
+		color: lighten($black, 50%);
+	}
+}
+
+.untree_co-cta {
+	border-radius: 7px;
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	&, & > .row {
+		min-height: 400px;
+	}
+
+	&.overlay {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background:rgba($bg_color, .3);
+		}
+	}
+	h2 {
+		color: $white;
+	}
+}
+
+.owl-3-slider {
+	.owl-nav {
+		display: none;
+	}
+}
+
+.slider-wrap {
+	position: relative;
+	z-index: 99;
+	.slider-nav {
+		position: absolute;
+		z-index: 99;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 0;
+		margin-bottom: -25px;
+		a {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			position: relative;
+			background: $primary;
+			border-radius: 4px;
+			position: relative;
+			top: 0;
+			transition: .2s all ease;
+			span {
+				color: $white;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover {
+				background: $white;
+				top: -2px;
+				span {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.team {
+	h3 {
+		font-size: 20px;
+	}
+	.pic {
+		width: 120px;
+		margin-bottom: 20px;
+		img {
+			border-radius: 40%;
+		}
+	}
+
+	.position {
+		color: $white;
+		font-size: 14px;
+	}
+}
+
+.slider-team-wrap {
+	.owl-dots {
+		position: absolutre;
+		margin-top: 30px;
+	}
+	.slider-nav {
+		a {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			position: relative;
+			background: $primary;
+			border-radius: 4px;
+			position: relative;
+			top: 0;
+			transition: .2s all ease;
+			span {
+				color: $white;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&:hover {
+				background: $white;
+				top: -2px;
+				span {
+					color: $primary;
+				}
+			}
+		}
+	}
+}

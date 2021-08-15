@@ -1,0 +1,20 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+
+$primary: #1daff3;
+$secondary: #12947f;
+$black: #000000;
+$white: #ffffff;
+$grey: #5b5656;
+$heading_color: #000;
+$text_light_color: #a0a4ab;
+
+$font-family: 'Rubik', sans-serif;
+$font-family-sans-serif: 'Rubik', sans-serif;
+
+@import 'site-base';
+@import 'site-navbar';
+@import 'site-blocks';
+@import 'site-elements';
+@import 'site-footer';
