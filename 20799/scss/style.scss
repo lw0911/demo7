@@ -1,0 +1,18 @@
+/*
+* Template Name: Extend
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/
+@import "functions";
+@import "variables";
+@import "mixins";
+
+$primary: #ff926b;
+$black: #000000;
+$white: #ffffff;
+$font-family: 'Montserrat', sans-serif;
+
+@import 'site-navbar';
+@import 'site-blocks';
+@import 'site-elements';

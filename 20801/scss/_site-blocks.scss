@@ -1,0 +1,426 @@
+
+.logo {
+	position: absolute;
+	z-index: 9;
+	a {
+		color: $black;
+		font-weight: 700;
+		font-size: 1.5rem;
+	}
+}
+
+.main-hero {
+	
+	.intro-text {
+
+		background: $primary;
+		padding-top: 7rem;
+		padding-bottom: 18rem;
+		.heading {
+			max-width: 700px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		h1 {
+			font-weight: 700;
+			font-size: 2.5rem;
+			@include media-breakpoint-down(md) {
+				font-size: 2rem;
+			}
+		}
+		.excerpt {
+			max-width: 400px;
+			margin: 0 auto;	
+		}
+	}
+	.intro-image {
+		margin-top: -200px;
+		margin-bottom: 0px;
+		@include media-breakpoint-down(md) {
+			margin-top: -200px;
+		}
+		img {
+			box-shadow: 0 15px 30px 0 rgba($black, .05);
+			border-radius: 7px;
+		}
+		
+	}
+
+	.overlap-image {
+		margin-top: -200px;
+		margin-bottom: 0px;
+		@include media-breakpoint-down(md) {
+			margin-top: -200px;
+		}
+		.owl-single {
+			border-radius: 7px;
+			overflow: hidden;
+		}
+	}
+
+	.play-video {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		margin: 0 auto;
+		background: $white;
+		color: $black;
+		display: block;
+		transition: .3s all ease;
+		position: relative;
+		top: 0;
+		&:hover {
+			top: -2px;
+			box-shadow: 0 15px 30px 0 rgba($black, .2);
+		}
+		> span {
+			transition: .3s all ease;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-30%, -50%);
+		}
+
+		
+
+	}
+}
+
+.section-counter {
+	padding: 70px 0 0 0;
+	h2 {
+		margin-bottom: 30px;
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+
+	.counter {
+		font-size: 3rem;
+		font-weight: 700;
+	}
+}
+
+.trusted-by-companies {
+	padding: 6rem 0;
+	text-align: center;
+	h2 {
+		margin-bottom: 30px;
+		font-size: 1.2rem;
+		font-weight: 400;
+	}
+}
+
+.tab-nav {
+	li {
+		a {
+			display: block;
+			padding: 30px;
+			border-radius: 4px;
+			margin-bottom: 10px;
+			h3 {
+				font-size: 16px;
+				font-weight: 700;
+				color: $black;
+			}
+			p {
+				color: $black;
+				font-size: 14px;
+				margin-bottom: 0;
+			}
+		}
+		&.active {
+			a {
+				background: $primary;
+			}
+		}
+	}
+}
+
+.custom-img {
+	overflow: hidden;
+	border-radius: 7px;
+	box-shadow: 0 15px 30px 0 rgba($black, .1);
+}
+
+.features-v2 {
+	z-index: 2;
+	position: relative;
+	.heading {
+		font-size: 2rem;
+		color: $white;
+		text-align: center;
+		@include media-breakpoint-down(md) {
+			font-size: 1.5rem;	
+		}
+	}
+	.features-v2-inner {
+		background: $black;
+		padding: 7rem;
+		@include media-breakpoint-down(md) {
+			padding: 3rem;
+		}
+		.features-v2-item {
+			// padding: 0 2rem;
+			img {
+				margin-bottom: 30px;
+				border-radius: 7px;
+			}
+			h3 {
+				font-size: 16px;
+				color: $white;
+				font-weight: 700;
+			}
+			p {
+				font-size: 14px;
+				color: rgba($white, .7);
+			}
+		}
+	}
+}
+.features-v3 {
+	background: $light;
+	padding-top: 25rem;
+	padding-bottom: 5rem;
+	margin-top: -20rem;
+	position: relative;
+	z-index: 1;
+	h2 {
+		@include media-breakpoint-down(md) {
+			font-size: 1.8rem;	
+		}
+	}
+	.feature-v3-item {
+		margin-bottom: 0px;
+		padding: 30px 30px 50px 30px;
+		position: relative;
+		overflow: hidden;
+		text-align: center;
+		transition: .3s all ease;
+		top: 0;
+		img {
+			margin-bottom: 30px;
+			max-width: 200px;
+			margin: 0 auto 30px auto;
+		}
+		h3 {
+			font-size: 16px;
+			font-weight: 700;
+		}
+		.more {
+			position: absolute;
+			transition: .3s all ease;
+			opacity: 0;
+			visibility: hidden;
+			bottom: 0px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		&:hover, &.active {
+			background: $white;
+			top: -10px;
+			box-shadow: 0 15px 30px 0 rgba($black, .05);
+			.more {
+				bottom: 20px;
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+.testimonial-v1 {
+	padding: 80px 0;
+	blockquote {
+		> p {
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+}
+
+
+.form-signup-v1 {
+	background: #4d3e3e;
+	padding: 80px 0;
+	h2 {
+		font-size: 32px;
+		color: $white;
+		margin-bottom: 20px;
+		@include media-breakpoint-down(md) {
+			font-size: 1.8rem;	
+		}
+	}
+	p {
+		color: $white;
+	}
+}
+.testimonials {
+	h3 {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 30px;
+		color: $white;
+	}
+	blockquote {
+		p {
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
+
+	.author {
+		span, cite {
+			color: $white;
+		}
+		span {
+			font-size: 14px;
+		}
+	}
+}
+.contact-form {
+	border-radius: 7px;
+}
+.testimonials {
+	background: $primary;
+	padding: 40px;
+	position: relative;
+	margin-bottom: 50px;
+	@include media-breakpoint-down(md) {
+		padding: 30px;
+	}
+	@include media-breakpoint-down(sm) {
+		padding: 20px;
+	}
+
+	&:before {
+		top: 100%;
+		left: 10%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+
+		// border-color: $primary;
+		border-top-color: $primary;
+		border-width: 17px;
+		margin-left: -17px;
+	}
+}
+.authors {
+	a {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		position: relative;
+		overflow: hidden;
+		border-radius: 50%;
+		transition: .3s all ease;
+		img {
+			max-width: 100%;	
+
+		}
+		&.active {
+			border: 4px solid $white;
+		}
+	}
+}
+.custom-form {
+	border-radius: 7px;
+	padding: 50px;
+	background: $white;
+	box-shadow: 0 15px 30px 0px rgba($black, .05);
+	h3 {
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+}
+.gutter-v1 {
+    margin-right: -40px;
+    margin-left: -40px;
+    @include media-breakpoint-down(md) {
+	  	margin-left: -15px;
+	  	margin-right: -15px;
+	  }
+  > .col,
+  > [class*="col-"] {
+    padding-right: 40px;
+    padding-left: 40px;
+    @include media-breakpoint-down(md) {
+    	padding-right: 15px;
+    	padding-left: 15px;
+    }
+  }
+}
+
+
+.site-footer {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	font-size: 15px;
+	a {
+		color: $black;
+		&:hover {
+			color: $primary;
+		}
+	}
+	.widget {
+		margin-bottom: 30px;
+		h3 {
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 30px;
+		}
+
+		.social {
+			li {
+				display: inline-block;
+				a {
+					width: 50px;
+					height: 50px;
+					border-radius: 10px;
+					background: $light;
+					display: inline-block;
+					position: relative;
+					color: lighten($black, 50%);
+					span {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+					&:hover {
+						color: $black;
+					}
+				}
+			}
+		}
+		.links {
+			li {
+				display: block;
+				margin-bottom: 10px;
+				a {
+					color: $black;
+					&:hover {
+						color: $primary;
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		position: relative;
+		padding-top: 30px;
+		&:before {
+			top: 0;
+			position: absolute;
+			left: 15px;
+			right: 15px;
+			content: "";
+			height: 1px;
+			background: $light;
+		}
+	}
+}
