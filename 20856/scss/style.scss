@@ -1,0 +1,18 @@
+@import "functions";
+@import "variables";
+@import "mixins";
+
+$primary: #ff6363;
+$black: #000000;
+$white: #ffffff;
+$grey: rgba(#989898, .7);
+$heading_color: #000839;
+$text_light_color: #a0a4ab;
+
+$font-family: 'Montserrat', sans-serif;
+
+@import 'site-base';
+@import 'site-navbar';
+@import 'site-blocks';
+@import 'site-elements';
+@import 'site-footer';
