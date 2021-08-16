@@ -1,0 +1,20 @@
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb-option {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    text-align: center;
+    margin: 0 15px;
+}
+
+.breadcrumb__text {
+
+    h2 {
+        color: $white-color;
+        font-size: 48px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+}

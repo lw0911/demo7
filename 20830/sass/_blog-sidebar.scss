@@ -1,0 +1,132 @@
+/*---------------------
+  Blog Sidebar
+-----------------------*/
+.blog__sidebar__item {
+  margin-bottom: 55px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.blog__sidebar__item__newslatter {
+
+    h4 {
+      margin-bottom: 10px;
+    }
+  }
+
+  h4 {
+    color: $heading-color;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  ul {
+
+    li {
+      list-style: none;
+      line-height: 36px;
+
+      a {
+        font-size: 15px;
+        font-family: 'Cormorant Garamond', serif;
+        color: #666666;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 20px;
+
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 4px;
+          height: 5px;
+          width: 5px;
+          background: #767b76;
+          border-radius: 50%;
+          content: "";
+        }
+      }
+    }
+  }
+
+  form {
+    position: relative;
+
+    input {
+      height: 40px;
+      width: 100%;
+      font-size: 15px;
+      color: #a3a698;
+      border: none;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    button {
+      font-size: 15px;
+      color: #767b67;
+      position: absolute;
+      right: -5px;
+      top: 10px;
+      border: none;
+      background: transparent;
+    }
+  }
+}
+
+.blog__sidebar__recent__item {
+  display: block;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blog__sidebar__recent__item__pic {
+  float: left;
+  margin-right: 30px;
+}
+
+.blog__sidebar__recent__item__text {
+  overflow: hidden;
+
+  h5 {
+    color: $heading-color;
+    line-height: 22px;
+    margin-bottom: 14px;
+  }
+
+  span {
+    display: block;
+    font-size: 17px;
+    font-family: 'Cormorant Garamond', serif;
+    color: #888888;
+    font-style: italic;
+  }
+}
+
+.blog__sidebar__instagram {
+  margin-right: -10px;
+  overflow: hidden;
+
+  img {
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+  }
+}
+
+.blog__sidebar__tags {
+
+  a {
+    display: inline-block;
+    font-size: 15px;
+    color: #666666;
+    padding: 9px 15px 7px;
+    background: #f6f7f1;
+    margin-right: 11px;
+    margin-bottom: 15px;
+  }
+}

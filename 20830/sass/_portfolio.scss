@@ -1,0 +1,44 @@
+/*---------------------
+  Portfolio
+-----------------------*/
+.portfolio {
+  padding-bottom: 80px;
+}
+
+.portfolio__filter {
+  text-align: center;
+  margin-bottom: 35px;
+
+  li {
+    list-style: none;
+    font-size: 18px;
+    color: #0d0d0d;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    display: inline-block;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.portfolio__gallery {
+  margin-right: -5px;
+}
+
+.portfolio__item {
+  height: 300px;
+  margin-bottom: 20px;
+  margin-right: -10.5px;
+
+  &.mid_large {
+    height: 528px;
+  }
+
+  &.large_item {
+    height: 850px;
+  }
+}
