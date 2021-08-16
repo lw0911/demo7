@@ -1,0 +1,16 @@
+
+$primary: #ff8e71;
+$secondary: #003a70;
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-sans-serif-secondary: 'Comfortaa', sans-serif;
+
+@import 'bootstrap/mixins';
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+
+@import 'bootstrap/bootstrap';
+
+@import 'components/site-navbar';
+@import 'components/site-base';
+@import 'components/site-blocks';
+@import 'components/site-footer';
