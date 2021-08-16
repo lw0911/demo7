@@ -1,0 +1,23 @@
+/*
+* Template Name: Content
+* Template Author: Untree.co
+* Tempalte URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/
+@import "functions";
+@import "variables";
+@import "mixins";
+
+$primary: #c1a57b;
+$black: #000000;
+$white: #ffffff;
+$grey: rgba(#989898, .7);
+
+$font-family: 'Jost', sans-serif;
+$font-family-serif: 'Playfair Display', serif;
+
+@import 'site-base';
+@import 'site-navbar';
+@import 'site-blocks';
+@import 'site-elements';
+@import 'site-footer';
