@@ -1,0 +1,56 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 26/12/2020 23:06
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-pillow:before { content: "\f100"; }
+.flaticon-special:before { content: "\f101"; }
+.flaticon-wifi-signal:before { content: "\f102"; }
+.flaticon-online-booking:before { content: "\f103"; }
+.flaticon-cooking:before { content: "\f104"; }
+.flaticon-swimming-pool:before { content: "\f105"; }
+.flaticon-cosmetics:before { content: "\f106"; }
+.flaticon-reception:before { content: "\f107"; }
+    
+    $font-Flaticon-pillow: "\f100";
+    $font-Flaticon-special: "\f101";
+    $font-Flaticon-wifi-signal: "\f102";
+    $font-Flaticon-online-booking: "\f103";
+    $font-Flaticon-cooking: "\f104";
+    $font-Flaticon-swimming-pool: "\f105";
+    $font-Flaticon-cosmetics: "\f106";
+    $font-Flaticon-reception: "\f107";

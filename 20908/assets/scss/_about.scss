@@ -1,0 +1,290 @@
+
+
+// About 2 
+.project-us{
+    position: relative;
+    // left img
+    .project-right-cap{
+        @media #{$md}{
+            padding-bottom: 50px;
+        }
+        @media #{$lg}{
+            padding-bottom: 50px;
+        }
+        @media #{$sm}{
+            padding-bottom: 40px;
+        }
+        @media #{$xs}{
+            padding-bottom: 40px;
+        }
+        .project-right-img{
+            img{
+                width: 100%;
+            }
+
+        }
+    }
+    
+    /* collapse */
+    .collapse-wrapper{
+        .accordion-item {
+            border: 0;
+            border-radius: 0;
+            border-bottom: 1px solid #E8ECF1;
+        }
+        .accordion:last-child {
+            margin-bottom: 0px;
+        }
+        .accordion-header {
+            padding: 0;
+            border-radius: 0;
+            background: none;
+            border: 0;
+            .accordion-button{
+                text-align: left;
+                border: 0;
+                padding: 20px 10px 21px 34px;
+                font-size: 20px;
+                font-weight: 700;
+                color: #232F55;
+                border-bottom: 0;
+                border-radius: 0;
+                background: none;
+                display: block;
+                text-decoration: none;
+                &:focus{
+                    box-shadow:none;
+                    color: $theme-color;
+                }
+                &::after {
+                    position: absolute;
+                    top: 24px;
+                    font-size: 15px;
+                    color: $theme-color;
+                    left: 8px;
+                    font-weight: 600;
+                    content: "\e61a";
+                    font-family: 'themify';
+                    background-image: none;
+                    outline: 0;
+                    transform: rotate(0deg);
+                }
+                &.collapsed {
+                    // color: $theme-color;
+                    border: 0;
+                    &::after {
+                        
+                        content: "\e622";
+                        font-weight: 800;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+        .accordion-collapse{
+            border: 0;
+            .accordion-body {
+                background: #fff;
+                padding: 20px 38px;
+            }
+        }
+        
+    }
+
+}
+
+.about-area{
+    @include flexbox();
+    @include align-items(center);
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left img
+	.about-img{
+		background-image: url(../img/gallery/about.jpg);
+		background-size: 100%;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+        @include flexbox();
+        @include justify-content(flex-end);
+        @include align-items(flex-end);
+
+        height: 778px;
+        width: 50%;
+        margin-left: 147px;
+        position: relative;
+
+        @media #{$large1}{
+            margin-left: 50px;
+        }
+        @media #{$lg}{
+            margin-left: 30px;
+
+        }
+        @media #{$md}{
+            margin-left: 30px;
+            height: 600px;
+            width: 94%;
+        }
+        @media #{$sm}{
+            margin-left: 30px;
+            width: 94%;
+            height: 550px;
+        }
+        @media #{$xs}{
+            margin-left: 0px;
+            width: 100%;
+            height: 300px;
+        }
+        &::before{
+            position: absolute;
+            content: "";
+            background: #FFE0BB;
+            top: 0;
+            left: -147px;
+            height: 100%;
+            width: 147px;
+            @media #{$large1}{
+                width: 50px;
+                left: -50px;
+            }
+            @media #{$lg}{
+                width: 30px;
+                left: -30px;
+            }
+            @media #{$md}{
+                width: 30px;
+                left: -30px;
+            }
+            @media #{$sm}{
+                width: 30px;
+                left: -30px;
+            }
+            @media #{$xs}{
+                width: 0;
+                left: -0;
+            }
+        }
+    }
+    
+    // 	Right  Contents
+    .about-details{
+		// background-image: url(../img/gallery/section_bg02.png);
+		background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 700px;
+        width: 50%;
+        padding: 120px 75px;
+        @include flexbox();
+		@include align-items(center);
+
+        @media #{$lg}{
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$md}{
+            width: 100%;
+            padding: 50px 30px;
+            height: auto;
+        }
+        @media #{$sm}{
+            width: 100%;
+			padding: 50px 30px;
+			height: 615px;
+			padding-bottom: 0;
+        }
+        @media #{$xs}{
+            width: 100%;
+			padding: 50px 15px;
+			height: auto;
+
+		}
+		.right-caption{
+			width: 69%;
+			@media #{$big_screen}{
+				width: 100%;
+			}
+			@media #{$lg}{
+				width: 100%;
+			}
+			@media #{$sm}{
+				width: 100%;
+			}
+			@media #{$xs}{
+				width: 100%;
+			}
+			.about-more{
+				 p.pera-top {
+					margin-bottom: 25px;
+				}
+				.pera-bottom{
+				}
+
+			}
+		}
+
+	}
+}
+
+
+// About Area
+.support-company-area{
+    .support-location-img{
+        img{
+            width: 100%;
+		}
+		// Shape
+		.about-shape{
+			position: absolute;
+			left: -94px;
+			bottom: -93px;
+			z-index: -1;
+		}
+	}
+	// Right Content
+	.right-caption{
+        @media #{$md}{
+            margin-bottom: 40px;
+        }
+        @media #{$sm}{
+            margin-bottom: 40px;
+        }
+        @media #{$xs}{
+            margin-bottom: 40px;
+        }
+		.support-caption{
+			span{
+				color: #FF6162;
+				font-size: 25px;
+				margin-bottom: 20px;
+				display: block;
+				@media #{$xs}{
+					font-size: 20px;
+				}
+			}
+			p.pera-top{
+				font-weight: 300;
+				margin-bottom: 40px;
+				@media #{$sm}{
+					margin-bottom: 25px;
+				}
+				@media #{$xs}{
+					margin-bottom: 25px;
+				}
+			}
+			p{
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 1.8;
+			}
+		}
+	}
+}
