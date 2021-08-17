@@ -1,0 +1,248 @@
+.our-client{
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        padding: 35px 60px 40px 60px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 0 12px;
+        @media #{$lg}{
+			padding: 35px 60px 45px 60px;
+        }
+
+        .cat-img{
+            position: relative;
+            margin-bottom: 26px;
+            
+            img{
+                margin: 0 auto;
+                transform: scale(1);
+                @include transition(.4s);
+                border-radius: 50%;
+            }
+            .numbering{
+                color: #fff;
+                position: absolute;
+                background:$theme-color;
+                width: 59px;
+                height: 59px;
+                line-height: 59px;
+                bottom: 20px;
+                border-radius: 50%;
+                right:37px;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 20px;
+                font-weight: 500;
+                font-family: $font_1;
+                @media #{$lg}{
+                    right:-35px;
+                }
+                @media #{$md}{
+                    right:-2px;
+                }
+                @media #{$sm}{
+                    right:80px;
+                }
+                @media #{$xs}{
+                    right:-50px;
+                }
+            }
+        }
+        .cat-cap{
+            span{
+                color: #6785FF;
+                font-size: 46px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: block;
+            }
+            h5{
+             & > a{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 14px;
+                display: block;
+                @include transition(.2s);
+                text-transform: capitalize;
+                color: #000000;
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+              }
+            }
+            p{
+                
+                @include transition(.2s);
+                color: #94817E;
+                font-size: 16px;
+
+                margin-bottom: 34px;
+                @media #{$sm}{
+                    font-size: 15px;
+
+                }
+            }
+            a{
+                color: #1c165c;
+                font-size: 16px;
+                font-weight: 600;
+                @include transition(.2s);
+            }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-img{
+                img{
+                    transform: scale(0.9);
+                }
+            }
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+
+            }
+       }
+       &.single-cat2{
+            background-color: #fff;
+            border: 1px solid $border-color;
+            border-radius: 10px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 30px;
+            &:hover {
+                border: 1px solid transparent;
+                box-shadow: 0 25px 38px rgba(254, 95, 65,.1);
+                -webkit-box-shadow: 0 20px 30px rgba(254, 95, 65,.1);
+            }
+       }
+    }
+}
+
+
+
+
+// Tabs Button Style
+.nav-button{
+    .nav-tabs{
+        margin-bottom: 70px;
+        padding-bottom: 0px;
+        position: relative;
+        border-bottom: 1px solid #94817E;
+        
+        .nav-item {
+            display: block;
+            @media #{$xs}{
+                font-size: 18px;
+            }
+        }
+        .nav-link {
+            font-family: $font_1;
+            color:#fff;
+            font-size: 18px;
+            font-weight: 500;
+            border: 0;
+            padding: 17px 5px;
+            padding-top: 0;
+            border-bottom: 4px solid transparent;
+            margin-right: 43px;
+            @media #{$xs}{
+                border-bottom: 0;
+            }
+            &.active {
+                color: $theme-color;
+                border-bottom: 4px solid $theme-color;
+                background: none;
+                @media #{$xs}{
+                    border-bottom: 0;
+                }
+               
+            }
+            &:hover {
+                border-bottom: 4px solid $theme-color;
+                @media #{$xs}{
+                    border-bottom: 0;
+                }
+            }
+            @media #{$sm}{
+                margin-right: 23px;
+            }
+            @media #{$xs}{
+                margin-right: 23px;
+            }
+        }
+    }
+    &.nav-button2{
+        .nav-tabs{
+            border-bottom: 1px solid #E6DAD8;
+            .nav-item {
+
+            }
+            .nav-link {
+                color:#94817E;
+            }
+        }
+    }
+}
+
+
+
+// Arrow
+.items-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(230, 218, 216,.2);
+                @include transition(.2s);
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+               left: -10px;
+            }
+            @media #{$lg}{
+               left: -10px;
+            }
+            @media #{$md}{
+               left: -10px;
+            }
+            @media #{$sm}{
+               left: -10px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -10px;
+             }
+            @media #{$lg}{
+                right: -10px;
+            }
+            @media #{$md}{
+                right: -10px;
+            }
+            @media #{$sm}{
+                right: -10px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,187 @@
+
+// Form Area
+.form-wrapper{
+    background: #fff;
+    // padding: 45px 40px 40px 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    @media #{$md}{
+       padding-top: 50px;
+   }
+    @media #{$sm}{
+       padding-top: 50px;
+   }
+    @media #{$xs}{
+       padding-top: 50px;
+   }
+    .form-tittle {
+        h2 {
+            font-size: 44px;
+            display: block;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 22px;
+            @media #{$lg}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 29px;
+            }
+        }
+        p{
+            color: #6E6575;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        span{
+            color: #FF6162;
+            font-size: 25px;
+            margin-bottom: 20px;
+            display: block;
+        }
+    }
+
+    // Start contact
+    input {
+        @include transition(.4s);
+        border: 1px solid #eaeaea;
+        height: 50px;
+        width: 100%;
+        padding: 10px 25px;
+        padding-right: 30px;
+        color: #071112;
+        font-weight: 500;
+        text-transform: capitalize;
+        border-radius: 25px;
+        .list {
+            width: 100%;
+            border-radius: 0;
+        }
+        &::placeholder{
+            color: #6E6575;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &:focus{
+            border: 1px solid $theme-color;
+            box-shadow: 0 8px 20px rgba(254, 95, 65,.1);
+            -webkit-box-shadow: 0 8px 20px rgba(254, 95, 65,.1);
+        }
+    }
+    .nice-select {
+        @include transition(.4s);
+        line-height: 30px;
+        border: 1px solid #eaeaea;
+        height: 50px;
+        width: 100%;
+        color: #071112;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-top: 10px;
+        border-radius: 25px;
+        @media #{$xs}{
+            margin-bottom: 15px;
+        }
+        &::after {
+            border-bottom: 2px solid #a3a3a3;
+            border-right: 2px solid #a3a3a3;
+            height: 7px;
+            right: 41px;
+            width: 7px;
+        }
+        &.open .list {
+            width: 100%;
+            border-radius: 0;
+        }
+        .option {
+            color: #071112;
+        }
+        &::placeholder{
+            color: #6E6575;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &:focus{
+            border: 1px solid $theme-color;
+            box-shadow: 0 8px 20px rgba(254, 95, 65,.1);
+            -webkit-box-shadow: 0 8px 20px rgba(254, 95, 65,.1);
+        }
+    }
+    textarea {
+        @include transition(.4s);
+        color: #6E6575;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 25px;
+        border: 1px solid #eaeaea;
+        text-transform: capitalize;
+        height: 125px;
+        width: 100%;
+        padding: 21px 23px;
+        @media #{$md}{
+            padding: 30px 42px;
+        }
+        @media #{$sm}{
+            padding: 30px 42px;
+        }
+        @media #{$xs}{
+            padding: 30px 42px;
+        }
+        &::placeholder{
+            color: #6E6575;
+            font-size: 16px;
+        }
+        &:focus{
+            border: 1px solid $theme-color;
+            box-shadow: 0 8px 20px rgba(254, 95, 65,.1);
+            -webkit-box-shadow: 0 8px 20px rgba(254, 95, 65,.1);
+        }
+    }
+    .contact {
+        border: 1px solid #eaedff;
+        padding: 40px 10px;
+        i {
+            background: #8fb569;
+            font-size: 40px;
+            height: 150px;
+            width: 150px;
+            color: #ffffff;
+            border-radius: 50%;
+            line-height: 135px;
+            border: 10px solid #fff;
+            -webkit-box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
+            box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
+            margin-bottom: 30px;
+        }
+    h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin: 0;
+            padding: 0 50px;
+    }
+    }
+    input::-moz-placeholder,
+    input::-moz-placeholder {
+        color: #071112;
+       font-size: 16px;
+       font-weight: 300;
+       transition: .4s;
+   }
+    input:focus::-webkit-input-placeholder {
+       opacity: 0;
+       -webkit-transition: .4s;
+       -o-transition: .4s;
+       transition: .4s;
+   }
+
+}
+
+
+.honer-area {
+    img{
+        width: 100%;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,292 @@
+
+.slider-height {
+    min-height: 850px;
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$lg}{
+        min-height: 600px;
+    }
+    @media #{$md}{
+        min-height: 600px;
+    }
+    @media #{$sm}{
+        min-height: 500px;
+    }
+    @media #{$xs}{
+        min-height: 750px;
+    }
+}
+
+.slider-height2{
+    min-height: 400px;
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$md}{
+        min-height: 300px;
+    }
+    @media #{$sm}{
+        min-height: 300px;
+    }
+    @media #{$xs}{
+        min-height: 300px;
+    }
+}
+.btn1 {
+    padding: 25px 0px;
+    @media #{$md}{
+        padding: 25px 0;
+    }
+}
+
+// Slider bg img
+    .slider-bg1{
+        background-image: url(../img/hero/h1_hero.jpg);
+    }
+    .slider-bg2{
+        background-image: url(../img/hero/h1_hero2.jpg);
+    }    
+    .slider-bg3{
+        background-image: url(../img/hero/h1_hero3.jpg);
+    }
+
+// Another Slider img
+    .slider-bg01{
+        background-image: url(../img/hero/h2_hero1.jpg);
+    }
+    .slider-bg02{
+        background-image: url(../img/hero/h2_hero2.jpg);
+    }    
+    .slider-bg03{
+        background-image: url(../img/hero/h2_hero3.jpg);
+    }
+
+.slider-area{
+    margin-top: -1px;
+    .hero-caption-left{
+        height: 437px;
+        background: $theme-color;
+        padding: 79px 20px 78px 45px;
+        overflow: hidden;
+        @media #{$sm}{
+            padding: 50px 20px 20px 30px;
+            height: 337px;
+        }
+        @media #{$xs}{
+            padding: 50px 20px 20px 30px;
+            height: 337px;
+        }
+        &.hero__caption2 {
+            padding: 0;
+            margin-left: 0;
+            margin-right: 0;
+            position: unset;
+            background: none;
+            h1{
+                color: #fff;
+                font-size: 50px;
+                @media #{$md}{
+                    font-size: 46px;
+                }
+                @media #{$xs}{
+                    font-size: 40px;
+                }
+            }
+        }
+        span{
+            color: #7F85A8;
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            text-transform: uppercase;
+        }
+        h1{
+            color: $white;
+            font-size: 50px;
+            font-weight: 900;
+            margin-bottom: 38px;
+            line-height: 1.2;
+            @media #{$lg}{
+                font-size: 60px;
+                line-height: 1.2;
+            }
+            @media #{$md}{
+                font-size: 50px;
+                line-height: 1.2;
+            }
+            @media #{$sm}{
+                font-size: 40px;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+                line-height: 1.2;
+            }
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 39px;
+            margin-bottom: 25px;
+            padding-right: 49px;
+            @media #{$md}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+           
+        }
+    }
+    .hero-caption-right{
+        height: 437px;
+        padding: 122px 70px 20px 38px;
+        margin-left: -24px;
+        overflow: hidden;
+        background: #fff;
+        @media #{$lg}{
+            padding: 122px 20px 20px 38px;
+        }
+        @media #{$md}{
+            padding: 122px 20px 20px 38px;
+        }
+        @media #{$sm}{
+            padding: 50px 20px 20px 30px;
+            height: 337px;
+        }
+        @media #{$xs}{
+            padding: 50px 20px 20px 30px;
+            height: 260px;
+            margin: 0;
+        }
+        .icon{
+            margin-bottom:22px;
+        }
+        h2{
+            font-size: 34px;
+            font-weight: 700;
+            line-height: 1.2;
+            @media #{$lg}{
+                font-size: 29px;
+            }
+            @media #{$md}{
+                font-size: 26px;
+            }
+            @media #{$sm}{
+                font-size: 22px;
+            }
+            @media #{$xs}{
+                font-size: 22px;
+            }
+        }
+    }
+    // Another Hero page
+    .hero-caption2{
+        padding-top: 0;
+        h2{
+            color: #fff;
+            font-size: 50px;
+            display: block;
+            font-weight: 700;
+            line-height: 1.3;
+            @media #{$sm}{
+                font-size: 53px;
+            }
+            @media #{$xs}{
+                font-size: 44px;
+            }
+        }
+        p{
+            margin-bottom: 55px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+    }
+}
+
+//
+
+.hero-overly1 {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        // background-color:rgba(141, 129, 131,.4);
+        @extend %overlay1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero-overly2{
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color:rgba(35, 47, 85,.3);
+        // @extend %overlay2;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+
+// Another Hero Page
+.slider-area{
+    .hero-cap{
+        & h2{
+            color: #fff;
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+// Arrow
+.slider-active {
+    & button{
+        &.slick-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+            height: 120px;
+            width: 45px;
+            cursor: pointer;
+            background: rgba(35, 47, 85,.4);
+            i{
+                font-size: 20px;
+                line-height: 60px;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+        &.slick-next {
+            left: auto;
+            right: 0;
+        }
+    }
+    
+}

@@ -1,0 +1,43 @@
+// map-are 
+.map-are{
+    position: relative;
+    iframe{
+        margin-bottom: -7px;
+        padding-bottom: 0;
+    }
+  .address{
+        position: absolute;
+        top: 75px;
+        // right: 0;
+
+      h3{
+        color: #fff;
+        background:$theme-color;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 18px 0;
+        line-height: 1;
+        margin: 0;
+      }
+      .address-info{
+        background: #fff;
+        padding: 29px;
+        @media #{$xs}{
+            padding: 17px;
+        }
+        ul{
+            li{
+                color: #232F55;
+                font-size: 16px;
+                margin-bottom: 9px;
+            }
+        }
+        .line{
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid $border-color;
+        }
+    }
+  }
+}

@@ -1,0 +1,165 @@
+.visit-tailor-area{
+    background:$theme-color;
+    @include flexbox();
+    @include align-items(center);
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit_bg.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 600px;
+        width: 50%;
+         @media #{$lg}{
+            width: 49%;
+        }
+         @media #{$xs}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 500px;
+        }
+
+    }
+    
+    // -Right Contents
+    .tailor-details{
+        width: 50%;
+        padding: 20px 50px 20px 60px;
+        @media #{$laptop}{
+            width: 50%;
+            padding: 20px 20px 20px 30px;
+        }
+        @media #{$lg}{
+            width: 53%;
+            padding: 20px 50px 20px 50px;
+        }
+        @media #{$md}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 44px;
+            display: block;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 55px;
+            position: relative;
+            padding-bottom: 30px;
+            @media #{$laptop}{
+                font-size: 29px;
+            }
+            @media #{$lg}{
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 29px;
+            }
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 95px;
+                height: 3px;
+                left: 0px;
+                z-index: 1;
+                background: #fff;
+                bottom: 0;
+            }
+        }
+        .sinlge-wrapper {
+            @include flexbox();
+            @include justify-content(space-between);
+
+            @media #{$lg}{
+               @include flex-wrap(wrap);
+            }
+            @media #{$xs}{
+               @include flex-wrap(wrap);
+            }
+            .single-details{
+                width: 46%;
+                @media #{$laptop}{
+                    width: 48%;
+                }
+                @media #{$lg}{
+                    width: 85%;
+                }
+                @media #{$xs}{
+                    width: 100%;
+                }
+                &.left-line{
+                    border-right: 1px solid rgba(255, 255, 255,.2);
+                    padding-right: 55px;
+                    @media #{$laptop}{
+                        padding-right: 19px;
+                    }
+                    @media #{$lg}{
+                        padding-right: 0;
+                        border: 0;
+                        margin-bottom: 30px;
+                    }
+                    @media #{$sm}{
+                        padding-right: 0;
+                        border: 0;
+                    }
+                    @media #{$xs}{
+                        padding-right: 0;
+                        border: 0;
+                        margin-bottom: 30px;
+                    }
+                   
+                }
+                h3{
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+                p{
+                    color: #fff;
+                    line-height: 1.7;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    @media #{$laptop}{
+                        font-size: 13px;
+                    }
+                    @media #{$sm}{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+

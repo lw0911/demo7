@@ -1,0 +1,178 @@
+.customer-section{
+        padding-top: 70px;
+		padding-bottom: 60px;
+		@media #{$md}{
+            padding-top: 70px;
+            padding-bottom: 60px;
+		}
+		@media #{$sm}{
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+		@media #{$xs}{
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        margin: 0 12px;
+        margin-bottom: 60px;
+        margin-top: 50px;
+        padding: 40px 46px 25px 46px;
+        background-color: #fff;
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        .cat-img{
+            margin-bottom: 25px;
+            img{
+                border-radius: 50%;
+                display: inline-block;
+                box-shadow: 0 10px 25px rgba(77, 49, 44,.13);
+                -webkit-box-shadow: 0 10px 25px rgba(77, 49, 44,.13);
+            }
+        }
+        .cat-cap{
+            span{
+                color: #6785FF;
+                font-size: 46px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: block;
+            }
+            h5{
+             & > a{
+                font-size: 28px;
+                font-weight: 500;
+                color: $heading-color;
+                text-transform: capitalize;
+                margin-bottom: 17px;
+                display: block;
+                @include transition(.2s);
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$md}{
+                    font-size: 20px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+                &:hover{
+                    color: $theme-color;
+                }
+              }
+            }
+            p{
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 18px;
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+                @media #{$sm}{
+                    font-size: 13px;
+                }
+                @media #{$md}{
+                    font-size: 17px;
+                }
+                @media #{$xs}{
+                    font-size: 17px;
+                }
+            } 
+            .rating {
+                position: relative;
+                margin-top: 33px;
+                padding-top: 25px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 57px;
+                    height: 2px;
+                    z-index: 1;
+                    background: #E6DAD8;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    top: 0;
+                }
+                li {
+                    color: #F86011;
+                    font-size: 16px;
+                    display: inline-block;
+                    p{
+                        color: #000;
+                    }
+                }
+            }
+        }
+        // Hover Effect In single 
+        &:hover{
+            border: 1px solid transparent;
+            box-shadow: 0 17px 18px rgba(254, 95, 65,.1);
+            -webkit-box-shadow: 0 17px 18px rgba(254, 95, 65,.1);
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+
+            }
+       }
+    }
+}
+
+
+// Arrow
+.customer-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(32, 69, 112,.3);
+                @include transition(.2s);
+                &:hover{
+                    color: $heading-color;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+               left: -10px;
+            }
+            @media #{$lg}{
+               left: -10px;
+            }
+            @media #{$md}{
+               left: -10px;
+            }
+            @media #{$sm}{
+               left: -10px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -10px;
+             }
+            @media #{$lg}{
+                right: -10px;
+            }
+            @media #{$md}{
+                right: -10px;
+            }
+            @media #{$sm}{
+                right: -10px;
+            }
+        }
+    }
+}
