@@ -1,0 +1,156 @@
+.pricing-card-area{
+    position: relative;
+    .single-card{
+        padding: 35px 40px;
+        // -webkit-box-shadow: 0 8px 26px rgba(67,40,124,0.08);
+        @include transition(.4s);
+        .card-top{
+            .cat-icon {
+                color: #FF4495;
+                background: #fff;
+                display: block;
+                margin-bottom: 50px;
+                width: 78px;
+                height: 78px;
+                line-height: 78px;
+                text-align: center;
+                border-radius: 50px;
+                display: inline-block;
+                box-shadow: 0px 15px 25px rgba(0,4,74,0.04);
+                margin-bottom: 13px;
+            }
+            span{
+                color: $theme-color;
+                margin-bottom: 19px;
+                display: block;
+                border-radius: 20px;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+        .card-mid{
+            margin-bottom: 8px;
+            h4{
+                color:$heading-color;
+                margin-bottom: 20px;
+                font-size: 30px;
+                font-weight: 700;
+                position: relative;
+                display: inline-block;
+                span{
+                    color: $theme-color;
+                    font-size: 17px;
+                    position: absolute;
+                    top: 0;
+                    left: -17px;
+                }
+            }
+        }
+        .card-bottom{
+            ul{
+                li{
+                    color:$heading-color;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            .get-btn{
+               
+                font-family: $font_1;
+                color: #fff;
+                background: $btn_bg;
+                border: none;
+                padding: 11px 23px;;
+                text-transform: capitalize;
+                border-radius: 0px;
+                font-size: 18px ;
+                font-weight: 400;
+                display: inline-block;
+                border-radius: 40px;
+                @extend %btn_gradient;
+                border: 1px solid transparent;
+                
+                &:hover{
+                    background: none;
+                    border: 1px solid $theme-color;
+                    color: $theme-color;
+                }
+            }
+        }
+
+        // Hover
+        &:hover{
+            background: #fff;
+            box-shadow: 0px 15px 30px rgba(255, 87, 0,.12);
+            .card-mid{
+                span{
+                }
+                h4{
+                }
+            }
+            .get-btn{
+                border: 1px solid $theme-color;
+                color: $theme-color;
+                background: none !important;
+            }
+        }
+    }
+}
+
+.p-bg{
+    background: #F8FBFE;
+}
+
+// Tabs Button Style
+.nav-button{
+    nav{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        padding-bottom: 0px;
+        .nav-tabs{
+          border: 1px solid #000;
+          border-radius:20px;
+            .nav-item {
+                display: block;
+                @media #{$xs}{
+                font-size: 18px;
+                }
+            }
+            .nav-link {
+                font-family: $font_1;
+                color:$heading-color;
+                font-size: 13px;
+                font-weight: 600;
+                border: 0;
+                padding: 10px 19px;
+                border-radius: 20px 0 0 20px;
+                text-transform: uppercase;
+                cursor: pointer;
+                &:last-child{
+                    border-radius: 0px 20px 20px 0;
+                }
+                &.active {
+                    color:#fff;
+                    background: #192839;
+                    border:0;
+                    @media #{$xs}{
+                        border-bottom: 0;
+                    }
+                   
+                }
+                &:hover {
+                    border: 0;
+                    @media #{$xs}{
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}

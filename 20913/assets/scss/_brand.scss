@@ -1,0 +1,21 @@
+.brand-active {
+	border: 1px solid #E8EEF3;
+	padding: 45px 50px;
+	box-shadow: 0 15px 25px rgba(68, 162, 255,.06);
+	position: relative;
+    z-index: 5;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 97%;
+        height: 50px;
+        background: #fff;
+        bottom: -13px;
+        z-index: -1;
+        display: block;
+        text-align: center;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+    }
+}

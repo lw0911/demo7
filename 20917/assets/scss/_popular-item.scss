@@ -1,0 +1,93 @@
+.popular-item-area{
+
+    .single-items{
+        .items-img{
+            position: relative;
+            width: 100%;
+            img{
+                display: inherit;
+                @include transition(.4s);
+                width: 100%;
+                height: 560px;
+                @media #{$md}{
+                    height: 450px;
+                }
+                @media #{$xs}{
+                    height: 450px;
+                }
+            }
+        }
+        &:hover{
+            .wantToWork-area2{
+                opacity: 1;
+                visibility: visible;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    // Area -2
+    .wantToWork-area2{
+        position: absolute;
+        bottom: 25px;
+        background: #ffff;
+        padding: 40px 40px;
+        right: 0;
+        left: 0;
+        margin: 0 60px;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.4s);
+        @media #{$md}{
+            padding: 20px 23px;
+            margin: 0 20px;
+        }
+        @media #{$xs}{
+            padding: 40px 15px;
+            margin: 0 10px;
+        }
+        .wants-wrapper{
+            .wantToWork-caption{
+                h2{
+                    font-size: 30px;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin-bottom: 12px;
+                    color: $heading-color;
+    
+                    @media #{$md}{
+                        font-size: 30px; 
+                    }
+                    @media #{$sm}{
+                        font-size: 35px; 
+                    }
+                    @media #{$xs}{
+                        font-size: 25px; 
+                    }
+                } 
+                p{
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    color: #5E5E5E;
+                    margin-bottom: 20px;
+                }
+            }    
+            .wantToWork-btn{
+    
+                @media #{$sm}{
+                    float: left;
+                    margin-top: 30px;
+                }
+                @media #{$xs}{
+                    float: left;
+                    margin-top: 30px;
+                }
+                @media #{$md}{
+                    // float: left;
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+
+}

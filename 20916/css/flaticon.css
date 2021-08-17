@@ -1,0 +1,100 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 15/06/2018 11:41
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.flaticon-001-calculator:before { content: "\f100"; }
+.flaticon-002-calendar:before { content: "\f101"; }
+.flaticon-003-like:before { content: "\f102"; }
+.flaticon-004-bill:before { content: "\f103"; }
+.flaticon-005-flask:before { content: "\f104"; }
+.flaticon-006-user:before { content: "\f105"; }
+.flaticon-007-startup:before { content: "\f106"; }
+.flaticon-008-structure:before { content: "\f107"; }
+.flaticon-009-refresh:before { content: "\f108"; }
+.flaticon-010-filter:before { content: "\f109"; }
+.flaticon-011-menu:before { content: "\f10a"; }
+.flaticon-012-tag:before { content: "\f10b"; }
+.flaticon-013-notification:before { content: "\f10c"; }
+.flaticon-014-tea:before { content: "\f10d"; }
+.flaticon-015-weather:before { content: "\f10e"; }
+.flaticon-016-love:before { content: "\f10f"; }
+.flaticon-017-add-button:before { content: "\f110"; }
+.flaticon-018-slider-tool:before { content: "\f111"; }
+.flaticon-019-gift:before { content: "\f112"; }
+.flaticon-020-speaker:before { content: "\f113"; }
+.flaticon-021-battery-status:before { content: "\f114"; }
+.flaticon-022-record:before { content: "\f115"; }
+.flaticon-023-search:before { content: "\f116"; }
+.flaticon-024-wallet:before { content: "\f117"; }
+.flaticon-025-mail:before { content: "\f118"; }
+.flaticon-026-sun:before { content: "\f119"; }
+.flaticon-027-chart:before { content: "\f11a"; }
+.flaticon-028-trash:before { content: "\f11b"; }
+.flaticon-029-umbrella:before { content: "\f11c"; }
+.flaticon-030-idea:before { content: "\f11d"; }
+.flaticon-031-gps-1:before { content: "\f11e"; }
+.flaticon-032-lock:before { content: "\f11f"; }
+.flaticon-033-news:before { content: "\f120"; }
+.flaticon-034-view:before { content: "\f121"; }
+.flaticon-035-ecommerce:before { content: "\f122"; }
+.flaticon-036-suitcase:before { content: "\f123"; }
+.flaticon-037-settings:before { content: "\f124"; }
+.flaticon-038-svg-file:before { content: "\f125"; }
+.flaticon-039-photo:before { content: "\f126"; }
+.flaticon-040-gamepad:before { content: "\f127"; }
+.flaticon-041-paper-plane:before { content: "\f128"; }
+.flaticon-042-coding:before { content: "\f129"; }
+.flaticon-043-touch:before { content: "\f12a"; }
+.flaticon-044-flashlight:before { content: "\f12b"; }
+.flaticon-045-chat:before { content: "\f12c"; }
+.flaticon-046-checklist:before { content: "\f12d"; }
+.flaticon-047-target:before { content: "\f12e"; }
+.flaticon-048-clocks:before { content: "\f12f"; }
+.flaticon-049-store:before { content: "\f130"; }
+.flaticon-050-protect:before { content: "\f131"; }
+.flaticon-051-timer:before { content: "\f132"; }
+.flaticon-052-house:before { content: "\f133"; }
+.flaticon-053-upload:before { content: "\f134"; }
+.flaticon-054-quaver:before { content: "\f135"; }
+.flaticon-055-geography:before { content: "\f136"; }
+.flaticon-056-phone:before { content: "\f137"; }
+.flaticon-057-landing-page:before { content: "\f138"; }
+.flaticon-058-phonebook:before { content: "\f139"; }
+.flaticon-059-gps:before { content: "\f13a"; }
+.flaticon-060-edit:before { content: "\f13b"; }
+.flaticon-061-save-button:before { content: "\f13c"; }
+.flaticon-062-camera:before { content: "\f13d"; }
+.flaticon-063-leaf:before { content: "\f13e"; }
+.flaticon-064-folder:before { content: "\f13f"; }
+.flaticon-065-credit-card:before { content: "\f140"; }
+.flaticon-066-layers:before { content: "\f141"; }
+.flaticon-067-video-player:before { content: "\f142"; }
+.flaticon-068-attached-file:before { content: "\f143"; }
+.flaticon-069-diamond:before { content: "\f144"; }
+.flaticon-070-book:before { content: "\f145"; }

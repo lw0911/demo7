@@ -1,0 +1,110 @@
+.popular-item-area{
+    padding-top: 240px;
+    padding-bottom: 120px;
+    position: relative;
+    @media #{$md}{
+        padding: 70px 0;
+    }
+    @media #{$sm}{
+        padding: 70px 0;
+    }
+    @media #{$xs}{
+        padding: 70px 0;
+    }
+    &.popular-item-area2{
+        padding-top: 120px;
+        padding-bottom: 0;
+        @media #{$md}{
+            padding-top: 70px;
+            padding-bottom: 0;
+        }
+        @media #{$sm}{
+            padding-top: 70px;
+            padding-bottom: 0;
+        }
+        @media #{$xs}{
+            padding-top: 70px;
+            padding-bottom: 0;
+        }   
+        &::before{
+            position: unset;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 54%;
+        background: #FFF7F3;
+        top: 0;
+        left: 0;
+        @media #{$md}{
+            height: 40%;
+        }
+        @media #{$sm}{
+            height: 40%;
+        }
+        @media #{$xs}{
+            height: 40%;
+        }
+    }
+    .single-items{
+        margin: 0 15px;
+        &.single-items2{
+            margin-bottom: 50px;
+        }
+        .items-img{
+            margin-bottom: 31px;
+            width: 100%;
+            img{
+                display: inherit;
+                margin-bottom: 25px;
+                @include transition(.4s);
+                width: 100%;
+            }
+        }
+        .items-cap{
+            h5{
+                a{
+                    font-size: 30px;
+                    margin-bottom: 12px;
+                    font-weight: 600;
+                    display: block;
+                    color: #391F14 !important;
+                    line-height: 1.1;
+                    padding-right: 13px;
+                    @media #{$laptop}{
+                        font-size: 20px;
+                    }
+                    @media #{$sm}{
+                        font-size: 20px;
+                    }
+                    @media #{$md}{
+                        font-size: 24px;
+                    }
+                    color:$heading-color !important;
+                }
+                a:hover{
+                    color: $theme-color;
+                }
+            }
+            p{
+                margin-bottom: 20px;
+                color: #391F14;
+                font-weight: 300;
+            }
+            span{
+                color: $theme-color;
+            }
+            a.more-btn{
+                color: $theme-color;
+                font-size: 18px;
+                font-weight: 400;
+                &:hover{
+                    letter-spacing: 1px;
+                }
+            }
+
+        }
+    }
+}

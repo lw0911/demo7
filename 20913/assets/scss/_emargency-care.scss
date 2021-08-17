@@ -1,0 +1,84 @@
+.emargency-care{
+    padding: 29px 0;
+    @media #{$sm}{
+        padding: 50px 0;
+    }
+    @media #{$xs}{
+        padding: 50px 0;
+    }
+    .single-emargency{
+        padding: 65px 50px 65px 60px;
+        background-image: url(../img/gallery/bg-2.png);
+        background-repeat: no-repeat;
+        text-align: center;
+        width: 490px;
+        height: 505px;
+        display: flex;
+        align-items: center;
+       
+        @media #{$xs}{
+            padding: 15px;
+            width: 300px;
+            height: 405px;
+            background-size: cover;
+            background-image: none;
+              /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff4495+0,ff6d6d+100,7db9e8+100 */
+            background: #ff4495; /* Old browsers */
+            background: -moz-linear-gradient(top,  #ff4495 0%, #ff6d6d 100%, #7db9e8 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  #ff4495 0%,#ff6d6d 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  #ff4495 0%,#ff6d6d 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4495', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+        }
+        .cat-icon{
+            margin-bottom: 25px;
+        }
+
+        .emargency-cap{
+            h5{
+                font-size: 36px;
+                font-weight: 700;
+                color: #fff;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                display: block;
+                @include transition(.2s);
+                @media #{$large1}{
+                    font-size: 33px;
+                }
+                @media #{$sm}{
+                    // font-size: 30px;
+                }
+                @media #{$md}{
+                    font-size: 30px;
+                }
+                @media #{$xs}{
+                    font-size: 26px;
+                }
+                
+            }
+            p{
+                margin-bottom: 20px;
+                color: #fff;
+            }
+            .emargenc-cap{
+                margin-bottom: 35px;
+            }
+           ul{
+               margin-bottom: 40px;
+               @media #{$sm}{
+                     margin-bottom: 30px;
+               }
+               @media #{$xs}{
+                     margin-bottom: 30px;
+               }
+                li{
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                } 
+           }
+        }
+    }
+}
+
+

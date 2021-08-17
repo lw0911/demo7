@@ -1,0 +1,394 @@
+/*---------------------
+  Choose Us
+-----------------------*/
+.chooseus {
+  padding-bottom: 60px;
+}
+
+.chooseus__item {
+  text-align: center;
+  padding-top: 26px;
+  height: 274px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 40px;
+    
+  &:after {
+    position: absolute;
+    left: 46px;
+    right: 0;
+    top: 0;
+    background: url(../img/services/sm-shape-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 92px;
+    height: 70px;
+    content: "";
+    margin: 0 auto;
+    @include transition(all, .5s);
+    z-index: -1;
+  }
+
+  &:hover {
+    
+    &:after {
+      width: 360px;
+      height: 274px;
+      left: 0;
+    }
+  }
+
+  &.second__item {
+
+    &:after {
+      background: url(../img/services/sm-shape-2.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &.third__item {
+
+    &:after {
+      background: url(../img/services/sm-shape-3.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  
+
+  h4 {
+    color: $heading-color;
+    font-weight: 500;
+    margin-bottom: 12px;
+    margin-top: 30px;
+  }
+
+  p {
+    color: #444444;
+    margin-bottom: 0;
+  }
+}
+
+/*---------------------
+  Testimonial
+-----------------------*/
+.testimonial {
+  height: 536px;
+}
+
+.testimonial__slider {
+
+  &.owl-carousel {
+
+    .col-lg-6 {
+      max-width: 100%;
+    }
+
+    .owl-nav {
+
+      button {
+        font-size: 16px;
+        font-family: 'Rubik', sans-serif;
+        color: $white-color;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: absolute;
+        left: -100px;
+        top: 52%;
+
+        &.owl-next {
+          left: auto;
+          right: -100px;
+
+          &:after {
+            background: url(../img/testimonial/next.png);
+          }
+        }
+
+        &:after {
+          position: absolute;
+          left: -24px;
+          top: -24px;
+          height: 70px;
+          width: 90px;
+          background: url(../img/testimonial/prev.png);
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+.testimonial__author {
+  margin-bottom: 20px;
+}
+
+.testimonial__author__pic {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  position: relative;
+
+  img {
+    border-radius: 50%;
+    min-width: 100%;
+  }
+
+  span {
+    font-size: 30px;
+    background: $primary-color;
+    color: $white-color;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.testimonial__item {
+  text-align: center;
+
+  p {
+    font-size: 18px;
+    color: $white-color;
+    font-style: italic;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  h5 {
+    color: $white-color;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .rating {
+
+    span {
+      font-size: 12px;
+      color: $primary-color;
+      margin-right: -4px;
+    }
+  }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+  padding-top: 190px;
+  padding-bottom: 60px;
+  position: relative;
+  margin-top: -90px;
+  overflow: hidden;
+
+  &:before {
+    position: absolute;
+    left: -155px;
+    top: -40px;
+    height: 351px;
+    width: 351px;
+    background: url(../img/team/left.png);
+    content: "";
+    z-index: -1;
+  }
+
+  &:after {
+    position: absolute;
+    right: -80px;
+    bottom: 115px;
+    height: 351px;
+    width: 351px;
+    background: url(../img/team/right.png);
+    content: "";
+    z-index: -1;
+  }
+}
+
+.team__item {
+  margin-bottom: 40px;
+
+  &.pt__item {
+    padding-top: 40px;
+  }
+
+  &:hover {
+
+    .team__item__text {
+      box-shadow: 3px 0px 20px rgba(223, 223, 224, 0.5);
+      padding-left: 28px;
+      padding-right: 28px;
+      padding-bottom: 25px;
+      margin-top: -60px;
+      height: 146px;
+    }
+  }
+}
+
+.team__item__pic {
+
+  img {
+    min-width: 100%;
+  }
+}
+
+.team__item__text {
+  padding-top: 26px;
+  padding-right: 25px;
+  background: $white-color;
+  position: relative;
+  z-index: 1;
+  @include transition(all, .5s);
+  height: 80px;
+  width: calc(100% - 30px);
+  overflow: hidden;
+
+  h5 {
+    color: $heading-color;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  span {
+    font-size: 14px;
+    color: #444444;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+
+  .team__item__social {
+
+    a {
+      font-size: 16px;
+      color: $heading-color;
+      margin-right: 14px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+/*---------------------
+  Work
+-----------------------*/
+.work {
+  padding-bottom: 60px;
+}
+
+.work__item {
+  text-align: center;
+  margin-bottom: 40px;
+
+  &:hover {
+
+    .work__item__icon {
+      
+      .icon {
+        background: $white-color;
+        
+        i {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+  h5 {
+    color: $heading-color;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 36px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.work__item__icon {
+  position: relative;
+  
+  .icon {
+    height: 170px;
+    width: 170px;
+    background: $secondary-color;
+    border-radius: 50%;
+    margin: 0 auto;
+    line-height: 170px;
+    text-align: center;
+    position: relative;
+    box-shadow: 3px 0px 5px rgba(223, 223, 224, 0.5);
+    @include transition(all, .3s);
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+      color: $heading-color;
+      font-weight: 700;
+      background: $primary-color;
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-radius: 50%;
+    }
+
+    i {
+      color: $white-color;
+      display: inline-block;
+    }
+  
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+      font-size: 62px;
+    }
+  }
+}
+
+/*---------------------
+  Call To Action
+-----------------------*/
+.callto {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.callto__text {
+  padding-left: 90px;
+  position: relative;
+
+  span {
+    font-size: 59px;
+    color: $white-color;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  h3 {
+    color: $white-color;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: $white-color;
+  }
+}
+
+.callto__num {
+  font-size: 40px;
+  color: $primary-color;
+  font-weight: 700;
+  text-align: right;
+  padding-top: 5px;
+}

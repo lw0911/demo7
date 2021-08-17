@@ -1,0 +1,13 @@
+.right-caption {
+    position: relative;
+    z-index: 3;
+    @media #{$md}{
+        margin-bottom: 50px;
+    }
+    @media #{$sm}{
+        margin-bottom: 50px;
+    }
+    @media #{$xs}{
+        margin-bottom: 50px;
+    }
+}

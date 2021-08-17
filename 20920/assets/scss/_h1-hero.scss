@@ -1,0 +1,254 @@
+.slider-height {
+    min-height: 870px;
+    @media #{$laptop}{
+        min-height: 670px;
+    } 
+    @media #{$lg}{
+        min-height: 570px;
+    } 
+    @media #{$md}{
+        min-height: 470px;
+    } 
+    @media #{$sm}{
+        min-height: 400px;
+    } 
+    @media #{$xs}{
+        min-height: 400px;
+    } 
+}
+
+.slider-height2{
+    min-height: 420px;
+    @media #{$lg}{
+        min-height: 380px;
+    } 
+    @media #{$md}{
+        min-height: 380px;
+    }
+    @media #{$sm}{
+        min-height: 300px;
+    }
+    @media #{$xs}{
+        min-height: 300px;
+    }
+}
+
+.slider-area{
+    background: #391F14;
+    margin-top: -1px;
+    position: relative;
+    &.slider-area2{
+        padding-bottom: 50px;
+        @media #{$xs}{
+            padding-bottom: 0px;
+            padding-top: 80px;
+        }
+    }
+    // Hero Img
+    .single-slider{
+        .hero-img{
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 60%;
+            z-index: -1;
+            // overflow: hidden;
+            @media #{$laptop}{
+                width: 77%;
+            }
+            @media #{$lg}{
+                width: 71%;
+            }
+            @media #{$md}{
+                width: 64%;
+            }
+            @media #{$sm}{
+                // display: none;
+            }
+            @media #{$xs}{
+                display: none;
+            }
+            img{
+                width: 100%;
+            }
+            &.hero-img2{
+                width: 51%;
+                @media #{$laptop}{
+                    width: 60%;
+                }
+                @media #{$lg}{
+                    width: 71%;
+                }
+                @media #{$md}{
+                    width: 72%;
+                }
+                @media #{$sm}{
+                    width: 70%;
+                }
+                img{
+                    height: 420px;
+                    @media #{$md}{
+                        height: 380px;
+                    }
+                    @media #{$sm}{
+                        height: 300px;
+                    }
+                    @media #{$xs}{
+                        height: 300px;
+                    }
+                }
+            }
+        }
+        // Hero Caption
+        .hero-caption{
+            overflow: hidden;
+            span{
+                color: #010A44;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+                display: block;
+            }
+            h1{
+                font-size: 100px;
+                font-weight: 600;
+                margin-bottom: 33px;
+                line-height: 1;
+                display: block;
+                color: #fff;
+
+                @media #{$lg}{
+                    font-size: 71px;
+                }
+                @media #{$md}{
+                    font-size: 45px;
+                }
+                @media #{$sm}{
+                    font-size: 45px;
+                    margin-bottom: 30px;
+                }
+                @media #{$xs}{
+                    font-size: 41px;
+                    margin-bottom: 25px;
+                }
+            }
+            p{
+                margin-bottom: 39px;
+                display: block;
+                color: #fff;
+                font-size: 20px;
+                padding-right: 50px;
+                @media #{$md}{
+                    margin-bottom: 29px;
+                    font-size: 18px;
+                    padding-right: 21px;
+                }
+                br{
+                    @media #{$sm}{
+                        display: none;
+                    }
+                    @media #{$xs}{
+                        display: none;
+                    }
+                }
+
+            }
+        }
+    }
+}
+// Another Hero Page
+.hero-area{
+    .hero-cap{
+        h2{
+            color: #fff;
+            font-size: 50px;
+            font-weight: 900;
+            text-transform: capitalize;
+            @media #{$sm}{
+                font-size: 29px;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+// Hero Overly
+.hero-overly {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(1, 10, 28,  0.3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+// Arrow
+.slider-active {
+    & button{
+        &.slick-arrow {
+            position: absolute;
+            right:60px;
+            bottom: 0;
+            background: none;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+            height: 60px;
+            width: 60px;
+            cursor: pointer;
+            background: #00444b;
+            @media #{$md}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            @media #{$sm}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            @media #{$xs}{
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                right:40px;
+            }
+            i{
+                font-size: 20px;
+                line-height: 60px;
+                color: #ffff;
+                @media #{$md}{
+                    line-height: 40px;
+                }
+                @media #{$sm}{
+                    line-height: 40px;
+                }
+                @media #{$xs}{
+                    line-height: 40px;
+                }
+            }
+        }
+        &.slick-next {
+            right: 0px;
+            background: #04dbec;
+        }
+    }
+    
+}
+

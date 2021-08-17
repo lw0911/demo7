@@ -1,0 +1,113 @@
+/*---------------------
+  Contact
+-----------------------*/
+.contact {}
+
+.contact__widget {
+  margin-bottom: 40px;
+}
+
+.contact__widget__item {
+  overflow: hidden;
+  margin-bottom: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contact__widget__item__icon {
+  height: 60px;
+  width: 60px;
+  background: $secondary-color;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 30px;
+  float: left;
+
+  span {
+    font-size: 24px;
+    color: $white-color;
+    position: relative;
+    top: 3px;
+  }
+}
+
+.contact__widget__item__text {
+  overflow: hidden;
+
+  h5 {
+    color: $heading-color;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.contact__form {
+  text-align: center;
+  margin-bottom: 40px;
+
+  form {
+
+    input {
+      height: 46px;
+      width: 100%;
+      padding-left: 20px;
+      font-size: 15px;
+      color: $heading-color;
+      border: 1px solid #e1e1e1;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      @include transition(all, .3s);
+
+      &::placeholder {
+        color: $heading-color;
+      }
+
+      &:focus {
+        border-color: #444444;
+      }
+    }
+
+    textarea {
+      height: 110px;
+      width: 100%;
+      padding-left: 20px;
+      padding-top: 12px;
+      font-size: 15px;
+      color: $heading-color;
+      border: 1px solid #e1e1e1;
+      resize: none;
+      margin-bottom: 9px;
+      border-radius: 4px;
+      @include transition(all, .3s);
+
+      &::placeholder {
+        color: $heading-color;
+      }
+
+      &:focus {
+        border-color: #444444;
+      }
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}
+
+.contact__map {
+  height: 400px;
+  margin-top: 30px;
+
+  iframe {
+    width: 100%;
+  }
+}

@@ -1,0 +1,56 @@
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb__option {
+    height: 308px;
+    padding-top: 110px;
+}
+
+.breadcrumb__text {
+    position: relative;
+    z-index: 1;
+    margin-left: 48px;
+
+    &:after {
+        position: absolute;
+        left: -48px;
+        top: -40px;
+        width: 270px;
+        height: 165px;
+        background: url(../img/shape.png);
+        content: "";
+        z-index: -1;
+    }
+
+    h2 {
+        color: $heading-color;
+        font-size: 40px;
+        font-weight: 500;
+    }
+}
+
+.breadcrumb__links {
+
+    a {
+        font-size: 16px;
+        color: $heading-color;
+        display: inline-block;
+        margin-right: 24px;
+        position: relative;
+        opacity: .7;
+
+        &:after {
+            position: absolute;
+            right: -16px;
+            top: 1px;        
+            content: "|";
+            color: #888888;
+        }
+    }
+
+    span {
+        font-size: 16px;
+        color: $secondary-color;
+        display: inline-block;
+    }
+}
