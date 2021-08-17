@@ -1,0 +1,132 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head -->
+
+<head>
+	<title>Alive Coming Soon Flat Responsive Widget Template :: W3layouts</title>
+	<!-- Meta-Tags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--Style-CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<!--Font-awesome-icons -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<!--Google-fonts -->
+	<link href="//fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600,700&display=swap"
+		rel="stylesheet">
+		<link href="//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<!-- //Head -->
+<!-- Body -->
+
+<body>
+	<section class="w3l-coming-soon-page">
+		<div class="coming-page-infohny">
+			<div class="wrapper">
+				<div class="header">
+					<div class="logo">
+						<a class="brand-logo" href="index.html">Alive.</a>
+					</div>
+					<div class="w3lhny-button text-right">
+						<a class="alive-btn" href="index.html">Download</a>
+					</div>
+				</div>
+				<div class="coming-block">
+					<h1>Coming Soon</h1>
+					<h2 class="parahny">Our Website Coming in 2021</h2>
+
+				</div>
+				<div class="alive-bottom">
+				
+					<div class="countdown">
+						<h6>Launching In</h6>
+						<div class="countdown__days">
+							<div class="number"></div>
+							<span class>Days</span>
+						</div>
+
+						<div class="countdown__hours">
+							<div class="number"></div>
+							<span class>Hours</span>
+						</div>
+
+						<div class="countdown__minutes">
+							<div class="number"></div>
+							<span class>Minutes</span>
+						</div>
+
+						<div class="countdown__seconds">
+							<div class="number"></div>
+							<span class>Seconds</span>
+						</div>
+					</div>
+					<div class="copyright-footer ">
+						
+						<div class="w3lhny-socialicons">
+							<ul class="social">
+								<li><h6>Follow Us :</h6></li>
+								<li><a href="#facebook"><span class="fa fa-facebook" aria-hidden="true"></span></a></li>
+								<li><a href="#linkedin"><span class="fa fa-linkedin" aria-hidden="true"></span></a></li>
+								<li><a href="#twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a></li>
+								<li>
+									<a href="#instagram" class="linkedin"><span class="fa fa-instagram"></span></a>
+								</li>
+								<li>
+									<a href="#linkedin" class="linkedin"><span class="fa fa-linkedin"></span></a>
+								</li>
+								
+							</ul>
+						</div>
+						<p>© 2021 Alive Coming Soon. Made with <span class="fa fa-heart"></span> | Designed by <a
+								href="https://w3layouts.com" target="_blank">W3layouts</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script>
+			(() => {
+				// Specify the deadline date
+				const deadlineDate = new Date('May 31, 2023 23:59:59').getTime();
+
+				// Cache all countdown boxes into consts
+				const countdownDays = document.querySelector('.countdown__days .number');
+				const countdownHours = document.querySelector('.countdown__hours .number');
+				const countdownMinutes = document.querySelector('.countdown__minutes .number');
+				const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+				// Update the count down every 1 second (1000 milliseconds)
+				setInterval(() => {
+					// Get current date and time
+					const currentDate = new Date().getTime();
+
+					// Calculate the distance between current date and time and the deadline date and time
+					const distance = deadlineDate - currentDate;
+
+					// Calculations the data for remaining days, hours, minutes and seconds
+					const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+					const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+					const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+					// Insert the result data into individual countdown boxes
+					countdownDays.innerHTML = days;
+					countdownHours.innerHTML = hours;
+					countdownMinutes.innerHTML = minutes;
+					countdownSeconds.innerHTML = seconds;
+				}, 1000);
+			})();
+		</script>
+
+	</section>
+	<!-- //coming-61-w3l-vv-section -->
+
+</body>
+<!-- //Body -->
+
+</html>

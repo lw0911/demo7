@@ -1,0 +1,60 @@
+.our-services{   
+    background: #F1F6F9;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    @media #{$md}{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    @media #{$sm}{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .single-services{
+        .services-icon{
+            img{
+                text-align: center;
+                margin-bottom: 14px;
+
+            }
+        }
+        .services-cap{
+           
+            h5{
+                a{
+                    font-weight:600;
+                    font-size: 24px;
+                    color:$heading-color;
+                    line-height: 1.4;
+                    margin-bottom: 20px;
+                    display: block;
+                    @media #{$sm}{
+                        font-size: 21px;
+                    }
+                }
+            }
+            p{
+                font-weight: 300;
+                color: #6A6063;
+                line-height: 1.6;
+                
+            }
+        }
+        &:hover{
+            .services-ion{
+                span{
+                    color: $theme-color;
+                }
+            }
+            h5{
+                a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.popular-location{
+    .single-location{
+        position: relative;
+        .location-img{
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+            &::before{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              bottom: 0;
+              top: 0;
+              left: 0;
+              right: 0;
+              content: "";
+              background: rgba(90, 78, 140,.3);
+            //   @extend %gallery;
+              z-index: 1;
+              @include transition (.4s);
+            }
+            img{
+                width: 100%;
+                transform: scale(1);
+                @include transition(.4s);
+            }
+        }
+        .location-details{
+            position: absolute;
+            left: 0px;
+            right: 0;
+            top: 40%;
+            text-align: center;
+            margin: 0 auto;
+            @include transition (.4s);
+            h4{
+               a{
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                display: inline-block;
+                margin-bottom: 2px;
+                @media #{$xs}{
+                    font-size: 18px;
+                     line-height: 1.1;
+                } 
+               }
+            }
+            p{
+                color: #fff;
+                font-size: 16px;
+                font-weight: 300;
+            }
+            .location-btn{
+                
+                @include transition (.4s);
+                background:$theme-color;
+                padding: 7px 13px;
+                color: #fff;
+                border-radius: 4px;
+                display: inline-block;
+                font-size: 14px;
+                visibility: hidden;
+                opacity: 0;
+                &:hover{
+                    background: #fff;
+                    color: $theme-color;
+                } 
+                i{
+                    font-size: 10px;
+                    padding: 0;
+                    margin: 0;
+                    position: relative;
+                    left: -3px;
+                }
+            }
+           
+        }
+    }
+}
+// Hover
+.single-location:hover{
+    .location-img{
+        &::before{
+            background: rgba(90, 78, 140,.7);
+        }
+        img{
+            transform: scale(1.05);
+        }
+    }
+    .location-details{
+        top: 50%;
+        transform: translateY(-50%);
+        .location-btn{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

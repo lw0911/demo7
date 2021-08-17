@@ -1,0 +1,124 @@
+
+.visit-tailor-area{
+    background: #004274;
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-details{
+        width: 50%;
+        padding: 20px 100px 20px 300px;
+        @media #{$large1}{
+            padding: 20px 80px 20px 80px;
+        }
+        @media #{$large2}{
+            padding: 20px 80px 20px 80px;
+        }
+        @media #{$lg}{
+            width: 53%;
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$md}{
+            width: 76%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        span{
+            margin-bottom: 22px; 
+            display: block;
+            color: #ffff;
+        }
+        h2 {
+            color: #fff;
+            font-size:38px;
+            display: block;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            text-transform: capitalize;
+            @media #{$lg}{
+                font-size: 37px;
+            }
+            @media #{$sm}{
+                font-size: 50px;
+            }
+            @media #{$xs}{
+                font-size: 26px;
+            }
+        }
+        p{
+            color: #ffff;
+            line-height: 1.7;
+            font-size: 18px;
+        }
+        input {
+            background: none;
+            padding: 0px;
+            width: 100%;
+            height: 37px;
+            border: 0;
+            border-bottom: 2px solid #BECCD6;
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 25px;
+            &::placeholder{
+                color: #ffff;
+                font-size: 16px;
+            }
+        }
+        p.pera-bottom{
+            margin-bottom: 41px;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                font-size: 13px;
+            }
+        }
+    }
+    // -Right Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/subscribe-img.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height:414px;
+        width: 50%;
+         @media #{$lg}{
+            width: 49%;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            height: 400px;
+        }
+
+    }
+}
+
+// Progress Bar
+
+

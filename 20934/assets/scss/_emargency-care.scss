@@ -1,0 +1,162 @@
+.emargency-care{
+    padding:67px 0;
+    @media #{$sm}{
+        padding: 50px 0;
+    }
+    @media #{$xs}{
+        padding: 50px 0;
+    }
+    .single-emargency{
+        padding: 81px 50px 76px 140px;
+        border-radius: 0;
+        margin-right: -12px;
+        position: relative;
+       &::before {
+            position: absolute;
+            content: "";
+            background-color: #EFFDFF;
+            width: 1000%;
+            height: 100%;
+            left: 12px;
+            top: 0;
+            bottom: 0;
+            z-index: 0;
+           
+        }
+        @media #{$large1}{
+            margin-left: 0px;
+        }
+        @media #{$large2}{
+            margin-left: 80px;
+        }
+        @media #{$lg}{
+            margin-left: 20px;
+            padding: 60px 50px 60px 120px;
+        }
+        @media #{$md}{
+            margin-left: 20px;
+            padding: 40px 35px 40px 100px;
+        }
+        @media #{$sm}{
+            margin-left: 20px;
+            padding: 30px 35px 30px 90px;
+        }
+        @media #{$xs}{
+            margin-left: 0px;
+            padding: 30px 35px 30px 60px;
+        }
+
+        .cat-icon{
+            margin-bottom: 25px;
+        }
+
+        .emargency-cap{
+            position: relative;
+            h5{
+             & > a{
+                font-size: 40px;
+                font-weight: 400;
+                color: $heading-color;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                display: block;
+                @include transition(.2s);
+                position: relative;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 41px;
+                    height: 2px;
+                    left: -62px;
+                    top: 26px;
+                    background:$theme-color;
+                    @media #{$xs}{
+                        position: unset;
+                     }
+                }
+                @media #{$large1}{
+                    font-size: 33px;
+                }
+                @media #{$sm}{
+                    font-size: 26px;
+                }
+                @media #{$md}{
+                    font-size: 30px;
+                }
+                @media #{$xs}{
+                    font-size: 26px;
+
+                }
+                &:hover{
+                    color: $theme-color;
+                }
+              }
+            }
+            p{
+                margin-bottom: 20px;
+                color: #545454;
+                font-size:18px;
+            }
+            .emargenc-cap{
+                margin-bottom: 35px;
+            }
+           ul{
+               margin-bottom: 40px;
+               @media #{$sm}{
+                     margin-bottom: 30px;
+               }
+               @media #{$xs}{
+                     margin-bottom: 30px;
+               }
+                li{
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                } 
+           }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+    
+            }
+       }
+    }
+}
+
+
+.join-us-area{
+    .joing-details{
+        p{
+            font-size: 18px;
+            margin-bottom: 50px;
+            @media #{$xs}{
+                margin-bottom: 30px;
+            }
+            @media #{$sm}{
+                margin-bottom: 20px;
+            }
+        }
+        @media #{$lg}{
+            margin-bottom: 30px;
+        }
+        @media #{$md}{
+            margin-bottom: 30px;
+        }
+        @media #{$sm}{
+            margin-bottom: 30px;
+        }
+        @media #{$xs}{
+            margin-bottom: 30px;
+        }
+    }
+    .joning-img{
+        img{
+            @media #{$xs}{
+                margin-bottom: 30px;
+            } 
+        }
+    }
+}

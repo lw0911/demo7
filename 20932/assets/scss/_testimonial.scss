@@ -1,0 +1,99 @@
+.popular-directorya-area{
+    background: #F1C4A3;
+
+    .properties{
+        margin: 0 12px;
+        .properties-caption{
+            background: #fff;
+            padding: 50px 35px 40px 35px;
+            height: 405px;
+            @media #{$sm}{
+                height: 350px;
+            }
+            @media #{$sm}{
+                height: 350px;
+            }
+            .ratting{
+                ul{
+                    margin-bottom: 30px;
+                    li{
+                        display: inline-block;
+                        i{
+                            color: #E67118;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            h3{
+               a{
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                    display: block;
+                    @media #{$lg}{
+                        font-size: 16px;
+                    }
+               }
+                a:hover,.properties-card{
+                    color:$theme-color;
+    
+                }
+                img{
+                    display: inline-block;
+
+                }
+            }
+            P.p-pera{
+                color: #545454;
+                margin-bottom: 40px;
+            }
+            p{
+                color: #545454;
+                font-size: 18px;
+                a.woner{
+                    color: #2A2A2A;
+                    font-size: 14px;
+                    &:hover{
+                        color: $theme-color
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Arrow
+.testi-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 28px;
+                color:rgba(26, 33, 61,.4);
+                &:hover{
+                    color:rgb(26, 33, 61);
+                }
+            }
+        }
+        &.slick-prev {
+            left:10px;
+            top: -73px;
+            
+        }
+        &.slick-next {
+            right: 10px;
+            top: -73px;
+            
+        }
+    }
+    
+}

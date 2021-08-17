@@ -1,0 +1,248 @@
+.our-practice-area{
+    .single-services1{
+        &.single-services2{
+            border: 1px solid #EFE2E2;
+        }
+        background: #ffff;
+        @include transition(.4s);
+        margin:4px;
+        padding: 35px 30px 1px 30px;
+        @media #{$xs}{
+            padding: 35px 19px 1px 19px;
+        }
+        &:hover {
+            box-shadow:0px 15px 30px rgba(180, 0, 0,.08);
+            &.single-services2{
+                border: 1px solid transparent;
+            }
+        }
+        .services-ion{
+            margin-bottom: 19px;
+        }
+        .services-cap{
+            h5{
+    
+                a{
+                    font-family: $font_2;
+                    font-size: 24px;
+                    line-height: 1.4;
+                    margin-bottom: 12px;
+                    font-weight: 400;
+                    display: block;
+                    @media #{$sm}{
+                        font-size: 20px;
+                    }
+                    color:$heading-color !important;
+                }
+                a:hover{
+                    color: $theme-color;
+                }
+            }
+            p{
+                margin-bottom: 24px;
+                font-size: 20px;
+                color: #66816A;
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+            }
+            a.more-btn{
+                color: $theme-color;
+                font-size: 18px;
+                font-weight: 400;
+                &:hover{
+                    letter-spacing: 1px;
+                }
+            }
+    
+        }
+        &:hover{
+            // border: 1px solid $theme-color;
+            .services-ion{
+                span{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+
+
+// Form Area
+.form-wrapper{
+    background: $theme-color;
+    padding: 44px 60px 46px 60px;
+    border-radius: 0 140px 0 0;
+    @media #{$large1}{
+        padding: 60px 20px 20px 20px;
+    }
+    @media #{$lg}{
+        padding: 60px 60px 40px 60px;
+        margin-top: 50px;
+    }
+    @media #{$md}{
+        margin-top: 50px;
+    }
+    @media #{$sm}{
+        margin-top: 50px;
+        border-radius: 0 40px 0 0;
+    }
+    @media #{$xs}{
+        margin-top: 50px;
+        padding: 60px 20px;
+        border-radius: 0 40px 0 0;
+    }
+    .form-tittle {
+        h2 {
+            color: #fff;
+            font-size: 38px;
+            display: block;
+            font-weight:600;
+            line-height: 1.4;
+            margin-bottom: 5px;
+            @media #{$lg}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 29px;
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+
+    // Start contact
+    input {
+        @include transition(.4s);
+        border: 1px solid rgba(255, 255, 255,.5);
+        height: 55px;
+        width: 100%;
+        padding: 10px 10px;
+        padding-right: 30px;
+        background: none;
+        color: #fff;
+        font-weight: 500;
+        text-transform: capitalize;
+        border-radius: 0;
+        .list {
+            width: 100%;
+            border-radius: 0;
+        }
+        &::placeholder{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &:focus{
+            border: 1px solid $theme-color2;
+        }
+    }
+    .nice-select {
+        @include transition(.4s);
+        line-height: 30px;
+        border: 1px solid rgba(255, 255, 255,.5);
+        background: none;
+        height: 55px;
+        width: 100%;
+        color: #fff;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-top: 10px;
+        border-radius: 0;
+        margin-bottom: 10px;   
+
+        @media #{$xs}{
+            margin-bottom: 15px;
+        }
+        &::after {
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            height: 7px;
+            right: 41px;
+            width: 7px;
+        }
+        &.open .list {
+            width: 100%;
+            border-radius: 0;
+        }
+        .option {
+            color: #071112;
+        }
+        &::placeholder{
+            color: #66816A;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        &:focus{
+            border: 1px solid $theme-color2;
+        }
+    }
+    textarea {
+        @include transition(.4s);
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        border-radius: 0;
+        border: 1px solid rgba(255, 255, 255,.5);
+        background: none;
+        text-transform: capitalize;
+        height: 116px;
+        width: 100%;
+        padding: 21px 23px;
+        @media #{$md}{
+            padding: 30px 42px;
+        }
+        @media #{$sm}{
+            padding: 30px 42px;
+        }
+        @media #{$xs}{
+            padding: 30px 42px;
+        }
+        &::placeholder{
+            color: #fff;
+            font-size: 16px;
+        }
+        &:focus{
+            border: 1px solid $theme-color2;
+        }
+    }
+    .contact {
+        border: 1px solid #eaedff;
+        padding: 40px 10px;
+        i {
+            background: #8fb569;
+            font-size: 40px;
+            height: 150px;
+            width: 150px;
+            color: #ffffff;
+            border-radius: 50%;
+            line-height: 135px;
+            border: 10px solid #fff;
+            -webkit-box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
+            box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
+            margin-bottom: 30px;
+        }
+    h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin: 0;
+            padding: 0 50px;
+    }
+    }
+    input::-moz-placeholder,
+    input::-moz-placeholder {
+       transition: .4s;
+   }
+    input:focus::-webkit-input-placeholder {
+       opacity: 0;
+       -webkit-transition: .4s;
+       -o-transition: .4s;
+       transition: .4s;
+   }
+
+}
