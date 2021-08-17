@@ -1,0 +1,347 @@
+.hero {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #4facfe;
+	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+	.img-wrap {
+		img {
+			box-shadow: 0 15px 30px 0 rgba($black, .1);
+		}
+	}
+	&, & > .container > .row {
+		height: 100vh;
+		min-height: 780px;
+		@include media-breakpoint-down(lg) {
+			height: auto;
+			padding-top: 4rem;
+			padding-bottom: 4rem;
+		}
+	}
+	&.inner-page {
+		&, & > .container > .row {
+			height: 50vh;
+			min-height: 550px;
+			@include media-breakpoint-down(lg) {
+				height: auto;
+				padding-top: 4rem;
+				padding-bottom: 4rem;
+			}
+		}
+	}
+	&.overlay {
+		position: relative;
+		&:before {
+			display: none;
+			background-color: rgba($black, .4);
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			z-index: 1;
+		}
+	}
+	> .container {
+		position: relative;
+		z-index: 2;
+	}
+
+	.heading {
+		color: $black;
+		font-size: 50px;
+		font-weight: 700;
+		@include media-breakpoint-down(lg) {
+			font-size: 40px;
+		}
+	}
+	
+}
+
+
+.section {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+	.heading {
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
+
+.sec-features {
+	background-color: #fafafa;
+	.feature {
+		[class^="flaticon-"] {
+			flex: 0 0 60px;
+			font-size: 50px;
+			position: relative;
+			margin-right: 10px;
+
+			&:before {
+
+				background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+				-webkit-background-clip: text;
+				-moz-background-clip: text;
+				background-clip: text;
+				-webkit-text-fill-color:transparent;
+
+				z-index: 2;
+				position: relative;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				z-index: 1;
+				left: -10px;
+
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background: rgba($secondary, .1);
+			}
+		}
+		h3 {
+			font-size: 18px;
+			font-weight: bold;
+			color: $black;
+		}
+		
+	}
+}
+
+.sec-services {
+
+}
+.service {
+	padding: 40px;
+	box-shadow: 0 10px 30px 0 rgba($black, .05);
+	margin-bottom: 50px;
+	background: $white;
+	[class^="flaticon-"] {
+		flex: 0 0 60px;
+		font-size: 50px;
+		position: relative;
+		margin-right: 10px;
+		margin-bottom: 30px;
+		display: inline-block;
+		&:before {
+			background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+			-webkit-background-clip: text;
+			-moz-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color:transparent;
+
+			z-index: 2;
+			position: relative;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			z-index: 1;
+			left: -10px;
+
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background: rgba($secondary, .1);
+		}
+	}
+	h3 {
+		color: $black;
+		font-size: 18px;
+	}
+}
+
+.sec-cta {
+	background-size: cover;
+	background-position: 100% center;
+	background-repeat: no-repeat;
+	background-color: #ccc;
+	&.overlay {
+		position: relative;
+		&:before {
+			background-color: rgba($black, .5);
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			z-index: 1;
+		}
+	}
+	> .container {
+		position: relative;
+		z-index: 2;
+	}
+	.heading {
+		color: $white;
+	}
+	p {
+		color: $white;
+	}
+}
+
+.post-slider-wrap, .testimonial-slider-wrap {
+	position: relative;
+	.tns-inner {
+		padding-bottom: 100px;
+	}
+
+	.tns-nav {
+		position: absolute;
+		// right: 20px;
+		left: 50%;
+		z-index: 9;
+		transform: translateX(-50%);
+		// z-index: 2;
+		bottom: 20px;
+		button {
+			background: none;
+			border: none;
+			// display: inline-block;
+			margin: 3px;
+			height: 7px;
+			position: relative;
+			&:active, &:focus {
+				outline: none;
+
+			}
+			&:before {
+				position: absolute;
+				content: "";
+				width: 7px;
+				height: 7px;
+				display: inline-block;
+				border-radius: 50%;
+				background-color: rgba($black, .5)!important;
+				// right: 0;
+				transition: .3s all ease;
+			}
+			&.tns-nav-active {
+				&:before {
+					background-color: $black!important;
+					height: 7px;
+				}
+			}
+		}
+	}
+
+}
+
+.card {
+	border: none;
+	box-shadow: 0 10px 30px 0 rgba($black, .05);
+	.card-body {
+		padding: 40px;
+		h5 {
+			color: $black;
+		}
+	}
+}
+
+.sec-halfs {
+	.half-content {
+		> div {
+			width: 50%;
+			@include media-breakpoint-down(lg) {
+				width: 100%;
+			}
+		}
+		.img {
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			@include media-breakpoint-down(lg) {
+				height: 450px;
+			}
+		}
+		.text {
+			padding: 90px;
+			@include media-breakpoint-down(lg) {
+				padding: 30px;
+			}
+		}
+	}
+}
+
+.testimonial-half {
+	> div {
+		width: 50%;
+		@include media-breakpoint-down(lg) {
+			width: 100%;
+		}
+	}
+	.img {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		@include media-breakpoint-down(lg) {
+			height: 250px;
+		}
+	}
+	.text {
+		padding: 90px;
+		@include media-breakpoint-down(lg) {
+			padding: 30px;
+		}
+		blockquote {
+			p {
+				color: $black;
+				font-size: 18px;
+				font-family: 'Georgia', serif;
+				font-style: italic;
+			}
+		}
+		.author {
+			margin-top: 50px;
+			strong {
+				color: $black;
+			}
+		}
+	}
+}
+
+.post-entry {
+	.date {
+		letter-spacing: .05rem;
+		margin-bottom: 10px;
+		display: block;
+	}
+	h5 {
+		margin-bottom: 30px;
+		a {
+			&:hover {
+				color: $primary;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.contact-info {
+	i {
+		font-size: 20px;
+		float: left;
+		width: 44px;
+		height: 44px;
+		background: $primary;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50px;
+		transition: all 0.3s;
+		color: $white;
+	}	
+	h4 {
+		font-size: 18px;
+		padding: 0 0 0 60px;
+	}
+	p {
+		padding: 0 0 0 60px;
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,16 @@
+
+$primary: #d79100;
+$secondary: #242f3a;
+$font-family-sans-serif: 'Raleway', sans-serif;
+$font-family-sans-serif-secondary: 'Playfair Display', sans-serif;
+
+@import 'bootstrap/mixins';
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+
+@import 'bootstrap/bootstrap';
+
+@import 'components/site-navbar';
+@import 'components/site-base';
+@import 'components/site-blocks';
+@import 'components/site-footer';

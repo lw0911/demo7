@@ -1,0 +1,53 @@
+// About Area
+.about-area{
+	padding-top: 90px;
+	@media #{$md}{
+		padding-top: 50px;
+	}
+	@media #{$sm}{
+		padding-top: 50px;
+	}
+	@media #{$xs}{
+		padding-top: 50px;
+	}
+    .about-cap-Left{
+		@media #{$md}{
+			margin-bottom: 40px;
+		}
+		@media #{$sm}{
+			margin-bottom: 40px;
+		}
+		@media #{$xs}{
+			margin-bottom: 40px;
+		}
+        img{
+            width: 100%;
+		}
+
+	}
+	// Right Content
+	.right-caption{
+
+		img{
+			width: 100%;
+			padding-top: 90px;
+			@media #{$md}{
+				padding-top: 40px;
+			}
+			@media #{$sm}{
+				padding-top: 40px;
+			}
+			@media #{$xs}{
+				padding-top: 40px;
+			}
+		}
+		
+	}
+	// Shape
+	.about-shape{
+		position: absolute;
+		left: -94px;
+		bottom: -93px;
+		z-index: -1;
+	}
+}

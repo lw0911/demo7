@@ -1,0 +1,65 @@
+.site-footer {
+	padding: 70px 0;
+	a {
+		position: relative;
+		display: inline-block;
+		color: rgba($black, .5);
+		&:before {
+			
+		}
+		&:hover {
+			color: $black;
+			&:before {
+				background: rgba($primary, 1);
+			}
+		}
+	}
+	.btn {
+		&:before {
+			display: none;
+		}
+	}
+	.widget {
+		margin-bottom: 40px;
+		display: block;
+		h3 {
+			font-size: 16px;
+		}
+
+		.links {
+			width: 150px;
+			li {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.social {
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				position: relative;
+				background: $primary;
+				border-radius: 50%;
+				color: $black;
+				&:before {
+					display: none;
+				}
+				> span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+				&:hover {
+					background: lighten($primary, 10%);
+					color: $black;
+				}
+			}
+		}
+	}
+
+}

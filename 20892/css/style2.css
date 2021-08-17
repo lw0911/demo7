@@ -1,0 +1,113 @@
+.section {
+  padding: 7rem 0; }
+
+.custom-form-wrap {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 422px;
+  margin: 50px auto 0 auto;
+  font-family: 'Source Sans Pro', sans-serif; }
+  .custom-form-wrap a {
+    color: #8E74F6; }
+  .custom-form-wrap .custom-heading {
+    font-size: 30px;
+    color: #222;
+    margin-bottom: 40px;
+    font-weight: bold; }
+  .custom-form-wrap .mb-0 {
+    margin-bottom: 0 !important; }
+  .custom-form-wrap .subheading {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    color: #8D8D8D;
+    display: block;
+    padding-top: 30px; }
+  .custom-form-wrap .field-group {
+    margin-bottom: 20px; }
+  .custom-form-wrap .fields {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .custom-form-wrap .fields > div {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 calc(50% - 7px);
+      flex: 0 0 calc(50% - 7px); }
+  .custom-form-wrap label {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    color: #222; }
+  .custom-form-wrap input[type="email"],
+  .custom-form-wrap input[type="text"],
+  .custom-form-wrap input[type="password"], .custom-form-wrap select {
+    color: #222;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    height: 52px;
+    border: 1px solid transparent !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ececec;
+    border-radius: 4px; }
+    .custom-form-wrap input[type="email"]:active, .custom-form-wrap input[type="email"]:focus,
+    .custom-form-wrap input[type="text"]:active,
+    .custom-form-wrap input[type="text"]:focus,
+    .custom-form-wrap input[type="password"]:active,
+    .custom-form-wrap input[type="password"]:focus, .custom-form-wrap select:active, .custom-form-wrap select:focus {
+      outline: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important;
+      border: 1px solid #8C8C8C !important;
+      background-color: transparent; }
+  .custom-form-wrap input[type="submit"] {
+    background-color: #400DF6;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 52px;
+    border-radius: 7px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-box-shadow: 0 15px 30px 0 rgba(64, 13, 246, 0.2);
+    box-shadow: 0 15px 30px 0 rgba(64, 13, 246, 0.2); }
+    .custom-form-wrap input[type="submit"]:active, .custom-form-wrap input[type="submit"]:focus {
+      outline: none; }
+  .custom-form-wrap .custom-mb {
+    margin-bottom: 40px; }
+  .custom-form-wrap .custom-note {
+    text-align: center;
+    color: #56527B; }
+
+.login-wrap {
+  position: relative; }
+
+.login-wrap:after {
+  content: "";
+  width: 50%;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  background-image: url("http://staging.availabled.com/wp-content/uploads/2020/12/login-hero-image.jpg");
+  background-size: cover;
+  background-position: center center; }
+
+@media screen and (max-width: 768px) {
+  .login-wrap:after {
+    display: none; } }
