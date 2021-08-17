@@ -1,0 +1,432 @@
+.hero {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+
+	.heading {
+		font-weight: 700;
+	}	
+}
+
+.sec-welcome {
+	.img-wrap {
+		position: relative;
+		margin-right: -100px;
+	}
+	.box {
+		position: relative;
+		z-index: 2;
+		background: darken($primary, 20%);
+		padding-left: 150px;
+		padding-right: 100px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		bottom: 50px;
+		color: rgba($white, .5);
+		
+	}
+}
+
+.btn-outline-dark-bg,
+.btn-outline-light-bg {
+	border-color: $secondary;
+	background-color: transparent;
+	color: $white;
+	line-height: 1.3;
+	padding: 8px 25px;
+	font-size: 13px;
+	border-radius: 30px;
+	&.has-arrow {
+		padding-right: 45px;
+		position: relative;
+		[class^="icon-"] {
+			top: 50%;
+			font-size: 16px;
+			right: 15px;
+			position: absolute;
+			transform: translateY(-50%) rotate(180deg);
+		}
+	}
+}
+
+.btn-outline-dark-bg {
+	border-color: $secondary;
+	background-color: transparent;
+	color: $white;
+	&:hover {
+		border-color: $secondary;
+		background-color: $secondary;
+		color: $white;
+	}
+}
+.btn-outline-light-bg {
+	border-color: $secondary;
+	background-color: transparent;
+	color: $primary;
+	&:hover {
+		border-color: $secondary;
+		background-color: $secondary;
+		color: $white;
+	}
+}
+
+.sec-why-choose-us {
+	z-index: 3;
+	position: relative;
+	.box {
+		background-color: $white;
+		margin-top: -50px;
+		position: relative;
+		z-index: 5;
+		.box-inner {
+			padding: 140px;
+			padding-right: 100px;
+		}
+	}
+
+	.aside-box {
+		padding-top: 80px;
+
+		.counter {
+			strong {
+				color: $secondary;
+				display: block;
+				font-size: 50px;
+			}
+		}
+	}
+}
+
+.counter {
+  strong {
+    color: $secondary;
+    display: block;
+    font-size: 50px;
+  }
+}
+
+.section {
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+}
+.subheading {
+	color: $secondary;
+	font-size: 14px;
+}
+.heading {
+	color: darken($primary, 40%);
+	font-weight: bold;
+}
+
+.feature {
+	padding: 40px 20px 70px 20px;
+	background: $white;
+	position: relative;
+	border: 1px solid #efefef;
+	color: $black;
+	display: block;
+	&:before {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 9;
+		width: 100%;
+		height: 2px;
+		opacity: 0;
+		visibility: hidden;
+		background-color: $primary;
+	}
+	[class^="flaticon-"] {
+		font-size: 40px;
+		display: block;
+		margin-bottom: 30px;
+	}
+	h3 {
+		font-size: 16px;
+		font-weight: normal;
+	}
+
+	.arrow {
+		position: absolute;
+		bottom: 40px;
+		left: 20px;
+		span {
+			position: absolute;
+			transform: rotate(180deg);
+			font-size: 18px;
+		}
+
+	}
+	&:hover, &:focus {
+		&:before {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+
+.relative {
+	position: relative;
+}
+
+.box-wrap {
+	position: absolute;
+	// width: 200%;
+	color: rgba($white, .5);
+	.heading {
+
+	}
+	&:after {
+		position: absolute;
+		content: "";
+		height: 100%;
+		background: darken($primary, 20%);
+		width: 200%;
+		top: 0;
+		left: 100%;
+
+	}
+	left: 0;
+	z-index: 2;
+	bottom: 0;
+	
+	background: darken($primary, 20%);
+	> div {
+		padding: 15rem 50px 100px 50px;	
+	}
+	h3 {
+		font-size: 16px;
+		color: $white;
+	}
+	[class^="flaticon-"] {
+		font-size: 50px;
+		color: $white;
+	}
+}
+
+.sec-posts {
+	.box {
+		.phone {
+			font-size: 18px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.post-entry {
+	h3 {
+		font-size: 16px;
+		a {
+			color: #222;
+		}
+	}
+	.date {
+		color: #9a9a9a;
+		font-size: 13px;
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.read-more {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		border-radius: 50%;
+		background-color: #efefef;
+		> span {
+			position: absolute;
+			transform: translate(-50%, -50%) rotate(180deg);
+			top: 50%;
+			left: 50%;
+		}
+		&:hover, &:focus {
+			background-color: $primary;
+			color: $white;
+		}
+	}
+}
+
+
+.site-footer {
+	background: #efefef;
+	font-size: 14px;	
+	color: #888;
+	padding: 70px 0;
+	a {
+		color: $primary;
+		position: relative;
+		display: inline-block;
+	}
+	.btn {
+		&:before {
+			display: none;
+		}
+	}
+	.widget {
+		margin-bottom: 40px;
+		display: block;
+		position: relative;
+		z-index: 1;
+		h3 {
+			font-size: 16px;
+			color: $black;
+			margin-bottom: 30px;
+		}
+
+		.links {
+			width: 150px;
+			li {
+				margin-bottom: 10px;
+				a {
+					color: #777;
+				}
+			}
+		}
+	}
+
+	.social {
+		li {
+			display: inline-block;
+			a {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				position: relative;
+				background: #777;
+				border-radius: 50%;
+				color: $white;
+				&:before {
+					display: none;
+				}
+				> span {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+				&:hover {
+					background: lighten($primary, 10%);
+					color: $white;
+				}
+			}
+		}
+	}
+
+}
+
+
+.service-v2 {
+	.wrap-icon {
+		flex: 0 0 50px;
+		text-align: center;
+		width: 50px;
+		height: 50px;
+		margin-right: 20px;
+		position: relative;
+		background: $white;
+		border-radius: 40%;
+		box-shadow: 0 15px 30px 0 rgba($black, .05);
+		span {
+			color: $primary;
+			font-size: 20px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.contents {
+		h3 {
+			font-size: 16px;
+			color: $black;
+			margin: 0;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+}
+
+
+.untree_co-testimonial {
+  .img-wrap {
+    position: relative;
+    img {
+      width: 100px;
+      border-radius: 50%;
+    }
+  }
+  blockquote {
+    font-size: 18px;
+    line-height: 1.5;
+    p {
+      color: $black;
+    }
+  }
+}
+
+.testimonial-slider-wrap {
+  position: relative;
+
+  .tns-outer .tns-inner {
+    padding-bottom: 100px!important;
+  }
+  .tns-nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    z-index: 2;
+    button {
+      background: none;
+      border: none;
+      display: inline-block;
+      margin: 2px;
+      position: relative;
+      &:active, &:focus {
+        outline: none;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: rgba($black, .2);
+        right: 0;
+        transition: .3s all ease;
+      }
+      &.tns-nav-active {
+        &:before {
+          background-color: $primary;
+        }
+      }
+    }
+  }
+}
+
+#map {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.glightbox {
+  display: block;
+  cursor: pointer;
+  &:hover {
+    opacity: .4;
+  }
+}

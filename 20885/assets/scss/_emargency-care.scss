@@ -1,0 +1,131 @@
+.emargency-care{
+    padding: 100px 0;
+    @media #{$sm}{
+        padding: 50px 0;
+    }
+    @media #{$xs}{
+        padding: 50px 0;
+    }
+    .single-emargency{
+        padding: 65px 50px 65px 60px;
+        background-color: #fff;
+        border-radius: 10px;
+        @media #{$large1}{
+            margin-left: 0px;
+        }
+        @media #{$large2}{
+            margin-left: 80px;
+        }
+        @media #{$lg}{
+            margin-left: 20px;
+            padding: 30px 35px 30px 30px;
+        }
+        @media #{$md}{
+            margin-left: 20px;
+            padding: 30px 35px 30px 30px;
+        }
+        @media #{$sm}{
+            margin-left: 20px;
+            padding: 30px 35px 30px 30px;
+        }
+        @media #{$xs}{
+            margin-left: 0px;
+            padding: 30px 35px 30px 30px;
+        }
+        .cat-icon{
+            margin-bottom: 25px;
+        }
+
+        .emargency-cap{
+            h5{
+             & > a{
+                font-size: 46px;
+                font-weight: 700;
+                color: $heading-color;
+                text-transform: capitalize;
+                margin-bottom: 30px;
+                display: block;
+                @include transition(.2s);
+                @media #{$large1}{
+                    font-size: 33px;
+                }
+                @media #{$sm}{
+                    font-size: 26px;
+                }
+                @media #{$md}{
+                    font-size: 30px;
+                }
+                @media #{$xs}{
+                    font-size: 26px;
+                }
+                &:hover{
+                    color: $theme-color;
+                }
+              }
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            .emargenc-cap{
+                margin-bottom: 35px;
+            }
+           ul{
+               margin-bottom: 40px;
+               @media #{$sm}{
+                     margin-bottom: 30px;
+               }
+               @media #{$xs}{
+                     margin-bottom: 30px;
+               }
+                li{
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                } 
+           }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+    
+            }
+       }
+    }
+}
+
+
+.join-us-area{
+    .joing-details{
+        p{
+            font-size: 18px;
+            margin-bottom: 50px;
+            @media #{$xs}{
+                margin-bottom: 30px;
+            }
+            @media #{$sm}{
+                margin-bottom: 20px;
+            }
+        }
+        @media #{$lg}{
+            margin-bottom: 30px;
+        }
+        @media #{$md}{
+            margin-bottom: 30px;
+        }
+        @media #{$sm}{
+            margin-bottom: 30px;
+        }
+        @media #{$xs}{
+            margin-bottom: 30px;
+        }
+    }
+    .joning-img{
+        img{
+            @media #{$xs}{
+                margin-bottom: 30px;
+            } 
+        }
+    }
+}

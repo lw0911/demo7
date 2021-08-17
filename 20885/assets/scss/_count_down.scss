@@ -1,0 +1,73 @@
+.count-down-area{
+    // @media #{$md}{
+    //     padding-bottom: 60px;
+    //     padding-top: 60px;
+    // }
+    // @media #{$sm}{
+    //     padding-bottom: 60px;
+    //     padding-top: 60px;
+    // }
+    // @media #{$xs}{
+    //     padding-bottom: 60px;
+    //     padding-top: 60px;
+    // }
+    .count-down-wrapper{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .single-counter{
+            padding: 44px 7px 44px 7px;
+            margin-bottom: 30px;
+            @media #{$lg}{
+                margin-bottom: 0px;
+            }
+            @media #{$xs}{
+                padding: 15px 7px 15px 7px;
+            }
+            .captions{
+                margin-left: 20px;
+                .counter{
+                    font-size: 46px;
+                    font-family:$font_1;
+                    line-height: 1;
+                    margin-bottom: 12px;
+                    display: inline-block;
+                    font-weight: 700;
+                    color: #fff;
+                }
+                span{
+                    color: #fff;
+                    font-size: 46px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 1;
+                    margin: 0;
+                    padding: 0;
+                    font-weight: 300;
+                    display: block;
+                    font-family: $font_1;
+                    color:#fff;
+                    @media #{$lg}{
+                        font-size: 15px;
+                    }
+                    @media #{$lg}{
+                        font-size: 15px;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+
+.color-blue{
+    color:#2d3092;
+}
+.color-green{
+    color:#1e9d78;
+}
+.color-red{
+    color:#f05510;
+}

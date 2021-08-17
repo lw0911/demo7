@@ -1,0 +1,213 @@
+// Services 1
+.services-area1{
+    .properties{
+        margin: 0 12px;
+        .properties-card{
+            border-radius: 10px;
+            background: #fff;
+             @include transition(.4s);
+            &:hover{
+                box-shadow: 0px 8px 8px 0px rgba(2,25,65,0.08);    
+            }
+            .properties-img{
+                img{
+                    width: 100%;
+                    border-radius: 10px 10px 0 0 ;
+                    position: relative;
+                }
+            }
+        }
+       .wrap-wrapper{
+           border: 1px solid $border-color;
+           border-radius: 0 0 10px 10px;
+           border-top: 0;
+            .properties-caption{
+                padding: 30px 18px 8px 30px;
+                h3{
+                    font-size: 26px;
+                    font-weight:700;
+                    margin-bottom: 18px;
+                    @include transition(.4s);
+                    @media #{$lg}{
+                        font-size: 16px;
+                    }
+                    a:hover,.properties-card{
+                        color:#ff5757 ;
+        
+                    }
+                }
+                P{
+                    color: #6A6063;
+                    span{
+                        color:$theme-color;
+                        font-size: 16px;
+                        @media #{$md}{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            .properties-footer{
+                padding: 0px 30px 30px 30px;
+                @include transition(.4s);
+                @media #{$xs}{
+                    padding: 0px 10px 20px 12px;
+                }
+                @media #{$sm}{
+                    padding: 0px 9px 20px 8px;
+                }
+                .class-day{
+                    span{
+                        
+                        font-family: $font_1;
+                        color: $theme-color;
+                        display: block;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 1;
+                        margin-bottom: 10px;
+                        @media #{$lg}{
+                            font-size: 12px;
+                        }
+                        @media #{$md}{
+                            font-size: 15px;
+                        }
+                        @media #{$xs}{
+                            font-size: 15px;
+                        }
+                    }
+                    p{
+                        margin: 0;
+                        font-size: 14px;
+                    }
+                }
+            }
+       }
+        
+        &:hover{
+            .properties-card{
+                box-shadow:0px 8px 20px  rgba(255, 55, 123,0.15);
+            }
+            .properties-caption{
+                h3{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+	
+}
+
+
+// Arrow
+.services1-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(32, 69, 112,.3);
+                @include transition(.2s);
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+               left: -10px;
+            }
+            @media #{$lg}{
+               left: -10px;
+            }
+            @media #{$md}{
+               left: -10px;
+            }
+            @media #{$sm}{
+               left: -10px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -10px;
+             }
+            @media #{$lg}{
+                right: -10px;
+            }
+            @media #{$md}{
+                right: -10px;
+            }
+            @media #{$sm}{
+                right: -10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// services 2
+.our-services{   
+    // background: #FFF5F2;
+    z-index: 0;
+    .single-services{
+        background-color: #fff;
+        .services-icon{
+            img{
+                text-align: center;
+                margin-bottom: 35px;
+
+            }
+        }
+        .services-cap{
+           
+            h5{
+                a{
+                    font-weight: 700;
+                    font-size: 26px;
+                    color:$heading-color;
+                    line-height: 1.4;
+                    margin-bottom: 20px;
+                    display: block;
+                    @media #{$sm}{
+                        font-size: 21px;
+                    }
+                }
+            }
+            p{
+                font-weight: 300;
+                color: #6A6063;
+                line-height: 1.6;
+                
+            }
+        }
+        &:hover{
+            background: #fff;
+            .services-ion{
+                span{
+                    color: $theme-color;
+                }
+            }
+            h5{
+                a{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
+

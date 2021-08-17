@@ -1,0 +1,20 @@
+
+$primary: #f2ad5f;
+$secondary: #10495c;
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-sans-serif-secondary: 'Poppins', sans-serif;
+
+$accordion-button-active-bg:              $secondary !default;
+$accordion-button-active-color:           shade-color($secondary, 10%) !default;
+
+
+@import 'bootstrap/mixins';
+@import 'bootstrap/functions';
+@import 'bootstrap/variables';
+
+@import 'bootstrap/bootstrap';
+
+@import 'components/site-navbar';
+@import 'components/site-base';
+@import 'components/site-blocks';
+@import 'components/site-footer';

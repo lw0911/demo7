@@ -1,0 +1,51 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 27/01/2021 07:18
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-wrench:before { content: "\f100"; }
+.flaticon-car-service:before { content: "\f101"; }
+.flaticon-car-parts:before { content: "\f102"; }
+.flaticon-fast-delivery:before { content: "\f103"; }
+.flaticon-service:before { content: "\f104"; }
+.flaticon-disc-brake:before { content: "\f105"; }
+.flaticon-air-conditioning:before { content: "\f106"; }
+.flaticon-tire:before { content: "\f107"; }
+.flaticon-fuel:before { content: "\f108"; }
+.flaticon-exhaust-pipe:before { content: "\f109"; }
+.flaticon-radiator:before { content: "\f10a"; }
+.flaticon-electricity:before { content: "\f10b"; }
+.flaticon-gasoline:before { content: "\f10c"; }
+.flaticon-car:before { content: "\f10d"; }
+.flaticon-wheel-alignment:before { content: "\f10e"; }
+.flaticon-repair:before { content: "\f10f"; }
+.flaticon-time:before { content: "\f110"; }
+.flaticon-taxi:before { content: "\f111"; }
+.flaticon-fixed:before { content: "\f112"; }
