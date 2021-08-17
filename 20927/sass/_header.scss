@@ -1,0 +1,172 @@
+/*---------------------
+  Header
+-----------------------*/
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.header__top {
+    padding: 20px 0;
+}
+
+.header__top__widget {
+
+    ul {
+
+        li {
+            list-style: none;
+            font-size: 15px;
+            color: $white-color;
+            display: inline-block;
+            margin-right: 45px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            span {
+                font-size: 15px;
+                position: relative;
+                top: 2px;
+                margin-right: 2px;
+            }
+        }
+    }
+}
+
+.header__top__social {
+    text-align: right;
+
+    a {
+        font-size: 15px;
+        color: $white-color;
+        margin-right: 30px;
+        display: inline-block;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.header__options {
+    background: $white-color;
+    padding-left: 30px;
+}
+
+.header__logo {
+    padding: 20px 0;
+
+    a {
+        display: inline-block;
+    }
+}
+
+.header__menu {
+    text-align: right;
+
+    ul {
+
+        li {
+            list-style: none;
+            display: inline-block;
+            position: relative;
+            margin-right: -5px;
+
+            &.active {
+                background: rgba(29, 42, 59, 0.1);
+
+                & > a {
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:hover {
+
+                & > a {
+                    background: rgba(29, 42, 59, 0.1);
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                .dropdown {
+                    top: 81px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .dropdown {
+                position: absolute;
+                left: 0;
+                top: 110px;
+                width: 150px;
+                background: $white-color;
+                text-align: left;
+                padding: 5px 0;
+                z-index: 9;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(all, .3s);
+
+                li {
+                    display: block;
+                    margin-right: 0;
+
+                    a {
+                        font-size: 15px;
+                        color: $heading-color;
+                        font-weight: 400;
+                        padding: 5px 20px;
+                        text-transform: capitalize;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            a {
+                font-size: 15px;
+                font-weight: 800;
+                color: $heading-color-2;
+                display: block;
+                padding: 33px 30px 26px;
+                text-transform: uppercase;
+                @include transition(all, .3s);
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 4px;
+                    width: 100%;
+                    background: #4657F0;
+                    content: "";
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.offcanvas-menu-wrapper {
+    display: none;
+}
+
+.canvas__open {
+    display: none;
+}

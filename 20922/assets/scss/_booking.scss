@@ -1,0 +1,67 @@
+
+.contact-animal-owner{
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-position: center center;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @media #{$mobile_device} {
+       background-size: cover;
+       padding: 86px 0;
+    }
+    .contact_text{
+        .section_title{
+            h3{
+                color: #fff;
+                font-size: 60px;
+                display: block;
+                font-weight: 700;
+                line-height: 1.4;
+                margin-bottom: 22px;
+        
+                @media #{$lg}{
+                    font-size: 41px;
+                }
+                @media #{$md}{
+                    font-size: 43px;
+                }
+                @media #{$sm}{
+                    font-size: 40px;
+                }
+                @media #{$xs}{
+                    font-size: 30px;
+                }
+            }
+            p{
+                font-size: 20px;
+                color: #B5AFCE;
+                line-height: 40px;
+                margin-top: 12px;
+            }
+
+        }
+        .contact_btn{
+            @media #{$mobile_device} {
+                display:  block !important;
+            }
+            p{
+                margin-bottom: 0;
+                font-size: 18px;
+                font-weight: 400;
+                // font-family: $font1;
+                color: #fff;
+                margin-left: 20px;
+                @media #{$mobile_device} {
+                    margin-left: 0;
+                    margin-top: 30px;
+                }
+                a{
+                    font-weight: 600;
+                    color: #fff;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}

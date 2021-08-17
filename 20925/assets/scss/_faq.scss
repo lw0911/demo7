@@ -1,0 +1,70 @@
+
+
+.solutions-wrapper {
+    .card-header {
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        border: 0;
+        a {
+            font-size: 16px;
+            padding: 25px 30px 25px 20px;
+            color:$heading-color;
+            display: block;
+            text-decoration: none;
+            font-family: $font_1;
+            border: 0;
+            font-weight: 500;
+            &::after {
+                position: absolute;
+                content: "\f068";
+                top: 25px;
+                font-size: 15px;
+                font-family: 'Font Awesome 5 Free';
+                color: #fff;
+                right: 20px;
+                font-weight: 600;
+            }
+            &.collapsed::after {
+                content: "\f067";
+                font-weight: 800;
+                color: #204570;
+            }
+            &.btn-link {
+                color: #0a1119;
+            }
+            &.collapsed {
+                color: $heading-color !important;
+            }
+        }
+    }
+    .card {
+        margin-bottom: 20px;
+        border-radius: 0;
+        background: #fff;
+        border: 0;
+        -webkit-box-shadow: 0px 16px 32px 0px rgba(176, 176, 176, 0.2);
+        box-shadow: 0px 16px 32px 0px rgba(176, 176, 176, 0.2);
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    .card-body {
+        background: #fff;
+        padding: 0px 40px;
+        padding-bottom: 26px;
+        color: #fff;
+        background: $theme-color2
+    }
+    .btn-link{
+        &.collapsed {
+            background: #fff;
+        }
+        background-color:$theme-color2;
+        color: #fff !important;
+        &:hover {
+            color: #fff !important;
+            // background-color: $theme-color2;
+        }
+    }
+}

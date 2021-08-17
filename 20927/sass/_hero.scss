@@ -1,0 +1,28 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+    padding-top: 315px;
+    padding-bottom: 235px;
+}
+
+.hero__text {
+    max-width: 750px;
+    text-align: center;
+    margin: 0 auto;
+    
+    h2 {
+        color: $white-color;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 85px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        color: $white-color;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 42px;
+    }
+}

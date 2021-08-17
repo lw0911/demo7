@@ -1,0 +1,216 @@
+.gallery-img{
+    img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+.map{
+
+    img{
+        width: 100%;
+    }
+}
+
+
+
+.details-cap{
+    .icon{
+        img{
+
+        }
+        padding-right: 20px;
+    }
+    .properties__caption{
+        h3{
+            color: #ffff;
+            font-size: 18px;
+            a{
+                &:hover{
+                    color: ffff;
+                }
+            }
+        }
+        p{
+            color: #fff;
+        }
+        .img-text{
+           span{
+                color: #fff;
+                font-size: 13px;
+                font-weight: 500;
+                padding: 7px 15px;
+                border-radius: 5px;
+                text-transform: capitalize;
+                border: 1px solid rgba(255, 255, 255,.5);
+            }
+            .open {
+                background: #FF377B;
+                border: 0 !important;
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+.double-btn {
+    @media #{$md}{
+        float: left;
+        padding-top: 30px;
+    }
+    @media #{$sm}{
+        float: left;
+        padding-top: 30px;
+    }
+    @media #{$xs}{
+        float: left;
+        padding-top: 30px;
+    }
+    .wantToWork-btn{
+        @media #{$xs}{
+           margin-left: 0;
+           margin-bottom: 15px;
+        } 
+    }
+   
+}
+
+.contact-form-main2{
+    position: relative;
+    //Left Img
+    .from-left{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 46%;
+        img{
+            width: 100%;
+            height: 837px;
+            @media #{$lg}{
+                height: 831px; 
+            }
+        }
+    }
+    .form-tittle{
+        padding: 83px 51px 0px 67px;
+        @media #{$xs}{
+            padding: 50px 10px 0px 10px;
+        }
+    }
+}
+.about-area{
+    h2 {
+		font-family: $font_1;
+		color: $heading-color;
+		font-size: 36px;
+		display: block;
+		font-weight: 600;
+		line-height: 1.4;
+		margin-bottom: 40px;
+        @media #{$large1}{
+            font-size: 40px;
+        }
+		@media #{$lg}{
+			font-size: 36px;
+		}
+		@media #{$md}{
+			font-size: 36px;
+		}
+		@media #{$sm}{
+			font-size: 31px;
+		}
+		@media #{$xs}{
+			font-size: 24px;
+
+		}
+		br{
+			@media #{$sm}{
+				display: none;
+			}
+			@media #{$xs}{
+				display: none;
+			}
+		}
+	}
+    p{
+        color: #68696E;
+        font-size: 18px;
+    }
+}
+// Form Wrapper
+.form-wrapper2{
+    // padding: 65px;
+    // box-shadow: 0 23px 46px rgba(20, 12, 64,0.1);
+    // @media #{$xs}{
+    //     padding: 25px;
+    // }
+    // Start contact
+    input {
+        border: 1px solid #eaeaea;
+        height: 50px;
+        width: 100%;
+        padding: 10px 25px;
+        padding-right: 30px;
+        color: #a3a3a3;
+        font-weight: 300;
+        text-transform: capitalize;
+        border-radius: 0px;
+        .list {
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    .nice-select {
+        border: 1px solid #eaeaea;
+        height: 50px;
+        width: 100%;
+        color: #a3a3a3;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding-top: 10px;
+        border-radius: 0px;
+        &::after {
+            border-bottom: 2px solid #a3a3a3;
+            border-right: 2px solid #a3a3a3;
+            height: 7px;
+            right: 41px;
+            width: 7px;
+        }
+        &.open .list {
+            width: 100%;
+            border-radius: 0;
+        }
+        .option {
+            color: #a3a3a3;
+        }
+    }
+    textarea {
+            color: #a3a3a3;
+            border: 1px solid #eaeaea;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            height: 156px;
+            width: 100%;
+            padding: 30px 50px;
+            border-radius: 0px;
+            @media #{$md}{
+                padding: 30px 42px;
+            }
+            @media #{$sm}{
+                padding: 30px 42px;
+            }
+            @media #{$xs}{
+                padding: 30px 42px;
+            }
+        &::placeholder {
+                color: #898faf;
+                font-size: 16px;
+                font-weight: 300;
+                transition: .4s;
+            }
+    }
+}
+.w-btn {
+	padding: 18px 33px;
+}

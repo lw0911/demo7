@@ -1,0 +1,180 @@
+.services-section{
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        .cat-img{
+            img{
+                width: 100%;
+            }
+        }
+        .cat-cap{
+            padding: 45px 35px 40px 35px;
+            background-color: #fff;
+            span{
+                color: #6785FF;
+                font-size: 46px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: block;
+            }
+            h5{
+             & > a{
+                font-size: 28px;
+                font-weight: 500;
+                color: $heading-color;
+                text-transform: capitalize;
+                margin-bottom: 17px;
+                display: block;
+                @include transition(.2s);
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$md}{
+                    font-size: 20px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+                &:hover{
+                    color: $theme-color;
+                }
+              }
+            }
+            p{
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 18px;
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+                @media #{$sm}{
+                    font-size: 13px;
+                }
+                @media #{$md}{
+                    font-size: 17px;
+                }
+                @media #{$xs}{
+                    font-size: 17px;
+                }
+            } 
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+
+            }
+       }
+    }
+}
+
+// services 2
+
+.our-services2{
+    .single-services{
+        @include transition(.4s);
+        &:hover {
+            // box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
+        }
+        .services-icon{
+            span{
+                
+                @include transition(.3s);
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                width: 67px;
+                height: 67px;
+                background: #0077FF;
+                line-height: 67px;
+                text-align: center;
+                border-radius: 50px;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 20px;
+            }
+        }
+        .services-cap{
+            h5{
+                font-size: 22px;
+                color: $heading-color;
+                line-height: 1.4;
+                margin-bottom: 18px;
+                @media #{$sm}{
+                    font-size: 20px;
+                }
+                a:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        &:hover{
+            // border: 1px solid $theme-color;
+            .services-icon{
+                span{
+                    color: #fff;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+
+// Arrow
+.services-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(32, 69, 112,.3);
+                @include transition(.2s);
+                &:hover{
+                    color: $heading-color;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+               left: -10px;
+            }
+            @media #{$lg}{
+               left: -10px;
+            }
+            @media #{$md}{
+               left: -10px;
+            }
+            @media #{$sm}{
+               left: -10px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -10px;
+             }
+            @media #{$lg}{
+                right: -10px;
+            }
+            @media #{$md}{
+                right: -10px;
+            }
+            @media #{$sm}{
+                right: -10px;
+            }
+        }
+    }
+}

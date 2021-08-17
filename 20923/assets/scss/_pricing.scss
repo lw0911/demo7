@@ -1,0 +1,97 @@
+.pricing-card-area{
+    .single-card{
+        background: #FFF8FE;
+        padding: 35px 40px;
+        // -webkit-box-shadow: 0 8px 26px rgba(67,40,124,0.08);
+        @include transition(.4s);
+        .card-top{
+            span{
+                padding: 4px 18px;
+                border: 1px solid $heading-color;
+                margin-bottom: 23px;
+                display: inline-block;
+                border-radius: 20px;
+                font-weight: 600;
+            }
+        }
+        .card-mid{
+            margin-bottom: 25px;
+            padding-bottom: 26px;
+            border-bottom: 1px solid #E7E6EB;
+            h4{
+                color: $theme-color;
+                margin-bottom: 20px;
+                font-size: 40px;
+                font-weight: 700;
+                position: relative;
+                display: inline-block;
+                span{
+                    color: $theme-color;
+                    font-size: 17px;
+                    position: absolute;
+                    top: 0;
+                    left: -17px;
+                }
+            }
+        }
+        .card-bottom{
+            ul{
+                li{
+                    color:#7977A2;
+                    font-weight: 300;
+                    margin-bottom: 23px;
+                    font-size: 17px;
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            .btn_0{
+               
+                // color: $theme-color;
+                // padding: 10px 64px;
+                // background: none;
+                // border: 1px solid $theme-color;
+                // display: inline-block;
+                // color: $theme-color;
+                // border-radius: 30px;
+                // text-transform: uppercase;
+                
+                // &:hover{
+                //     @extend %btn-bgs;
+                // }
+            }
+        }
+
+        // Hover
+        &:hover{
+            background: #fff;
+            box-shadow: 0px 15px 30px rgba(255, 87, 0,.12);
+            .card-mid{
+                span{
+                }
+                h4{
+                }
+            }
+            .card-bottom{
+                ul{
+                    li{
+                    }
+                }
+                // .btn_0{
+                //     @extend %btn-bgs;
+                //     color: #fff !important;
+                // }
+            }
+
+        }
+    }
+}
+
+.work-company{
+    .single-logo img {
+        @media #{$lg}{
+            width: 100%;
+        }
+    }
+}

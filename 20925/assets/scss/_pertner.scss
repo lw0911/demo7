@@ -1,0 +1,40 @@
+.pertner{
+    background: #F6F6F6;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    &.pertner2{
+        background: #ffff;
+    }
+    .pertner-intro{
+        text-align: right;
+        @media #{$xs}{
+            text-align: left;
+        }
+        p{
+            display: block;
+            font-size: 30px;
+            font-weight: 400;
+            margin: 0;
+            font-family: $font_1;
+            span{
+
+                display: block;
+                color: #FF6162;
+                margin: 0;
+            }
+
+            @media #{$lg}{
+                font-size: 27px;
+            }
+            @media #{$md}{
+                font-size: 20px;
+            }
+
+        }
+    }
+    .single-partner{
+        img{
+            // width: 100%;
+        }
+    }
+}

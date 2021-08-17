@@ -1,0 +1,111 @@
+
+//copy Right 
+.footer-bottom-area {
+    .footer-border{
+        // border-top: 1px solid #d7e7fe;
+        padding-top: 45px;
+        padding-bottom: 1px;
+        @media #{$md}{
+            padding-top:30px;
+        }
+        @media #{$sm}{
+            padding-top:30px;
+        }
+        @media #{$xs}{
+            padding-top:30px;
+        }
+    }
+    .footer-copy-right{
+        p{
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 2;
+            i{
+                color: $theme-color;
+            }
+            a{
+                color: $theme-color;
+                &:hover{
+                    // color: #C2C5DB;
+                }
+            }
+        }
+    }
+}
+
+// footer social
+.footer-social{
+    a{
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 40px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 8px;
+        border: 1px solid #fff;
+        @media #{$xs}{
+            margin-right: 0px;
+        }
+        &:hover{
+            color: #fff;
+            border: 1px solid transparent;
+            background: $theme-color;
+        }
+        i{
+                display:inline-block;
+        }
+    }
+}
+
+
+.main-menu2{
+    ul{
+        li{
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            margin: 0px 20px;
+            @media #{$laptop}{
+                margin: 0 14px;
+            }
+            @media #{$lg}{
+                margin: 0 8px;  
+            }
+            @media #{$sm}{
+                margin: 0px 7px; 
+            }
+            @media #{$xs}{
+                margin: 0px 7px; 
+            }
+            a{
+                color:#fff;
+                font-weight: 500;
+                padding: 28px 4px;
+                text-transform: uppercase;
+                display: block;
+                font-size: 16px;
+                @include transition(.3s);
+                text-transform: normal;
+                // text-decoration: underline transparent;
+                font-family: $font_1;
+                position: relative;
+                @media #{$sm}{
+                    padding: 11px 4px;
+                }
+                @media #{$xs}{
+                    padding: 11px 4px;
+                }
+            }
+            &:hover{
+                & > a{
+                    color: $theme-color;
+                    // text-decoration: underline;
+                }
+            }
+        }
+    }
+}

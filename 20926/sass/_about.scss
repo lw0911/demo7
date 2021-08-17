@@ -1,0 +1,121 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.about__top__text {
+    margin-bottom: 45px;
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.about__video {
+    height: 535px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    .play-btn {
+        display: inline-block;
+        height: 80px;
+        width: 80px;
+        background: $white-color;
+        font-size: 30px;
+        color: $primary-color;
+        line-height: 80px;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+.about__text {
+    background: $white-color;
+    box-shadow: 0px 10px 21px rgba(99, 134, 137, 0.16);
+    padding: 100px 90px 105px 70px;
+    margin-left: -95px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+
+    span {
+        color: $primary-color;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        color: $heading-color;
+        font-size: 38px;
+        line-height: 1.4;
+        margin-bottom: 26px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+    padding-bottom: 60px;
+}
+
+.team__btn {
+    margin-bottom: 45px;
+    text-align: right;
+}
+
+.team__item {
+    box-shadow: 0px 10px 21px rgba(99, 134, 137, 0.16);
+    margin-bottom: 30px;
+}
+
+.team__item__pic {
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.team__item__text {
+    text-align: center;
+    padding: 25px 20px 25px;
+
+    h4 {
+        color: $heading-color;
+    }
+
+    span {
+        color: $primary-color;
+        display: block;
+        margin-bottom: 18px;
+    }
+
+    .team__item__social {
+
+        a {
+            font-size: 20px;
+            color: #888888;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

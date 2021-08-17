@@ -1,0 +1,119 @@
+
+// Single
+.single-Program{
+    padding: 36px 30px;
+    @include transition(.4s);
+    border: 1px solid #E8E9FF;
+    box-shadow: 0px 15px 20px rgba(1, 84, 247,.2);
+    border-radius: 5px;
+    @media #{$md}{
+        padding: 20px 18px;
+    }
+    @media #{$sm}{
+        padding: 20px 25px;
+    } 
+    .job-items{
+        @include flexbox();
+
+        @media #{$xs}{
+            @include flex-wrap(wrap);
+        } 
+        .company-img{
+            img {
+                overflow: hidden;
+                float: left;
+                margin-right: 32px;
+                z-index: 999;
+            }
+        } 
+        .job-tittle{
+            @media #{$xs}{
+                padding-top: 25px;
+            }
+           
+            a{
+                h4{
+                    color: $heading-color;
+                    @include transition(.4s);
+                    font-size: 30px;
+                    margin-bottom: 21px;
+                    &:hover{
+                        color:heading-color
+                    }
+                }
+            }
+            p{
+                margin-bottom: 20px;
+            }
+            ul {
+                li {
+                    display: inline-block;
+                    margin-right: 48px;
+                    font-size: 15px;
+                    color: #808080;
+                    line-height: 1.8;
+                    @media #{$md}{
+                        margin-right: 18px;
+                    }
+                    @media #{$xs}{
+                        margin-right: 0px;
+                        margin-bottom: 7px;
+                    }
+                    @media #{$sm}{
+                        margin-right: 8px;
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    i {
+                        font-size: 18px;
+                        color: $theme-color;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }  
+
+    // Hover 
+    &:hover{
+        border: 1px solid $theme-color;
+    }
+}
+
+
+// Tabs Button Style
+.nav-tabs{
+    margin-bottom: 15px;
+    padding-bottom: 0px;
+    position: relative;
+    border-bottom: 1px solid $border-color;
+    
+    .nav-item {
+        display: block;
+        color: #79709D;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $font_1;
+        padding: 12px 20px;
+        @media #{$xs}{
+            font-size: 18px;
+        }
+    }
+    .nav-link {
+        border: 0;
+        color:#79709D;
+        border-bottom: 4px solid transparent;
+        &.active {
+            color: #302072;
+            border-bottom: 4px solid $theme-color;
+        }
+        &:hover {
+            border-bottom: 4px solid $theme-color;
+        }
+    }
+
+}
+
+
+

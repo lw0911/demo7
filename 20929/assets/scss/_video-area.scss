@@ -1,0 +1,44 @@
+.video-area{
+    position: relative; 
+    height: 430px;  
+    border-radius: 5px;
+
+    @media #{$sm}{
+        height: 350px;
+    }
+    @media #{$xs}{
+        height: 350px;
+    }
+    // Video icon
+    .video-wrap {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        margin: 0 auto;
+        text-align: center;
+        z-index: 1;
+        .video-icon{
+            a{
+                margin-bottom: 20px;
+                display: block;
+            }
+            img{
+                position: absolute;
+                border: 37px solid rgba(255,255,255,0.2);
+                content: "";
+                border-radius: 50%;
+                left: -30px;
+                top: -30px;
+                right: 0;
+                z-index: 1;
+                background: #0000;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+

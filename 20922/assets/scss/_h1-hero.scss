@@ -1,0 +1,355 @@
+.slider-area{
+    margin-top: -1px;
+    .hero-caption{
+        padding-top: 50px;
+        span{
+            color: $theme-color;
+            font-family: $font_1;
+
+            font-size: 40px;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 0;
+            line-height: 1;
+            @media #{$md}{
+                font-size:33px;
+            }
+            @media #{$sm}{
+                font-size:33px;
+            }
+            @media #{$xs}{
+                font-size: 20px;
+            }
+        }
+        h1{
+            color:#fff;
+            font-family: $font_1;
+            font-size: 120px;
+            font-weight: 500;
+            line-height: 1.1;
+            margin-bottom: 31px;
+            @media #{$lg}{
+                font-size: 90px;
+            }
+            @media #{$md}{
+                font-size: 80px;
+            }
+            @media #{$sm}{
+                font-size: 60px;
+            }
+            @media #{$xs}{
+                font-size: 33px;
+                margin-bottom: 20px;
+            }
+        }
+        p{
+           margin-bottom: 54px;
+           padding-right: 155px;
+            color: #fff;
+            font-size: 24px;
+
+           @media #{$md}{
+                margin-bottom: 54px;
+                padding-right: 0px;
+            }
+           @media #{$sm}{
+                padding-right: 0px;
+            }
+           @media #{$xs}{
+                margin-bottom: 32px;
+                padding-right: 0px;
+                font-size: 18px;
+            }
+        }
+        // slider-btn
+        .slider-btns{
+            @include flexbox();
+            @include flex-wrap(wrap);
+            a{
+                color: $theme-color;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: uppercase;
+                display: block;
+            }
+            .video-btn{
+                color: #fff;
+                font-weight: 500;
+                font-size: 20px;
+                text-transform: capitalize;
+                display: block;
+                padding: 17px 40px;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                margin-left: 20px;
+                @media #{$xs}{
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+        &.hero-caption2{
+
+            // padding-top: 50px;
+            h2{
+                font-size: 80px;
+                display: block;
+                font-weight: 500;
+                line-height: 1.4;
+                margin-bottom: 19px;
+                color:#fff;
+                @media #{$md}{
+                    margin-bottom: 20px;
+                }
+                @media #{$sm}{
+                    margin-bottom: 20px;
+                }
+                @media #{$xs}{
+                    margin-bottom: 20px;
+                    font-size: 60px;
+                }
+            }
+            p{
+                margin-bottom: 0px;
+                color:#fff;
+                font-size: 24px;
+                line-height: 1.6;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .hero-img img {
+        position: relative;
+        right: -32%;
+        z-index: -1;
+        display: none;
+        @media #{$lg}{
+            right: 0px;
+        }
+    }
+    .hero-shape{
+        position: absolute;
+        left: 0;
+        top: 22%;
+        @media #{$laptop}{
+            top: 13%;
+        }
+        @media #{$lg}{
+            top: 11%;
+        }
+        @media #{$md}{
+            top: unset;
+            left: unset;
+            right: 4%;
+            bottom: 3%;
+        }
+        @media #{$sm}{
+            top: unset;
+            left: unset;
+            right: 4%;
+            bottom: 3%;
+        }
+        @media #{$xs}{
+            top: unset;
+            left: unset;
+            right: 7%;
+            bottom: 4%;
+        }
+    }
+}
+
+// Another Hero Page
+.hero-area{
+    margin-top: -1px;
+    .hero-cap{
+        h2{
+            font-size:48px;
+            font-weight: 900;
+            text-transform: capitalize;
+            margin-bottom: 5px;
+            color: #fff;
+            @media #{$sm}{
+                font-size: 50px;
+              }
+            @media #{$xs}{
+                font-size: 38px;
+              }
+        }
+        // 
+        // nav {
+        //     margin: 7px 0;
+        //     padding-left: 95px;
+        //     position: relative;
+        //     &::before {
+        //         position: absolute;
+        //         content: "";
+        //         width: 75px;
+        //         height: 1px;
+        //         background: #ff5f13;
+        //         left: 0;
+        //         top: 52%;
+        //         transform: translateY(-50%);
+        //     }
+        // }
+        .breadcrumb {
+            background: none;
+            padding: 0;
+            margin: 0;
+
+            a {
+                color: #fff;
+                font-size: 16px;
+                text-transform: capitalize;
+            }
+        }
+        .breadcrumb-item + .breadcrumb-item::before {
+            color: #fff;
+        }
+    }
+
+}
+  
+// Hero Overlay
+.hero-overly {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(35, 30, 30,.4);;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero-overly2 {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(35, 30, 30,0.702);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+// product name 01 
+.product-name01{
+    position: absolute;
+    transform-origin: top;
+    z-index: 1;
+    right: -71px;
+    top: 54%;
+
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    @media #{$laptop}{
+        right: -90px;
+    }
+    @media #{$lg}{
+        right: -92px;
+    }
+    h2{
+        font-family:$font_1;
+        color: rgba(255, 255, 255,0.2);
+        font-size: 140px;
+        text-transform: uppercase;
+        @media #{$lg}{
+            font-size: 107px;
+        }
+        @media #{$md}{
+            font-size: 100px;
+        }
+        @media #{$sm}{
+            font-size: 80px;
+        }
+        @media #{$xs}{
+            font-size: 80px;
+        }
+        
+    }
+}
+
+// Slider Height
+.slider-height {
+    height:900px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$laptop}{
+        height: 900px;
+    }
+    @media #{$lg}{
+        height: 800px;
+    }
+    @media #{$md}{
+        height: 600px;
+    }
+    @media #{$sm}{
+        height: 600px;
+    }
+    @media #{$xs}{
+        height: 550px;
+    }
+}
+
+.slider-height2{
+    height: 450px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$lg}{
+        height:400px;
+    }
+    @media #{$md}{
+        height: 400px;
+    }
+    @media #{$sm}{
+        height: 400px;
+    }
+    @media #{$xs}{
+        height: 350px;
+    }
+}
+
+
+.slider-bg1{
+    background-image: url(../img/hero/h1_hero1.jpg);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    @media #{$sm}{
+        background-position: left center;
+    }
+    @media #{$xs}{
+        background-position: left center;
+    }
+}
+
+.slider-bg2{
+    background-image: url(../img/hero/h2_hero1.jpg);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+}

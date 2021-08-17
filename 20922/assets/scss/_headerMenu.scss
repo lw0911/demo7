@@ -1,0 +1,228 @@
+// Header left right padding
+
+.header-area {
+    .main-header{
+        // mobile menu show
+        padding: 0px 85px;
+        @media #{$laptop}{
+            padding: 0px 30px;
+        }
+        @media #{$lg}{
+            padding: 0px 15px;
+        }
+        // mobile menu show
+        @media #{$md}{
+            padding: 15px 50px;
+        }
+        @media #{$sm}{
+            padding: 15px 0px;
+        }
+        @media #{$xs}{
+            padding: 15px 0px;
+        }
+    }
+        &.header-sticky.sticky-bar{
+        .header-right-btn{
+            @media #{$md}{
+                display: none !important;
+            }
+            @media #{$sm}{
+                display: none !important;
+            }
+            @media #{$xs}{
+                display: none !important;
+            }
+        }
+    }
+}
+
+// Header Bottom
+.main-header{
+    .main-menu{
+        @media #{$laptop}{
+           margin-right: 30px;
+        }
+        ul{
+            li{
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                margin: 0px 20px;
+                @media #{$laptop}{
+                    margin: 0 14px;
+                }
+                @media #{$lg}{
+                    margin: 0 8px;  
+                }
+                a{
+                    color:#fff;
+                    font-weight: 500;
+                    padding: 28px 4px;
+                    text-transform: uppercase;
+                    display: block;
+                    font-size: 16px;
+                    @include transition(.3s);
+                    text-transform: normal;
+                    // text-decoration: underline transparent;
+                    font-family: $font_1;
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        bottom: 14px;
+                        right: 5px;
+                        left: -5px;
+                        height: 3px;
+                        z-index: 1;
+                        @include transition(.4s);
+                        background: $theme-color;
+                    }
+                }
+                &:hover{
+                    & > a{
+                        color: $theme-color;
+                        // text-decoration: underline;
+                        &::after{
+                            left: 0;
+                            right: auto;
+                            width: 100%;
+                            @include transition(.4s);
+                        }
+                    }
+                }
+            }
+            ul.submenu{
+                position: absolute;
+                width: 170px;
+                background:$heading-color;
+                // @extend %btn_gradient;
+                left: 0;
+                top: 90%;
+                visibility: hidden;
+                opacity: 0;
+                box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+                padding: 17px 0;
+                // border-top: 5px solid #11E276;
+                @include transition(.3s);
+                & > li{
+                    margin-left: 7px;
+                    display: block;
+                    & > a{
+                        padding: 6px 10px !important;
+                        font-size: 16px;
+                        color: #fff;
+                        &::after{
+                            position: unset;
+                           }
+                        &:hover{
+                            color:#fff;
+                            background: none;
+                            padding-left: 13px !important;
+                        }
+                        i{
+                            // @include transition(.4s);
+                        }
+                    }
+                } 
+            }
+        }
+
+        // Hover Show Sub-menu
+        ul > li:hover > ul.submenu {
+            visibility: visible;
+            opacity: 1;
+            top: 100%;
+        }
+    }
+}
+
+.button-header{
+    margin: 0 !important;
+    margin-left: 23px !important;
+
+    @media #{$md}{
+        margin-left: 0px !important;
+    }
+    @media #{$sm}{
+        margin-left: 0px !important;
+    }
+    @media #{$xs}{
+        margin-left: 0px !important;
+    }
+}
+
+.header-transparent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9;
+}
+
+//! header Sticky  & Responsive
+.header-sticky{
+    &.sticky-bar{
+        // @extend %btn-bgs;
+        background: #fff;
+        &.sticky {
+            .main-menu{
+                ul {
+                    li{
+                        a {
+                            padding: 20px 20px !important;
+                        }
+                    }
+                }
+            }
+            // Small device sticky show padding
+            @media #{$md}{
+                padding: 15px 0px;
+            }
+            @media #{$sm}{
+                padding: 15px 0px;
+            }
+            @media #{$xs}{
+                padding: 15px 0px;
+            } 
+        }
+    }
+}
+
+//! Mobile Menu
+.mobile_menu {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    z-index: 99;
+    .slicknav_menu {
+        background: transparent;
+        margin-top: 0px !important;
+        .slicknav_btn {
+            top: -27px;
+            // mobile Menu button color
+            .slicknav_icon-bar {
+                background-color:$theme-color !important;
+            }
+        }
+        .slicknav_nav{
+            margin-top: 9px !important;
+            // box-shadow: 0 0 10px 3px rgba(141, 140, 140, 0.5);
+            background:#fff;
+            a:hover {
+                background: transparent;
+                color: $theme-color;
+            }
+            a {
+                font-size: 15px;
+                padding: 7px 10px;
+                color: #000;
+            }
+            // Dropdown Menu button Padding None
+        .slicknav_item a {
+                padding: 0 !important;
+            }
+        }
+    }
+}
+

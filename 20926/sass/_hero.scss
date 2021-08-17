@@ -1,0 +1,138 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+
+}
+
+.hero__text {
+
+    span {
+        font-size: 16px;
+        color: $heading-color;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        display: block;
+        margin-bottom: 12px;
+        position: relative;
+        top: 100px;
+        @include transition(all, .2s);
+        opacity: 0;
+    }
+
+    h2 {
+        color: $heading-color;
+        font-size: 43px;
+        line-height: 60px;
+        margin-bottom: 28px;
+        position: relative;
+        top: 100px;
+        @include transition(all, .4s);
+        opacity: 0;
+    }
+
+    .primary-btn {
+        position: relative;
+        top: 100px;
+        @include transition(all, .6s);
+        opacity: 0;
+    }
+}
+
+.hero__items {
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__slider {
+
+    &.owl-carousel {
+
+        .owl-item {
+
+            &.active {
+
+                .hero__text {
+
+                    span {
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    h2 {
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    .primary-btn {
+                        top: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 30px;
+            width: 1380px;
+            margin: 0 auto;
+
+            button {
+                height: 15px;
+                width: 15px;
+                background: $white-color;
+                border-radius: 50%;
+                margin-right: 10px;
+                position: relative;
+
+                &.active {
+
+                    &:before {
+                        opacity: 1;
+                    }
+
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    height: 15px;
+                    width: 15px;
+                    border: 1px solid $primary-color;
+                    content: "";
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    opacity: 0;
+                }
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 1px;
+                    height: 13px;
+                    width: 13px;
+                    border: 2px solid #eeeef0;
+                    content: "";
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    opacity: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.wantToWork-area{
+    border: 1px solid #DEE0E5;
+    border-radius: 5px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @include flexbox();
+    @include justify-content(space-between);
+    @include align-items(center);
+    @include flex-wrap(wrap);
+        h2{
+            color: $heading-color;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 8px;
+            @media #{$md}{
+                font-size: 30px; 
+            }
+            @media #{$sm}{
+                font-size: 35px; 
+            }
+            @media #{$xs}{
+                font-size: 25px; 
+            }
+        } 
+        p{
+            font-size: 18px;
+            margin-bottom: 0;
+            color: #000;
+        }
+  
+    .wantToWork-btn{
+
+        @media #{$sm}{
+            float: left;
+            margin-top: 6px;
+        }
+        @media #{$xs}{
+            float: left;
+            margin-top: 6px;
+        }
+        @media #{$md}{
+            float: left;
+            margin-top: 6px;
+        }
+    }
+}

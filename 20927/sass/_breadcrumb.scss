@@ -1,0 +1,66 @@
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb-option {
+    padding-top: 210px;
+}
+
+.breadcrumb__text {
+    text-align: center;
+
+    h2 {
+        color: $white-color;
+        font-size: 46px;
+        font-weight: 700;
+    }
+}
+
+.breadcrumb__links {
+    margin-bottom: 12px;
+
+    a {
+        color: $white-color;
+        font-size: 15px;
+        font-weight: 600;
+        margin-right: 26px;
+        display: inline-block;
+        position: relative;
+        
+        &:after {
+            position: absolute;
+            right: -18px;
+            top: 0;
+            font-family: "FontAwesome";
+            content: "\f105";
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    span {
+        color: $white-color;
+        font-size: 15px;
+        font-weight: 600;
+        display: inline-block;
+        margin-right: 26px;
+        position: relative;
+        
+        &:after {
+            position: absolute;
+            right: -18px;
+            top: -1px;
+            font-family: "FontAwesome";
+            content: "\f105";
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        &:last-child {
+            margin-right: 0;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

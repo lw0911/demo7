@@ -1,0 +1,523 @@
+/******** base color css ********/
+
+.btn {
+	background: $btn_bg;
+	font-family: $font_2;
+	text-transform: inherit !important;
+	padding: 30px 43px;
+	color: #302072 !important;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 20px !important;
+	font-weight: 500 !important;
+	border-radius:5px;
+	line-height: 1;
+
+	// letter-spacing: 1px;
+	line-height: 0;
+
+	cursor: pointer;
+	-moz-user-select: none;
+	transition: color 0.4s linear;
+	position: relative;
+	z-index: 1;
+	border: 0;
+	overflow: hidden;
+	&::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 101%;
+		height: 101%;
+		background:$heading-color;
+		z-index: 1;
+		border-radius: 5px;
+		transition: transform 0.5s;
+		transition-timing-function: ease;
+		transform-origin: 0 0;
+		transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+		// 
+		transform: scaleX(0);
+		border-radius: 0px;
+	}
+	i{
+		padding-right: 11px;
+	}
+	&:hover{
+		color: #fff !important;
+		&::before {
+			transform: scaleX(1);
+			z-index: -1;
+		}
+	}
+}
+
+.btn_0{
+	border: none;
+	padding:14px 34px  !important;
+	text-transform: capitalize !important;
+	border-radius: 4px;
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	display: inline-block !important;
+	cursor: pointer;
+	color: #fff !important;
+	display: inline-block;
+
+	@include transition(.5s);
+	// box-shadow: 0px 7px 21px 0px rgba(0, 0, 0, 0.12);
+	background-image: linear-gradient(to left,#FF9100, #df7e00,#FF9100);
+	background-position: right;
+	background-size: 200%;
+	i{
+		color: #ffffff;
+		font-size: 13px;
+		font-weight: 500;
+		position: relative;
+		left: 26px;
+		@include transition(.4s);
+	}
+	&:hover{
+		i{
+			left: 30px;
+		}
+	}
+	img{
+		padding-right: 17px;
+	}
+	&:hover{
+		@include transition(.4s);
+		background-position: left;
+		background-image: linear-gradient(to left,#FF9100, #df7e00,#FF9100);
+		color: #fff;
+	  }
+}
+
+.border-btn{
+	border: 1px solid $theme-color;
+	color: $theme-color;
+	background: none;
+	text-transform: normal;
+	padding: 13px 34px !important;
+	
+	-moz-user-select: none;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	position: relative;
+	transition: color 0.4s linear;
+	position: relative;
+	overflow: hidden;
+	border-radius: 0px;
+
+	z-index: 1;
+	 i {
+		font-size: 16px;
+		margin-right: 10px;
+		color: $theme-color;
+		@include transition(.3s);
+	}
+	&::before{
+		border: 1px solid transparent;
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 101%;
+		height: 101%;
+		// @extend %btn-bgs;
+		background:$theme-color;
+		z-index: -1;
+		transition: transform 0.5s;
+		transition-timing-function: ease;
+		transform-origin: 0 0;
+		transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+		// 
+		transform: scaleY(0);
+		border-radius: 0;
+	}
+	&.border-btn2{
+		border: 1px solid #fff !important;
+		color: #fff !important;
+		border-radius: 30px;
+		&:hover{
+			border: 1px solid transparent !important;
+			&::before {
+				color: $theme-color;
+			}
+		}
+	}
+	&:hover::before {
+		transform: scaleY(1);
+		border: 1px solid transparent;
+		color: #fff;
+	}
+}
+
+.about-btn {
+	padding: 28px 52px;
+}
+.blog-btn {
+	text-transform: uppercase !important;
+	padding: 15px 18px;
+	font-size: 13px !important;
+	line-height: 1px;
+}
+
+.browse-btn {
+	color: $heading-color;
+	font-weight: 500;
+	font-size: 16px;
+	position: relative;
+	display: inline-block;
+	text-transform: uppercase;
+    &::before{
+		position: absolute;
+		content: "";
+		background: $heading-color;
+		width: 100%;
+		height: 2px;
+		bottom: -11px;
+    }
+    &:hover{
+        color: $theme-color;
+		letter-spacing: 0.5px;
+		&::before{
+			background: $theme-color;
+		}
+	}
+
+	&.browse-btn2 {
+		color: #fff;
+		&::before{
+			background: #fff;
+		}
+	}
+}
+
+// Custom Btn
+.header-btn {
+	// border: 1px solid #fff;
+	color: $theme-color !important;
+	background: $btn_bg2;
+	font-family: $font_2 !important;
+	text-transform: capitalize !important;
+	font-size: 17px !important;
+	font-weight: 700 !important;
+	padding: 13px 32px !important;
+	display: inline-block !important;
+	border-radius: 5px;
+	
+	&::after {
+		position: unset !important;
+	}
+	i{
+		padding-right: 9px;
+		font-size: 17px;
+		color: #fff;
+	}
+}
+
+.hero-btn {
+	padding: 35px 40px;
+}
+.buy-btn {
+	padding: 35px 36px;
+}
+
+.cal-btn{
+	i{
+		color: #09cc7f !important;
+		font-size: 31px;
+		font-weight: 300;
+		margin-right: 10px;
+	}
+	& > p{
+		color: #072366 !important;
+		font-weight: 700;
+		font-size: 16px;
+		display: inline-block;
+		margin: 0 !important;
+		position: relative;
+		top: -7px;
+	}
+}
+
+.slider-btn2 {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	text-decoration: underline;
+	padding: 17px 24px;
+	display: inline-block;
+	&:hover{
+		color: #fff !important;
+		text-decoration: underline !important;
+		letter-spacing: 0.2px;
+	}
+	@media #{$xs}{
+		padding-left: 0;
+	}
+}
+
+.black-btn {
+	padding: 14px 35px;
+	background: #000;
+	display: inline-block;
+	&::before{
+		background: #331391;
+	}
+}
+
+.borders-btn {
+	padding: 10px 64px;
+	background: none;
+	border: 1px solid $theme-color;
+	display: inline-block;
+	color: $theme-color;
+	border-radius: 30px;
+	text-transform: uppercase;
+}
+
+// Custom Btn
+.submit-btn {
+	width: 100%;
+	background: $btn_bg;
+	font-family: $font_2;
+	text-transform: inherit !important;
+	padding: 30px 43px;
+	color: #fff !important;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 16px !important;
+	font-weight: 500 !important;
+	border-radius:5px;
+	line-height: 1;
+
+	line-height: 0;
+	cursor: pointer;
+	-moz-user-select: none;
+	transition: color 0.4s linear;
+	position: relative;
+	z-index: 1;
+	border: 0;
+	overflow: hidden;
+	&::before{
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 101%;
+		height: 101%;
+		background:$heading-color;
+		z-index: 1;
+		border-radius: 5px;
+		transition: transform 0.5s;
+		transition-timing-function: ease;
+		transform-origin: 0 0;
+		transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+		// 
+		transform: scaleX(0);
+		border-radius: 0px;
+	}
+	&:hover{
+		color: #fff !important;
+		&::before {
+			transform: scaleX(1);
+			z-index: -1;
+		}
+	}
+	i {
+		font-size: 20px;
+		margin-right: 10px;
+		color:#fff;
+		@include transition(.3s);
+	}
+	&.download-btn{
+		border-radius: 0;
+		padding: 20px 43px;
+	}
+}
+
+.submit-btn2 {
+	background:$btn_bg;
+	width: 100%;
+	height: 50px;
+	padding: 10px 20px;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 0px;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
+
+.white-btn {
+    // background: $btn_bg;
+    background:#fff;
+    padding: 25px 36px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #222222;
+	border-radius: 5px;
+	
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    -moz-user-select: none;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    overflow: hidden;
+
+
+    @media #{$xs}{
+        padding: 25px 18px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 101%;
+        height: 101%;
+        background:$btn_bg;
+        z-index: 1;
+        border-radius: 5px;
+        transition: transform 0.5s;
+        transition-timing-function: ease;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+        // 
+        transform: scaleX(0);
+        border-radius: 0;
+    }
+    &.white-btn2{
+        padding: 20px 29px;
+	}
+    &.white-btn3{
+		padding: 25px 54px;
+		border-radius: 30px;
+		color: #777;
+	}
+	&:hover{
+		color: #fff !important;
+		box-shadow: 0px 3px 31px 2px rgba(3, 0, 0, 0.7);
+        &::before {
+            transform: scaleX(1);
+            z-index: -1;
+        }
+    }
+}
+
+.btn_1{
+    background-color: $theme-color;
+    border: 1px solid $theme-color;
+    color: $white !important;
+    display: inline-block;
+    padding: 16px 41px;
+    text-transform: capitalize;
+    line-height: 16px;
+    margin-top: 32px;
+    font-size: 13px;
+    
+    &:hover{
+        background-color: $white;
+        border: 1px solid $theme-color;
+        color: $theme-color !important;
+    }
+}
+.btn_2{
+    color: $white !important;
+    border: 1px solid $white;
+    display: inline-block;
+    padding: 15px 39px;
+    text-transform: capitalize;
+    font-size: 13px;
+    
+    &:hover{
+        background-color: $white;
+        border: 1px solid $white;
+        color: $theme-color !important;
+    }
+}
+.btn_02{
+    color: $font_color1 !important;
+    border: 1px solid $border-color;
+    display: inline-block;
+    padding: 5px 21px;
+    text-transform: capitalize;
+	font-size: 13px;
+	border-radius: 4px;
+    &:hover{
+        background-color: $white;
+        border: 1px solid $theme-color;
+        color: $theme-color !important;
+    }
+}
+.btn_01{
+    color: $heading-color !important;
+    
+    border: 1px solid #d7dbe3;
+    display: inline-block;
+    padding: 14px 33px;
+    text-transform: capitalize;
+    font-size: 13px;
+    background: #fff;
+    &:hover{
+        background-color: $white;
+        border: 1px solid $theme-color;
+        color: $theme-color !important;
+    }
+}
+.product_btn{
+    
+    font-size: 12px;
+    background-color: $theme-color;
+    display: inline-block;
+    color: $white;
+    padding: 2px 15px;
+    text-transform: uppercase;
+    border: 1px solid $theme-color;
+    &:hover{
+        border: 1px solid $theme-color;
+        background-color: transparent;
+        color: $theme-color;
+    }
+}
+.btn.focus, .btn:focus {
+	outline: 0;
+	box-shadow:none; 
+}
+.btn.focus, .btn:focus {
+	outline: 0;
+	box-shadow:none; 
+}
+
+.fb-btn {
+	background: #3b5997;
+	padding: 15px 26px;
+	&:hover{
+		&::before{
+			background: $theme-color !important;
+		}
+	}
+}
+
+.twit-btn {
+	background: #1da1f2;
+	padding: 15px 26px;
+	&:hover{
+		&::before{
+			background: $theme-color !important;
+		}
+	}
+}

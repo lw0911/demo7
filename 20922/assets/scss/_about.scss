@@ -1,0 +1,152 @@
+.support-company-area{
+    .support-location-img{
+		position: relative;
+		@media #{$md}{
+			right: 0px;
+			margin-bottom: 10px;
+		}
+		@media #{$sm}{
+			right: 0px;
+			margin-bottom: 10px;
+		}
+		@media #{$xs}{
+			right: 0px;
+			margin-bottom: 10px;
+		}
+        img{
+            width: 100%;
+		}
+	}
+	// Right Content
+	.right-caption{
+		position: relative;
+		.support-caption{
+            @include flexbox();
+            @include justify-content(space-between);
+
+			.single-info{
+                i{
+                    float: left;
+                    color: $theme-color;
+                     font-size: 20px;
+                }
+                .contents{
+                    display: block;
+                    overflow: hidden;
+                    margin-left: 29px;
+                    span{
+                        font-family:$font_1;
+                        color: $heading-color;
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                        display: block;
+                        line-height: 1;
+
+                    }
+                    p{
+                        color: #302072;
+                        font-size: 20px;
+                        line-height: 1.5;
+                        @media #{$lg}{
+                            font-size: 16px;
+                        }
+                        @media #{$xs}{
+                            font-size: 14px;
+                            br{
+                                display: none;
+                            }
+                        }
+                    }
+                }   
+              }
+            }
+	}
+}
+
+// About 2 
+.project-us{
+    position: relative;
+    // left content
+    position: relative;
+    .project-caption{
+        p.project-cap-top{
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding-right: 80px;
+            @media #{$lg}{
+                padding-right: 0px;
+            }
+            @media #{$sm}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+        }
+         p{
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 45px;
+            padding-right: 50px;
+            @media #{$lg}{
+                padding-right: 20px;
+            }
+            @media #{$sm}{
+                padding-right: 0px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+            }
+        }
+
+    }
+	 
+	
+    // left img
+    .project-right-cap{
+        @media #{$md}{
+            padding-top: 50px;
+        }
+        @media #{$lg}{
+            padding-top: 50px;
+        }
+        @media #{$sm}{
+            padding-top: 50px;
+        }
+        @media #{$sm}{
+            padding-top: 50px;
+        }
+        @media #{$xs}{
+            padding-top: 30px;
+        }
+        .project-right-img{
+            img{
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+        p{
+            font-size: 22px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+        .project-right-cap2{
+            margin-bottom: 0px;
+            @media #{$xs}{
+                margin-bottom: 0px;
+            }
+            @media #{$md}{
+                margin-bottom: 0px;
+            }
+            @media #{$sm}{
+                margin-bottom: 0px;
+            }
+            @media #{$sm}{
+                margin-bottom: 0px;
+            }
+        }
+	}
+}
+

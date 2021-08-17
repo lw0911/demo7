@@ -1,0 +1,172 @@
+.great-stuffs{
+    .single-location{
+        position: relative;
+        h3{
+            a{
+                color: $heading-color;
+                font-size: 22px;
+                font-weight: 600;
+                margin-bottom: 0;
+                padding-top: 20px;
+                display: block;
+                @media #{$lg}{
+                    font-size: 19px;
+                }
+                @media #{$md}{
+                    font-size: 19px;
+                }
+                @media #{$sm}{
+                    font-size: 19px;
+                }
+                @media #{$xs}{
+                    font-size: 19px;
+                }
+            }
+        }
+        .location-img{
+            @include transition(.4s);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+            border-radius: 50%;
+            &::before{
+                @include transition(.4s);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: 0;
+                content: "";
+                background: rgba(26, 33, 61,.5);
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+            }
+            &::after{
+                @include transition(.4s);
+                position: absolute;
+                width: 92%;
+                height: 91%;
+                bottom: 10px;
+                content: "";
+                border: 2px dotted #fff;
+                z-index: 1;
+                left: 8px;
+                border-radius: 50%;
+                opacity: 0;
+                visibility: hidden;
+                @media #{$lg}{
+                    bottom: 6px;
+                    left: 5px;
+                } 
+                @media #{$sm}{
+                    bottom: 6px;
+                    left: 5px;
+                } 
+                @media #{$xs}{
+                    bottom: 14px;
+                    left: 13px;
+                } 
+
+                // AniMated Rounding
+                -webkit-animation-name: rotateme;
+                animation-name: rotateme;
+                -webkit-animation-duration: 30s;
+                animation-duration: 30s;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                animation-timing-function: linear;
+                @keyframes rotateme {
+                    from {
+                        -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                    }
+                    to {
+                        -webkit-transform: rotate(360deg);
+                        transform: rotate(360deg);
+                    }
+                }
+            
+                @-webkit-keyframes rotateme {
+                    from {
+                        -webkit-transform: rotate(0deg);
+                    }
+            
+                    to {
+                        -webkit-transform: rotate(360deg);
+                    }
+                }
+            }
+            img{
+                width: 100%;
+                transform: scale(1);
+                @include transition(.4s);
+            }
+        }
+        .location-details{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin: 0 auto;
+            z-index: 2;
+            @include transition (.4s);
+            opacity: 0;
+            visibility: hidden;
+            h4{
+                a{
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    display: inline-block;
+                    margin: 0;
+                    line-height: 1;
+                    @media #{$xs}{
+                        font-size: 18px;
+                        line-height: 1.1;
+                    } 
+                    i{
+                        margin-left: 5px;
+                        
+                    }
+                    &:hover{
+                        letter-spacing: 0.5px;
+                    }
+                }
+            }
+        }
+        // Hover
+        &:hover{
+            
+            h3{
+                a{
+                    color: $theme-color;
+                }
+            }
+            .location-img{
+                box-shadow:0 10px 20px rgba(26, 33, 61,.12);
+                img{
+                    transform: scale(1.05);
+                    
+                }
+                &::before{
+                opacity: 1;
+                visibility: visible;
+                }
+                &::after{
+                opacity: 1;
+                visibility: visible;
+                }
+                
+            }
+            .location-details{
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    
+}

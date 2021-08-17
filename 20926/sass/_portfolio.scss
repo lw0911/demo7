@@ -1,0 +1,46 @@
+/*---------------------
+  Portfolio
+-----------------------*/
+.portfolio__item {
+    height: 290px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    &:hover {
+        
+        .portfolio__item__text {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+
+    &.portfolio__item__medium {
+        height: 436px;
+    }
+
+    &.portfolio__item__large {
+        height: 580px;
+    }
+}
+
+.portfolio__item__text {
+    background: $white-color;
+    display: inline-block;
+    padding: 15px 40px 15px;
+    @include transition(all, .3s);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    text-align: center;
+
+    h4 {
+        color: $heading-color;
+        margin-bottom: 4px;
+    }
+
+    span {
+        color: $primary-color;
+        display: block;
+    }
+}

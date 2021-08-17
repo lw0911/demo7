@@ -1,0 +1,91 @@
+/*---------------------
+  Footer
+-----------------------*/
+.footer {
+  background: #191B26;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer__text {
+  text-align: center;
+
+  .footer__about {
+    padding-bottom: 25px;
+  
+    .footer__logo {
+      margin-bottom: 25px;
+    }
+  
+    p {
+      color: $white-color;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+  
+  .footer__nav {
+    margin-bottom: 26px;
+  
+    ul {
+  
+      li {
+        display: inline-block;
+        list-style: none;
+        margin-right: 60px;
+  
+        a {
+          font-size: 15px;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: $white-color;
+  
+        }
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  
+  .footer__copyright {
+    color: $white-color;
+    margin-bottom: 0;
+  
+    i {
+      color: $primary-color;
+    }
+  
+    a {
+      color: $primary-color;
+    }
+  }
+  
+  .footer__social {
+    margin-bottom: 50px;
+  
+    a {
+      font-size: 20px;
+      color: #747E8C;
+      height: 55px;
+      width: 55px;
+      line-height: 60px;
+      text-align: center;
+      display: inline-block;
+      background: $white-color;
+      margin-right: 11px;
+      border-radius: 50%;
+      @include transition(all, .3s);
+  
+      &:hover {
+        background: $primary-color;
+        color: $white-color;
+      }
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

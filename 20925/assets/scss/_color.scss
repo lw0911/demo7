@@ -1,0 +1,107 @@
+
+/*-------------   Color Variable  --------------*/
+
+//Colors
+	$white: #ffffff;
+	$black: #16161a;
+	$gray:#F4F6F9;
+
+//Theme color
+	$theme-color: #0BDE8C;
+	$theme-color2: #0077FF;
+	$theme-color3: #f27420;
+	$theme-color4: #ff3500;
+
+// btn and Section color
+	$btn_bg:#0BDE8C;
+	$btn_bg2: #F86011;
+
+// Heading color
+	$heading-color:#204570;
+	$heading_color2: #080808;
+
+// Body Font
+	$body-text-color: #3F4854;
+	$font_color1: #3F4854;
+
+// Radio btn
+	$radio-color1: #f4f4f4;
+	$radio-color2: #0BDE8C;
+
+// border-color
+	$border_color: #DBE2E9;
+	$hr-border-color:#eceff8;
+
+// Section Bg
+	$section_bg1: #454545;
+
+
+.gradient-background{
+	background-image: linear-gradient(to left,#0BC6FF, #0d80f3,#0BC6FF,);
+	background-position: right;
+	background-size: 200%;
+}
+
+%font-c1{
+	background-image: linear-gradient(to left,#0BC6FF, #0d80f3,#0BC6FF,);
+	// background: -webkit-linear-gradient(#eee, #333);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-position: right;
+	background-size: 200%;
+}
+	
+.white-bg{
+	background: #ffffff;
+}
+.gray-bg{
+	background: #f5f5f5;
+}
+
+	$gray-color: #bebebe;
+	$gray-color-2: #bdbdbd;
+
+
+
+
+// bg
+	$brand-bg: #f1f4fa;
+	$testimonial-bg:#f9fafc;
+
+
+
+/*-------------Color include--------------*/
+
+
+/*-- Background color---*/
+
+.gray-bg {
+	background: $gray;
+}
+.white-bg {
+	background:$white;
+}
+.black-bg {
+	background: $black;
+}
+.theme-bg {
+	background:$theme-color;
+}
+.brand-bg{
+	background: $brand-bg;
+}
+.testimonial-bg{
+	background: $testimonial-bg;
+}
+
+
+/*--- color------*/
+.white-color {
+	color: $white;
+}
+.black-color {
+	color: $black;
+}
+.theme-color {
+	color: $theme-color;
+}

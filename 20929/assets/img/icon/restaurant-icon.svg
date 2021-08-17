@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="restaurant-icon" transform="translate(-75 -2782)">
+    <circle id="Ellipse_7" data-name="Ellipse 7" cx="20" cy="20" r="20" transform="translate(75 2782)" fill="#fdd35f"/>
+    <g id="cutlery" transform="translate(36.277 2793.604)">
+      <g id="Group_5" data-name="Group 5" transform="translate(51)">
+        <g id="Group_4" data-name="Group 4" transform="translate(0)">
+          <path id="Path_15" data-name="Path 15" d="M351.763,5.188a.763.763,0,0,0,.763-.763V.763a.763.763,0,0,0-1.526,0V4.425A.763.763,0,0,0,351.763,5.188Z" transform="translate(-339.557)" fill="#1a213d"/>
+          <path id="Path_16" data-name="Path 16" d="M287.1,0a.763.763,0,0,0-.763.763V4.577c0,1.654-.873,3.052-1.907,3.052s-1.907-1.4-1.907-3.052V.763a.763.763,0,1,0-1.526,0V4.577c0,1.875.907,3.935,2.67,4.464v9.726a.763.763,0,0,0,1.526,0V9.041c1.763-.529,2.67-2.587,2.67-4.464V.763A.763.763,0,0,0,287.1,0Z" transform="translate(-272.227)" fill="#1a213d"/>
+          <path id="Path_17" data-name="Path 17" d="M54.433,0C52.664,0,51,1.848,51,4.577c0,1.877.907,3.935,2.67,4.464v9.726a.763.763,0,1,0,1.526,0V9.041c1.763-.529,2.67-2.588,2.67-4.464C57.866,1.767,56.142,0,54.433,0Zm0,7.629c-1.034,0-1.907-1.4-1.907-3.052s.873-3.052,1.907-3.052,1.907,1.4,1.907,3.052S55.467,7.629,54.433,7.629Z" transform="translate(-51)" fill="#1a213d"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
