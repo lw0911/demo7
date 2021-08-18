@@ -1,0 +1,114 @@
+.services-section{
+    &.services-section2{
+        margin-top: -85px;
+        @media #{$md}{
+            margin-top: 0px;
+        }
+        @media #{$sm}{
+            margin-top: 0px;
+        }
+        @media #{$xs}{
+            margin-top: 0px;
+        }
+    }
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        .cat-img{
+            overflow: hidden;
+            img{
+                width: 100%;
+                transform: scale(1);
+                @include transition(.4s);
+                height: 220px;
+            }
+        }
+        .cat-cap{
+            border: 1px solid #DEDEDE;
+            padding: 30px 20px 25px 20px;
+            @include transition(.3s);
+            .pricing{
+                span{
+                    color: #000000;
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                    display: block;
+                    text-transform: uppercase;
+                }
+                .price{
+                    font-size: 17px;
+                    font-weight: 600;
+                    color: $theme-color;
+                }
+            }
+
+            h5{
+             & > a{
+                font-size: 20px;
+                font-weight: 500;
+                color: #071112;
+                text-transform: capitalize;
+                margin-bottom: 17px;
+                display: block;
+                @include transition(.2s);
+                text-decoration: underline transparent;
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$md}{
+                    font-size: 20px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+                &:hover{
+                    color: $theme-color;
+                    text-decoration: underline;
+                }
+              }
+            }
+            p{
+                color: #5E5E5E;
+                font-size: 14px;
+                line-height: 1.6;
+                margin: 0;
+                font-weight: 400;
+                margin-bottom: 23px;
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+                @media #{$sm}{
+                    font-size: 13px;
+                }
+                @media #{$md}{
+                    font-size: 13px;
+                }
+                @media #{$xs}{
+                    font-size: 17px;
+                }
+                i{
+                    color: $theme-color;
+                    margin-right: 10px;
+                }
+            }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-img{
+                img{
+                    transform: scale(1.05);
+                }
+            }
+            .cat-cap{
+                border: 1px solid transparent;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+                h5{
+                  a{
+
+                  }
+                }
+            }
+       }
+    }
+}

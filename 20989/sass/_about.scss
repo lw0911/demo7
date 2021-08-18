@@ -1,0 +1,210 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.about__text {
+    padding-top: 35px;
+    margin-bottom: 30px;
+}
+
+.about__title {
+
+    h2 {
+        font-size: 42px;
+        color: $heading-color-2;
+        font-weight: 700;
+        line-height: 52px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+.about__services__item {
+    margin-bottom: 30px;
+
+    h5 {
+        color: $heading-color-2;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 14px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    ul {
+
+        li {
+            list-style: none;
+            font-size: 15px;
+            color: $heading-color-2;
+            font-weight: 700;
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.about__pic {
+    margin-right: -20px;
+    overflow: hidden;
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+
+.about__pic__item {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+    float: left;
+
+    &.about__pic__item--large {
+        padding-top: 100px;
+    }
+
+    img {
+        min-width: 100%;
+        margin-bottom: 20px;
+        box-shadow: 0px 5px 30px rgba(35, 46, 14, 0.05);
+    }
+}
+
+/*---------------------
+  About Page
+-----------------------*/
+.about-page {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 70px;
+}
+
+.about__page__title {
+    text-align: center;
+    margin-bottom: 65px;
+
+    h2 {
+        font-size: 48px;
+        color: $heading-color-2;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.about__page__pic {
+    margin-right: -30px;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+.about__page__pic__item {
+    width: calc(20% - 30px);
+    margin-right: 30px;
+    float: left;
+    margin-bottom: 30px;
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.about__counter__item {
+    text-align: center;
+    margin-bottom: 30px;
+
+    .about__counter__number {
+        margin-top: 22px;
+        margin-bottom: 10px;
+
+        h2 {
+            color: $heading-color-2;
+            font-weight: 700;
+            display: inline-block;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 36px;
+            font-weight: 700;
+            color: $heading-color-2;
+            line-height: 42px;
+        }
+    }
+
+    h5 {
+        color: $heading-color-2;
+        margin-bottom: 22px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+    padding-bottom: 70px;
+    padding-top: 80px;
+}
+
+.team__item {
+    margin-bottom: 30px;
+}
+
+.team__item__pic {
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.team__item__text {
+    background: #f2f4f5;
+    padding: 25px 80px 25px 30px;
+    position: relative;
+
+    h5 {
+        color: $heading-color-2;
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    span {
+        color: #4e4e4e;
+        font-size: 15px;
+        display: block;
+    }
+
+    .team__item__phone {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        line-height: 100px;
+        background: $primary-color;
+        padding: 0 25px;
+    }
+}

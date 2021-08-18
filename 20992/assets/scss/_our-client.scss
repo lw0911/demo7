@@ -1,0 +1,89 @@
+.our-client{
+    background: #F5F6F7;
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        .cat-img{
+            position: relative;
+            margin-bottom: 40px;
+            
+            img{
+                margin: 0 auto;
+                transform: scale(1);
+                @include transition(.4s);
+                height: 219px;
+            }
+            .numbering{
+                color: #fff;
+                position: absolute;
+                background:$theme-color;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                bottom: -22px;
+                border-radius: 50%;
+                left: 0;
+                right: 0;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+        .cat-cap{
+            span{
+                color: #6785FF;
+                font-size: 46px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: block;
+            }
+            h5{
+             & > a{
+                font-size: 24px;
+                font-weight: 600;
+                margin-bottom: 14px;
+                display: block;
+                @include transition(.2s);
+                text-transform: capitalize;
+                color: #000000;
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+              }
+            }
+            p{
+                color: #57667e;
+                font-size: 16px;
+                @include transition(.2s);
+                margin: 0;
+                @media #{$sm}{
+                    font-size: 15px;
+
+                }
+            }
+            a{
+                color: #1c165c;
+                font-size: 16px;
+                font-weight: 600;
+                @include transition(.2s);
+            }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-img{
+                img{
+                    transform: scale(0.9);
+
+                }
+            }
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+
+            }
+       }
+    }
+}

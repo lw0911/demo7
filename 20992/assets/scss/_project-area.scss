@@ -1,0 +1,88 @@
+.project-area{
+    padding-top: 130px;
+    padding-bottom: 130px;
+    @media #{$sm}{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @media #{$xs}{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .single-project{
+        padding-left: 100px;
+        width: 39%;
+        @media #{$xs}{
+            padding-left: 0px;
+        }
+        h2{
+            font-size: 50px;
+            color: #fff;
+            margin-bottom: 35px;
+            position: relative;
+            font-weight: 600;
+            @media #{$xs}{
+                font-size: 32px;
+            }
+            &::before{
+                position: absolute;
+                width: 150px;
+                height: 2px;
+                bottom: -17px;
+                content: "";
+                @extend %gradient;
+
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 31px;
+        }
+
+    }
+
+    // Arrow
+    .project-slider{
+        button{
+            &.slick-arrow {
+                position: absolute;
+                border: 0;
+                padding: 0;
+                z-index: 2;
+                cursor: pointer;
+                top: 29%;
+                transform: translateY(-29%);
+                left: auto;
+                background: none;
+                line-height: 1;
+                box-shadow: 0px 7px 21px 0px rgba(0,0,0,0.12);
+                i{
+                    font-size: 25px;
+                    color: #fff;
+                    font-weight: 900;
+                    @include transition(.2s);
+                
+                }
+                &:hover{
+                    i{
+                        // color: #fff;
+                    }
+                }
+            }
+            &.slick-prev {
+                left: 0px;
+                // i{
+                //     color: #ddd;
+                // }
+            }
+            &.slick-next {
+                right: -100px;
+                // i{
+                //     color: #ddd;
+                // }
+            }
+        }
+        
+    }
+}

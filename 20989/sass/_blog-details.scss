@@ -1,0 +1,241 @@
+/*---------------------
+  Blog Hero
+-----------------------*/
+.blog-hero {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.blog__hero__text {
+
+    .label {
+        color: $white-color;
+        display: inline-block;
+        background: $primary-color;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 2px 18px;
+    }
+
+    h2 {
+        color: $white-color;
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    .blog__date {
+        font-size: 14px;
+        color: $white-color;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+
+        span {
+            margin-right: 5px;
+        }
+    }
+
+    p {
+        color: $white-color;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
+/*---------------------
+  Blog Details
+-----------------------*/
+.blog__details__text {
+    margin-bottom: 50px;
+
+    p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 38px;
+    }
+
+    h4 {
+        color: $heading-color-2;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    ul {
+
+        li {
+            list-style: none;
+            font-size: 18px;
+            color: #4e4e4e;
+            padding-left: 22px;
+            position: relative;
+            margin-bottom: 12px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 8px;
+                height: 8px;
+                width: 8px;
+                background: #4e4e4e;
+                content: "";
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.blog__details__pic {
+    padding: 0 5px;
+    padding-bottom: 20px;
+}
+
+.blog__details__pic__item {
+    margin-bottom: 20px;
+    margin-left: -5px;
+    margin-right: -5px;
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.blog__details__quote {
+    padding-left: 35px;
+    position: relative;
+    margin-bottom: 60px;
+
+    &:before {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        height: 130px;
+        width: 5px;
+        background: $primary-color;
+        content: "";
+    }
+
+    p {
+        font-size: 20px;
+        color: #252525;
+        line-height: 36px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    h5 {
+        color: #4e4e4e;
+        font-size: 20px;
+        position: relative;
+        padding-left: 16px;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 12px;
+            height: 1px;
+            width: 14px;
+            background: #4e4e4e;
+            content: "";
+        }
+    }
+}
+
+.blog__details__tag {
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    a {
+        display: inline-block;
+        font-size: 13px;
+        color: $heading-color-2;
+        background: #f2f4f5;
+        padding: 9px 18px 7px;
+        margin-right: 6px;
+        margin-bottom: 10px;
+    }
+}
+
+.blog__details__related {
+    padding-top: 55px;
+    padding-bottom: 20px;
+
+    h3 {
+        color: $heading-color-2;
+        font-weight: 700;
+        margin-bottom: 35px;
+    }
+}
+
+.blog__details__form {
+  
+    .section-title {
+      margin-bottom: 28px;
+
+      h2 {
+        font-size: 30px;
+        text-transform: capitalize;
+        margin-bottom: 8px;
+      }
+
+      p {
+          font-size: 15px;
+      }
+    }
+  
+    form {
+  
+      .input__item {
+        margin-bottom: 20px;
+  
+        &.text__item {
+          margin-bottom: 30px;
+        }
+  
+        p {
+          color: $heading-color-2;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+  
+        input {
+          height: 40px;
+          width: 100%;
+          padding-left: 20px;
+          font-size: 15px;
+          color: #b7b7b7;
+          border: none;
+          background: #f2f4f5;
+    
+          &::placeholder {
+            color: #b7b7b7;
+          }
+        }
+  
+        textarea {
+          height: 130px;
+          width: 100%;
+          padding-left: 20px;
+          font-size: 15px;
+          color: #b7b7b7;
+          border: none;
+          background: #f2f4f5;
+          padding-top: 12px;
+          resize: none;
+    
+          &::placeholder {
+            color: #b7b7b7;
+          }
+        }
+      }
+    }
+  }

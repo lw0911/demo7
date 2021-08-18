@@ -1,0 +1,124 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+
+}
+
+.hero__slider {
+
+    &.owl-carousel {
+
+        .owl-item {
+
+            &.active {
+                
+                .hero__text {
+
+                    span {
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    h2 {
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    p {
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    .primary-btn {
+                        top: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+
+            button {
+                height: 50px;
+                width: 50px;
+                background: $white-color;
+                font-size: 30px;
+                color: $black-color;
+                border-radius: 50%;
+                line-height: 45px;
+                text-align: center;
+                display: inline-block;
+                position: absolute;
+                left: 60px;
+                top: 50%;
+                margin-top: -25px;
+                
+                i {
+                    position: relative;
+                    top: -2px;
+                }
+
+                &.owl-next {
+                    left: auto;
+                    right: 60px;
+                }
+            }
+        }
+    }
+}
+
+.hero__items {
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__text {
+    max-width: 660px;
+
+    span {
+        font-size: 18px;
+        font-weight: 900;
+        color: $primary-color;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 20px;
+        position: relative;
+        top: 100px;
+        @include transition(all, .3s);
+        opacity: 0;
+    }
+
+    h2 {
+        font-size: 72px;
+        color: $white-color;
+        font-weight: 700;
+        line-height: 82px;
+        text-transform: uppercase;
+        margin-bottom: 32px;
+        position: relative;
+        top: 100px;
+        @include transition(all, .6s);
+        opacity: 0;
+    }
+
+    p {
+        font-size: 18px;
+        color: $white-color;
+        margin-bottom: 45px;
+        position: relative;
+        top: 100px;
+        @include transition(all, .9s);
+        opacity: 0;
+    }
+
+    .primary-btn {
+        position: relative;
+        top: 100px;
+        @include transition(all, 1.2s);
+        opacity: 0;
+    }
+}
