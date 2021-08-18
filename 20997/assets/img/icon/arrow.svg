@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="arrow" transform="translate(-820 -684)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(820 684)" fill="#fff" stroke="#dbe2e9" stroke-width="1">
+      <circle cx="23.5" cy="23.5" r="23.5" stroke="none"/>
+      <circle cx="23.5" cy="23.5" r="23" fill="none"/>
+    </g>
+    <text id="_" data-name="" transform="translate(839 715)" fill="#023c5a" font-size="20" font-family="FontAwesome5Free-Solid, 'Font Awesome 5 Free'"><tspan x="0" y="0"></tspan></text>
+  </g>
+</svg>

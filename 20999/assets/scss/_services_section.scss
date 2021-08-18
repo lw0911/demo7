@@ -1,0 +1,138 @@
+.services-section{
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        .cat-img{
+            overflow: hidden;
+            border-radius: 5px 5px 0px 0px;
+            img{
+                width: 100%;
+                transform: scale(1);
+                @include transition(.4s);
+                
+            }
+        }
+        .cat-cap{
+            border-radius: 0px 0px 5px 5px;
+            padding: 30px 20px 30px 23px;
+            box-shadow: 0 10px 15px rgba(0, 9, 94,.06);
+            @include transition(.3s);
+            .pricing{
+                h3{
+                   a{
+                    color:$heading-color;
+                    font-family: $font_1;
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    display: block;
+                    text-transform: capitalize;
+                    @media #{$md}{
+                        font-size: 15px;
+                    }
+                    &:hover{
+                        color: $heading-color;
+                    }
+                   }
+                }
+                .price{
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: $theme-color;
+                    line-height: 1;
+                }
+            }
+            p{
+                color: $heading-color;
+                font-size: 14px;
+                font-weight: 500;
+                margin: 0;
+                padding: 0;
+                line-height: 1.4;
+                a{
+                    color: #7EA0FF;
+                    background: rgba(126,160,255,0.05);
+                    font-size: 14px;
+                    display: inline-block;
+                    font-weight: 500;
+                    line-height: 1;
+                    margin: 0;
+                    padding: 9px 15px;
+                    border-radius: 19px;
+                    margin-right: 13px;
+                    @media #{$md}{
+                        font-size: 13px;
+                        padding: 6px 9px;
+                    }
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-img{
+                img{
+                    transform: scale(1.05);
+                }
+            }
+       }
+    }
+}
+
+
+// Arrow Style
+.services-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(32, 69, 112,.3);
+                @include transition(.2s);
+                &:hover{
+                    color: $heading-color;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+               left: -15px;
+            }
+            @media #{$lg}{
+               left: -15px;
+            }
+            @media #{$md}{
+               left: -15px;
+            }
+            @media #{$sm}{
+               left: -15px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -15px;
+             }
+            @media #{$lg}{
+                right: -15px;
+            }
+            @media #{$md}{
+                right: -15px;
+            }
+            @media #{$sm}{
+                right: -15px;
+            }
+        }
+    }
+}

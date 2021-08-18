@@ -1,0 +1,347 @@
+/*---------------------
+  Blog Details
+-----------------------*/
+.blog-details {
+    padding-bottom: 30px;
+}
+
+.blog__details__hero {
+    
+    img {
+        min-width: 100%;
+    }
+}
+
+.blog__details__content {
+    padding: 70px;
+    margin-left: -70px;
+    margin-right: -70px;
+    background: $white-color;
+    margin-top: -70px;
+    position: relative;
+    z-index: 9;
+}
+
+.blog__details__title {
+    margin-bottom: 30px;
+
+    img {
+        min-width: 100%;
+    }
+
+    .label {
+        color: $primary-color;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+        color: $heading-color;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 52px;
+        text-transform: uppercase;
+    }
+
+    ul {
+        margin-bottom: 30px;
+
+        li {
+            font-size: 14px;
+            color: #888888;
+            font-weight: 300;
+            font-style: italic;
+            list-style: none;
+            display: inline-block;
+            margin-right: 25px;
+            position: relative;
+
+            span {
+                color: $heading-color;
+            }
+
+            &:after {
+                position: absolute;
+                right: -19px;
+                top: 0;
+                content: "|";
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    p {
+        color: $heading-color;
+        font-weight: 300;
+        margin-bottom: 22px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.blog__details__pic {
+    margin-bottom: 35px;
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.blog__details__desc {
+    margin-bottom: 30px;
+
+    p {
+        color: $heading-color;
+        font-weight: 300;
+        margin-bottom: 22px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.blog__details__item {
+    overflow: hidden;
+    margin-right: -10px;
+    margin-bottom: 25px;
+}
+
+.blog__details__item__pic {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.blog__details__widget {
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 50px;
+}
+
+.blog__details__tag {
+    margin-bottom: 15px;
+
+    span {
+        font-size: 16px;
+        color: $heading-color;
+        font-weight: 300;
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    a {
+        font-size: 16px;
+        color: #888888;
+        font-weight: 300;
+        display: inline-block;
+        margin-right: 16px;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background: #888888;
+            content: "";
+            opacity: .5;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.blog__details__share {
+    text-align: right;
+    margin-bottom: 15px;
+
+    span {
+        font-size: 16px;
+        color: $heading-color;
+        font-weight: 300;
+        display: inline-block;
+        margin-right: 15px;
+    }
+    
+    a {
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.facebook {
+            color: #0043a1;
+        }
+
+        &.twitter {
+            color: #23c4ff;
+        }
+
+        &.instagram {
+            color: #cc307e;
+        }
+
+        &.youtube {
+            color: #ff000f;
+        }
+    }
+}
+
+.blog__details__comment__title {
+    margin-bottom: 35px;
+
+    h4 {
+        color: $heading-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        margin-right: 35px;
+
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background: $heading-color;
+            content: "";
+        }
+    }
+
+    a {
+        font-size: 24px;
+        color: #888888;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+.blog__details__comment__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.blog__details__comment__item--reply {
+        padding-left: 105px;
+    }
+}
+
+.blog__details__comment__item__pic {
+    float: left;
+    margin-right: 25px;
+
+    img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+    }
+}
+
+.blog__details__comment__item__text {
+    overflow: hidden;
+    position: relative;
+
+    ul {
+        margin-bottom: 12px;
+
+        li {
+            list-style: none;
+            font-size: 14px;
+            color: #888888;
+            font-weight: 300;
+            display: inline-block;
+            margin-right: 25px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                right: -17px;
+                top: -2px;
+                content: "|";
+                color: #eaeaea;
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            span {
+                font-size: 18px;
+                color: $heading-color;
+                font-weight: 600;
+                font-family: 'Rajdhani', sans-serif;
+                display: block;
+                line-height: 21px;
+            }
+        }
+    }
+
+    p {
+        color: $black-color;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    .comment__btns {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        a {
+            font-size: 14px;
+            color: #888888;
+            font-weight: 300;
+            display: inline-block;
+            margin-right: 25px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                right: -17px;
+                top: -2px;
+                content: "|";
+                color: #eaeaea;
+            }
+
+            &:last-child {
+                margin-right: 0;
+
+                &:after {
+                    display: none;
+                }
+            } 
+        }
+    }
+}

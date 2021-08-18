@@ -1,0 +1,361 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+    padding-bottom: 70px;
+}
+
+.about__pic {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.about__pic__item {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    float: left;
+
+    img {
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.about__text {
+    margin-bottom: 30px;
+}
+
+.about__title {
+
+    span {
+        color: $primary-color;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        color: $heading-color;
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 54px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-weight: 300;
+        margin-bottom: 25px;
+    }
+}
+
+.about__counter {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.about__counter__item {
+    width: 33.33%;
+    float: left;
+    margin-bottom: 25px;
+
+    h2 {
+        color: $heading-color;
+        font-size: 42px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    strong {
+        color: $heading-color;
+        font-size: 42px;
+        font-weight: 600;
+        font-family: 'Rajdhani', sans-serif;
+        display: inline-block;
+        line-height: 36px;
+        margin-bottom: 5px;
+    }
+
+    span {
+        color: #444444;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+/*---------------------
+  About Page
+-----------------------*/
+.about-page {
+    padding-bottom: 150px;
+}
+
+.about__history {
+
+    .nav-tabs {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .nav {
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 45px;
+    }
+
+    .nav-item {
+        margin-right: 95px;
+        display: inline-block;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .nav-link {
+            font-size: 30px;
+            font-weight: 600;
+            color: #b7b7b7;
+            font-family: 'Rajdhani', sans-serif;
+            border: none;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            padding: 0;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -4.5px;
+                height: 10px;
+                width: 10px;
+                background: #b7b7b7;
+                content: "";
+                border-radius: 50%;
+                margin: 0 auto;
+            }
+
+            &.active {
+                background: transparent;
+                color: $heading-color;
+
+                &:after {
+                    background: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.about__content__history__text {
+    background: $white-color;
+    text-align: center;
+    padding: 60px 50px;
+    margin-bottom: -50px;
+    margin-top: 50px;
+    box-shadow: 3px 0 30px rgba(202, 202, 202, 0.3);
+
+    h4 {
+        color: $heading-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    p {
+        color: $heading-color;
+        font-weight: 300;
+        margin-bottom: 28px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/*---------------------
+  Counter
+-----------------------*/
+.about-counter {
+    background: #faf5f0;
+    overflow: hidden;
+    padding-bottom: 70px;
+}
+
+.counter__item {
+    width: 20%;
+    float: left;
+    text-align: center;
+    margin-bottom: 30px;
+  
+    &:hover {
+  
+      .counter__icon {
+        background-image: url(../img/shape/shape-7.png) !important;
+  
+        span {
+          color: $white-color;
+        }
+      }
+    }
+
+    h2 {
+        color: $heading-color;
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    p {
+        color: $heading-color;
+        margin-bottom: 0;
+        font-weight: 300;
+    }
+  }
+  
+  .counter__icon {
+    height: 130px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px!important;
+    margin: 0 auto;
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 60px;
+    }
+  
+    span {
+      color: $primary-color;
+    }
+  }
+
+/*---------------------
+  Skill
+-----------------------*/
+.skill {
+    padding-bottom: 60px;
+}
+
+.skill__content {
+    margin-bottom: 40px;
+}
+
+.skill__bar__item {
+    margin-bottom: 26px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    p {
+        color: $heading-color;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+    .barfiller {
+        height: 7px;
+        border: none;
+        background: #e1e1e1;
+        box-shadow: inherit;
+        margin-bottom: 0;
+    }
+
+    .tip {
+        padding: 0;
+        font-size: 16px;
+        color: #111111;
+        background: transparent;
+        font-weight: 600;
+        margin-top: -38px;
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.skill__video {
+    margin-bottom: 40px;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.play-btn {
+    height: 60px;
+    width: 60px;
+    background: $white-color;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: $primary-color;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+
+    i {
+        color: $primary-color;
+        position: relative;
+        left: 2px;
+        top: 2px;
+    }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+    background: #faf5f0;
+    padding-bottom: 70px;
+}
+
+.team__item {
+    text-align: center;
+    margin-bottom: 30px;
+
+    img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    h4 {
+        color: $heading-color;
+        font-weight: 700;
+        margin-top: 28px;
+        margin-bottom: 14px;
+    }
+
+    p {
+        color: $heading-color;
+        font-weight: 300;
+    }
+
+    .team__social {
+
+        a {
+            display: inline-block;
+            color: $heading-color;
+            margin-right: 16px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

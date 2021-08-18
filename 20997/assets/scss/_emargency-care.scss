@@ -1,0 +1,91 @@
+.emargency-care{
+    padding: 100px 0;
+    @media #{$sm}{
+        padding: 50px 0;
+    }
+    @media #{$xs}{
+        padding: 50px 0;
+    }
+    .single-emargency{
+        padding: 60px 35px 60px 60px;
+        background-color: #fff;
+        margin-left: 167px;
+        border-radius: 20px;
+        @media #{$large1}{
+            margin-left: 0px;
+        }
+        @media #{$large2}{
+            margin-left: 80px;
+        }
+        @media #{$lg}{
+            margin-left: 20px;
+            padding: 30px 35px 30px 30px;
+        }
+        @media #{$md}{
+            margin-left: 20px;
+            padding: 30px 35px 30px 30px;
+        }
+        @media #{$sm}{
+            margin-left: 20px;
+            padding: 30px 35px 30px 30px;
+        }
+        @media #{$xs}{
+            margin-left: 0px;
+            padding: 30px 35px 30px 30px;
+        }
+        .cat-icon{
+            margin-bottom: 25px;
+        }
+
+        .emargency-cap{
+            h5{
+             & > a{
+                font-size: 36px;
+                font-weight: 500;
+                color: $heading-color;
+                text-transform: capitalize;
+                margin-bottom: 17px;
+                display: block;
+                @include transition(.2s);
+                @media #{$large1}{
+                    font-size: 33px;
+                }
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$md}{
+                    font-size: 20px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+                &:hover{
+                    color: $theme-color;
+                }
+              }
+            }
+           ul{
+               margin-bottom: 40px;
+               @media #{$sm}{
+                     margin-bottom: 30px;
+               }
+               @media #{$xs}{
+                     margin-bottom: 30px;
+               }
+                li{
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                } 
+           }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-cap{
+                h5{
+                    color: #000;
+                }
+    
+            }
+       }
+    }
+}

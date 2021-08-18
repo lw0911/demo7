@@ -1,0 +1,96 @@
+/*---------------------
+  Services
+-----------------------*/
+.services-page {
+    padding-bottom: 60px;
+}
+
+.services__title {
+    text-align: center;
+    margin-bottom: 36px;
+
+    p {
+        color: $heading-color;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
+}
+
+.services__page__item {
+    box-shadow: 3px 0 30px rgba(202, 202, 202, 0.2);
+    margin-bottom: 30px;
+
+    &.services__page__item--little {
+
+        .services__page__item__text {
+            padding: 28px 30px 30px;
+
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    img {
+        min-width: 100%;
+    }
+
+    .services__page__item__text {
+        padding: 28px 40px 35px;
+
+        h3 {
+            color: $heading-color;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+    
+        p {
+            color: $heading-color;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+    
+        a {
+            font-size: 16px;
+            color: $heading-color;
+            position: relative;
+    
+            &:after {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 1px;
+                width: 100%;
+                background: $heading-color;
+                content: "";
+            }
+        }
+    }
+}
+
+/*---------------------
+  Services Call To
+-----------------------*/
+.callto-services {
+    padding-top: 0;
+}
+
+.callto__services__content {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  
+  .callto__services__text {
+    text-align: center;
+  
+    h2 {
+      font-size: 50px;
+      color: $white-color;
+      font-weight: 600;
+      line-height: 65px;
+      margin-bottom: 24px;
+    }
+  }

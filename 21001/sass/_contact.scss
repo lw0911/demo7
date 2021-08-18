@@ -1,0 +1,58 @@
+/*---------------------
+  Contact
+-----------------------*/
+.contact__form {
+  text-align: center;
+
+  h2 {
+    font-size: 40px;
+    color: $heading-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  form {
+
+    input {
+      width: 100%;
+      height: 46px;
+      font-size: 14px;
+      color: $heading-color;
+      font-weight: 300;
+      padding-left: 20px;
+      border: 1px solid #e1e1e1;
+      background: $white-color;
+      margin-bottom: 20px;
+
+      &::placeholder {
+        color: $heading-color;
+        font-weight: 300;
+      }
+    }
+
+    textarea {
+      width: 100%;
+      height: 110px;
+      font-size: 14px;
+      color: $heading-color;
+      font-weight: 300;
+      padding-left: 20px;
+      border: 1px solid #e1e1e1;
+      background: $white-color;
+      margin-bottom: 14px;
+      padding-top: 12px;
+      resize: none;
+
+      &::placeholder {
+        color: $heading-color;
+        font-weight: 300;
+      }
+    }
+
+    .site-btn {
+      background: $heading-color;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.services-wrapper{
+
+    .services-area{
+        .single-blogs{
+            background: #fff;
+            padding: 70px 40px 70px 40px;
+            @include transition(.4s);
+            .blog-img{
+                text-align: center;
+                img{
+                    margin-bottom: 25px;
+                }
+                .blog-btn{
+                    color:$white;
+                    text-transform: capitalize;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: $theme-color;
+                    padding: 25px 17px;
+                    font-size: 16px !important;
+                    width: 123px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    text-align: center;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+            .blogs-cap{
+                span{
+                    color: #74706B;
+                    margin-bottom: 11px;
+                    display: block;
+                }
+                h5{
+                    a{
+                        color: $heading-color;
+                        font-size: 22px;
+                        line-height: 1.4;
+                        margin-bottom: 12px;
+                        font-weight: 500;
+                        display: block;
+                        @media #{$sm}{
+                            font-size: 20px;
+                        }
+                        
+                        &:hover{
+                            color: $heading-color;
+                        }
+                    }
+                    
+                }
+                p{
+                    color: #4C526E;
+                    margin-bottom: 24px;
+                    font-size: 18px;
+                }
+            }
+            &:hover{
+                background: #F8F8F8;
+                .blog-img{
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                .blogs-cap{
+                    .red-btn2{
+                        i{
+                            background: $theme-color;
+                            border: 1px solid transparent;
+                            color: #fff; 
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

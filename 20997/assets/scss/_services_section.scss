@@ -1,0 +1,135 @@
+.services-area{
+    .single-services{
+        .services-img {
+            position: relative;
+            img {
+                width: 100%;
+            }
+        }
+        .services-caption {
+            
+            @include transition(.4s);
+            position: absolute;
+            bottom: -65px;
+
+            background: #fff;
+            width: 80%;
+            padding-top: 34px;
+            padding-bottom: 25px;
+            padding-left: 29px;
+            padding-right: 15px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            overflow: hidden;
+            -webkit-box-shadow: 0 10px 20px rgba(2, 60, 90,.1);
+            border-radius: 10px;
+            @media #{$lg}{
+                width: 90%;
+            }
+            @media #{$md}{
+                padding-left: 15px;
+                width: 90%;
+            }
+            @media #{$sm}{
+                width: 90%;
+            }
+            @media #{$xs}{
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            h3 {
+                margin-bottom: 20px;
+                line-height: 13px;
+                font-family: $font_1;
+                a{
+                    color:$heading-color;
+                    font-size: 26px;
+                    font-size: 22px;
+                    margin-bottom: 14px;
+                    display: block;
+                    @media #{$md}{
+                        font-size: 18px;
+                        margin-bottom: 6px;
+                    }
+                    @media #{$md}{
+                        font-size: 18px;
+                        margin-bottom: 6px;
+                    }
+                    @media #{$sm}{
+                        font-size: 18px;
+                        margin-bottom: 6px;
+                    }
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+            p{
+                color: #023C5A;
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                line-height: 1.4;
+            }
+        }
+
+    }
+} 
+
+
+
+// Arrow
+.services-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(32, 69, 112,.3);
+                @include transition(.2s);
+                &:hover{
+                    color: $heading-color;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+               left: -10px;
+            }
+            @media #{$lg}{
+               left: -10px;
+            }
+            @media #{$md}{
+               left: -10px;
+            }
+            @media #{$sm}{
+               left: -10px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -10px;
+             }
+            @media #{$lg}{
+                right: -10px;
+            }
+            @media #{$md}{
+                right: -10px;
+            }
+            @media #{$sm}{
+                right: -10px;
+            }
+        }
+    }
+}

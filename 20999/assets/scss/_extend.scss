@@ -1,0 +1,46 @@
+
+%overlay1{
+	background-image: -moz-linear-gradient( 170deg, rgba(34,34,34,0) 0%, rgb(0,0,0) 100%);
+	background-image: -webkit-linear-gradient( 170deg, rgba(34,34,34,0) 0%, rgb(0,0,0) 100%);
+	background-image: -ms-linear-gradient( 170deg, rgba(34,34,34,0) 0%, rgb(0,0,0) 100%);
+  }
+
+%btn_gradient{
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#00095e+0,0c0c1f+100 */
+  background: rgb(0,9,94); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(0,9,94,1) 0%, rgba(12,12,31,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(0,9,94,1) 0%,rgba(12,12,31,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(0,9,94,1) 0%,rgba(12,12,31,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00095e', endColorstr='#0c0c1f',GradientType=0 ); /* IE6-9 */
+
+}
+  
+%gallery{
+  background-image: -moz-linear-gradient( 90deg, rgb(1,10,39) 0%, rgb(1,10,39) 0%, rgba(6,31,120,0.3) 70%, rgba(11,52,201,0.01) 100%, rgb(11,52,201) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(1,10,39) 0%, rgb(1,10,39) 0%, rgba(6,31,120,0.3) 70%, rgba(11,52,201,0.01) 100%, rgb(11,52,201) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(1,10,39) 0%, rgb(1,10,39) 0%, rgba(6,31,120,0.3) 70%, rgba(11,52,201,0.01) 100%, rgb(11,52,201) 100%);
+
+}
+
+%footer-bg{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1a2d6d+0,0c1534+100 */
+  background: rgb(26,45,109); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(26,45,109,1) 0%, rgba(12,21,52,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(26,45,109,1) 0%,rgba(12,21,52,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(26,45,109,1) 0%,rgba(12,21,52,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a2d6d', endColorstr='#0c1534',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+
+
+
+// &::before{
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   bottom: 0;
+//   content: "";
+//   @extend %footer-bg;
+
+// }

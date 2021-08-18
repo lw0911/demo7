@@ -1,0 +1,122 @@
+.pricing-card-area{
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        background: #FF9100;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 53%;
+        width: 100%;
+        @media #{$md}{
+            height: 34%;
+        }
+        @media #{$sm}{
+            height: 22%;
+        }
+        @media #{$xs}{
+            height: 26%;
+        }
+    }
+    .single-card{
+        &.active{
+            box-shadow: 0px 15px 25px rgba(168,96,0,0.1);
+        }
+        background: #fff;
+        padding: 35px 40px;
+        // -webkit-box-shadow: 0 8px 26px rgba(67,40,124,0.08);
+        @media #{$lg}{
+            padding: 35px 25px;
+        }
+        @include transition(.4s);
+        .card-top{
+            span{
+                padding: 4px 18px;
+                border: 1px solid $heading-color;
+                margin-bottom: 23px;
+                display: inline-block;
+                border-radius: 20px;
+                font-weight: 600;
+            }
+        }
+        .card-mid{
+            margin-bottom: 25px;
+            padding-bottom: 26px;
+            border-bottom: 1px solid #E7E6EB;
+            h4{
+                color: $theme-color;
+                margin-bottom: 20px;
+                font-size: 40px;
+                font-weight: 700;
+                position: relative;
+                display: inline-block;
+                span{
+                    color: $theme-color;
+                    font-size: 17px;
+                    position: absolute;
+                    top: 0;
+                    left: -17px;
+                }
+            }
+        }
+        .card-bottom{
+            ul{
+                li{
+                    color:#7977A2;
+                    font-weight: 300;
+                    margin-bottom: 23px;
+                    font-size: 17px;
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+            .btn{
+               
+                // color: $theme-color;
+                // padding: 10px 64px;
+                // background: none;
+                // border: 1px solid $theme-color;
+                // display: inline-block;
+                // color: $theme-color;
+                // border-radius: 30px;
+                // text-transform: uppercase;
+                
+                // &:hover{
+                //     @extend %btn-bgs;
+                // }
+            }
+        }
+
+        // Hover
+        &:hover{
+            box-shadow: 0px 15px 25px rgba(168,96,0,0.1);
+            .card-mid{
+                span{
+                }
+                h4{
+                }
+            }
+            .card-bottom{
+                ul{
+                    li{
+                    }
+                }
+                // .btn{
+                //     @extend %btn-bgs;
+                //     color: #fff !important;
+                // }
+            }
+
+        }
+    }
+}
+
+.work-company{
+    .single-logo img {
+        @media #{$lg}{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+/*---------------------
+  Breadcrumb
+-----------------------*/
+.breadcrumb-option {
+    padding: 60px 0;
+}
+
+.breadcrumb__text {
+    text-align: center;
+
+    h2 {
+        font-size: 46px;
+        font-weight: 600;
+        color: $white-color;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+}
+
+.breadcrumb__links {
+
+    a {
+        font-size: 16px;
+        color: $white-color;
+        font-weight: 300;
+        margin-right: 30px;
+        display: inline-block;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            right: -20px;
+            top: 0;
+            content: '|';
+        }
+    }
+
+    span {
+        font-size: 16px;
+        color: $white-color;
+        font-weight: 300;
+        display: inline-block;
+    }
+}
+
+/*---------------------
+  Breadcrumb Blog
+-----------------------*/
+.breadcrumb-blog {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+
+    h2 {
+        color: $white-color;
+        font-size: 60px;
+        font-weight: 700;
+    }
+}

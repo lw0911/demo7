@@ -1,0 +1,166 @@
+.testimonial-area{
+    position: relative;
+    .testimonial-caption{
+        padding-left: 80px;
+        @media #{$md}{
+            padding-left: 0px;
+        }
+        @media #{$sm}{
+            padding-left: 0px;
+        }
+        @media #{$xs}{
+            padding-left: 0px;
+        }
+        .testimonial-top-cap{
+            img{
+                margin-bottom: 30px;
+                width: auto;
+                display: inline-block;
+            }
+            h2{
+                font-size: 50px;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 40px;
+                @media #{$md}{
+                    font-size: 50px;
+                    margin-bottom: 30px
+                }
+                @media #{$sm}{
+                    font-size: 42px;
+                    margin-bottom: 30px
+                }
+                @media #{$xs}{
+                    font-size: 29px;
+                    margin-bottom: 20px;
+                }
+            }
+            p{
+                line-height: 1.5;
+                padding: 0 50px;
+                margin-bottom: 32px;
+                font-size: 26px;
+                color:#fff;
+                font-weight: 400;
+                @media #{$lg}{
+                    font-size: 20px;
+                }
+                @media #{$md}{
+                    font-size: 20px;
+                    padding: 0px;
+                }
+                @media #{$md}{
+                    font-size: 18px;
+                    padding: 0px;
+                    margin-bottom: 40px;
+                }
+                @media #{$sm}{
+                    font-size: 18px;
+                    padding: 0px;
+                    margin-bottom: 30px;
+                }
+                @media #{$xs}{
+                    font-size: 15px;
+                    padding: 0px;
+                    margin-bottom: 30px;
+                }
+
+            }
+        }
+        .testimonial-founder{
+            .founder-img{
+
+            }
+            .founder-text{
+                margin-left: 20px;
+                text-align: left;
+                span{
+                    font-family: $font_2;
+                    color:#fff;
+                    font-size:18px;
+                    font-weight: 600;
+                    text-align: left;
+                    @media #{$xs}{
+                        font-size: 26px;
+                    }
+                }
+                p{
+                    color: #fff;
+                    font-weight:500;
+                    line-height:1.5 ;
+                }
+            }
+        }
+    }
+    .testimonial-banner{
+        position: relative;
+        right: -55px;
+        @media #{$large1}{
+            left: 0px;
+        }
+        @media #{$lg}{
+            left: 0px;
+        }
+        @media #{$md}{
+            left: 0px;
+        }
+        @media #{$sm}{
+            left: 0px;
+        }
+        @media #{$xs}{
+            left: 0px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    // Shape
+    .testimonial-shape{
+        position: absolute;
+        left: 0em;
+        top: 31%;
+    }
+}
+
+/* Homepage1 Testimonial */
+.h1-testimonial-active{
+    button.slick-arrow {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        transform: translateY(-50%);
+        border: 0;
+        padding: 0;
+        width:35px;
+        height:35px;
+        border-radius: 50%;
+        line-height:40px;
+        cursor: pointer;
+        background:#fff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0,.05);
+        @include transition(.3s);
+        z-index: 2;
+        i{
+            color: #423F8D;
+        }
+        @media #{$sm}{
+            left: -28px;
+        }
+         @media #{$sm}{
+            left: -28px;
+        }
+    } 
+   button.slick-next {
+        left: auto;
+        right: 0px;
+        @media #{$sm}{
+            right: -28px;
+        }
+    }
+
+
+}
+
+.slick-initialized .slick-slide {
+    outline: 0;
+}
