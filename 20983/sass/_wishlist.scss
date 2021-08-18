@@ -1,0 +1,139 @@
+/*---------------------
+  Wishlist
+-----------------------*/
+.wishlist__table {
+    
+    table {
+        width: 100%;
+    }
+
+    thead {
+        border-bottom: 1px solid #f2f2f2;
+        
+        tr {
+            
+            th {
+                font-size: 22px;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 600;
+                color: $heading-color-2;
+                text-transform: uppercase;
+                padding-bottom: 25px;
+            }
+        }
+    }
+
+    tbody {
+
+        tr {
+            border-bottom: 1px solid #f2f2f2;
+
+            td {
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                &.wishlist__item {
+                    width: 745px;
+
+                    .wishlist__item__pic {
+                        float: left;
+                        margin-right: 20px;
+                        
+                        img {
+                            border: 1px solid #e8eff4;
+                        }
+                    }
+
+                    .wishlist__item__text {
+                        overflow: hidden;
+                        padding-top: 20px;
+
+                        h6 {
+                            font-size: 15px;
+                            font-family: 'Open Sans', sans-serif;
+                            color: #888888;
+                            margin-bottom: 6px;
+                        }
+
+                        span {
+                            color: $heading-color;
+                            font-size: 18px;
+                            font-family: 'Rajdhani', sans-serif;
+                            font-weight: 600;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wishlist__quantity {
+    width: 215px;
+
+    .quantity {
+
+        .pro-qty {
+            width: 90px;
+            height: 46px;
+
+            input {
+                font-size: 18px;
+                font-family: 'Rajdhani', sans-serif;
+                font-weight: 600;
+                color: $heading-color;
+                float: left;
+                text-align: center;
+                border: none;
+                background: transparent;
+                width: 56px;
+                height: 48px;
+            }
+
+            .qtybtn {
+                font-size: 16px;
+                color: #888888;
+                float: left;
+                height: 100%;
+                line-height: 46px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.wishlist__price {
+    color: $heading-color;
+    font-size: 18px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    width: 215px;
+}
+
+.wishlist__cart {
+    width: 200px;
+
+    .primary-btn {
+        border: 1px solid $primary-color;
+        color: $heading-color;
+        background: transparent;
+    }
+}
+
+.wishlist__close {
+    text-align: right;
+    
+    span {
+        font-size: 18px;
+        color: $heading-color;
+        cursor: pointer;
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        background: #f2f2f2;
+        display: inline-block;
+        border-radius: 50%;
+    }
+}

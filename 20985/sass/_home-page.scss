@@ -1,0 +1,352 @@
+/*---------------------
+  Services
+-----------------------*/
+.services {
+  padding-top: 150px;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 825px;
+    width: 100%;
+    background: url(../img/services/services-bg.png);
+    content: "";
+    z-index: -1;
+  }
+
+  .container {
+    border-bottom: 1px solid #ede5e5;
+    padding-bottom: 70px;
+  }
+}
+
+.services__item {
+  margin-bottom: 30px;
+
+  &.services__item__top {
+
+    &:hover {
+
+      .services__item__text {
+        top: 30px;
+      }
+    }
+  }
+
+  &:hover {
+
+    .services__item__text {
+      top: -30px;
+      box-shadow: 0px 5px 25px rgba(83, 116, 131, 0.16);
+      background: $white-color;
+    }
+  }
+}
+
+.services__item__pic {
+
+  img {
+    min-width: 100%;
+  }
+}
+
+.services__item__text {
+  padding: 30px 30px;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: calc(100% - 30px);
+  @include transition(all, .3s);
+
+  h5 {
+    font-size: 20px;
+    font-weight: 500;
+    color: $heading-color;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  span {
+    color: $primary-color;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+/*---------------------
+  Testimonial
+-----------------------*/
+.testimonial {
+  
+}
+
+.testimonial__item__icon {
+  position: absolute;
+  left: 0;
+  top: -42px;
+  z-index: -1;
+}
+
+.testimonial__author {
+  overflow: hidden;
+  margin-bottom: 35px;
+}
+
+.testimonial__item {
+  padding-left: 345px;
+  position: relative;
+  z-index: 1;
+
+  p {
+    font-size: 15px;
+    color: $heading-color;
+    font-weight: 500;
+    line-height: 40px;
+    margin-bottom: 0;
+  }
+}
+
+.testimonial__author__pic {
+  float: left;
+  margin-right: 25px;
+
+  img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+}
+
+.testimonial__author__text {
+  overflow: hidden;
+  padding-top: 10px;
+
+  h5 {
+    color: $heading-color;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  span {
+    color: $primary-color;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+  }
+}
+
+.testimonial__slider {
+
+  &.owl-carousel {
+
+    .owl-stage-outer {
+      padding-top: 42px;
+      padding-bottom: 63px;
+    }
+
+    .owl-dots {
+      position: absolute;
+      right: 3px;
+      top: 50px;
+
+      button {
+        height: 15px;
+        width: 15px;
+        background: #fadde6;
+        border-radius: 50%;
+        margin-right: 15px;
+        position: relative;
+
+        &:after {
+          position: absolute;
+          left: -2.5px;
+          top: -2.5px;
+          height: 20px;
+          width: 20px;
+          border: 3px solid $primary-color;
+          content: "";
+          border-radius: 50%;
+          opacity: 0;
+        }
+
+        &.active {
+          background: transparent;
+
+          &:after {
+            opacity: 1;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------
+  Work
+-----------------------*/
+.work {
+  overflow: hidden;
+
+  .container-fluid {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+.work__item {
+  height: 305px;
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: -5px;
+  margin-right: -5px;
+  overflow: hidden;
+
+  &:hover {
+
+    .work__item__text {
+      bottom: 0;
+    }
+  }
+
+  &.large__item {
+    height: 630px;
+  }
+}
+
+.work__item__text {
+  background: $primary-color;
+  padding: 20px 20px 16px 30px;
+  position: absolute;
+  left: 0;
+  bottom: -500px;
+  width: 100%;
+  @include transition(all, .5s);
+
+  span {
+    color: $white-color;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  h6 {
+    color: $white-color;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+}
+
+/*---------------------
+  Beauty Products
+-----------------------*/
+.beauty-products {
+  background: #f8f2f2;
+}
+
+/*---------------------
+  Call To Action
+-----------------------*/
+.callto {
+  overflow: hidden;
+}
+
+.callto__left {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.callto__left__text {
+
+  span {
+    font-size: 30px;
+    color: $primary-color;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 300px;
+    color: $white-color;
+    font-family: 'Mattings Regular';
+    line-height: 165px;
+  }
+}
+
+.callto__form {
+  height: 550px;
+  padding: 90px 100px 65px;
+
+  h3 {
+    color: $white-color;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  input {
+    background: $white-color;
+    height: 46px;
+    width: 100%;
+    font-size: 16px;
+    color: #888888;
+    padding-left: 20px;
+    border: none;
+    margin-bottom: 30px;
+
+    &::placeholder {
+      color: #888888;
+    }
+  }
+
+  .nice-select {
+    height: 46px;
+    line-height: 46px;
+    border-radius: 0;
+    float: none;
+    margin-bottom: 30px;
+    padding-left: 20px;
+
+    .list {
+      margin-top: 0;
+      width: 100%;
+      border-radius: 0;
+    }
+
+    span {
+      font-size: 16px;
+      color: #888888;
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  textarea{
+    background: $white-color;
+    height: 100px;
+    width: 100%;
+    font-size: 16px;
+    color: #888888;
+    padding-left: 20px;
+    border: none;
+    padding-top: 12px;
+    margin-bottom: 24px;
+
+    &::placeholder {
+      color: #888888;
+    }
+  }
+}

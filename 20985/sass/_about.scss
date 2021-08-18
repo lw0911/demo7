@@ -1,0 +1,228 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &:after {
+        position: absolute;
+        left: 0;
+        top: -150px;
+        right: 0;
+        width: 1105px;
+        height: 1070px;
+        background: url(../img/about/about-bg.png);
+        content: "";
+        margin: 0 auto;
+    }
+}
+
+.about__text {
+
+    .section-title {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 200px;
+
+            &::before {
+                position: absolute;
+                left: -48px;
+                top: 20px;
+                height: 117px;
+                width: 163px;
+                background: url(../img/icon/s-bg.png);
+                content: "";
+                z-index: -1;
+            }
+        }
+    }
+
+    p {
+        color: $heading-color;
+        line-height: 30px;
+        margin-bottom: 65px;
+    }
+}
+
+.about__pic {
+
+    img {
+        min-width: 100%;
+    }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+    background: #f8f2f2;
+}
+
+.team__item {
+
+    &:hover {
+
+        &.team__item__top {
+
+            .team__item__text {
+                margin-top: auto;
+                margin-bottom: -130px;
+            }
+        }
+
+        .team__item__text {
+            background: $white-color;
+            box-shadow: 0px 5px 25px rgba(83, 116, 131, 0.16);
+            height: 210px;
+            position: relative;
+            left: 0;
+            top: 0;
+            margin-top: -130px;
+
+            span {
+                margin-bottom: 15px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            .team__item__social {}
+        }
+    }
+}
+
+.team__item__pic {
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.team__item__text {
+    padding: 30px 30px 25px;
+    @include transition(all, .5s);
+    height: 108px;
+    overflow: hidden;
+    width: calc(100% - 30px);
+
+    h5 {
+        color: $heading-color;
+        margin-bottom: 10px;
+    }
+
+    span {
+        font-size: 14px;
+        color: $primary-color;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: $heading-color;
+        line-height: 25px;
+    }
+}
+
+.team__item__social {
+
+    a {
+        font-size: 18px;
+        color: $heading-color-2;
+        display: inline-block;
+        margin-right: 22px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.team__slider {
+
+    &.owl-carousel {
+
+        .col-lg-3 {
+            max-width: 100%;
+        }
+
+        .owl-nav {
+
+            button {
+                font-size: 30px;
+                color: #888888;
+                position: absolute;
+                left: -25px;
+                top: 50%;
+                margin-top: -22px;
+
+                &.owl-next {
+                    left: auto;
+                    right: -25px;
+                }
+            }
+        }
+    }
+}
+
+/*---------------------
+  Newslatter
+-----------------------*/
+.newslatter {
+    padding-top: 34px;
+    padding-bottom: 40px;
+}
+
+.newslatter__text {
+
+    h2 {
+        color: $white-color;
+        font-size: 110px;
+        font-family: 'Mattings Regular';
+        line-height: 85px;
+        text-shadow: 2px 2px #000;
+    }
+}
+
+.newslatter__form {
+    margin-top: 17px;
+    
+    form {
+        position: relative;
+
+        input {
+            width: 100%;
+            height: 50px;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            color: $white-color;
+            padding-left: 40px;
+    
+            &::placeholder {
+                color: $white-color;
+            }
+        }
+    
+        button {
+            font-size: 15px;
+            color: $primary-color;
+            font-weight: 500;
+            background: $white-color;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 50px;
+            padding: 0 30px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,142 @@
+/*---------------------
+  Header
+-----------------------*/
+.header {
+    
+    &.header_shop {
+
+        .header__option__num {
+            color: $heading-color-2;
+        }
+    }
+}
+
+.header__logo {
+    padding: 34px 0;
+    
+    a {
+        display: inline-block;
+    }
+}
+
+.header__options__nav {
+    padding: 20px 0;
+    text-align: right;
+}
+
+.header__menu {
+    display: inline-block;
+    margin-right: 45px;
+
+    ul {
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 40px;
+            position: relative;
+
+            &.active {
+
+                a {
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:hover {
+
+                a {
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                .dropdown {
+                    top: 32px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .dropdown {
+                position: absolute;
+                left: 0;
+                top: 62px;
+                width: 150px;
+                background: $heading-color;
+                text-align: left;
+                padding: 5px 0;
+                z-index: 9;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(all, .3s);
+
+                li {
+                    display: block;
+                    margin-right: 0;
+
+                    a {
+                        font-size: 14px;
+                        color: $white-color;
+                        font-weight: 400;
+                        padding: 5px 20px;
+                        text-transform: capitalize;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 600;
+                font-family: 'Rajdhani', sans-serif;
+                color: #052336;
+                display: block;
+                padding: 4px 0;
+                text-transform: uppercase;
+                position: relative;
+                
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 100%;
+                    background: $primary-color;
+                    content: "";
+                    @include transition(all, .3s);
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+.header__option__num {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Rajdhani', sans-serif;
+    color: $white-color;
+    background: $primary-color;
+    padding: 10px 30px 8px;
+}
+
+.offcanvas-menu-wrapper {
+    display: none;
+}
+
+.canvas__open {
+    display: none;
+}

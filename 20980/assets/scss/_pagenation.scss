@@ -1,0 +1,34 @@
+
+// pagination_wrap 
+.pagination_wrap{
+    text-align: center;
+    margin-top: 20px;
+    ul{
+        li{
+            display: inline-block;
+            a{
+                width: 38px;
+                height: 38px;
+                border: 1px solid #EAEAEA;
+                @include border-radius(50%);
+                font-size: 16px;
+                text-align: center;
+                line-height: 38px;
+                display: inline-block;
+                color: #AAB1B7;
+                font-size: 14px;
+                margin: 0 4px;
+                i{
+                    line-height: 38px;
+                }
+                span{
+                    line-height: 38px;
+                }
+                &:hover{
+                    border-color: #00D363;
+                    color: #00D363;
+                }
+            }
+        }
+    }
+}

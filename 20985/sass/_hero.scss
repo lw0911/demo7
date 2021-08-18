@@ -1,0 +1,90 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+    overflow: hidden;
+}
+
+.hero__items {
+    height: 900px;
+}
+
+.hero__slider {
+
+    &.owl-carousel {
+
+        .owl-nav {
+
+            button {
+                font-size: 60px;
+                color: #888888;
+                height: 150px;
+                width: 150px;
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                position: absolute;
+                left: -75px;
+                top: 50%;
+                margin-top: -75px;
+
+                i {
+                    position: absolute;
+                    right: 35px;
+                    top: 45px;
+                }
+
+                &.owl-next {
+                    left: auto;
+                    right: -75px;
+
+                    i {
+                        left: 35px;
+                        right: auto;
+                        top: 46px;
+                    }
+                }
+            }
+        }
+
+        .owl-dots {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 26px;
+            text-align: center;
+
+            button {
+                height: 15px;
+                width: 15px;
+                background: rgba(255, 255, 255, 0.5);
+                border-radius: 50%;
+                margin-right: 10px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    left: -2.5px;
+                    top: -2.5px;
+                    height: 20px;
+                    width: 20px;
+                    border: 3px solid $white-color;
+                    content: "";
+                    border-radius: 50%;
+                    opacity: 0;
+                }
+
+                &.active {
+                    background: transparent;
+                    
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

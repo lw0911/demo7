@@ -1,0 +1,226 @@
+
+// About 02
+.about-area2{
+    // left content
+    .about-caption{
+        .pera-top {
+            font-size: 16px;
+            font-weight: 500;
+            color: #212025;
+            margin-bottom: 25px;
+        }
+        .pera-bottom {
+            font-size: 16px;
+            color: #212025;
+            font-weight: 300;
+		}
+    }
+    // Right img
+    .about-img{
+        img{
+            width: 100%;
+            box-shadow: 0px 20px 30px rgba(35, 47, 85,.1);
+            @media #{$md}{
+                margin-bottom: 50px;
+            }
+            @media #{$sm}{
+                margin-bottom: 50px;
+            }
+            @media #{$xs}{
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .about-img2 {
+        position: relative;
+    }
+}
+.about-caption{
+    @media #{$xs}{
+        margin-bottom: 35px;
+    }
+}
+
+// right mark
+.single-features {
+    @include flexbox();
+    .features-icon{
+        position: relative;
+        top: 8px;
+        img {
+            display: block;
+        }
+    }
+    .features-caption {
+        padding-left: 19px;
+        h3 {
+            font-size: 25px;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+        p {
+            color: #285D25;
+            font-size: 18px;
+        }
+    } 
+}
+
+
+// Right mark
+.single-offers{
+    padding-left: 113px;
+
+    @media #{$xs}{
+        padding-left: 0px;
+    }
+    .offers-cap{
+        position: relative;
+        img{
+            position: absolute;
+            top: 7px;
+            left: -110px;
+            text-align: center;
+            @media #{$xs}{
+                position: unset;
+                margin-bottom: 15px;
+            }
+        }
+        h3{
+            a{
+                color: $heading-color;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.5;
+                margin-bottom: 16px;
+                @include transition(.4s);
+                @media #{$sm}{
+                    font-size: 29px;
+                }
+                &:hover{
+                    color: $heading-color;
+                }
+            }
+        }
+        p{
+            color: #101A31;
+            margin-bottom: 30px;
+            font-size: 16px;
+
+            @media #{$md}{
+                font-size: 22px;
+            }
+            @media #{$sm}{
+                font-size: 22px;
+            }
+        }
+        a{
+            i{
+                transform: rotate(45deg);
+                display: inline-block;
+                color: #fff;
+                font-size: 27px;
+                font-weight: 600;
+                @include transition(.4s);
+                
+            }
+        }
+    }
+}
+.single-offers-img{
+    img{
+        width: 100%;
+        @media #{$xs}{
+            padding-top: 20px;
+        }
+    }
+}
+
+// Ratting point
+.ratting-point {
+    @include flexbox();
+    @include align-items(center);
+    @include flex-wrap(wrap);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0,0.06);
+    border-radius: 7px;
+    background: #fff;
+    padding: 25px 22px;
+    position: absolute;
+    bottom: 31%;
+    z-index: 1;
+    right: -26%;
+
+    @media #{$lg}{
+        padding: 18px 14px;
+        right: -12%;
+    }
+    @media #{$md}{
+        padding: 18px 14px;
+        bottom: 10%;
+        right: 0;
+        left: 0;
+        margin: 0 30px;
+    }
+    @media #{$sm}{
+        padding: 18px 14px;
+        bottom: 10%;
+        right: 0;
+        left: 0;
+        margin: 0 30px;
+    }
+    @media #{$xs}{
+        padding: 18px 14px;
+        bottom: 10%;
+        right: 0;
+        left: 0;
+        margin: 0 30px;
+    }
+    .features-icon{
+        position: relative;
+        top: 8px;
+        img {
+            display: block;
+        }
+    }
+    .features-ratting{
+        @media #{$xs}{
+            margin-bottom: 12px;
+        }
+        h3{
+            font-size: 44px;
+            font-weight: 700;
+            border-right: 1px solid #EFEFEF;
+            padding: 18px 16px 15px 20px;
+            margin-right: 7px;
+
+            @media #{$lg}{
+                border-right:0;
+            }
+            @media #{$xs}{
+                border-right:0;
+                padding: 0px 16px 15px 20px;
+            }
+        }
+    }
+    .features-caption {
+        padding-left: 19px;
+        h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.2;
+            color: #6F7781;
+            margin-bottom: 0;
+            @media #{$lg}{
+                font-size: 15px;
+            }
+            @media #{$xs}{
+                font-size: 15px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,363 @@
+.slider-area{
+    margin-top: -1px;
+    .hero-caption{
+        padding-top: 50px;
+        position: relative;
+        z-index: 2;
+        @media #{$md}{
+            padding-top: 74px;
+        }
+        @media #{$xs}{
+            padding-top: 74px;
+        }
+        span{
+            
+            font-family: $font_1;
+            color: #6D6E8D;
+            font-size: 22px;
+            font-weight: 500;
+            display: inline-block;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            @media #{$md}{
+                font-size:33px;
+            }
+            @media #{$sm}{
+                font-size:33px;
+            }
+            @media #{$xs}{
+                font-size: 18px;
+            }
+        }
+        h1{
+            color:$heading-color;
+            font-family: $font_1;
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 40px;
+            @media #{$lg}{
+                font-size: 60px;
+            }
+            @media #{$md}{
+                font-size: 70px;
+            }
+            @media #{$sm}{
+                font-size: 60px;
+            }
+            @media #{$xs}{
+                font-size: 33px;
+                margin-bottom: 20px;
+            }
+        }
+        p{
+           margin-bottom: 54px;
+           padding-right: 155px;
+            color: #fff;
+            font-size: 24px;
+
+           @media #{$md}{
+                margin-bottom: 54px;
+                padding-right: 0px;
+            }
+           @media #{$sm}{
+                padding-right: 0px;
+            }
+           @media #{$xs}{
+                margin-bottom: 32px;
+                padding-right: 0px;
+                font-size: 18px;
+            }
+        }
+        // slider-btn
+        .slider-btns{
+            @include flexbox();
+            @include flex-wrap(wrap);
+            a{
+                color: $theme-color;
+                font-weight: 500;
+                font-size: 14px;
+                text-transform: uppercase;
+                display: block;
+            }
+            .hero-btn2{
+                color: #fff;
+                background: $btn_bg2;
+                font-weight: 500;
+                font-size: 20px;
+                text-transform: capitalize;
+                display: block;
+                padding: 15px 36px;
+                border-radius: 5px;
+                margin-left: 20px;
+                @media #{$xs}{
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+                i{
+                    margin-right: 5px;
+                }
+            }
+        }
+        // Another Page
+        &.hero-caption2{
+
+            padding-top: 100px;
+            h2{
+                
+                color:$heading-color;
+                font-size: 50px;
+                display: block;
+                font-weight: 700;
+                line-height: 1.4;
+                margin-bottom: 19px;
+                @media #{$md}{
+                    margin-bottom: 20px;
+                }
+                @media #{$sm}{
+                    margin-bottom: 20px;
+                }
+                @media #{$xs}{
+                    margin-bottom: 20px;
+                    font-size: 46px;
+                }
+            }
+            p{
+                margin-bottom: 0px;
+                color:#fff;
+                font-size: 24px;
+                line-height: 1.6;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .hero-img img {
+        position: absolute;
+        right: 6%;
+        z-index: 1;
+        bottom: 0;
+
+        width: 772px;
+        height: 586px;
+        @media #{$large1}{
+            right: 2%;
+            width: 672px;
+            height: 486px;
+        }
+        @media #{$lg}{
+            right: 1%;
+            width: 522px;
+            height: 460px;
+        }
+        @media #{$md}{
+            display: none;
+        }
+        @media #{$sm}{
+            display: none;
+        }
+        @media #{$xs}{
+            display: none;
+        }
+    }
+    // Shape
+    .hero-shape{
+        position: absolute;
+        left: 10%;
+        bottom: -6%;
+        @media #{$laptop}{
+            left: 10%;
+            bottom: -6%;
+        }
+        @media #{$lg}{
+            left: 10%;
+            bottom: -6%;
+        }
+        @media #{$xs}{
+           display: none;
+        }
+    }
+    // Shape 2
+    .hero-shape2{
+        img{
+            width: 763px;
+            height: 711px;
+            @media #{$large1}{
+                width: 590px;
+                height: 629px;
+            }
+            @media #{$lg}{
+                width: 463px;
+                height: 411px;
+            }
+            @media #{$md}{
+                width: 463px;
+                height: 411px;
+            }
+            @media #{$sm}{
+                width: 280px;
+                height: 311px;
+                display: none;
+            }
+            @media #{$xs}{
+                width: 463px;
+                height: 411px;
+                display: none;
+            }
+        }
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        @media #{$laptop}{
+            top: 0%;
+            right: 0%;
+        }
+    }
+}
+
+// Hero Overlay
+.hero-overly {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(35, 30, 30,.4);;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero-overly2 {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(35, 30, 30,0.702);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+// product name 01 
+.hero-tittle{
+    position: absolute;
+    z-index: 1;
+    bottom: -88px;
+    right:0px;
+    left: 0%;
+    text-align: center;
+    z-index: 0;
+    @media #{$sm}{
+        bottom: -53px;
+    }
+    @media #{$xs}{
+        bottom: -37px;
+    }
+    h2{
+        font-family:$font_1;
+        color: #FFF;
+        font-size: 484px;
+        text-transform: uppercase;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -11px;
+        -webkit-text-stroke-width: 32px;
+        -webkit-text-stroke-color: #fff;
+        @media #{$lg}{
+            font-size: 394px;
+        }
+        @media #{$md}{
+            font-size: 290px;
+            letter-spacing: -2px;
+        }
+        @media #{$sm}{
+            font-size: 185px;
+            letter-spacing: 4px;
+            -webkit-text-stroke-width: 20px;
+            -webkit-text-stroke-color: #fff;
+        }
+        @media #{$xs}{
+            font-size: 113px;
+            letter-spacing: 0px;
+            -webkit-text-stroke-width: 10px;
+            -webkit-text-stroke-color: #fff;
+        }
+        
+    }
+}
+
+// Slider Height
+.slider-height {
+    height:800px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$laptop}{
+        height:700px;
+    }
+    @media #{$lg}{
+        height: 600px;
+    }
+    @media #{$md}{
+        height: 600px;
+    }
+    @media #{$sm}{
+        height: 600px;
+    }
+    @media #{$xs}{
+        height: 468px;
+    }
+}
+
+.slider-height2{
+    height: 400px;
+    background-repeat:no-repeat ;
+    background-position: center center;
+    @media #{$lg}{
+        height:400px;
+    }
+    @media #{$md}{
+        height: 400px;
+    }
+    @media #{$sm}{
+        height: 400px;
+    }
+    @media #{$xs}{
+        height: 350px;
+    }
+}
+
+
+.slider-bg1{
+    background-image: url(../img/hero/h1_hero1.jpg);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+    @media #{$sm}{
+        background-position: left center;
+    }
+    @media #{$xs}{
+        background-position: left center;
+    }
+}
+
+.slider-bg2{
+    background-image: url(../img/hero/h2_hero1.jpg);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+}

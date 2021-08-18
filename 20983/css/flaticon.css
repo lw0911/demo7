@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before,
+	[class*=" flaticon-"]:before,
+	[class^="flaticon-"]:after,
+	[class*=" flaticon-"]:after {
+	  font-family: Flaticon;
+	  font-size: 40px;
+	  font-style: normal;
+}
+
+.flaticon-001-smartphone:before { content: "\f100"; }
+.flaticon-002-security:before { content: "\f101"; }
+.flaticon-003-security:before { content: "\f102"; }
+.flaticon-004-credit-card:before { content: "\f103"; }
+.flaticon-005-website:before { content: "\f104"; }
+.flaticon-006-eye:before { content: "\f105"; }
+.flaticon-007-computer:before { content: "\f106"; }
+.flaticon-008-security:before { content: "\f107"; }
+.flaticon-009-computer:before { content: "\f108"; }
+.flaticon-010-cctv:before { content: "\f109"; }
+.flaticon-011-folder:before { content: "\f10a"; }
+.flaticon-012-file:before { content: "\f10b"; }
+.flaticon-013-router:before { content: "\f10c"; }
+.flaticon-014-cloud:before { content: "\f10d"; }
+.flaticon-015-laptop:before { content: "\f10e"; }
+.flaticon-016-security:before { content: "\f10f"; }
+.flaticon-017-firewall:before { content: "\f110"; }
+.flaticon-018-confidential-email:before { content: "\f111"; }
+.flaticon-019-server:before { content: "\f112"; }
+.flaticon-020-search:before { content: "\f113"; }
+.flaticon-021-website:before { content: "\f114"; }
+.flaticon-022-password:before { content: "\f115"; }
+.flaticon-023-email:before { content: "\f116"; }
+.flaticon-024-security:before { content: "\f117"; }
+.flaticon-025-security:before { content: "\f118"; }
+.flaticon-026-password:before { content: "\f119"; }
+.flaticon-027-file:before { content: "\f11a"; }
+.flaticon-028-padlock:before { content: "\f11b"; }
+.flaticon-029-unlock:before { content: "\f11c"; }
+.flaticon-030-world:before { content: "\f11d"; }
+.flaticon-031-radar:before { content: "\f11e"; }
+.flaticon-032-password:before { content: "\f11f"; }
+.flaticon-033-key:before { content: "\f120"; }
+.flaticon-034-bomb:before { content: "\f121"; }
+.flaticon-035-smartphone:before { content: "\f122"; }
+.flaticon-036-alarm:before { content: "\f123"; }
+.flaticon-037-email:before { content: "\f124"; }
+.flaticon-038-money:before { content: "\f125"; }
+.flaticon-039-user:before { content: "\f126"; }
+.flaticon-040-chat-box:before { content: "\f127"; }
+.flaticon-041-settings:before { content: "\f128"; }
+.flaticon-042-hacker:before { content: "\f129"; }
+.flaticon-043-cpu:before { content: "\f12a"; }
+.flaticon-044-algorithm:before { content: "\f12b"; }
+.flaticon-045-binary-code:before { content: "\f12c"; }
+.flaticon-046-flash-drive:before { content: "\f12d"; }
+.flaticon-047-personal-security:before { content: "\f12e"; }
+.flaticon-048-barcode:before { content: "\f12f"; }
+.flaticon-049-cryptocurrency:before { content: "\f130"; }
+.flaticon-050-facial-recognition:before { content: "\f131"; }

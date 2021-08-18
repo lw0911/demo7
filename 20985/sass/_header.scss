@@ -1,0 +1,141 @@
+/*---------------------
+  Header
+-----------------------*/
+.header {
+    background: $white-color;
+}
+
+.header__logo {
+    padding: 20px 0;
+    
+    a {
+        display: inline-block;
+    }
+}
+
+.header__options {
+    text-align: right;
+}
+
+.header__menu {
+    display: inline-block;
+    margin-right: 45px;
+
+    ul {
+
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 50px;
+            position: relative;
+
+            &.active {
+
+                a {
+                   
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:hover {
+
+                a {
+                   
+                    &:after {
+                        opacity: 1;
+                    }
+                }
+
+                .dropdown {
+                    top: 100px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .dropdown {
+                position: absolute;
+                left: 0;
+                top: 120px;
+                width: 160px;
+                background: $heading-color;
+                text-align: left;
+                padding: 5px 0;
+                z-index: 9;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(all, .3s);
+
+                li {
+                    display: block;
+                    margin-right: 0;
+
+                    a {
+                        font-size: 14px;
+                        color: $white-color;
+                        font-weight: 400;
+                        padding: 5px 20px;
+                        text-transform: capitalize;
+
+                        &:after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            a {
+                font-size: 16px;
+                font-weight: 500;
+                color: $heading-color;
+                display: block;
+                padding: 40px 0 37px;
+                position: relative;
+
+                &:after {
+                    position: absolute;
+                    left: 0;
+                    bottom: 26px;
+                    right: 0;
+                    width: 7px;
+                    height: 7px;
+                    background: $primary-color;
+                    content: "";
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    opacity: 0;
+                    @include transition(all, .3s);
+                }
+            }
+        }
+    }
+}
+
+.search__option {
+    display: inline-block;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.header__option__right {
+    display: inline-block;
+    padding: 24px 0;
+
+    .primary-btn {
+
+    }
+}
+
+.offcanvas-menu-wrapper {
+    display: none;
+}
+
+.canvas__open {
+    display: none;
+}

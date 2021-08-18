@@ -1,0 +1,95 @@
+/*---------------------
+  Services
+-----------------------*/
+.services__page__widget {
+    margin-top: 45px;
+}
+
+.services__page__widget__form {
+    padding: 50px 130px 50px 50px;
+
+    form {
+
+        input {
+            height: 45px;
+            width: 100%;
+            border: 1px solid #f2f2f2;
+            font-size: 14px;
+            color: $white-color;
+            background: transparent;
+            padding-left: 20px;
+            margin-bottom: 15px;
+
+            &::placeholder {
+                color: $white-color;
+            }
+        }
+
+        .nice-select {
+            height: 45px;
+            line-height: 45px;
+            float: none;
+            border: 1px solid #f2f2f2;
+            border-radius: 0;
+            background: transparent;
+            padding-left: 20px;
+            margin-bottom: 15px;
+
+            &:after {
+                border-bottom: 1.5px solid #888888;
+                border-right: 1.5px solid #888888;
+                height: 7px;
+                right: 20px;
+                width: 7px;
+            }
+
+            .list {
+                width: 100%;
+                margin-top: 0;
+                border-radius: 0;
+            }
+
+            span {
+                font-size: 14px;
+                color: $white-color;
+            }
+        }
+    }
+
+    textarea {
+        height: 100px;
+        width: 100%;
+        border: 1px solid #f2f2f2;
+        font-size: 14px;
+        color: $white-color;
+        background: transparent;
+        padding-left: 20px;
+        margin-bottom: 9px;
+        padding-top: 12px;
+        resize: none;
+
+        &::placeholder {
+            color: $white-color;
+        }
+    }
+}
+
+.services__page__widget__text {
+    background: #f6f6f9;
+    padding: 115px 120px;
+    margin-left: -120px;
+    margin-top: 50px;
+
+    p {
+        color: #424242;
+        font-size: 45px;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+        line-height: 50px;
+        margin-bottom: 0;
+
+        span {
+            color: $primary-color;
+        }
+    }
+}

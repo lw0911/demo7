@@ -1,0 +1,121 @@
+/*---------------------
+  Contact
+-----------------------*/
+.contact {
+  padding-bottom: 60px;
+}
+
+.contact__map {
+  height: 390px;
+  margin-bottom: 70px;
+
+  iframe {
+    width: 100%;
+  }
+}
+
+.contact__widget {
+  margin-bottom: 40px;
+}
+
+.contact__widget__item {
+  background: $white-color;
+  padding: 30px 70px;
+  position: relative;
+  margin-bottom: 50px;
+  border: 1px solid #e1e1e1;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  h5 {
+    color: $heading-color;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $heading-color;
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.contact__widget__icon {
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+  background: $white-color;
+  display: inline-block;
+  color: $white-color;
+  border-radius: 50%;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  z-index: 1;
+  margin-top: -40px;
+
+  &:after {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 60px;
+    width: 60px;
+    background: $primary-color;
+    border-radius: 50%;
+    content: "";
+    z-index: -1;
+  }
+}
+
+.contact__form {
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 40px;
+    color: $heading-color;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  form {
+
+      input {
+        height: 50px;
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        font-size: 15px;
+        color: $heading-color;
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        &::placeholder {
+            color: $heading-color;
+        }
+    }
+
+      textarea {
+        height: 150px;
+        width: 100%;
+        border: 1px solid #e1e1e1;
+        font-size: 15px;
+        color: $heading-color;
+        padding-top: 12px;
+        padding-left: 20px;
+        margin-bottom: 24px;
+        resize: none;
+
+        &::placeholder {
+            color: $heading-color;
+        }
+    }
+
+    .site-btn {
+      background: $heading-color;
+    }
+  }
+}

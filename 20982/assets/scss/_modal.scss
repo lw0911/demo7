@@ -1,0 +1,612 @@
+.cs_modal{
+    .modal-content{
+        background-color: #FF377B;
+        padding: 0 30px;
+        @media #{$small_mobile} {
+            padding: 0 20px;
+        }
+    }
+    .modal-header{
+        padding: 34px 0 30px 0px;
+        @include align-items(center);
+        border-bottom: 0px solid transparent;
+        h5{
+            margin-bottom: 0;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 25px;
+        }
+        .close{
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+            i{
+                font-size: 14px;
+                color: #dddd;
+            }
+        }
+    }
+
+    .modal-body{
+        padding: 35px 30px !important;
+        background: #fff;
+        @media #{$xs} {
+            padding: 25px 20px !important;
+        }
+        .chose_thumb_title{
+            font-size: 12px;
+            font-weight: 300;
+            color:#222222;
+            text-align: left;
+            margin: 0;
+            margin-bottom: 0px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .input_wrap{
+            label{
+                font-size: 15px;
+                font-weight: 500;
+                color: #000;
+                text-align: left;
+                margin: 0;
+                margin-bottom: 0px;
+                display: block;
+                margin-bottom: 8px;
+            }
+            textarea{
+                height: 100px;
+                padding: 0;
+                line-height: 28px;
+                padding: 13px 25px;
+            }
+        }
+        .nice_Select,input,textarea{
+           height: 50px;
+           line-height: 50px;
+           background-color: $white;
+           border: 1px solid #eee;
+           padding: 10px 25px;
+           color: #7e7172;
+           font-weight: 500;
+           font-size: 13px;
+           width: 100%;
+           display: block;
+           margin-bottom: 21px;
+           font-weight: 300;
+           border-radius: 0px;
+           &::placeholder{
+            color: #7e7172;
+            font-weight: 300;
+            opacity: 1;
+        }
+        }
+        .nice_Select{
+            line-height: 30px;
+            :after{
+                left: 22px;
+            }
+        }
+        ::placeholder{
+            color: $heading-color;
+        }
+    }
+    .modal_btn{
+        @include flexbox();
+        @include justify-content(center);
+        @include align-items(center);
+        .btn_1 {
+            // flex: 48% 0 0;
+            padding: 16px 26px !important;
+            margin: 0 5px;
+            text-align: center;
+        }
+    }
+    .modal-footer{
+        border-top: 0px solid transparent;
+        padding: 30px 0 40px 0;
+    }
+}
+.form_box{   
+    .from_group{
+        display: block;
+        width: 100%;
+        margin-bottom: 23px;
+        label{
+            font-size: 14px;
+            font-weight: 300;
+            margin-bottom: 13px;
+            color: #dddd;
+        }
+        .nice_Select,input, textarea{
+            width: 100%;
+            display: block;
+            background-color: #dddd;
+            border: 1px solid #dddd;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        textarea{
+            height: 115px;
+            line-height: 27px;
+        }
+        .bootstrap-tagsinput input {
+            border: none !important;
+            width: auto !important;
+            display: inline-block !important;
+            background-color: transparent !important;
+        }
+        .bootstrap-tagsinput .badge [data-role="remove"]:after {
+            background-color: transparent !important;
+        }
+        .bootstrap-tagsinput .badge {
+            margin: 0 5px;
+            padding: 9px 8px;
+            line-height: 12px;
+            font-weight: 500;
+            font-size: 13px;
+        }
+        .badge-info {
+            color: #fff;
+            background-color: #2EC9B8;
+        }
+        .nice_Select{
+            line-height: 30px;
+        }
+    }
+}
+
+// Global select style
+.nice-select {
+    line-height: 30px;
+    border: 0;
+    border-bottom: 1px solid #eaeaea;
+    height: 50px;
+    width: 100%;
+    color: #071112;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding-top: 10px;
+    border-radius: 0px;
+    &::after {
+        border-bottom: 2px solid #000000;
+        border-right: 2px solid #000000;
+        height: 7px;
+        right: 41px;
+        width: 7px;
+    }
+    .list {
+        width: 100%;
+        border-radius: 0;
+    }
+    &.open .list {
+        width: 100%;
+        border-radius: 0;
+    }
+    .option {
+        color: #071112;
+    }
+    &::placeholder{
+        color: #6E6575;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+.nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+	background-color: #FF377B;
+    }
+// modal 
+
+@media (min-width: 768px){
+    .modal-dialog.custom-modal-dialog {
+        max-width: 650px;
+    }
+}
+@media (min-width: 992px){
+    .modal-dialog.custom-modal-dialog {
+        max-width: 950px;
+    }
+}
+@media (min-width: 1200px){
+    .modal-dialog.custom-modal-dialog {
+        max-width: 1050px;
+    }
+}
+
+// check mark in modal
+
+/*Checkboxes styles*/
+.single-box{
+
+    position: relative;
+    z-index: 0;
+    p{
+       padding-left: 37px;
+       margin-bottom: 0;
+    }
+    input[type="checkbox"] + label {
+        @include flexbox();
+       margin: 0.2em;
+       cursor: pointer;
+       padding: 0.2em;
+       line-height:1.4;
+       color: #222;
+       font-size: 14px;
+       font-weight: 500;
+   }
+   .label-style2{
+        color: #000 !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+   }
+
+     input[type=checkbox] {
+       display: none;
+     }
+     
+   input[type="checkbox"] + label::before {
+       content: "\2714";
+       border: 1px solid #eeeeee;
+       border-radius:0;
+       display: inline-block;
+       width: 16px;
+       height: 16px;
+       padding-left: 2px;
+       padding-bottom: 1px;
+       margin-right: 1.2em;
+       font-size: 12px;
+       vertical-align: bottom;
+       color: transparent;
+       transition: .2s;
+       line-height:1.2;
+   }
+     
+     input[type=checkbox] + label:active:before {
+       transform: scale(0);
+     }
+     
+     input[type=checkbox]:checked + label:before {
+       background-color: $theme-color;
+       border-color: $theme-color;
+       color: #fff;
+     }  
+}
+
+// custom nav
+.custom_navtab {
+	@include justify-content(center);
+	background: #fff;
+	padding-top: 39px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 95%;
+        height: 1px;
+        background: #eee;;
+        bottom: 0;
+    }
+    li {
+        margin-left: 3px;
+        @media #{$sm} {
+            margin-left: 5px;
+        }
+        @media #{$small_mobile} {
+            margin: 5px 5px 5px 0;
+        }
+        a.active{
+            background: $theme-color !important;
+            color: #fff;
+        }
+    }
+    &.custom_navtab2 {
+        &::before{
+            background: none;
+        }
+    }
+}
+
+// file upload 
+.file_upload{
+    border: 1px solid #eee !important;
+    padding: 9px 15px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+    label{
+        margin-bottom: 0 !important;
+    }
+    .form-group{
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .btn_file_upload {
+        color: $white;
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+        border: 0;
+        display: inline-block;
+        &:hover, 
+          &:focus {
+            color: lighten(#555, 20%);
+            border-color: lighten(#555, 20%);
+          }
+      }
+      
+      /* input file style */
+      
+    .input-file ,.input-file2 {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+        + .js-labelFile, + .js-labelFile2 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 0 10px;
+            cursor: pointer;
+        }
+    }
+    .btn{
+        padding: 0px 16px !important;
+        border-radius: 5px;
+        background-color: #f6f9fc;
+        display: inline-block !important;
+        font-size: 12px;
+        color: #848d94 !important;
+        border-radius: 30px;
+        bottom: 0;
+        margin-bottom: 0;
+        font-weight: 400;
+        &:hover{
+            background-color: $theme-color;
+            color: $white;
+            border: 0;
+        }
+    }
+    .form-group{
+         background-color: $white;
+         width: 100%;
+         padding: 0px;
+         border-radius: 5px;
+    }
+}
+
+// Tag Start 
+.single-tag{
+    margin-bottom: 21px;
+    label{
+        // font-size: 12px;
+        // font-weight: 300;
+        // color: #222222;
+        // text-align: left;
+        // margin: 0;
+        // margin-bottom: 0px;
+        // display: block;
+        // margin-bottom: 8px;
+    }
+    .bootstrap-tagsinput{
+        text-align: left;
+        padding: 4px 25px 4px 25px;
+        box-shadow: none;
+        border-radius: 3px;
+        min-height: 50px;
+        border: 1px solid #eeee !important;
+        input{
+            border: none !important;
+            width: auto !important;
+            display: inline-block !important;
+            background-color: transparent !important;
+            height: 0;
+            margin: 0;
+            min-width: 20px;
+            padding: 0px !important;
+            margin: 0 !important;
+            
+        }
+
+    } 
+    .bootstrap-tagsinput .badge {
+        margin: 0 5px 5px 0;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 30px 0 20px;
+        font-size: 12px;
+        color: #848d94 !important;
+        font-weight: 400;
+        background: #f6f9fc;
+        border: 0;
+        border-radius: 30px;
+        position: relative;
+        width: auto;
+    }
+    .bootstrap-tagsinput .badge [data-role="remove"]::after {
+        font-size: 10px;
+        font-family: 'themify';
+        content: "\e646";
+        background: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 0px;
+        background: transparent;
+        margin-left: 5px;
+        padding: 0;
+        border: 1px solid transparent;
+        padding: 2px;
+    }
+    .bootstrap-tagsinput .badge [data-role="remove"]:hover::after {
+        background: #fff;
+        color: red;
+        border-color: none;
+    }
+    span.badge.badge-info span {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 8px;
+    }
+    }
+
+.bootstrap-tags_input3{
+    .bootstrap-tagsinput{
+        min-height:120px;
+    }
+}
+
+
+// general secect 
+.input_wrap{
+    label{
+        font-size: 12px;
+        font-weight: 300;
+        color:#79838b;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 0px;
+        display: block;
+        margin-bottom: 8px;
+    }
+}
+.nice_Select{
+    height: 40px;
+    line-height: 40px;
+    background-color: $white;
+    border: 1px solid #eee1e2;
+    padding: 0px 25px;
+    color: #7e7172;
+    font-weight: 500;
+    font-size: 13px;
+    width: 100%;
+    display: block;
+    margin-bottom: 21px;
+    font-weight: 300;
+    border-radius: 0px;
+    &::placeholder{
+     color: #7e7172;
+     font-weight: 300;
+     opacity: 1;
+ }
+}
+.nice-select.nice_Select2 {
+    width: 100%;
+    border: 1px solid #eee1e2;
+    border-radius: 0px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 13px;
+    color: #7e7172;
+    padding: 0px 25px;
+    font-weight: 300;
+    &::placeholder{
+        color: #7e7172;
+        font-weight: 300;
+        opacity: 1;
+    }
+    &:after{
+        border-bottom: 0;
+        border-right: 0;
+        content: '';
+        display: block;
+        height: 10px;
+        margin-top: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 12px;
+        top: 10%;
+        -webkit-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+        width: auto;
+        right: 25px;
+        content: "\f0d7";
+        border: 0;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color:#cec1c2;
+        font-size: 14px;
+        transform: translateY(-50%);
+
+    }
+    &.open::after {
+        content: "\f0d8";
+    
+    }
+    .list{
+        width: 100%;
+        background-color: #fef1f2;
+        .option {
+            color: #111;
+            &.selected{
+                font-weight: 400 !important;
+            }
+        }
+    }
+}
+.nice-select.nice_Select3 {
+    width: 100%;
+    border: 1px solid #eee1e2;
+    border-radius: 0px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 13px;
+    color: #7e7172;
+    padding: 0px 25px;
+    font-weight: 300;
+    &::placeholder{
+        color: #7e7172;
+        font-weight: 300;
+        opacity: 1;
+    }
+    &:after{
+        border-bottom: 0;
+        border-right: 0;
+        content: '';
+        display: block;
+        height: 10px;
+        margin-top: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 12px;
+        top: 9%;
+        -webkit-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+        width: auto;
+        right: 25px;
+        content: "\f0d7";
+        border: 0;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color:#cec1c2;
+        font-size: 14px;
+        transform: translateY(-50%);
+
+    }
+    &.open::after {
+        content: "\f0d8";
+    
+    }
+    .list{
+        width: 100%;
+        background-color: #fef1f2;
+        .option {
+            color: #111;
+            &.selected{
+                font-weight: 400 !important;
+            }
+        }
+    }
+}
+
+// medium_modal_width 
+.medium_modal_width{
+    .modal-dialog {
+        @media #{$md} {
+            max-width: 780px;
+        }
+    }
+}

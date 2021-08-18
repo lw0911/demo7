@@ -1,0 +1,66 @@
+.contact-wrappers {
+	height: 580px;
+    @include flexbox();
+    @include justify-content(center);
+    @include align-items(flex-end);
+    @media #{$sm}{
+        height: 400px;
+    }
+    @media #{$xs}{
+        height: 500px;
+    }
+}
+
+.wants-wrapper {
+    @extend %overlay3;
+
+    position: relative;
+    bottom: -141px;
+}
+.wantToWork-caption{
+    h2{
+        font-size: 46px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        font-weight: 500;
+        color: #fff;
+        @media #{$md}{
+            font-size: 30px; 
+        }
+        @media #{$sm}{
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        @media #{$xs}{
+            font-size: 25px; 
+            margin-bottom: 20px;
+        }
+    } 
+    p{
+        font-size: 18px;
+        color: #fff;
+        margin-bottom: 37px;
+        br{
+            @media #{$xs}{
+                display: none;
+            } 
+        }
+    }
+}    
+
+.sm-left{
+    @media #{$xs}{
+        float: left;
+        margin-top: 30px;
+    } 
+    @media #{$sm}{
+        float: left;
+        margin-top: 30px;
+    } 
+}
+
+.wantToWork-btn{
+    @media #{$xs}{
+      margin-bottom: 10px;  
+    } 
+}

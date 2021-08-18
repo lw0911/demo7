@@ -1,0 +1,98 @@
+
+/*-------------   Color Variable  --------------*/
+
+//Colors
+	$white: #ffffff;
+	$black: #16161a;
+	$gray:#F6F9FC;
+
+//Theme color
+	$theme-color: #FF4495;
+	$theme-color2: #140C40;
+	$theme-color3: #f27420;
+	$theme-color4: #ff3500;
+
+// btn and Section color
+	$btn_bg: #00044A;
+	$btn_bg2: #27CB8B;
+
+// Heading color
+	$heading-color:#232F55;
+	$heading_color2: #080808;
+
+	
+// font color , border
+	$font_color1: #232F55;
+	$body-text-color: #232F55;
+	
+// Body Font
+
+	$border-color:#EFEFEF;
+	$hr-border-color:#eceff8;
+
+
+// Section Bg
+	$section_bg1:#00095E;
+	$section_bg2:#FBFBFB;
+	$section_bg3:#2D0A31;
+
+	$footer-bg:#00044A;
+	
+.section-bg1{
+	background: $section_bg1;
+}
+.section-bg2{
+	background: $section_bg2;
+}
+.footer-bg{
+	background: $footer-bg;
+}
+
+
+	$gray-color: #bebebe;
+	$gray-color-2: #bdbdbd;
+
+
+
+
+// bg
+	$brand-bg: #f1f4fa;
+	$testimonial-bg:#f9fafc;
+
+
+
+/*-------------Color include--------------*/
+
+
+/*-- Background color---*/
+
+.gray-bg {
+	background: $gray;
+}
+.white-bg {
+	background:$white;
+}
+.black-bg {
+	background: $black;
+}
+.theme-bg {
+	background:$theme-color;
+}
+.brand-bg{
+	background: $brand-bg;
+}
+.testimonial-bg{
+	background: $testimonial-bg;
+}
+
+
+/*--- color------*/
+.white-color {
+	color: $white;
+}
+.black-color {
+	color: $black;
+}
+.theme-color {
+	color: $theme-color;
+}

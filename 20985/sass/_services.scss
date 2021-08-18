@@ -1,0 +1,85 @@
+/*---------------------
+  Services
+-----------------------*/
+.services-page {
+    padding-bottom: 0;
+}
+
+.services__page__text {
+    margin-bottom: 100px;
+
+    .price {
+        font-size: 16px;
+        color: $primary-color;
+        font-weight: 500;
+        background: $white-color;
+        position: relative;
+        margin-bottom: 10px;
+
+        &:after {
+            position: absolute;
+            left: 100px;
+            top: 11px;
+            height: 1px;
+            width: 70px;
+            background: $primary-color;
+            content: "";
+        }
+    }
+
+    h2 {
+        color: $heading-color;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    p {
+        color: $heading-color;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-bottom: 40px;
+
+        li {
+            list-style: none;
+            font-size: 15px;
+            color: $heading-color;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                font-size: 15px;
+                color: $primary-color;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .primary-btn {
+        color: $heading-color;
+        background: transparent;
+        border: 2px solid $primary-color;
+    }
+}
+
+.services__page__pic {
+    margin-right: -30px;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+.services__page__pic__item {
+    width: calc(50% - 30px);
+    margin-right: 30px;
+    float: left;
+    
+    &.small__item {
+        padding-top: 50px;
+    }
+}

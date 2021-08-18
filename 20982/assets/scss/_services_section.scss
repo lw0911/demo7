@@ -1,0 +1,253 @@
+.services-section{
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+        margin:0 15px;
+        margin-bottom: 30px;
+        .cat-icon{
+            img{
+                width: 100%;
+                border-radius: 4px 4px 0 0;
+                border-radius: 0 0 4px 4px;
+            }
+        }
+        .cat-cap{
+            box-shadow: 0px 8px 20px rgba(0, 0, 0,.05);
+            padding: 25px 0;
+            span{
+                color: #6785FF;
+                font-size: 46px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                display: block;
+            }
+            h5{
+             & > a{
+                font-size: 30px;
+                font-weight: 600;
+                color: #071112;
+                text-transform: capitalize;
+                margin-bottom: 17px;
+                display: block;
+                @include transition(.2s);
+                @media #{$lg}{
+                    font-size: 20px;
+                }
+                @media #{$sm}{
+                    font-size: 21px;
+                }
+                @media #{$md}{
+                    font-size: 20px;
+                }
+                @media #{$xs}{
+                    font-size: 23px;
+                }
+                &:hover{
+                    color: $theme-color;
+                }
+              }
+            }
+            p{
+                color: #5E5E5E;
+                font-size: 17px;
+                line-height: 1.6;
+                margin: 0;
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+                @media #{$sm}{
+                    font-size: 13px;
+                }
+                @media #{$md}{
+                    font-size: 17px;
+                }
+                @media #{$xs}{
+                    font-size: 17px;
+                }
+            } 
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-cap{
+                box-shadow: 0px 8px 20px rgba(255, 55, 123,.12);
+                h5{
+                   a{
+                    color: $theme-color;
+                   }
+                }
+
+            }
+       }
+    }
+}
+
+// Arrow
+.services-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 20px;
+                color: $theme-color;
+
+            }
+        }
+        &.slick-prev {
+            left: -58px;
+            @media #{$laptop}{
+                left: -13px;
+            }
+            @media #{$lg}{
+                left: -13px;
+            }
+            @media #{$md}{
+                left: -18px;
+            }
+            @media #{$sm}{
+                left: -13px;
+            }
+            i{
+                color: #ddd;
+            }
+        }
+        &.slick-next {
+            right: -58px;
+            @media #{$laptop}{
+                right: -13px;
+            }
+            @media #{$lg}{
+                right: -13px;
+            }
+            @media #{$md}{
+                right: -18px;
+            }
+            @media #{$sm}{
+                right: -13px;
+            }
+            i{
+                color: #ddd;
+            }
+        }
+    }
+}
+
+
+// services 2
+
+.our-services2{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media #{$lg}{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media #{$md}{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media #{$sm}{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media #{$xs}{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .our-services2-wrapper {
+        background: #ffff;
+        margin-left: 225px;
+        margin-right: 225px;
+        padding-top: 90px;
+        padding-bottom: 60px;
+
+        @media #{$laptop}{
+            margin-left: 60px;
+            margin-right: 60px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        @media #{$lg}{
+            margin-left: 40px;
+            margin-right: 40px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        @media #{$md}{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        @media #{$sm}{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+        @media #{$xs}{
+            margin-left: 15px;
+            margin-right: 15px;
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .single-services{
+        @include transition(.4s);
+        &:hover {
+            // box-shadow: 0px 10px 30px 0px rgba(133, 66, 189, 0.1);
+        }
+        .services-icon{
+            span{
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                width: 67px;
+                height: 67px;
+                background: $theme-color;
+                line-height: 67px;
+                text-align: center;
+                border-radius: 50px;
+                display: inline-block;
+                position: relative;
+                margin-bottom: 31px;
+                @include transition(.3s);
+            }
+        }
+        .services-cap{
+            h5{
+                font-size: 24px;
+                color: #001f38;
+                line-height: 1.4;
+                margin-bottom: 18px;
+                @media #{$sm}{
+                    font-size: 20px;
+                }
+                a:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        &:hover{
+            // border: 1px solid $theme-color;
+            .services-icon{
+                span{
+                    color: #fff;
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+
+}
+

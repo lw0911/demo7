@@ -1,0 +1,118 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+    overflow: hidden;
+
+    .container {
+        position: relative;
+        z-index: 5;
+    }
+}
+
+.hero__items {
+    padding-top: 160px;
+    padding-bottom: 222px;
+}
+
+.hero__text {
+    background: rgba(17, 17, 17, 0.4);
+    text-align: center;
+    padding: 50px 90px;
+    overflow: hidden;
+    
+    span {
+        color: $primary-color;
+        font-size: 15px;
+        font-weight: 700;
+        display: block;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        @include transition(all, .3s);
+    }
+
+    h2 {
+        color: $white-color;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 55px;
+        margin-bottom: 30px;
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        @include transition(all, .6s);
+    }
+
+    .primary-btn {
+        position: relative;
+        top: 100px;
+        opacity: 0;
+        @include transition(all, .9s);
+    }
+}
+
+.hero__slider {
+
+    &.owl-carousel {
+
+        .owl-item {
+            
+            &.active {
+
+                .hero__text {
+
+                    span {
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    h2 {
+                        top: 0;
+                        opacity: 1;
+                    }
+
+                    .primary-btn {
+                        top: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .owl-nav {
+
+            button {
+                font-size: 36px;
+                color: $white-color;
+                height: 100px;
+                width: 100px;
+                background: rgba(5, 35, 54, 0.5);
+                border-radius: 50%;
+                line-height: 100px;
+                position: absolute;
+                left: -50px;
+                top: 50%;
+                margin-top: -50px;
+
+                &.owl-next {
+                    left: auto;
+                    right: -50px;
+
+                    i {
+                        left: -18px;
+                    }
+                }
+
+                i {
+                    position: relative;
+                    left: 18px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}

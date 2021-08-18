@@ -1,0 +1,85 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+    padding-bottom: 60px;
+}
+
+.about__pic {
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    .little_pic {
+        position: relative;
+        float: right;
+        border: 10px solid $white-color;
+        margin-top: -170px;
+        z-index: 1;
+    }
+}
+
+.about__text {
+    margin-bottom: 40px;
+    padding-top: 20px;
+
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: $heading-color;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin-bottom: 35px;
+
+        li {
+            font-size: 16px;
+            color: $heading-color;
+            list-style: none;
+            margin-bottom: 14px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            span {
+                color: $secondary-color;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+/*---------------------
+  About Video
+-----------------------*/
+.about-video {
+    margin-top: -250px;
+}
+
+.about__video__content {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .play-btn {
+        display: inline-block;
+        height: 70px;
+        width: 70px;
+        background: $secondary-color;
+        border-radius: 50%;
+        font-size: 32px;
+        color: $white-color;
+        line-height: 70px;
+        text-align: center;
+
+        i {
+            position: relative;
+            left: 2px;
+        }
+    }
+}

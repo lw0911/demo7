@@ -1,0 +1,285 @@
+.slider-height {
+    min-height: 950px;
+    @media #{$md}{
+        min-height: 750px;
+    }
+    @media #{$sm}{
+        min-height: 800px;
+    }
+    @media #{$xs}{
+        min-height: 800px;
+    }
+}
+
+.slider-height2{
+    height: 400px;
+    @media #{$md}{
+        height: 400px;
+    }
+    @media #{$sm}{
+        height: 400px;
+    }
+    @media #{$xs}{
+        height: 350px;
+    }
+}
+
+.slider-height3{
+    height: 500px;
+    @media #{$md}{
+        height: 400px;
+    }
+    @media #{$sm}{
+        height: 400px;
+    }
+    @media #{$xs}{
+        height: 530px;
+    }
+}
+
+.slider-bg1{
+    background-image: url(../img/hero/h1_hero1.png);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+}
+.slider-bg2{
+    background-image: url(../img/hero/h1_hero2.png);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+}
+.slider-bg3{
+    background-image: url(../img/hero/h1_hero3.png);
+    background-repeat:no-repeat ;
+    background-position: center center;
+    background-size: cover;
+}
+
+//  Transparent Header
+.header-transparent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 9;
+}
+.hero-overly {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        // background-color:rgba(0, 0, 50,.7);
+        @extend %overlay1;
+        width: 100%;
+        height: 70%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero-overly4{
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background: rgba(51, 17, 17, 0.6);        // @extend %overlay1;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        background-repeat: no-repeat;
+    }
+}
+
+
+// Form Area
+.form-tittle {
+    @media #{$md}{
+        padding-top:60px ;
+    }
+    @media #{$sm}{
+        padding-top:60px ;
+    }
+    @media #{$xs}{
+        padding-top:60px ;
+    }
+    h2 {
+        font-size: 60px;
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0;
+        color: #ffff;
+
+        @media #{$xs}{
+            font-size: 46px;
+        }
+    }
+    p{
+        color: #6E6575;
+        font-size: 14px;
+        padding: 0 20px;
+        line-height: 1.8;
+    }
+}
+.form-wrapper{
+    background: #fff;
+    padding-top: 10px;
+    // Start contact
+    input {
+        border: 0;
+        border-bottom: 1px solid #eaeaea;
+        height: 50px;
+        width: 100%;
+        padding: 10px 25px;
+        padding-right: 30px;
+        color: #071112;
+        font-weight: 500;
+        text-transform: capitalize;
+        border-radius:0px;
+
+        &::placeholder{
+            color:#5E5E5E;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    .nice-select {
+        line-height: 30px;
+        border: 0;
+        border-bottom: 1px solid #eaeaea;
+        height: 50px;
+        width: 100%;
+        color: #071112;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        padding-top: 10px;
+        border-radius: 0px;
+        &::after {
+            border-bottom: 2px solid #000000;
+            border-right: 2px solid #000000;
+            height: 7px;
+            right: 41px;
+            width: 7px;
+        }
+        .list {
+            width: 100%;
+            border-radius: 0;
+        }
+        &.open .list {
+            width: 100%;
+            border-radius: 0;
+        }
+        .option {
+            color: #071112;
+        }
+        &::placeholder{
+            color: #6E6575;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+    textarea {
+            color: #6E6575;
+            font-size: 16px;
+            font-weight: 400;
+
+            border: 1px solid #eaeaea;
+            text-transform: capitalize;
+            height: 116px;
+            width: 100%;
+            padding: 21px 23px;
+            border-radius: 25px;
+            @media #{$md}{
+                padding: 30px 42px;
+            }
+            @media #{$sm}{
+                padding: 30px 42px;
+            }
+            @media #{$xs}{
+                padding: 30px 42px;
+            }
+            &::placeholder{
+                color: #6E6575;
+                font-size: 16px;
+            }
+    }
+    .contact {
+        border: 1px solid #eaedff;
+        padding: 40px 10px;
+        i {
+            background: #8fb569;
+            font-size: 40px;
+            height: 150px;
+            width: 150px;
+            color: #ffffff;
+            border-radius: 50%;
+            line-height: 135px;
+            border: 10px solid #fff;
+            -webkit-box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
+            box-shadow: 0px 16px 32px 0px rgba(206, 226, 255, 0.4);
+            margin-bottom: 30px;
+        }
+    h3 {
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin: 0;
+            padding: 0 50px;
+    }
+    }
+    input::-moz-placeholder,
+    input::-moz-placeholder {
+        color: #071112;
+       font-size: 16px;
+       font-weight: 300;
+       transition: .4s;
+   }
+    input:focus::-webkit-input-placeholder {
+       opacity: 0;
+       -webkit-transition: .4s;
+       -o-transition: .4s;
+       transition: .4s;
+   }
+   .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+	background-color: #FF377B;
+    }
+}
+
+
+// Another Hero Page
+.hero-area{
+    .hero__caption2{
+        padding-top: 50px;
+        @media #{$sm}{
+            padding-top: 80px;
+        }
+        @media #{$xs}{
+            padding-top: 80px;
+        }
+        h2{
+            color: #fff;
+            font-size: 60px;
+            font-weight: 600;
+            text-transform: capitalize;
+            @media #{$sm}{
+                font-size: 40px;
+            }
+            @media #{$xs}{
+                font-size: 37px;
+            }
+            
+        }
+    }
+}

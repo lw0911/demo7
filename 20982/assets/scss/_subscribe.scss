@@ -1,0 +1,34 @@
+
+.subscribe-area{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @media #{$md}{
+        background-position: right;
+    }
+    @media #{$sm}{
+        background-position: right;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media #{$xs}{
+        background-position: right;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    input {
+        background: none;
+        padding: 0px;
+        width: 100%;
+        height: 37px;
+        border: 0;
+        border-bottom: 1px solid #000000;
+        color: #000000;
+        font-size: 16px;
+        margin-bottom: 25px;
+        &::placeholder{
+            color: #000000;
+            font-size: 16px;
+        }
+    }
+}

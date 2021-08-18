@@ -1,0 +1,100 @@
+/*---------------------
+  Wishlist
+-----------------------*/
+.wishlist {
+    padding-bottom: 180px;
+}
+
+.wishlist__table {
+
+    table {
+        width: 100%;
+    }
+
+    thead {
+        border-bottom: 1px solid #e1e1e1;
+        
+        tr {
+            
+            th {
+                font-size: 24px;
+                font-family: 'Saira Condensed', sans-serif;
+                color: #100303;
+                text-transform: uppercase;
+                padding-bottom: 25px;
+                font-weight: 600;
+            }
+        }
+    }
+    
+    tbody {
+
+        tr {
+            border-bottom: 1px solid #f2f2f2;
+
+            td {
+                padding-top: 35px;
+                padding-bottom: 35px;
+
+                &.wishlist__item {
+                    width: 770px;
+
+                    .wishlist__item__pic {
+                        float: left;
+                        margin-right: 30px;
+                        
+                        img {
+                            border: 1px solid #dddddd;
+                        }
+                    }
+
+                    .wishlist__item__text {
+                        overflow: hidden;
+                        padding-top: 36px;
+
+                        h5 {
+                            font-size: 20px;
+                            color: #100303;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wishlist__price {
+    font-size: 16px;
+    color: #200204;
+    font-weight: 700;
+    width: 160px;
+}
+
+.wishlist__stock {
+    font-size: 16px;
+    color: #200204;
+    width: 200px;
+}
+
+.wishlist__btn {
+
+    a {
+        font-size: 18px;
+        font-family: 'Saira Condensed', sans-serif;
+        font-weight: 600;
+        color: $heading-color;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: inline-block;
+        border: 2px solid $primary-color;
+        padding: 12px 30px 10px;
+        text-align: center;
+    }
+}
+
+.wishlist__close {
+    font-size: 20px;
+    color: #E65783;
+    text-align: right;
+}

@@ -1,0 +1,120 @@
+.tranding-area{
+    // Single Tranding
+    .trending{
+        .trend-top-img{
+            overflow: hidden;
+            position: relative;
+            border-radius: 7px;
+            &::before{
+                position: absolute;
+                width: 100%;
+                height: 50%;
+                bottom: 0;
+                content: "";
+                @extend %gallery;
+            }
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+            .trend-top-cap{
+                position: absolute;
+                bottom: 25px;
+                left: 31px;
+                @media #{$xs}{
+                    bottom: -2px;
+                    left: 5px;
+                }
+                span{
+                    @extend .small-btn;  //button page
+                    @extend .color2;
+                    margin-bottom:20px;
+                }
+                h2{
+                   a{  
+                        font-size: 25px;
+                        font-weight: 500;
+                        @media #{$xs}{
+                            font-size: 15px;
+                        }
+                        display: block;
+                        color: #fff;
+                        line-height:1.3;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                   }
+                }
+                p{
+                    color: #fff;
+                    font-size: 14px;
+                    overflow: hidden;
+                    a{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    // properties 
+    .properties{
+        .properties-card{
+            background: #fff;
+             @include transition(.4s);
+            .properties-img{
+                position: relative;
+                img{
+                    width: 100%;
+                    border-radius: 10px;
+                    position: relative;
+                    @include transition(.4s);
+                }
+                .img-text{
+                    position: absolute;
+                    bottom: 5px;
+                    left: 21px;
+                    z-index: 2;
+                    span{
+                        @extend .small-btn;  //button page
+                        @extend .color3;
+                        margin-bottom:20px;
+                    }
+                }
+    
+             }
+            
+            .properties-caption{
+                padding-top: 20px;
+                h3{
+                    a{
+                        font-size: 20px;
+                        font-weight: 500;
+                        margin-bottom: 19px;
+                        @include transition(.4s);
+                        display:block;
+                        @media #{$lg}{
+                            font-size: 16px;
+                        }
+                        text-decoration: underline transparent;
+                    }
+                    a:hover,.properties-card{
+                        color: $theme-color;
+                        text-decoration: underline;
+        
+                    }
+                }
+                P{
+                    a{
+                        color:$theme-color;
+                        font-size: 16px;
+                        @media #{$md}{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

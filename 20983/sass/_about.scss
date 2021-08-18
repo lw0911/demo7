@@ -1,0 +1,122 @@
+/*---------------------
+  About
+-----------------------*/
+.about {
+    padding-bottom: 40px;
+}
+
+.about__text {
+    margin-bottom: 40px;
+    padding-top: 20px;
+
+    .label {
+        font-size: 15px;
+        color: $primary-color;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        color: #444444;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+
+        span {
+            font-weight: 600;
+            color: #170e02;
+        }
+    }
+
+    p {
+        color: #424242;
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .primary-btn {
+        background: #052336;
+    }
+}
+
+.about__video {
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-bottom: 40px;
+
+    .play-btn {
+        display: inline-block;
+        font-size: 30px;
+        color: $primary-color;
+        height: 70px;
+        width: 70px;
+        background: $white-color;
+        line-height: 70px;
+        text-align: center;
+        border-radius: 50%;
+    }
+}
+
+/*---------------------
+  Team
+-----------------------*/
+.team {
+    padding-bottom: 65px;
+}
+
+.team__item {
+    margin-bottom: 35px;
+}
+
+.team__item__pic {
+
+    img {
+        min-width: 100%;
+    }
+}
+
+.team__item__text {
+    text-align: center;
+    background: $white-color;
+    margin: 0 40px;
+    padding: 20px 25px 0;
+    margin-top: -20px!important;
+    position: relative;
+    z-index: 1;
+
+    .team__item__social {
+        margin-bottom: 14px;
+
+        a {
+            display: inline-block;
+            font-size: 16px;
+            color: #888888;
+            margin-right: 7px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    h4 {
+        color: #052336;
+        font-size: 22px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    span {
+        color: $primary-color;
+        display: block;
+        font-size: 14px;
+    }
+}

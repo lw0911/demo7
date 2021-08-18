@@ -1,0 +1,93 @@
+/*---------------------
+  Wishlist
+-----------------------*/
+.wishlist__table {
+
+    table {
+        width: 100%;
+    }
+
+    thead {
+        border-bottom: 1px solid #e1e1e1;
+        
+        tr {
+            
+            th {
+                font-size: 24px;
+                color: $black-color;
+                font-weight: 500;
+                padding-bottom: 35px;
+            }
+        }
+    }
+    
+    tbody {
+
+        tr {
+            border-bottom: 1px solid #f2f2f2;
+
+            td {
+                padding-top: 35px;
+                padding-bottom: 35px;
+
+                &.wishlist__item {
+                    width: 680px;
+
+                    .wishlist__item__pic {
+                        float: left;
+                        margin-right: 30px;
+                        
+                        img {
+                            border: 1px solid #dddddd;
+                        }
+                    }
+
+                    .wishlist__item__text {
+                        overflow: hidden;
+                        padding-top: 41px;
+
+                        h6 {
+                            color: $heading-color;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wishlist__price {
+    font-size: 15px;
+    font-weight: 500;
+    color: $heading-color;
+    width: 235px;
+}
+
+.wishlist__stock {
+    font-size: 15px;
+    color: $black-color;
+    width: 235px;
+}
+
+.wishlist__btn {
+    width: 190px;
+
+    a {
+        font-size: 15px;
+        font-weight: 500;
+        color: $white-color;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: $heading-color;
+        display: inline-block;
+        padding: 14px 30px 12px;
+        width: 184px;
+    }
+}
+
+.wishlist__close {
+    font-size: 20px;
+    color: $primary-color;
+    text-align: right;
+}

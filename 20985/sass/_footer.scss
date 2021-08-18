@@ -1,0 +1,118 @@
+/*---------------------
+  Footer
+-----------------------*/
+.footer {
+  background: #f8f2f2;
+  padding-top: 130px;
+}
+
+.footer__contact__item {
+  text-align: center;
+  background: $white-color;
+  padding: 55px 30px 25px;
+  position: relative;
+  margin-bottom: 70px;
+
+  h5 {
+    color: $heading-color;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $heading-color;
+    font-size: 15px;
+  }
+}
+
+.footer__contact__icon {
+  height: 80px;
+  width: 80px;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+  background: $white-color;
+  display: inline-block;
+  color: $white-color;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  z-index: 1;
+  margin-left: -40px;
+
+  &:after {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 60px;
+    width: 60px;
+    background: $primary-color;
+    border-radius: 50%;
+    content: "";
+    z-index: -1;
+  }
+}
+
+.footer__logo {
+  margin-bottom: 26px;
+
+  a {
+    display: inline-block;
+  }
+
+  h6 {
+    font-size: 15px;
+    color: $heading-color;
+    margin-top: 18px;
+
+    a {
+      color: $heading-color;
+    }
+  }
+}
+
+.footer__instagram__pic {
+  margin-right: -10px;
+  overflow: hidden;
+
+  img {
+    width: calc(20% - 10px);
+    margin-bottom: 10px;
+    margin-right: 10px;
+    float: left;
+  }
+}
+
+.footer__copyright {
+  padding: 10px 0 15px;
+}
+
+.footer__copyright__text{
+  color: $heading-color;
+  margin-bottom: 0;
+
+  i {
+    color: $primary-color;
+  }
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.footer__copyright__social {
+  text-align: right;
+
+  a {
+    font-size: 18px;
+    color: $heading-color-2;
+    display: inline-block;
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
