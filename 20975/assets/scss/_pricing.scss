@@ -1,0 +1,133 @@
+.pricing-area{
+    background: #FFF6FA;
+
+    // Pricing items
+    .price-items{
+        @include flexbox();
+        justify-content: space-between;
+        padding: 15px 0;
+        border-bottom: 1px solid #EFDCE4;
+        @media #{$xs}{
+            @include flex-wrap(wrap);
+        }
+        .price-left{
+            @include flexbox();
+            align-items: center;
+            .company-img{
+                img {
+                    overflow: hidden;
+                    float: left;
+                    margin-right: 22px;
+                    z-index: 9;
+                    @media #{$xs}{
+                        margin-right: 9px;
+                    }
+                }
+            } 
+            .job-tittle{
+                a{
+                    h4{
+                        color: $heading-color;
+                        @include transition(.4s);
+                        font-size: 22px;
+                        margin-bottom: 1px;
+                        font-weight: 400;
+                        @media #{$xs}{
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            color:heading-color
+                        }
+                    }
+                }
+                p{
+                    margin-bottom: 0;
+                    color: #3F4854;
+                    font-size: 14px;
+                }
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 48px;
+                        font-size: 15px;
+                        color: #808080;
+                        line-height: 1.8;
+                        @media #{$md}{
+                            margin-right: 18px;
+                        }
+                        @media #{$xs}{
+                            margin-right: 0px;
+                            margin-bottom: 7px;
+                        }
+                        @media #{$sm}{
+                            margin-right: 8px;
+                        }
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        i {
+                            font-size: 18px;
+                            color: $theme-color;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .price{
+            span{
+                font-family: $font_1;
+                color: #FF4495;
+                font-weight: 700;
+                font-size: 22px;
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+            }
+        }
+    }  
+
+    // Img
+    .pricing-img{
+        // Mobile Device bottom
+		@media #{$md}{
+			margin-top:70px;
+		}
+		@media #{$sm}{
+			margin-top: 60px;
+		}
+		@media #{$xs}{
+			margin-top: 60px;
+        }
+        img{
+            width: 100%;
+            border-radius: 0 0 0px 80px;
+        }
+        .price2-img{
+            position: absolute;
+            bottom: -74px;
+            right: -31%;
+            @media #{$large1}{
+                right: 14px;
+            }
+            @media #{$lg}{
+                right: -2%;
+            }
+            @media #{$md}{
+                right: -30px;
+            }
+            @media #{$sm}{
+                // display: none;
+            }
+            @media #{$xs}{
+                display: none;
+            }
+            img{
+                width: inherit;
+                // box-shadow: 0px 20px 30px rgba(0, 4, 74,.12);
+                border-radius: 0 0 0px 80px;
+            }
+        }
+	}
+}
+

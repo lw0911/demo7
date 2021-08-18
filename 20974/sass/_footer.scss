@@ -1,0 +1,145 @@
+/*---------------------
+  Footer
+-----------------------*/
+.footer {
+  background: #09122b;
+  padding-top: 70px;
+}
+
+.footer__logo {
+  margin-bottom: 32px;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.footer__about {
+  margin-bottom: 30px;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    right: -72px;
+    top: -70px;
+    height: 335px;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    content: "";
+  }
+
+  p {
+    font-size: 14px;
+    color: #9caaaf;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+.footer__social {
+
+  a {
+    display: inline-block;
+    font-size: 16px;
+    color: $white-color;
+    margin-right: 24px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.footer__widget {
+  margin-bottom: 30px;
+
+  h5 {
+    color: $white-color;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  ul {
+
+    &.address {
+
+      li {
+        line-height: normal;
+        font-size: 14px;
+        font-weight: 500;
+        color: #9caaaf;
+        margin-bottom: 22px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        span {
+          font-size: 16px;
+          color: $primary-color;
+          margin-right: 5px;
+        }
+      }
+    }
+
+    li {
+      list-style: none;
+      line-height: 30px;
+
+      a {
+        font-size: 14px;
+        color: #9caaaf;
+      }
+    }
+  }
+}
+
+.footer__copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px 0 20px;
+  margin-top: 50px;
+}
+
+.footer__copyright__text {
+
+  p {
+    color: $white-color;
+    font-size: 14px;
+    margin-bottom: 0;
+
+    i {
+      color: $primary-color;
+    }
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+.footer__copyright__links {
+  text-align: right;
+
+  a {
+    color: $white-color;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 24px;
+    position: relative;
+
+    &:after {
+      position: absolute;
+      right: -17px;
+      top: -1px;
+      content: "|";
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}

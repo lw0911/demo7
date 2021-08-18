@@ -1,0 +1,32 @@
+/*---------------------
+  Hero
+-----------------------*/
+.hero {
+    padding-top: 215px;
+    padding-bottom: 215px;
+}
+
+.hero__text {
+
+    .hero__label {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: $white-color;
+        display: block;
+        margin-bottom: 28px;
+    }
+
+    h2 {
+        font-size: 52px;
+        color: $white-color;
+        line-height: 70px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .primary-btn {
+        margin-left: 15px;
+    }
+}
