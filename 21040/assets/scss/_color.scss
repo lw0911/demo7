@@ -1,0 +1,91 @@
+
+/*-------------   Color Variable  --------------*/
+
+//Colors
+	$white: #ffffff;
+	$white_color:#ffff;
+	$black: #16161a;
+	$gray:#F1FBFF;
+	
+//Theme color
+	$theme-color:#FFEA01;
+	$theme-color2: #0055FF;
+	$theme-color3: #f27420;
+	$theme-color4: #ff3500;
+
+// btn and Section color
+	$body-bg:#F3F3E8;
+	$btn_bg:#F15B43;
+
+// Heading color
+	$heading-color:#202020;
+	$heading_color2: #0055FF;
+	
+// Body font color
+	$font_color1: #202020;
+	$font_color2:#202020;
+	$body-text-color: #202020;
+
+// Border color
+	$border-color:#C9D6CB;
+	$hr-border-color:#eceff8;
+
+// Section Bg
+	$section-bg1:#FCF2EB;
+	$section-bg2:#305534;
+
+	$gray-color: #bebebe;
+	$gray-color-2: #bdbdbd;
+
+
+// bg
+	$brand-bg: #EFF6F0;
+	$testimonial-bg:#f9fafc;
+
+
+
+/*-------------Color include--------------*/
+
+
+/*-- Background color---*/
+
+.body-bg{
+	background: $body-bg;
+}
+.gray-bg {
+	background: $gray;
+}
+.white-bg {
+	background:$white;
+}
+.black-bg {
+	background: $black;
+}
+.theme-bg {
+	background:$theme-color;
+}
+.brand-bg{
+	background: $brand-bg;
+}
+.testimonial-bg{
+	background: $testimonial-bg;
+}
+.section-bg{
+	background: $section-bg1;
+}
+.section-bg2{
+	background: $section-bg2;
+}
+
+
+/*--- color------*/
+.white-color {
+	color: $white;
+}
+.black-color {
+	color: $black;
+}
+.theme-color {
+	color: $theme-color;
+}
+

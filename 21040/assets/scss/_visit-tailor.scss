@@ -1,0 +1,326 @@
+// 01
+.visit-tailor-area{
+    background-color: #FFEA01;
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+
+    // left Contents
+    .tailor-details{
+        width: 36%;
+        padding: 20px 20px 20px 80px;
+        @media #{$lg}{
+            width: 53%;
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$laptop}{
+            width: 41%
+        }
+        @media #{$md}{
+            width: 82%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        h2 {
+            font-size: 50px;
+            display: block;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 28px;
+            @media #{$large1}{
+                font-size: 41px;
+            }
+            @media #{$lg}{
+                font-size: 39px;
+            }
+            @media #{$sm}{
+                font-size: 30px;
+            }
+            @media #{$xs}{
+                font-size: 29px;
+            }
+        }
+        p{
+            color:#202020;
+            line-height: 1.7;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        p.pera-bottom{
+            margin-bottom: 41px;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                font-size: 13px;
+            }
+        }
+    }
+
+    // -Right Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit_bg.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 850px;
+        width: 49%;
+        position: relative;
+         @media #{$lg}{
+            width: 49%;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            height: 400px;
+        }
+        .info-more{
+            background-color: $theme-color2;
+            color: #fff !important;
+            padding: 37px 90px;
+            font-size: 30px;
+            border-radius: 0px;
+            font-weight: 400;
+            text-transform: capitalize;
+            border: 1px solid transparent;
+            display: inline-block;
+            position: absolute;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            @media #{$xs}{
+                padding: 18px 28px;
+                font-size: 22px;
+            }
+            i{
+                margin-left: 14px;
+                font-size: 19px;
+                font-weight: 800
+            }	
+		}
+    }
+}
+
+// 02
+.visit-tailor-area2{
+    background:#202020;
+    @include flexbox();
+    @include align-items(center);
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit_bg2.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 832px;
+        width: 50%;
+        position: relative;
+        @media #{$lg}{
+            height: 1132px;
+            width: 49%;
+        }
+         @media #{$xs}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 500px;
+        }
+		.info-man{
+            background: $theme-color;
+            display: inline-block;
+            padding: 35px 37px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            right: 0px;
+            margin: 0 auto;
+            text-align: center;
+            width: 275px;
+
+			@media #{$laptop}{
+				bottom: 153px;
+				right: 68px;
+			}	
+			@media #{$lg}{
+				padding: 24px 31px;
+			}	
+			@media #{$sm}{
+				padding: 23px 36px;
+			}	
+			@media #{$xs}{
+				padding: 21px 19px;
+                bottom: 30px;
+                right: 15px;
+			}	
+			.head-cap{
+                text-align: center;
+				@media #{$xs}{
+					margin-bottom: 9px;
+				}
+				h3{
+					color:$heading-color;
+					font-size: 120px;
+					font-weight: 800;
+					line-height: 1;
+				}
+			}
+			p{
+				color: $font_color1;
+				margin: 0;
+				font-size: 18px;
+
+			}
+		}
+    }
+    
+    // -Right Contents
+    .tailor-details{
+        width: 50%;
+        padding: 20px 50px 20px 60px;
+        @media #{$laptop}{
+            width: 50%;
+            padding: 20px 20px 20px 30px;
+        }
+        @media #{$lg}{
+            width: 53%;
+            padding: 20px 50px 20px 50px;
+        }
+        @media #{$md}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        img{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #fff;
+            font-size: 44px;
+            display: block;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 55px;
+            position: relative;
+            padding-bottom: 30px;
+            @media #{$laptop}{
+                font-size: 29px;
+            }
+            @media #{$lg}{
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+            @media #{$sm}{
+                font-size: 32px;
+            }
+            @media #{$xs}{
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+        }
+        .sinlge-wrapper {
+            @include flexbox();
+            @include justify-content(space-between);
+
+            @media #{$lg}{
+               @include flex-wrap(wrap);
+            }
+            @media #{$xs}{
+               @include flex-wrap(wrap);
+            }
+            .single-details{
+                width: 46%;
+                @media #{$laptop}{
+                    width: 48%;
+                }
+                @media #{$lg}{
+                    width: 85%;
+                }
+                @media #{$xs}{
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+                h3{
+                    a{
+                        color: #fff;
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin-bottom: 20px;
+                        &:hover{
+                            color: $theme-color;
+                        }
+                    }
+                }
+                p{
+                    color: #fff;
+                    line-height: 1.7;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                    @media #{$laptop}{
+                        font-size: 13px;
+                    }
+                    @media #{$sm}{
+                        font-size: 13px;
+                    }
+                }
+                span{
+                    color: rgba(243, 243, 232,.5);
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+
+
+

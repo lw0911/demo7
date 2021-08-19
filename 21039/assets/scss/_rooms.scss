@@ -1,0 +1,134 @@
+
+.rooms-area{
+    .single-gallery{
+        @include transition(.4s);
+        background: none;
+        border: 1px solid #4B4B4B;
+        padding: 30px;
+        
+        // Caption
+        .thumb-content-box {
+            @media #{$sm}{
+                flex-wrap: wrap;
+             }
+            @media #{$xs}{
+                flex-wrap: wrap;
+             }
+             .room-img{
+                @media #{$sm}{
+                    margin-bottom: 30px;
+                 }
+                @media #{$xs}{
+                    margin-bottom: 30px;
+                 }
+             }
+            .thumb-content {
+                @include transition(.4s);
+                padding-left: 40px;
+                bottom: -58px;
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+                padding-right: 20px;
+                @media #{$sm}{
+                    padding-left: 0px;
+                 }
+                @media #{$xs}{
+                    padding-left: 0px;
+                 }
+                span{
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                h3 {
+                    @include transition(.4s);
+                    color: #ffffff;
+                    font-weight: 400;
+                    font-size: 32px;
+                    margin-bottom: 25px;
+
+
+                    @media #{$laptop}{
+                        font-size: 32px;
+                    }
+                    @media #{$lg}{
+                        font-size: 32px;
+                        
+                    }
+                    @media #{$md}{
+                        br{
+                            display: none;
+                        }
+                    }
+                    @media #{$sm}{
+                        br{
+                            display: none;
+                        }
+                    }
+                    @media #{$xs}{
+                        font-size: 21px;
+                        br{
+                            display: none;
+                        }
+                    }
+                    span{
+                        font-size: 39px;
+                        display: block;
+                        
+                        @media #{$laptop}{
+                            font-size: 29px;
+                        }
+                        @media #{$lg}{
+                            font-size: 29px;
+                        }
+                        @media #{$xs}{
+                            font-size: 29px;
+                        }
+                    }
+                }
+                p{
+                    color: #fff;
+                    font-size: 14px;
+                }
+                a {
+                    border: 0;
+                    color: #fff;
+                    background: rgba(255, 255, 255,.1);
+                    width: 60px;
+                    height: 60px;
+                    line-height: 65px;
+                    display: block;
+                    text-align: center;
+                    border-radius: 50%;
+                    &:hover {
+                        color: #fff;
+                        background: $theme-color;
+                    }
+                }
+            }
+        }
+        &:hover{
+            background: #272727;
+            border: 1px solid transparent;
+            padding: 30px;
+            // Caption
+            .thumb-content-box {
+                .thumb-content {
+                    h3 {
+                        color: $theme-color;
+                    }
+                    a {
+                        background: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

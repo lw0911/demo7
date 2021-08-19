@@ -1,0 +1,43 @@
+.our-services-area{
+    .single-services1{
+        .services-ion{
+            margin-bottom: 24px;
+        }
+        .services-cap{
+            h5{
+                a{
+                    color: $heading-color;
+                    font-family: $font_2;
+                    font-size: 24px;
+                    line-height: 1.4;
+                    margin-bottom: 18px;
+                    font-weight: 600;
+                    display: block;
+                    @media #{$sm}{
+                        font-size: 20px;
+                    }
+                }
+                a:hover{
+                    color: $theme-color2;
+                }
+            }
+            p{
+                margin-bottom: 24px;
+                font-size: 16px;
+                font-weight: 300;
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+            }
+            a.more-btn{
+                color: $theme-color;
+                font-size: 18px;
+                font-weight: 400;
+                &:hover{
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
