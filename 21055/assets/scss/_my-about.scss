@@ -1,0 +1,74 @@
+
+.may-about{
+    background: #fff;
+    .col-xl-9{
+        .single-about{
+            &:first-child{
+                border-top: 1px solid #E2E2E2;
+            }
+        }
+    }
+   
+    .single-about{
+        @include flexbox();
+        @include justify-content(space-between);
+        @include align-items(center);
+        @include flex-wrap(wrap);
+        padding: 13px 0px;
+        border-bottom: 1px solid #E2E2E2;
+      
+
+        .tittle-experience{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            h3{
+                
+                color: $heading-color;
+                font-weight: 400;
+                font-size: 30px;
+                margin-bottom: 19px;
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+                @media #{$sm}{
+                    font-size: 25px;
+                }
+            }
+            p{
+                font-weight: 300;
+                font-size: 16px;
+                color: $heading-color;
+            }
+            
+        }
+        .bottom-pera{
+            p{
+                font-weight: 300;
+                font-size: 16px;
+                color: $heading-color;
+            } 
+        }
+        .experience-link{
+            p{
+                color: #928888;
+                font-size: 20px;
+                a{
+                    
+                    color: $heading-color;
+                    font-weight: 400;
+                    font-size: 20px;
+                    letter-spacing: .2px;
+                    @media #{$xs}{
+                        font-size: 13px;
+                    }   
+                    i{
+                        padding-left: 10px;
+                    }
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,238 @@
+
+.slider-height {
+    background-color: #5AFF80;
+    height: 900px;
+    @media #{$lg}{
+        height: 700px;
+    }
+    @media #{$md}{
+        height: 700px;
+    }
+    @media #{$sm}{
+        height:600px;
+    }
+    @media #{$xs}{
+        height: 550px;
+    }
+}
+
+.slider-height2{
+    background-color: #5AFF80;
+    height: 560px;
+    @media #{$md}{
+        height: 350px;
+    }
+    @media #{$sm}{
+        height: 330px;
+    }
+    @media #{$xs}{
+        height: 330px;
+    }
+}
+
+.slider-height3{
+    background-color: #5AFF80;
+    height: 375px;
+    @media #{$md}{
+        height: 350px;
+    }
+    @media #{$sm}{
+        height: 330px;
+    }
+    @media #{$xs}{
+        height: 330px;
+    }
+}
+
+.slider-area{
+    .hero__caption{
+        @media #{$lg}{
+            padding-top: 50px;
+        }
+        @media #{$sm}{
+            padding-top: 50px;
+        }
+        @media #{$xs}{
+            padding-top: 50px;
+        }
+        span{
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 300;
+            margin-bottom: 39px;
+            color:$theme-color;
+            margin-bottom: 44px;
+            text-transform: uppercase;
+            display: inline-block;
+            position: relative;
+            padding-left: 50px;
+            @media #{$xs}{
+                margin-bottom: 30px;
+                font-size: 16px;
+            }
+            &::before {
+                    position: absolute;
+                    content: "";
+                    width: 30px;
+                    height: 1px;
+                    background: $theme-color;
+                    left: 0;
+                    top: 52%;
+                    transform: translateY(-50%);
+            }
+        }
+        h1{
+            color: $heading-color;
+            font-size: 80px;
+            font-weight: 400;
+            margin-bottom: 14px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            @media #{$large1}{
+                font-size: 62px;
+            }
+            @media #{$lg}{
+                font-size: 73px;
+            }
+            @media #{$md}{
+                font-size: 57px;
+            }
+            @media #{$sm}{
+                font-size: 56px;
+            }
+            @media #{$xs}{
+                font-size: 45px;
+            }
+        }
+         p{
+            font-family: $font_2;
+            color: $heading-color;
+            margin-bottom: 42px;
+            font-size:40px;
+            font-weight: 300;
+            padding-right: 50px;
+            line-height: 1.2;
+            @media #{$large1}{
+                padding-right: 0px;
+            }
+            @media #{$md}{
+                padding-right: 0px;
+                font-size: 33px;
+            }
+            @media #{$sm}{
+                padding-right: 0px;
+                font-size: 33px;
+            }
+            @media #{$xs}{
+                padding-right: 0px;
+                font-size: 25px;
+            }
+        }
+        &.hero__caption5{
+            padding-top: 100px;
+            @media #{$lg}{
+                padding-top: 100px;
+            }
+            @media #{$md}{
+                padding-top: 100px;
+            }
+            @media #{$sm}{
+                padding-top: 50px;
+            }
+            @media #{$xs}{
+                padding-top: 50px;
+            }
+        }
+    }
+    // Hero man
+    .hero-man{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        @media #{$laptop}{
+            right: -100px;
+        }
+       
+        @media #{$lg}{
+            right: -180px;
+        }
+        @media #{$md}{
+         right: -281px;
+        }
+        @media #{$sm}{
+            display: none;
+        }
+        @media #{$xs}{
+            display: none;
+        }
+        img{
+            @media #{$lg}{
+                width: 938px;
+            }
+            @media #{$md}{
+                width: 938px;
+            }
+        }
+    }
+}
+
+//
+.hero-overly {
+    position: relative;
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color: rgba(1, 10, 28,  0.3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+// Another Hero Page
+.slider-area{
+    .hero-cap{
+            @media #{$xs}{
+                 padding-top: 80px;
+            }
+            @media #{$sm}{
+                padding-top: 80px;
+             }
+        & h2{
+            font-size: 50px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            @media #{$sm}{
+                font-size: 50px;
+              }
+            @media #{$xs}{
+                font-size: 35px;
+              }
+        }
+        // .breadcrumb {
+        //     background: none;
+        //     padding: 0;
+        //     margin: 0;
+
+        //     a {
+        //         color: #ec5b53;
+        //         font-size: 18px;
+        //         text-transform: capitalize;
+        //     }
+        // }
+        // .breadcrumb-item + .breadcrumb-item::before {
+        //     color: #ec5b53;
+        // }
+    }
+
+}

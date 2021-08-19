@@ -1,0 +1,75 @@
+.pricing-card-area{
+    .single-card{
+        padding: 30px 0px;
+        border: 1px solid #DBDBDB;
+
+        overflow: hidden !important;
+        position: relative;
+        .card-mid{
+            margin-bottom: 33px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #DBDBDB;
+            span{
+                background: $theme-color;
+                display: inline-block;
+                color: $white;
+                border-radius: 25px;
+                padding: 7px 21px;
+                margin-bottom: 13px;
+            }
+            h4{
+                color: $theme-color;
+                font-size: 30px;
+                font-weight: 400;
+                font-family: $font_2;
+                padding-right: 3px;
+                & > span{
+                    text-transform: uppercase;
+                    color: $heading-color;
+                    font-size: 14px;
+                    background: none;
+                    padding: 0;
+                }
+            }
+        }
+        .card-bottom{
+            padding: 0 25px;
+            ul{
+                li{
+                    color: #717081;
+                    font-weight: 300;
+                    margin-bottom: 12px;
+                    font-size: 16px;
+                    &:last-child{
+                        margin-bottom: 48px;
+                    }
+                }
+            }
+        }
+
+        // Hover
+        &:hover{
+            .card-bottom{
+                .border-btn{
+                    transform: scaleY(1);
+                    border: 1px solid transparent;
+                    color: #fff;
+                    background: #071112;
+                }
+            }
+
+        }
+    }
+}
+
+.work-company{
+    .single-logo img {
+        @media #{$lg}{
+            width: 100%;
+        }
+    }
+}
+.border-btn.get-btn {
+	width: 100%;
+    text-transform: uppercase;
+}

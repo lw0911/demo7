@@ -1,0 +1,98 @@
+.subscribe-area{
+    border-bottom: 1px solid #f0f0ef;
+    border-top: 1px solid #f0f0ef;
+    .subscribe-padding{
+        padding: 100px 0;
+        @media #{$xs}{
+            padding: 40px 0;
+        }
+    }
+    .subscribe-caption{
+        span{
+            text-transform: uppercase;
+            font-size: 12px;
+            color: $theme-color;
+            margin-bottom: 10px;
+            display: block;
+        }
+        h3{ 
+            font-size: 46px;
+            display: block;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 22px;
+            @media #{$lg}{
+                font-size: 41px;
+            }
+            @media #{$md}{
+                font-size: 37px;
+            }
+            @media #{$sm}{
+                font-size: 31px;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+            }
+        }
+        p{
+            color:#76787A;
+            font-size: 16px;
+            padding-bottom: 27px;
+        }
+        form{
+            position: relative;
+            input{
+                width: 100%;
+                height: 80px;
+                background:#F6F9FC;
+                padding:15px 24px 15px 67px;
+                color: $theme-color;
+                font-size: 16px;
+                border-radius: 5px;
+                border: 0;
+                &::placeholder{
+                    color: #76787A;
+                    font-size: 16px;
+                }
+                @media #{$xs}{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    height: 70px;
+                }
+            }
+            button.subscribe-btn{
+                border: 0;
+                background: #007AFF;
+                border-radius: 5px;
+                padding: 16px 26px;
+                color: #fff;
+                margin-left: 5px;
+                cursor: pointer;
+                font-size: 20px;
+                font-weight: 500;
+                position: absolute;
+                right: 10px;
+                top: 9px;
+                @media #{$xs}{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    margin-left: 0px;
+                    position: unset
+                }
+               
+            }
+            span{
+                color: #B6B9BC;
+                font-size: 35px;
+                font-weight: 400;
+                position: absolute;
+                left: 22px;
+                top: 20px;
+                font-family: $font_1;
+                @media #{$xs}{
+                    top: 13px;
+                }
+            }
+        }
+    }
+}

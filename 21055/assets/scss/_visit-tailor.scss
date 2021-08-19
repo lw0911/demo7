@@ -1,0 +1,110 @@
+.visit-tailor-area{
+    background-color: #01FF56;
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    position: relative;
+    &::before{
+        position: absolute;
+        height: 100px;
+        width: 100%;
+        background: $theme-color;
+        content: "";
+        right: 0px;
+        top: 0px;
+        @media #{$md}{
+            position: unset;
+        }
+        @media #{$sm}{
+            position: unset;
+        }
+        @media #{$xs}{
+            position: unset;
+        }
+    }
+    // left Contents
+    .tailor-details{
+        width: 35%;
+        padding: 20px 40px 20px 80px;
+        @media #{$lg}{
+            width: 49%;
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$large1}{
+            width: 55%
+        }
+        @media #{$laptop}{
+            width: 41%
+        }
+        @media #{$md}{
+            width: 82%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        p{
+            font-family: $font_2;
+            color: $heading-color;
+            font-size: 40px;
+            font-weight: 300;
+            @media #{$large1}{
+                font-size: 33px;
+            }
+            @media #{$lg}{
+                font-size: 33px;
+            }
+            @media #{$large1}{
+                font-size: 33px;
+            }
+            @media #{$xs}{
+                font-size: 22px;
+            }
+        }
+    }
+
+    // -Right Contents
+    .visit-team{
+        background-image: url(../img/gallery/visit.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 662px;
+        width: 56%;
+         @media #{$lg}{
+            width: 60%;
+        }
+        @media #{$sm}{
+            width: 100%;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$sm}{
+            height: 400px;
+            width: 100%;
+        }
+        @media #{$xs}{
+            height: 300px;
+            width: 100%;
+        }
+    }
+}
+
+
+

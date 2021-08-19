@@ -1,0 +1,306 @@
+
+
+// Visit One
+.visit-one{
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-details{
+        width: 36%;
+        padding: 20px 40px 20px 80px;
+        @media #{$lg}{
+            width: 49%;
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$large1}{
+            width: 55%
+        }
+        @media #{$laptop}{
+            width: 41%
+        }
+        @media #{$md}{
+            width: 82%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+    }
+
+    // -Right Contents
+    .visit-team{
+        background-image: url(../img/gallery/visit2.jpg);
+        background-color:#FFF6EE ;
+        background-size: cover;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 728px;
+        width: 52%;
+        
+        .wrapper{
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                bottom: 0px;
+                right: 0px;
+                left: 0px;
+                top: 0;
+                background: #FFF6EE;
+            }
+        }
+       
+        
+         @media #{$lg}{
+            width: 60%;
+        }
+        @media #{$sm}{
+            width: 100%;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$sm}{
+            height: 430px;
+            width: 100%;
+        }
+        @media #{$xs}{
+            height: 250px;
+            width: 100%;
+        }
+    }
+}
+
+
+// Video
+.visit-tailor-video{
+    @include flexbox();
+    @include align-items(center);
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-details{
+        width: 50%;
+        padding: 20px 100px 20px 300px;
+        @media #{$large1}{
+            padding: 20px 80px 20px 80px;
+            width: 50%;
+        }
+        @media #{$large2}{
+            padding: 20px 80px 20px 80px;
+            width: 50%;
+        }
+        @media #{$lg}{
+            width: 53%;
+            padding: 50px 20px 20px 50px;
+        }
+        @media #{$md}{
+            width: 76%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+            padding-top: 50px;
+        }
+        @media #{$xs}{
+
+            width: 100%;
+            padding: 50px 30px;
+            padding-top: 50px;
+        }
+        span{
+            
+            color: $heading-color;
+            margin-bottom: 22px; 
+            display: block;
+        }
+        h2 {
+            color: $heading-color;
+            font-size:58px;
+            display: block;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom:40px;
+            @media #{$lg}{
+                font-size: 37px;
+            }
+            @media #{$sm}{
+                font-size: 50px;
+            }
+            @media #{$xs}{
+                font-size: 26px;
+            }
+        }
+        p{
+            line-height: 1.7;
+            font-size: 18px;
+        }
+        p.pera-bottom{
+            margin-bottom: 41px;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                font-size: 13px;
+            }
+        }
+    }
+    // -Right Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit3.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height:766px;
+        width: 50%;
+         @media #{$large1}{
+            width: 50%;
+        }
+        @media #{$large2}{
+            width: 50%;
+        }
+         @media #{$lg}{
+            width: 49%;
+            height:766px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+// Testimonial Area
+.testi-tittle{
+    h4{
+        color: #122C77;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+}
+.h1-testimonial-active{
+    .testimonial-caption{
+        .testimonial-top-cap{
+            img{
+                margin-bottom: 35px;
+                width: auto;
+                display: inline-block;
+            }
+            p{
+                font-family: $font_1;
+                color:$heading-color;
+                line-height: 1.4;
+                margin-bottom: 28px;
+                font-size: 31px;
+                font-weight: 600;
+                @media #{$lg}{
+
+                }
+                @media #{$md}{
+                    padding: 0px;
+                }
+                @media #{$sm}{
+                    margin-bottom: 30px;
+                }
+                @media #{$xs}{
+                    font-size: 15px;
+                    margin-bottom: 30px;
+                }
+
+            }
+        }
+        .testimonial-founder{
+            .founder-img{
+
+            }
+            .founder-text{
+                margin-left: 20px;
+                text-align: left;
+                span{
+                    color: $heading-color;
+                    font-family: $font_2;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-align: left;
+                    margin-bottom: 1px;
+
+                }
+                p{
+                    color:#74706B;
+                    font-weight:500;
+                    line-height:1.5 ;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+// Arrow
+.h1-testimonial-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            left: 0px;
+            bottom: -88px;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            opacity: 1;
+            visibility: visible;
+
+            cursor: pointer;
+            background: none;
+
+            i{
+                font-size: 20px;
+                color: #CCD2E1;
+                &:hover{
+                    color: $theme-color ;
+                }
+            }
+        }
+        &.slick-next {
+            left: 50px;
+        }
+    }
+    
+}
+.slick-initialized .slick-slide {
+    outline: 0;
+}

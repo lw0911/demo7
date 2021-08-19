@@ -1,0 +1,248 @@
+.categories-area{
+    .single-cat{
+        @include transition(.4s);
+        z-index: 1;
+
+        .cat-cap{
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid transparent;
+            padding: 30px 20px 25px 20px;
+            @include transition(.3s);
+            border-radius: 5px;
+            .colors1{
+                color: #F27E42;
+                background: rgba(242, 126, 66, .26);
+            }
+            .colors2{
+                color: #4294F2;
+                background: rgba(66, 148, 2420, .26);
+            }
+            .colors3{
+                color: #2EB98D;
+                background: rgba(46, 185, 141, .03);
+            }
+            .colors4{
+                color: #6A42F2;
+                background: rgba(106, 66, 242, .07);
+            }
+            .colors5{
+                color: #F162BC;
+                background: rgba(241, 98, 188, .07);
+            }
+            span{
+                padding: 6px 20px;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 26px;
+                margin-bottom: 40px;
+                display: inline-block;
+            }
+            h5{
+                a{
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #071112;
+                    text-transform: capitalize;
+                    margin-bottom: 17px;
+                    display: block;
+                    @include transition(.2s);
+                    @media #{$lg}{
+                        font-size: 19px;
+                    }
+                    @media #{$sm}{
+                        font-size: 21px;
+                    }
+                    @media #{$md}{
+                        font-size: 20px;
+                    }
+                    @media #{$xs}{
+                        font-size: 23px;
+                    }
+                    &:hover{
+                        color: $theme-color;
+                    }
+                }
+            }
+            ul{
+                li{
+                    &:first-child{
+                        margin-right: 20px;
+                    }
+                    display: inline-block;
+                    p{
+                        color: #76787A;
+                        font-size: 14px;
+                        line-height: 1.6;
+                        margin: 0;
+                        font-weight: 400;
+                        margin-bottom: 23px;
+                        @media #{$lg}{
+                            font-size: 16px;
+                        }
+                        @media #{$sm}{
+                            font-size: 13px;
+                        }
+                        @media #{$md}{
+                            font-size: 13px;
+                        }
+                        @media #{$xs}{
+                            font-size: 17px;
+                        }
+                        i{
+                            color: rgba(164, 172, 169,.5);
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+            .pricing{
+                .left{
+                    @include flexbox();
+                    @include align-items(center);
+                    img{
+                        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+                        border-radius: 50%;
+                    }
+                    p{
+                        font-size: 16px;
+                        font-weight: 600;
+                        display: block;
+                        margin: 0;
+                        margin-left: 9px;
+                        color: #18304B;
+                        @media #{$lg}{
+                            font-size: 14px;
+                        }
+                        @media #{$sm}{
+                            margin-left: 6px;
+                            font-size: 9px;
+                        }
+                        @media #{$xs}{
+                            margin-left: 6px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .time{
+                    padding: 0;
+                    color: #B6B9BC;
+                    font-size: 16px;
+                    background: none;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
+        }
+        // Hover Effect In single 
+        &:hover{
+            .cat-img{
+                img{
+                    transform: scale(1.05);
+                }
+            }
+            .cat-cap{
+                border: 1px solid $theme-color;
+                h5{
+                  a{
+
+                  }
+                }
+            }
+       }
+    }
+    // Tabs Button Style
+    .nav-button{
+        margin-bottom: 30px;
+        .nav-tabs{
+            margin-bottom: 20px;
+            padding-bottom: 0px;
+            position: relative;
+            border-bottom: 1px solid rgba(164, 172, 169,.4);
+            justify-content: center;
+            .nav-item {
+                display: block;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+            .nav-link {
+                font-family: $font_2;
+                color:#B6B9BC;
+                font-size: 18px;
+                font-weight:700;
+                border: 0;
+                padding: 17px 5px;
+                padding-top: 0;
+                border-bottom: 4px solid transparent;
+                margin-left: 53px;
+                @media #{$large1}{
+                    margin-left: 33px;
+                }
+                @media #{$lg}{
+                    font-size: 16px;
+                    margin-left: 12px;
+                }
+                @media #{$md}{
+                    font-size: 16px;
+                    margin-left: 12px;
+                    border-bottom: 0;
+                }
+                @media #{$sm}{
+                    font-size: 16px;
+                    margin-left: 12px;
+                    border-bottom: 0;
+                }
+                @media #{$xs}{
+                    font-size: 16px;
+                    margin-left: 12px;
+                    border-bottom: 0;
+                }
+                &:first-child{
+                    margin-left: 0px;
+                }
+                @media #{$xs}{
+                    border-bottom: 0;
+                }
+                &.active {
+                    color: $theme-color;
+                    border-bottom: 4px solid $theme-color;
+                    background: none;
+                    @media #{$md}{
+                        border-bottom: 0;
+                    }
+                    @media #{$sm}{
+                        border-bottom: 0;
+                    }
+                    @media #{$xs}{
+                        border-bottom: 0;
+                    }
+                
+                }
+                &:hover {
+                    border-bottom: 4px solid $theme-color;
+                    @media #{$md}{
+                        border-bottom: 0;
+                    }
+                    @media #{$sm}{
+                        border-bottom: 0;
+                    }
+                    @media #{$xs}{
+                        border-bottom: 0;
+                    }
+                }
+
+            }
+        }
+        &.nav-button2{
+            .nav-tabs{
+                border-bottom: 1px solid rgba(255, 255, 255,.2);
+                .nav-item {
+
+                }
+                .nav-link {
+                    color:#94817E;
+                }
+            }
+        }
+    }
+}

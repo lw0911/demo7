@@ -1,0 +1,73 @@
+.pricing-card-area{
+    .single-card{
+        @include transition(.4s);
+        padding: 30px 31px;
+        overflow: hidden !important;
+        position: relative;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        .card-mid{
+            margin-bottom: 33px;
+            span{
+                font-size: 20px;
+                font-weight: 600;
+                display: inline-block;
+                color: $heading-color;
+                margin-bottom: 1px;
+                margin-bottom: 14px;
+            }
+            h4.free{
+                color: #0AAB78;
+            }
+            h4.business{
+                color: #F27E42;
+            }
+            h4{
+                color: #4294F2;
+                font-size: 30px;
+                font-weight: 700;
+                font-family: $font_2;
+                margin: 0;
+                & > span{
+                    color: #4294F2 !important;
+                    font-size: 16px;
+                    background: none;
+                    padding: 0;
+                }
+            }
+            p{
+                font-size: 14px;
+                font-style: italic;
+            }
+        }
+        .card-bottom{
+           p{
+               margin-bottom: 28px;
+           }
+            .btn_01{
+                border: 1px solid $btn_bg;
+                padding: 13px 44px;
+            }
+        }
+
+        // Hover
+        &:hover{
+            .card-bottom{
+                .btn_01{
+                    border: 1px solid #4294F2;
+                    color: #fff !important;
+                    background: $btn_bg;
+                }
+            }
+        }
+    }
+}
+
+.work-company{
+    .single-logo img {
+        @media #{$lg}{
+            width: 100%;
+        }
+    }
+}

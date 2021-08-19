@@ -1,0 +1,118 @@
+
+.gallery-area{
+    .box{
+        position: relative;
+        // img
+        .gallery-img{
+            height: 565px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .big-img{
+            height: 680px;
+            @media #{$lg}{
+                height: 435px;
+            }
+            @media #{$md}{
+                height: 300px;
+            }
+            @media #{$sm}{
+                height: 350px;
+            }
+            @media #{$xs}{
+                height: 300px;
+            }
+        }
+        .small-img{
+            height: 435px;
+        }
+        // Caption
+        .overlay {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            @extend %overlay2;
+            // background-color: rgba(0, 0, 0,.3);
+            top: 0;
+            left: 0;
+            .overlay-content {
+                position: absolute;
+                bottom: 0;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                p{
+                    color: #ffffff;
+                    font-size: 18px;
+                    font-weight: 300;
+                }
+                h3 {
+                    color: #ffffff;
+                    font-size: 40px;
+                    margin: 0;
+                    text-transform: uppercase;
+                    @media #{$laptop}{
+                        font-size: 32px;
+                    }
+                    @media #{$lg}{
+                        font-size: 32px;
+                    }
+                    @media #{$xs}{
+                        font-size: 32px;
+                    }
+                }
+                a {
+                    color: #fff;
+                    background: #ff0000;
+                    width: 60px;
+                    height: 60px;
+                    display: inline-block;
+                    text-align: center;
+                    line-height: 60px;
+                    border-radius: 50%;
+                    transform: rotate(45deg) !important;
+                    margin-bottom: 30px;
+                    font-size: 20px;
+                    i{
+                        position: relative;
+                        bottom: -2px;
+                    }
+                    &:hover {
+                        background: #fff;
+                        color: #ff0000;
+                    }
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+        &.snake{
+            position: relative;
+            overflow: hidden;
+        }
+    }
+}
+
+.box{
+    position: relative;
+    img{
+        width: 100%;
+    }
+    &.snake{
+        position: relative;
+        overflow: hidden;
+    }
+}
+.overlay{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,.3);
+    top: 0;
+    left: 0;
+  }
+  

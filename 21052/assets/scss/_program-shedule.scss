@@ -1,0 +1,147 @@
+
+// Tabs Button Style
+.nav-button{
+    padding: 40px 30px;
+    background: #0e0e0e;
+    .nav-tabs{
+        margin-bottom: 20px;
+        padding-bottom: 0px;
+        position: relative;
+        border-bottom: 1px solid rgba(255, 255, 255,.2);
+        justify-content: center;
+        
+        .nav-item {
+            display: block;
+            @media #{$xs}{
+                font-size: 18px;
+            }
+        }
+        .nav-link {
+            font-family: $font_1;
+            color:#fff;
+            font-size: 18px;
+            font-weight: 500;
+            border: 0;
+            padding: 17px 5px;
+            padding-top: 0;
+            border-bottom: 4px solid transparent;
+            margin-right: 43px;
+            @media #{$xs}{
+                border-bottom: 0;
+            }
+            &.active {
+                color: $theme-color2;
+                border-bottom: 4px solid $theme-color2;
+                background: none;
+                @media #{$xs}{
+                    border-bottom: 0;
+                }
+               
+            }
+            &:hover {
+                border-bottom: 4px solid $theme-color2;
+                @media #{$xs}{
+                    border-bottom: 0;
+                }
+            }
+            @media #{$sm}{
+                margin-right: 23px;
+            }
+            @media #{$xs}{
+                margin-right: 23px;
+            }
+        }
+    }
+    &.nav-button2{
+        .nav-tabs{
+            border-bottom: 1px solid rgba(255, 255, 255,.2);
+            .nav-item {
+
+            }
+            .nav-link {
+                color:#94817E;
+            }
+        }
+    }
+}
+
+.shedule-wrapper{
+    padding: 30px 30px;
+    background: #0e0e0e;
+    // shedule items
+    .shedule-items{
+        @include flexbox();
+        justify-content: space-between;
+        padding: 23px 0;
+        border-bottom: 1px dashed rgba(255, 255, 255,.2);
+        @media #{$xs}{
+            @include flex-wrap(wrap);
+        }
+        .shedule-left{
+            @include flexbox();
+            align-items: center; 
+            .job-tittle{
+                a{
+                    h4{
+                        color: #ffff;
+                        font-family: $font_2;
+                        @include transition(.4s);
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                        @media #{$xs}{
+                            font-size: 16px;
+                        }
+                        &:hover{
+                            color:heading-color
+                        }
+                    }
+                }
+                p{
+                    margin-bottom: 0;
+                    color:#9B9EAC;
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 48px;
+                        font-size: 15px;
+                        color: #ffff;
+                        line-height: 1.8;
+                        @media #{$md}{
+                            margin-right: 18px;
+                        }
+                        @media #{$xs}{
+                            margin-right: 0px;
+                            margin-bottom: 7px;
+                        }
+                        @media #{$sm}{
+                            margin-right: 8px;
+                        }
+                        &:last-child{
+                            margin-right: 0px;
+                        }
+                        i {
+                            font-size: 18px;
+                            color: $theme-color;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        .price{
+            span{
+                font-family: $font_2;
+                color: #fff;
+                font-weight: 600;
+                font-size: 24px;
+                @media #{$xs}{
+                    font-size: 16px;
+                }
+            }
+        }
+    }  
+}

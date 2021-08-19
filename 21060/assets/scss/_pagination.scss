@@ -1,0 +1,113 @@
+
+// Pagination Area
+.pagination-area{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    // @media #{$lg}{
+    //     padding-bottom: 50px;
+    // }
+    // @media #{$md}{
+    //     padding-bottom: 50px;
+    // }
+    // @media #{$sm}{
+    //     padding-bottom: 50px;
+    // }
+    // @media #{$xs}{
+    //     padding-bottom: 50px;
+    // }
+    .page-item {
+        margin: 0;
+        &:first-child{
+            margin: 0;
+            .page-link {
+                margin-left: 0;
+                border-top-left-radius: 0%;
+                border-bottom-left-radius: 0%;
+            }
+        }
+        &:last-child {
+            .page-link {
+                border-top-right-radius: 0%;
+                border-bottom-right-radius: 0%;
+            }
+        }
+        &.active .page-link {
+            z-index: 1;
+            border: 0;
+            position: relative;
+            box-shadow: none;
+            outline: 0;
+            color: #fff;
+            background: #3B4855
+        }
+    }
+    .page-link {
+        color: $heading-color;
+        font-family: $font_1;
+        font-size: 20px;
+        text-align: center;
+        background: none;
+        box-shadow: none;
+        outline: 0;
+        padding: 10px 18px;
+        margin: 0 7px;
+        border-radius: 0%;
+        border: 1px solid #f0f0f0;
+        @media #{$xs}{
+            margin: 0 4px;
+            padding: 8px 11px;
+        }  
+        &:hover {
+            color: #fff;
+            background: #3B4855;
+            border: 1px solid transparent;
+        }
+    }
+}
+
+
+
+
+.page-notification{
+    padding: 15px 88px;
+
+    @media #{$lg}{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media #{$md}{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media #{$sm}{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media #{$xs}{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .breadcrumb {
+        background: none;
+        padding: 0;
+        margin: 0;
+        a {
+            font-family: $font_1;
+            color: #686868;
+            font-size: 14px;
+            text-transform: capitalize;
+            line-height: 1;
+            font-weight: 400;
+            letter-spacing: -.05px;
+        }
+    }
+    .breadcrumb-item + .breadcrumb-item::before {
+        display: inline-block;
+        color: #686868;
+        content: "/";
+        font-size: 17px;
+        padding: 0 4px;
+        padding-right: 8px;
+    }
+}
+
