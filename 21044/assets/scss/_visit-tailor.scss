@@ -1,0 +1,143 @@
+.visit-tailor-area{
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+
+    // left Contents
+    .tailor-details{
+        width: 36%;
+        padding: 20px 20px 20px 80px;
+        @media #{$lg}{
+            width: 53%;
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$laptop}{
+            width: 41%
+        }
+        @media #{$md}{
+            width: 82%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        h2 {
+            font-size: 30px;
+            display: block;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 18px;
+            @media #{$lg}{
+                font-size: 30px;
+            }
+            @media #{$sm}{
+                font-size: 30px;
+            }
+            @media #{$xs}{
+                font-size: 29px;
+            }
+        }
+        p{
+            color:#545454;
+            line-height: 1.7;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        p.pera-bottom{
+            margin-bottom: 41px;
+            @media #{$xs}{
+                font-size: 15px;
+            }
+            @media #{$sm}{
+                font-size: 13px;
+            }
+        }
+    }
+
+    // -Right Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit_bg.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 700px;
+        width: 49%;
+        position: relative;
+         @media #{$lg}{
+            width: 49%;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 400px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            height: 400px;
+        }
+		.info-man{
+            background: #1E1E1E;
+            display: inline-block;
+            padding: 35px 37px;
+            position: absolute;
+            bottom: 68px;
+            right: 70px;
+
+			@media #{$laptop}{
+				bottom: 153px;
+				right: 68px;
+			}	
+			@media #{$lg}{
+				padding: 24px 31px;
+			}	
+			@media #{$sm}{
+				padding: 23px 36px;
+			}	
+			@media #{$xs}{
+				padding: 21px 19px;
+                bottom: 30px;
+                right: 15px;
+			}	
+			.head-cap{
+                text-align: center;
+				@media #{$xs}{
+					margin-bottom: 9px;
+				}
+				h3{
+					color: $theme-color;
+					font-size: 120px;
+					font-weight: 800;
+					line-height: 1;
+				}
+			}
+			p{
+				color: #fff;
+				margin: 0;
+				font-size: 18px;
+
+			}
+		}
+    }
+}
+
+// Progress Bar
+
+

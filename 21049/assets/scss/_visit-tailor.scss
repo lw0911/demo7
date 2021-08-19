@@ -1,0 +1,180 @@
+
+// 02
+.visit-tailor-area2{
+    @include flexbox();
+    @include align-items(center);
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+    // left Contents
+    .tailor-offers{
+        background-image: url(../img/gallery/visit_bg.jpg);
+        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 828px;
+        width: 31%;
+        position: relative;
+        @media #{$lg}{
+            height: 828px;
+            width: 27%;
+        }
+         @media #{$xs}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$md}{
+            width: 100%;
+            height: 500px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    
+    // -Right Contents
+    .tailor-details{
+        width: 70%;
+        padding: 20px 50px 20px 60px;
+        @media #{$laptop}{
+            width: 70%;
+            padding: 20px 20px 20px 30px;
+        }
+        @media #{$lg}{
+            width: 80%;
+            padding: 20px 50px 20px 50px;
+        }
+        @media #{$md}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+        }
+        img{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .sinlge-wrapper {
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+
+            @media #{$lg}{
+               @include flex-wrap(wrap);
+            }
+            @media #{$xs}{
+               @include flex-wrap(wrap);
+            }
+            .single-details{
+                width: 57%;
+                @media #{$laptop}{
+                    width: 57%;
+                }
+                @media #{$lg}{
+                    width: 43%;
+                    margin-left: 0;
+                }
+                @media #{$sm}{
+                    width: 50%;
+                    margin-left: 20px;
+                }
+                @media #{$xs}{
+                    width: 100%;
+                    margin-bottom: 30px;
+                    margin-left: 0px;
+                }
+                h3{
+                    position: relative;
+                    color: $heading-color;
+                    font-size: 44px;
+                    font-weight: 400;
+                    margin-bottom: 54px;
+                    @media #{$large1}{
+                        font-size: 36px;
+                    }
+                    @media #{$lg}{
+                        font-size: 30px;
+                    }
+                    @media #{$sm}{
+                        font-size: 25px;
+                    }
+                    @media #{$md}{
+                        font-size: 36px;
+                    }
+                    @media #{$xs}{
+                        font-size: 29px;
+                    }
+                    br{
+                        @media #{$sm}{
+                            display: none;
+                        }
+                        @media #{$xs}{
+                            display: none;
+                        }
+                    }
+                    &::after{
+                        background:$theme-color;
+                        content: "";
+                        position: absolute;
+                        height: 3px;
+                        width: 100px;
+                        z-index: 1;
+                        left: 0;
+                        bottom: -26px;
+                    }
+                }
+                p{
+                    color: $font-color1;
+                    line-height: 1.7;
+                    font-size: 18px;
+                    margin-bottom: 20px;
+                   
+                    @media #{$lg}{
+                        font-size: 15px;
+                    }
+                    @media #{$sm}{
+                        font-size: 13px;
+                    }
+                }
+                span{
+                    color: rgba(243, 243, 232,.5);
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+                .address{
+                    margin-bottom: 25px;
+                    h5{
+                        color: $heading-color;
+                        font-size: 18px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+

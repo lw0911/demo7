@@ -1,0 +1,87 @@
+
+/*-------------   Color Variable  --------------*/
+
+//Colors
+	$white: #ffffff;
+	$white_color:#ffff;
+	$black: #16161a;
+	$gray:#F1FBFF;
+	
+//Theme color
+	$theme-color:#65C9BB;
+	$theme-color2: #F15B43;
+	$theme-color3: #f27420;
+	$theme-color4: #ff3500;
+
+// btn and Section color
+	$btn_bg:#F15B43;
+
+// Heading color
+	$heading-color:#263B5C;
+	$heading_color2: #080808;
+	
+// Body font color
+	$font_color1: #777777;
+	$font_color2:#1D2547;
+	$body-text-color: #777777;
+
+// Border color
+	$border-color:#C9D6CB;
+	$hr-border-color:#eceff8;
+
+// Section Bg
+	$section-bg1:#FCF2EB;
+	$section-bg2:#305534;
+
+	$gray-color: #bebebe;
+	$gray-color-2: #bdbdbd;
+
+
+// bg
+	$brand-bg: #EFF6F0;
+	$testimonial-bg:#f9fafc;
+
+
+
+/*-------------Color include--------------*/
+
+
+/*-- Background color---*/
+
+.gray-bg {
+	background: $gray;
+}
+.white-bg {
+	background:$white;
+}
+.black-bg {
+	background: $black;
+}
+.theme-bg {
+	background:$theme-color;
+}
+.brand-bg{
+	background: $brand-bg;
+}
+.testimonial-bg{
+	background: $testimonial-bg;
+}
+.section-bg{
+	background: $section-bg1;
+}
+.section-bg2{
+	background: $section-bg2;
+}
+
+
+/*--- color------*/
+.white-color {
+	color: $white;
+}
+.black-color {
+	color: $black;
+}
+.theme-color {
+	color: $theme-color;
+}
+

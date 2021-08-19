@@ -1,0 +1,97 @@
+.our-services2{
+    .single-services{
+        padding-right: 50px;
+        @include transition(.4s);
+        @media #{$lg}{
+            padding: 0;
+        }
+        @media #{$md}{
+            padding: 0;
+        }
+        @media #{$sm}{
+            padding: 0;
+        }
+        @media #{$xs}{
+            padding: 0;
+        }
+        .services-icon{
+            span{
+                color: #55A48A;
+                font-size: 16px;
+                font-weight: 500;
+                margin-bottom: 16px;
+                display: block;
+            }
+        }
+        .services-cap{
+            h5{
+                font-size: 28px;
+                font-weight: 500;
+                color: $heading-color;
+                line-height: 1.4;
+                margin-bottom: 18px;
+                @media #{$sm}{
+                    font-size: 20px;
+                }
+                a:hover{
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+}
+
+// Arrow
+.services-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(32, 69, 112,.3);
+                @include transition(.2s);
+                &:hover{
+                    color: $heading-color;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+               left: -10px;
+            }
+            @media #{$lg}{
+               left: -10px;
+            }
+            @media #{$md}{
+               left: -10px;
+            }
+            @media #{$sm}{
+               left: -10px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -10px;
+             }
+            @media #{$lg}{
+                right: -10px;
+            }
+            @media #{$md}{
+                right: -10px;
+            }
+            @media #{$sm}{
+                right: -10px;
+            }
+        }
+    }
+}

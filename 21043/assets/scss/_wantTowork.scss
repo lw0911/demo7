@@ -1,0 +1,186 @@
+.want-wrapper{
+    padding-top: 50px;
+    background: #FFF323;
+    padding-bottom: 20px;
+    .wants-wrapper {
+        @include flexbox();
+        align-items: center;
+        // flex-wrap: wrap;
+        blockquote {
+            margin-right: 30px;
+        }
+    }
+    .wantToWork-area{
+        z-index: 1;
+        .wantToWork-caption{
+            @media #{$xs}{
+                margin-bottom: 30px;
+            }
+            h2{
+                font-family: $font_2;
+                font-size: 30px;
+                font-weight: 500;
+                line-height: 1;
+                margin-bottom: 8px;
+                color: #132E43;
+                
+                @media #{$md}{
+                    font-size: 30px; 
+                }
+                @media #{$sm}{
+                    font-size: 35px; 
+                }
+                @media #{$xs}{
+                    font-size: 22px; 
+                }
+            } 
+            p{
+                font-size: 14px;
+                margin-bottom: 0;
+                color:#2D0000;
+                font-weight: 400;
+            }
+        }    
+        input {
+            color:$theme-color;
+            height: 50px;
+            width: 100%;
+            padding: 10px 25px;
+            font-weight: 500;
+            text-transform: capitalize;
+            border-radius: 30px;
+            border: 0;
+            &::placeholder{
+                color: $heading-color;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .nice-select {
+            color:$heading-color;
+            line-height: 30px;
+            border: 0;
+            height: 50px;
+            width: 100%;
+            font-weight: 500;
+            text-transform: capitalize;
+            padding-top: 10px;
+            border-radius: 30px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+            &::after {
+                border-bottom: 2px solid $heading-color;
+                border-right: 2px solid $heading-color;
+                height: 7px;
+                right: 41px;
+                width: 7px;
+            }
+            .list {
+                width: 100%;
+                border-radius: 0;
+            }
+            &.open .list {
+                width: 100%;
+                border-radius: 0;
+                background: $theme-color2;
+            }
+            .option {
+                color: #071112;
+            }
+            &::placeholder{
+                color: #6E6575;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        // .wantToWork-btn{
+        //     @media #{$sm}{
+        //         float: left;
+        //         margin-top: 30px;
+        //     }
+        //     @media #{$xs}{
+        //         float: left;
+        //         margin-top: 30px;
+        //     }
+        //     @media #{$md}{
+        //         // float: left;
+        //         margin-top: 30px;
+        //     }
+        // }
+        .contact-now{
+           
+            span {
+                font-family: $font_1;
+                font-size: 24px;
+                font-weight: 400;
+                margin-right: 31px;
+                
+                @media #{$lg}{
+                    font-size: 17px;
+                }
+                @media #{$sm}{
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+                @media #{$xs}{
+                    font-size: 14px;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .btn2 {
+    
+        background: $theme-color;
+        color: #ffff;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 12px 31px 12px 30px;
+        text-transform: capitalize;
+        border-radius: 30px;
+        cursor: pointer;
+        display: inline-block;
+        @media #{$xs}{
+            font-size: 14px;
+        }
+        @media #{$sm}{
+            font-size: 14px;
+        }
+        i{
+            padding-right: 12px;
+        }
+        &:hover{
+            color: #fff;
+        }
+    }
+    .sm-left{
+        @media #{$xs}{
+            float: left;
+            margin-top: 30px;
+        } 
+        @media #{$sm}{
+            float: left;
+            margin-top: 30px;
+        } 
+    }
+    .btn.w-btn {
+        padding: 18px 65px 18px 33px;
+    }
+    .double-btn.f-right {
+        @media #{$sm}{
+            float: left;
+        } 
+        @media #{$xs}{
+            float: left;
+        } 
+        
+    }
+    
+    .wantToWork-btn img {
+        margin-right: 9px;
+    }
+    
+    
+    
+}
+

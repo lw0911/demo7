@@ -1,0 +1,50 @@
+.location-house{
+    position: relative;
+    padding-left: 300px;
+    @media #{$large3}{
+        padding-left: 240px;
+    }
+    @media #{$largex}{
+        padding-left: 0px;
+    }
+    .section-tittle{
+        img{
+            margin-bottom: 30px;
+        }
+    }
+    .insta-btn {
+        border: 2px solid #C46B48;
+        color: #C46B48;
+        background: #fff;
+        @include transition(.4s);
+        font-family: $font_1;
+        position: absolute;
+        margin: 0 auto;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        display: inline-block;
+
+        font-size: 18px;
+        width: 183px;
+        height: 60px;
+        line-height: 55px;
+        left: 0;
+        right: 0;
+        i{
+            color: #C46B48;
+            font-size: 15px;
+            margin-right: 10px;
+            font-weight: 700;
+        }
+    }
+    &:hover{
+        .location-btn{
+            
+           bottom: 20%;
+            background: $theme-color;
+        }
+   }
+}
+

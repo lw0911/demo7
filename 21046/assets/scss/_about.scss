@@ -1,0 +1,150 @@
+// About 02
+.about-area{
+    // left content
+    .about-caption{
+        @media #{$md}{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @media #{$sm}{
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        @media #{$xs}{
+            margin-top: 35px;
+            padding-bottom:50px;
+        } 
+        h2 {
+            background: $theme-color;
+            padding: 45px 60px;
+
+            font-family: $font_1;
+            font-size: 58px;
+            display: block;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 12px;
+            position: relative;
+            left: -300px;
+            @media #{$large1}{
+                font-size: 40px;
+            }
+            @media #{$lg}{
+                font-size: 30px;
+                left: -100px;
+            }
+            @media #{$md}{
+                font-size: 30px;
+                left: 0px;
+                background: none;
+                padding: 0;
+            }
+            @media #{$sm}{
+                font-size: 31px;
+                left: 0px;
+                background: none;
+                padding: 0;
+            }
+            @media #{$xs}{
+                font-size: 24px;
+                left: 0px;
+                background: none;
+                padding: 0;
+    
+            }
+            br{
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+        }
+        p{
+            color:#656565;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+            br{
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+            a{
+                text-decoration: underline;
+            }
+        }
+        
+        .pera-top {
+            font-size: 16px;
+            font-weight: 500;
+            color: #212025;
+            margin-bottom: 25px;
+        }
+        .pera-bottom {
+            font-size: 16px;
+            color: #212025;
+            font-weight: 300;
+		}
+    }
+    // Right img
+    .about-img{
+        &.about-img1{
+            img{
+                border-radius: 0;
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    // slider-btn
+    .slider-btns{
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include align-items(center);
+        @media #{$xs}{
+            display: inline-block;
+        }
+        a{
+            color: $theme-color;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            display: block;
+        }
+        .video-btn{
+            font-family: $font_1;
+            color: $theme-color;
+            font-weight: 400;
+            font-size: 18px;
+            text-transform: capitalize;
+            display: block;
+            // padding: 17px 40px;
+            // border: 1px solid #fff;
+            border-radius: 5px;
+
+            @media #{$md}{
+                margin-top: 20px;
+            }
+            @media #{$xs}{
+                margin-top: 20px;
+            }
+            i{
+                margin-right: 5px;
+            }
+            img{
+                margin-right: 5px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+

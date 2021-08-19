@@ -1,0 +1,193 @@
+.customer-section{
+
+
+    // Border-top
+    .col-lg-4:nth-child(1) .single-cat,
+    .col-lg-4:nth-child(2) .single-cat,  
+    .col-lg-4:nth-child(3) .single-cat {
+        border-top: 1px solid rgba(255, 255, 255,.2);
+        @media #{$xs}{
+            border-bottom: 1px solid rgba(255, 255, 255,.2);
+        }
+    }
+    // remove border left
+    .col-lg-4:nth-child(1) .single-cat {
+        border-left: 0;
+        border-right: 0;
+        @media #{$sm}{
+            border-left: 1px solid rgba(255, 255, 255,.2);
+        }
+    }
+    // remove border Right
+    .col-lg-4:nth-child(3) .single-cat {
+        border-left: 0;
+        border-right: 0;
+        @media #{$sm}{
+            border-left: 1px solid rgba(255, 255, 255,.2) !important;
+        }
+    }
+
+    // remove border left
+    .col-lg-4:nth-child(3) .single-cat{
+        @media #{$md}{
+            border-right: 1px solid rgba(255, 255, 255,.2);
+            border-left: 0;
+        }
+        @media #{$sm}{
+            border-right: 1px solid rgba(255, 255, 255,.2);
+            border-left: 0;
+        }
+    }
+
+    
+.single-cat{
+    @include transition(.4s);
+    z-index: 1;
+    padding: 40px 46px 25px 46px;
+    border: 1px solid rgba(255, 255, 255,.2);
+    border-radius: 0px;
+    @media #{$large1}{
+        height: 356px;
+    }
+    @media #{$lg}{
+        height: 290px;
+    }
+    @media #{$md}{
+        padding: 30px 15px 10px 20px;
+        height: 290px;
+    }
+    
+    .cat-img{
+        margin-bottom: 25px;
+        img{
+            border-radius: 50%;
+            display: inline-block;
+        }
+        p{
+            color: #fff;
+            display: inline-block; 
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    }
+    .cat-cap{
+        span{
+            color: #6785FF;
+            font-size: 46px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+        h5{
+         & > a{
+            font-size: 28px;
+            font-weight: 500;
+            color: $heading-color;
+            text-transform: capitalize;
+            margin-bottom: 17px;
+            display: block;
+            @include transition(.2s);
+            @media #{$sm}{
+                font-size: 21px;
+            }
+            @media #{$md}{
+                font-size: 20px;
+            }
+            @media #{$xs}{
+                font-size: 23px;
+            }
+            &:hover{
+                color: $theme-color;
+            }
+          }
+        }
+        p{
+            color: #fff;
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 36px;
+            font-weight: 300;
+            @media #{$lg}{
+                font-size: 16px;
+            }
+            @media #{$sm}{
+                font-size: 13px;
+            }
+            @media #{$md}{
+                font-size: 17px;
+            }
+            @media #{$xs}{
+                font-size: 17px;
+            }
+        } 
+        .rating {
+            position: relative;
+            li {
+                color: $theme-color;
+                font-size: 14px;
+                display: inline-block;
+                margin-bottom: 15px;
+                p{
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+}
+
+
+// Arrow
+.customer-active{
+button{
+    &.slick-arrow {
+        position: absolute;
+        border: 0;
+        padding: 0;
+        z-index: 2;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        left: auto;
+        background: none;
+        i{
+            font-size: 30px;
+            color: rgba(32, 69, 112,.3);
+            @include transition(.2s);
+            &:hover{
+                color: $heading-color;
+            }
+        }
+    }
+    &.slick-prev {
+        left: -40px;
+        @media #{$laptop}{
+           left: -10px;
+        }
+        @media #{$lg}{
+           left: -10px;
+        }
+        @media #{$md}{
+           left: -10px;
+        }
+        @media #{$sm}{
+           left: -10px;
+        }
+    }
+    &.slick-next {
+        right: -40px;
+        @media #{$laptop}{
+            right: -10px;
+         }
+        @media #{$lg}{
+            right: -10px;
+        }
+        @media #{$md}{
+            right: -10px;
+        }
+        @media #{$sm}{
+            right: -10px;
+        }
+    }
+}
+}

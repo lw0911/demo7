@@ -1,0 +1,70 @@
+.instagram-area{
+    margin-bottom: -5px;
+    .single-instagram{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #39CCA4;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            @include transition(.4s);
+        }
+        i { 
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            top: 45%;
+            color: #fff;
+            font-size: 30px;
+            z-index: 2;
+            opacity: 0;
+            visibility: hidden;
+           @include transition(.4s);
+        }
+        &:hover{
+            i{
+                top: 48%;
+                opacity: 1;
+                visibility: visible;
+            }
+            &::before{
+                visibility: visible;
+                 opacity: .8;
+            }
+       }
+    }
+}
+
+.appointment {
+	background: #122C77;
+	padding: 53px 0;
+	margin: 0;
+    p {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 300;
+        margin: 0;
+        letter-spacing: -.7px;
+        @media #{$sm}{
+            font-size: 25px;
+        }
+        @media #{$xs}{
+            font-size: 25px;
+        }
+        a{
+            display: inline-block;
+            text-decoration: underline #ffff;
+            margin: 0;
+        }
+    }
+}

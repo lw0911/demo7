@@ -1,0 +1,154 @@
+
+.footer-wrapper{
+    background: #F4FCFA;
+    .footer-area{
+        .footer-pera{
+            p{
+                color:#4C5753;
+                font-size: 14px;
+                margin-bottom: 19px;
+                line-height: 1.8;
+            }
+            &.footer-pera2 p{
+                padding: 0;
+            }
+        }
+        .footer-tittle{
+            h4{
+                color: $heading-color;
+                font-size: 20px;
+                margin-bottom: 30px;
+                font-weight: 600;
+            }
+            ul{
+                li{
+                    margin-bottom: 15px;
+                     a{
+                        color: #4C5753;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-decoration: underline transparent;
+                        &:hover{
+                            color:$theme-color;
+                            text-decoration: underline;
+                        }
+                    }
+                    span{
+                        color: red;
+                    }
+                }
+            }
+            p{
+                color: #4C5753;
+                font-size: 16px;
+            }
+        }
+        .footer-form{
+             form{
+                position: relative;
+                 input{
+                    width: 100%;
+                    height: 65px;
+                    padding: 10px 20px;
+                    border: 0;
+                    border-radius: 0px;
+                    color: #5C6168;
+                    background: none;
+                    border: 2px solid $btn_bg;
+                    &::placeholder{
+                        color: #5C6168;
+                        font-size: 16px;
+                    }
+                }
+                .form-icon{
+                    button{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border: 0;
+                        cursor: pointer;
+                        padding: 21px 34px;
+                        height: 64px;
+                        line-height: 1;
+                        border-radius:0;
+                        background: $btn_bg;
+                        i{
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+        }
+        .info.error {
+            color:  $theme-color;
+        }
+    }
+}
+
+
+//copy Right 
+.footer-bottom-area {
+    .footer-border{
+        border-top: 1px solid rgba(76, 87, 83,0.15);
+        padding-top: 24px;
+        padding-bottom: 1px;
+        @media #{$md}{
+            padding-top:20px;
+        }
+        @media #{$sm}{
+            padding-top:20px;
+        }
+        @media #{$xs}{
+            padding-top:20px;
+        }
+    }
+    .footer-copy-right{
+        p{
+            color: #4C5753;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 2;
+            i{
+                color: $theme-color;
+            }
+            a{
+                color: $theme-color;
+                &:hover{
+                    // color: #C2C5DB;
+                }
+            }
+        }
+    }
+}
+
+// footer social
+.footer-social{
+    a{
+        color:#4C5753;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 24px;
+        i{
+            @include transition(.4s);
+            display:inline-block;
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg)
+        }
+
+        &:hover{
+            color:$theme-color;
+            i{
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg); 
+            }
+        }
+
+    }
+}

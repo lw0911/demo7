@@ -1,0 +1,251 @@
+
+// Services Area 1
+.services-area1{
+    background: #F3D955;
+    padding-top: 160px;
+    position: relative;
+    margin-top: -70px;
+    z-index: 0;
+    @media #{$md}{
+        padding-top: 90px;
+        margin-top: 0px;
+    }
+    @media #{$sm}{
+        padding-top: 90px;
+        margin-top: 0px
+    }
+    @media #{$xs}{
+        padding-top: 90px;
+        margin-top: 0px
+    }
+
+    // Border-top
+    .col-lg-4:nth-child(1) .properties,
+    .col-lg-4:nth-child(2) .properties,  
+    .col-lg-4:nth-child(3) .properties {
+        border: 1px solid rgba(54, 64, 43,.2);
+        border-bottom: 0;
+        @media #{$xs}{
+            border-bottom: 1px solid rgba(54, 64, 43,.2);
+        }
+    }
+    // remove border left
+    .col-lg-4:nth-child(1) .properties {
+        border-left: 0;
+        border-right: 0;
+        @media #{$sm}{
+            border-left: 1px solid rgba(54, 64, 43,.2)
+        }
+    }
+    // remove border Right
+    .col-lg-4:nth-child(3) .properties {
+        border-left: 0;
+        border-right: 0;
+        @media #{$sm}{
+            border-left: 1px solid rgba(54, 64, 43,.2) !important;
+        }
+    }
+
+    // remove border left
+    .col-lg-4:nth-child(3) .properties{
+        @media #{$md}{
+            border-right: 1px solid rgba(54, 64, 43,.2);
+            border-left: 0;
+        }
+        @media #{$sm}{
+            border-right: 1px solid rgba(54, 64, 43,.2);
+            border-left: 0;
+        }
+    }
+
+
+       
+
+    .properties{
+        padding: 50px  50px 120px 50px;
+        @media #{$lg}{
+            padding: 50px  20px 120px 20px;
+        }
+        @media #{$md}{
+            padding: 50px  20px 50px 20px;
+        }
+        @media #{$sm}{
+            padding: 50px  20px 50px 20px;
+        }
+        @media #{$xs}{
+            padding: 50px  20px 50px 20px;
+        }
+        &__card{
+            background: none;
+             @include transition(.4s);
+        }
+        &__img{
+            img{
+                width: 100%;
+                position: relative;
+            }
+        }
+        &__caption{
+            padding: 26px 25px 8px 25px;
+            @media #{$sm}{
+                padding: 26px 0px 8px 0px;
+            }
+            h3{
+                font-family: $font_3;
+                font-size: 26px;
+                font-weight: 700;
+                margin-bottom: 15px;
+                @include transition(.4s);
+                &:Hover{
+                    color: $heading-color;
+                }
+            }
+            P{
+                color: $heading-color;
+                font-size: 20px;
+                span{
+                    color:$theme-color;
+                    font-size: 16px;
+                    @media #{$md}{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &__footer{
+            padding: 19px 18px 20px 29px;
+             @include transition(.4s);
+             @media #{$xs}{
+                padding: 19px 10px 20px 12px;
+             }
+             @media #{$sm}{
+                padding: 19px 9px 20px 8px;
+             }
+        }
+        &.properties2 {
+            margin: 0px 5px 30px 5px !important;
+        }
+        &:hover{
+            .properties__caption{
+                h3{
+                    color: $heading-color;
+                }
+            }
+            .properties__footer{
+                .btn_2{
+                    background-color: $heading-color;
+                    border: 1px solid $heading-color;
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+	
+}
+
+
+// Services Area 2
+.services-area{
+    background: #EBE5D0;
+
+    .single-services{
+        margin: 0 12px;
+        &.single-services2{
+            margin: 0;
+            margin-bottom: 30px;
+        }
+        @media #{$sm}{
+           margin-bottom: 30px;
+        }
+        @media #{$xs}{
+           margin-bottom: 30px;
+        }
+        .services-img{
+            img {
+                width: 100%;
+            }
+        }
+        .services-caption {
+            position: relative;
+            background: #EBE5D0;
+            width: 80%;
+            padding: 33px 46px 16px 32px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: -50px;
+            @media #{$md}{
+                width: 95%;
+            }
+            @media #{$lg}{
+                width: 94%;
+                padding: 33px 15px 16px 15px;
+            }
+            @media #{$md}{
+                width: 94%;
+                padding: 33px 15px 16px 15px;
+            }
+            @media #{$sm}{
+                width: 94%;
+                padding: 33px 15px 16px 15px;
+            }
+            @media #{$xs}{
+                width: 100%;
+                padding: 33px 16px 16px 26px;
+                margin-top: 0px;
+            }
+            span {
+                margin-bottom: 15px;
+                line-height: 13px;
+                font-family: $font_1;
+                position: relative;
+                color: #e94d65;
+                font-weight: 300;
+                font-size: 14px;
+                display: block;
+                padding-left: 60px;
+               &::before {
+                    position: absolute;
+                    content: "";
+                    width: 35px;
+                    height: 2px;
+                    top: 0;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: #e94d65;
+                }
+            }
+            h4 {
+                
+                font-family: $font_3;
+                margin-bottom: 15px;
+                line-height: 1.5;
+                a{
+                    color: $heading-color;;
+                    font-weight: 700;
+                    font-size: 30px;
+                    display: block;
+                    &:hover{
+                        color: $heading-color;
+                    }
+                    @media #{$large1}{
+                      font-size: 21px;
+                    }
+                    @media #{$lg}{
+                      font-size: 21px;
+                    }
+                    @media #{$md}{
+                      font-size: 18px;
+                    }
+                    @media #{$xs}{
+                      font-size: 18px;
+                    }
+                }
+            }
+            p{
+
+            }
+        }
+    }
+}

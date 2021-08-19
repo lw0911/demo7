@@ -1,0 +1,114 @@
+.class-offer-area{
+
+    .properties{
+        &__card{
+            background: #F4F2F1;
+             @include transition(.4s);
+        }
+        &__img{
+            img{
+                width: 100%;
+                position: relative;
+            }
+
+        }
+        &__caption{
+            padding: 26px 18px 8px 22px;
+            border-bottom: 1px solid #ebeff4;
+            h3{
+                font-size: 26px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                @include transition(.4s);
+                @media #{$lg}{
+                    font-size: 16px;
+                }
+                a:hover,.properties__card{
+                    color:#ff5757 ;
+    
+                }
+            }
+            P{
+                color: #777777;
+                span{
+                    color:$theme-color;
+                    font-size: 16px;
+                    @media #{$md}{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+        &__footer{
+            padding: 19px 18px 20px 29px;
+             @include transition(.4s);
+             @media #{$xs}{
+                padding: 19px 10px 20px 12px;
+             }
+             @media #{$sm}{
+                padding: 19px 9px 20px 8px;
+             }
+             .btn_01{
+                padding: 14px 80px;
+                @media #{$large1}{
+                    padding: 14px 40px;
+                }
+                @media #{$large2}{
+                    padding: 14px 50px;
+                }
+                @media #{$lg}{
+                    padding: 10px 17px;
+                }
+                @media #{$md}{
+                    padding: 14px 40px;
+                }
+                @media #{$sm}{
+                    padding: 14px 40px;
+                }
+                @media #{$xs}{
+                    padding: 10px 21px;
+                }
+             }
+            .class-day{
+                span{
+                    color:$theme-color;
+                    font-family: $font_1;
+                    display: block;
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 1;
+                    margin-bottom: 5px;
+                }
+                p{
+                    color: #263B5C;
+                    font-size: 14px;
+                }
+            }
+        }
+        &.properties2 {
+            margin: 0px 5px 30px 5px !important;
+        }
+        &:hover{
+            .properties__card{
+                
+            }
+            .properties__caption{
+                h3{
+                    color: $theme-color2;
+                }
+            }
+            .properties__footer{
+                .btn_01{
+                    border: 2px solid  $btn_bg;
+                    color: $btn_bg;
+                    background: none;
+                }
+            }
+        }
+    }
+	
+}
+
+
+
+

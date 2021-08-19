@@ -1,0 +1,166 @@
+
+.footer-wrapper{
+    background: $theme-color;
+    .footer-area{
+        .footer-pera{
+            p{
+                color:$heading-color;
+                font-size: 14px;
+                margin-bottom: 19px;
+                line-height: 1.8;
+            }
+            &.footer-pera2 p{
+                padding: 0;
+            }
+        }
+        .footer-tittle{
+            h4{
+                color: $heading-color;
+                font-size: 20px;
+                margin-bottom: 30px;
+                font-weight: 600;
+            }
+            ul{
+                li{
+                    margin-bottom: 15px;
+                     a{
+                        color: $heading-color;
+                        font-weight: 400;
+                        font-size: 16px;
+                        text-decoration: underline transparent;
+                        &:hover{
+                            color:$heading-color;
+                            text-decoration: underline;
+                        }
+                    }
+                    span{
+                        color: red;
+                    }
+                }
+            }
+            p{
+                color: $heading-color;
+                font-size: 16px;
+            }
+        }
+        .footer-form{
+             form{
+                position: relative;
+                 input{
+                    width: 100%;
+                    height: 60px;
+                    padding: 10px 20px;
+                    border: 0;
+                    border-radius: 0px;
+                    color: $heading-color;
+                    background: none;
+                    border: 1px solid $heading-color;
+                    border-radius: 5px;
+                    @media #{$lg}{
+                        height: 59px;
+                    }
+                    @media #{$sm}{
+                        height: 59px;
+                    }
+                    @media #{$xs}{
+                        height: 59px;
+                    }
+                    &::placeholder{
+                        color: $heading-color;
+                        font-size: 16px;
+                    }
+                }
+                .form-icon{
+                    button{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border: 0;
+                        cursor: pointer;
+                        padding: 21px 30px;
+                        height: 60px;
+                        line-height: 1;
+                        border-radius:0;
+                        background: #36402B;
+                        i{
+                            color: $heading-color;
+                        }
+                    }
+                }
+            }
+        }
+        .info.error {
+            color:  $heading-color;
+        }
+    }
+}
+
+
+
+//copy Right 
+.footer-bottom-area {
+    .footer-border{
+        border-top: 1px solid rgba(26, 26, 26,.2);
+        padding-top: 22px;
+        padding-bottom: 1px;
+        @media #{$md}{
+            padding-top:20px;
+        }
+        @media #{$sm}{
+            padding-top:20px;
+        }
+        @media #{$xs}{
+            padding-top:20px;
+        }
+    }
+    .footer-copy-right{
+        p{
+            color: $heading-color;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 2;
+            i{
+                color: $heading-color;
+            }
+            a{
+                color: $heading-color;
+                &:hover{
+                    // color: #C2C5DB;
+                }
+                 
+            }
+        }
+    }
+}
+
+// footer social
+.footer-social{
+    a{
+        color:$heading-color;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 13px;
+        i{
+            @include transition(.4s);
+            display:inline-block;
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg)
+        }
+
+        &:hover{
+            color:$heading-color;
+            i{
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg); 
+            }
+        }
+
+    }
+}

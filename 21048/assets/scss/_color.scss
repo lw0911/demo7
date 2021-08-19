@@ -1,0 +1,90 @@
+
+/*-------------   Color Variable  --------------*/
+
+//Colors
+	$white: #ffffff;
+	$white_color:#ffff;
+	$black: #16161a;
+	$gray:#F1FBFF;
+
+// Body Bg
+	$body-bg:#0B0016;
+
+//Theme color
+	$theme-color: #C46B48;
+	$theme-color2: #D6A04C;
+	$theme-color3: #f27420;
+	$theme-color4: #ff3500;
+
+// btn and Section color
+	$btn_bg:#C46B48;
+
+// Heading color
+	$heading-color:#202738;
+	$heading_color2: #080808;
+	
+// Body font color
+	$font_color1: #636363;
+	$font_color2:#1D2547;
+	$body-text-color: #636363;
+
+// Border color
+	$border-color: rgba(255, 255, 255,.2);
+	$hr-border-color:#eceff8;
+
+// Section Bg
+	$section_bg1: #1E1E1E;
+
+	$gray-color: #bebebe;
+	$gray-color-2: #bdbdbd;
+
+
+
+// bg
+	$brand-bg: #f1f4fa;
+	$testimonial-bg:#f9fafc;
+
+
+
+/*-------------Color include--------------*/
+
+
+/*-- Background color---*/
+.body-bg{
+	background: $body-bg;
+}
+.section-bg {
+	background: $section_bg1;
+}
+
+.gray-bg {
+	background: $gray;
+}
+.white-bg {
+	background:$white;
+}
+.black-bg {
+	background: $black;
+}
+.theme-bg {
+	background:$theme-color;
+}
+.brand-bg{
+	background: $brand-bg;
+}
+.testimonial-bg{
+	background: $testimonial-bg;
+}
+
+
+/*--- color------*/
+.white-color {
+	color: $white;
+}
+.black-color {
+	color: $black;
+}
+.theme-color {
+	color: $theme-color;
+}
+

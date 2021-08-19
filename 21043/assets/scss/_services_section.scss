@@ -1,0 +1,138 @@
+.services-wrapper{
+    background: #E8E7D3;
+    padding-bottom: 50px;
+    @media #{$xs}{
+        padding-bottom: 0px;
+    }
+    .services-area{
+        padding-top: 100px;
+        padding-bottom: 60px;
+        background: #fff;
+        margin: 0 50px 0px 50px;
+        @media #{$md}{
+            padding-top: 80px;
+            padding-bottom: 50px;
+        }
+        @media #{$sm}{
+            padding-top: 80px;
+            padding-bottom: 29px;
+        }
+        @media #{$xs}{
+            padding-top: 80px;
+            padding-bottom: 29px;
+            margin: 0;
+        }
+        .single-blogs{
+            &.single-blogs2{
+                margin-bottom: 40px;
+                .blogs-cap{
+                    h5{
+                        a{
+                            font-size: 28px;
+                            @media #{$large1}{
+                                font-size: 24px;
+                            }
+                            @media #{$lg}{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .blog-img{
+                margin-bottom: 25px;
+                width: 100%;
+                position: relative;
+                &.blog-img2{
+                    position: unset;
+                    &::before {
+                        position: unset;
+                    }
+                }
+                &::before {
+                    @include transition(.3s);
+                    position: absolute;
+                    content: "";
+                    background-color:rgba(84, 84, 84,.6);
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                img{
+                    display: inherit;
+                    @include transition(.4s);
+                    width: 100%;
+                }
+                .blog-btn{
+                    color:$white;
+                    text-transform: capitalize;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background: $theme-color;
+                    padding: 25px 17px;
+                    font-size: 16px !important;
+                    width: 123px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    text-align: center;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+            .blogs-cap{
+                span{
+                    color: #74706B;
+                    margin-bottom: 11px;
+                    display: block;
+                }
+                h5{
+                    a{
+                        color: $heading-color;
+                        font-size: 22px;
+                        line-height: 1.4;
+                        margin-bottom: 12px;
+                        font-weight: 500;
+                        display: block;
+                        @media #{$sm}{
+                            font-size: 20px;
+                        }
+                        
+                        &:hover{
+                            color: $heading-color;
+                        }
+                    }
+                    
+                }
+                p{
+                    color: #4C526E;
+                    margin-bottom: 24px;
+                    font-size: 18px;
+                }
+            }
+            &:hover{
+                .blog-img{
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+                .blogs-cap{
+                    .red-btn2{
+                        i{
+                            background: $theme-color;
+                            border: 1px solid transparent;
+                            color: #fff; 
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}

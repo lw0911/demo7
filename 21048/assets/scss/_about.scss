@@ -1,0 +1,139 @@
+// About 02
+.about-area{
+    position: relative;
+    background: #F6F1EA;
+    // left content
+    .about-caption{
+        // @media #{$md}{
+        //     padding-bottom: 50px;
+        // }
+        // @media #{$sm}{
+        //     padding-bottom: 50px;
+        // }
+        // @media #{$xs}{
+        //     padding-bottom:50px;
+        // } 
+        &.about-caption2{
+            padding-left: 50px;
+            @media #{$lg}{
+                padding-left: 0;
+            }
+        }
+        h2 {
+            font-family: $font_1;
+            font-size: 44px;
+            display: block;
+            font-weight: 300;
+            line-height: 1.4;
+            margin-bottom: 12px;
+            @media #{$large1}{
+                font-size: 40px;
+            }
+            @media #{$lg}{
+                font-size: 30px;
+            }
+            @media #{$md}{
+                font-size: 30px;
+            }
+            @media #{$sm}{
+                font-size: 31px;
+            }
+            @media #{$xs}{
+                font-size: 24px;
+            }
+            br{
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+        }
+        p{
+            color:$body-text-color;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.5;
+            br{
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+            a{
+                text-decoration: underline;
+            }
+        }
+        .pera-top {
+            font-size: 16px;
+            font-weight: 500;
+            color: #212025;
+            margin-bottom: 25px;
+        }
+        .pera-bottom {
+            font-size: 24px;
+            color: #0A0A0A;
+            margin-bottom: 50px;
+            font-weight: 400;
+		}
+        
+    }
+    .support-caption{
+        @include flexbox();
+        @include justify-content(space-between);
+
+        .single-info{
+            .contents{
+                display: block;
+                overflow: hidden;
+                margin-left: 29px;
+                h4{
+                    color: $theme-color;
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin-bottom: 17px;
+                }
+                p{
+                    color: #202738;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    display: block;
+                    margin-bottom: 5px;
+                    @media #{$lg}{
+                        font-size: 16px;
+                    }
+                    @media #{$xs}{
+                        font-size: 14px;
+                        br{
+                            display: none;
+                        }
+                    }
+                }
+                span{
+                    font-family:$font_1;
+                    color:#636363;
+                    font-size: 18px;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                    display: block;
+                    line-height: 1;
+
+                }
+            }   
+          }
+    }
+    // Menu Shape
+    .about-shape{
+        position: absolute;
+        right: 0px;
+        bottom: 90px;
+        @media #{$xs}{
+
+        }
+    }
+}
+
+

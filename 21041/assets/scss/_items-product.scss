@@ -1,0 +1,169 @@
+
+
+.latest-items{
+    padding-top: 95px;
+    padding-bottom: 100px;
+    @media #{$md}{
+        padding-top: 95px;
+        padding-bottom: 100px;
+    }
+    @media #{$sm}{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    @media #{$xs}{
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    &.latest-items2{
+        padding: 0;
+    }
+    &:first-child{
+        margin-left: 0;
+    }
+    &:last-child{
+        margin-right: 0;
+    }
+
+    .properties{
+        &.properties2{
+            margin-left: 0;
+            margin-right:0 ;
+        }
+        margin: 0 12px;
+        .properties-card{
+            .properties-img{
+                position: relative;
+                overflow: hidden;
+                overflow:hidden;
+                margin-bottom:19px;
+                img{
+                    @include transition(.4s);
+                    width: 100%;
+                    transform: scale(1)
+                }
+                //hover Show Smg
+                .img-cap{
+                    text-align: center;
+                    position: absolute;
+                    bottom: -20%;
+                    width: 100%;
+                    opacity: 0;
+                    visibility: hidden;
+                    @include transition(.4s);
+                    span{
+                        color: #0A0A0A;
+                        background: $theme-color;
+                        padding: 14px 0;
+                        display: block;
+                        cursor: pointer;
+                        font-size:16px;
+                    }
+                }
+            }
+            .properties-caption{
+                @include transition(.4s);
+                h3{
+                    a{
+                        color:#fff;
+                        font-size: 24px;
+                        font-weight: 400;
+                        margin-bottom: 6px;
+                        @media #{$md}{
+                            font-size: 18px;
+                        }
+                        @media #{$xs}{
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .properties-footer{
+                    @include transition(.4s);
+                    .price{
+                        span{
+                            color:$theme-color;
+                            cursor: pointer;
+                            font-weight:300;
+                            font-size: 20px;
+                        }
+                    }        
+                }
+            }
+        }
+        &:hover{
+            .properties-img{
+                img{
+                    transform: scale(1.04);
+                }
+                .img-cap {
+                    bottom: 0;
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }  
+        }
+    }
+}
+
+
+
+// Arrow
+.latest-items-active{
+    button{
+        &.slick-arrow {
+            position: absolute;
+            border: 0;
+            padding: 0;
+            z-index: 2;
+            cursor: pointer;
+            top: 50%;
+            transform: translateY(-50%);
+            left: auto;
+            background: none;
+            i{
+                font-size: 30px;
+                color: rgba(229, 191, 74,.5);
+                @include transition(.2s);
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+        &.slick-prev {
+            left: -40px;
+            @media #{$laptop}{
+            left: -20px;
+            }
+            @media #{$large1}{
+            left: -30px;
+            }
+            @media #{$lg}{
+            left: -27px;
+            }
+            @media #{$md}{
+            left: -25px;
+            }
+            @media #{$sm}{
+            left: -10px;
+            }
+        }
+        &.slick-next {
+            right: -40px;
+            @media #{$laptop}{
+                right: -20px;
+            }
+            @media #{$large1}{
+                right: -30px;
+            }
+            @media #{$lg}{
+                right: -27px;
+            }
+            @media #{$md}{
+                right: -20px;
+            }
+            @media #{$sm}{
+                right: -10px;
+            }
+        }
+    }
+}
