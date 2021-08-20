@@ -1,0 +1,36 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  background: rgba(darken($secondary, 5), 0.9);
+
+  &.header-transparent {
+    background: transparent;
+  }
+
+  &.header-scrolled {
+    background: rgba(darken($secondary, 5), 0.9);
+    padding: 15px 0;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: $font-secondary;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+}

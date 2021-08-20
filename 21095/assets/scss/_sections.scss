@@ -1,0 +1,148 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: lighten($primary, 48);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact {
+
+  .contact-info {
+    margin-bottom: 20px;
+    text-align: center;
+    i {
+      font-size: 48px;
+      display: inline-block;
+      margin-bottom: 10px;
+      color: $primary;
+    }
+
+    address, p {
+      margin-bottom: 0;
+      color: $default;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 300;
+      color: #999;
+    }
+
+    a {
+      color: #000;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .contact-address, .contact-phone, .contact-email {
+    margin-bottom: 20px;
+  }
+
+
+  .php-email-form {
+    
+    .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+      & br + br {
+        margin-top: 25px;
+      }
+    }
+    
+    .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+  
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+  
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+  
+    }
+
+    input, textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      &:focus {
+        border-color: $primary;
+      }
+    }
+
+    button[type="submit"] {
+      background: $primary;
+      border: 0;
+      padding: 10px 24px;
+      color: #fff;
+      transition: 0.4s;
+      &:hover {
+        background: lighten($primary, 10%);
+      }
+    }
+  
+  }
+
+  @keyframes animate-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media (min-width: 768px) {
+    .contact-phone {
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+    }
+
+    .contact-address, .contact-phone, .contact-email {
+      padding: 20px 0;
+    }
+  }
+  
+}
+

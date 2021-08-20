@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: darken($secondary-dark, 10);
+  padding: 30px 0;
+  color: $white;
+  font-size: 14px;
+
+  .copyright {
+    text-align: center;
+  }
+
+  .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: $white;
+  }
+}

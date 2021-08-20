@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 80px;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+
+  .logo {
+
+    h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      font-weight: 300;
+      letter-spacing: 3px;
+    }
+
+    h1 a, h1 a:hover {
+      color: $white;
+      text-decoration: none;
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 40px;
+    }
+  }
+
+  .contact-link a {
+    color: $white;
+    padding-right: 10px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .logo h1 {
+      font-size: 28px;
+      padding: 8px 0;
+    }
+  }
+}

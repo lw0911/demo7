@@ -1,0 +1,316 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 80px 0;
+}
+
+.section-bg {
+  background-color: lighten($primary, 45);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    position: relative;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: $primary;
+    bottom: 0;
+    left: calc(50% - 40px);
+  }
+
+  p {
+    margin-bottom: 0;
+    font-style: italic;
+    color: $default-light;
+  }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about {
+  h3 {
+    font-weight: 300;
+    font-size: 26px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding-bottom: 10px;
+    }
+    i {
+      font-size: 20px;
+      padding-right: 4px;
+      color: $primary;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us {
+  padding-bottom: 30px;
+  
+  .card {
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+    margin-bottom: 30px;
+  }
+
+  .card-icon {
+    text-align: center;
+    margin-top: -32px;
+
+    i {
+      font-size: 32px;
+      color: $white;
+      width: 64px;
+      height: 64px;
+      padding-top: 10px;
+      text-align: center;
+      background-color: $primary;;
+      border-radius: 50%;
+      text-align: center;
+      border: 4px solid #fff;
+      transition: 0.3s;
+      display: inline-block;
+    }
+  }
+  .card-body {
+    padding-top: 12px;
+  }
+
+  .card-title {
+    font-weight: 700;
+    text-align: center;
+    a {
+      color: $secondary;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+
+  .card-text {
+    color: lighten($default, 10);
+  }
+
+  .card:hover .card-icon i {
+    background: $white;
+    color: $primary;
+  }
+
+  @media (max-width: 1024px) {
+    background-attachment: scroll;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Frequenty Asked Questions
+--------------------------------------------------------------*/
+.faq  {
+  padding-bottom: 60px;
+
+  .faq-list {
+    padding: 0;
+    list-style: none;
+
+    li {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+
+    a {
+      display: block;
+      position: relative;
+      font-family: $primary;
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 400;
+      padding-right: 25px;
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 24px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+      padding: 10px 0 0 0;
+    }
+
+    .icon-show {
+      display: none;
+    }
+
+
+    a.collapsed {
+      color: $black;
+      &:hover {
+        color: $primary;
+      }
+
+      .icon-show {
+        display: inline-block;
+      }
+
+      .icon-close {
+        display: none;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact {
+
+  .info {
+    color: $default;
+
+    i {
+      font-size: 32px;
+      color: $primary;
+      float: left;
+    }
+
+    p {
+      padding: 0 0 10px 50px;
+      margin-bottom: 20px;
+      line-height: 22px;
+      font-size: 14px;
+    }
+
+    .email {
+      p {
+        padding-top: 5px;
+      }
+    }
+
+  }
+
+  .social-links {
+    a {
+      font-size: 18px;
+      display: inline-block;
+      background: $secondary-dark;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 36px;
+      transition: 0.3s;
+      &:hover {
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+
+  .php-email-form {
+
+    .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+      & br + br {
+        margin-top: 25px;
+      }
+    }
+    
+    .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+  
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+  
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+  
+    }
+
+    input, textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+
+      &:focus {
+        border-color: $primary;
+      }
+    }
+
+    button[type="submit"] {
+      background: $primary;
+      border: 0;
+      padding: 10px 24px;
+      color: #fff;
+      transition: 0.4s;
+      &:hover {
+        background: lighten($primary, 10%);
+      }
+    }
+  
+  }
+
+  @media (max-width: 768px) {
+    .social-links {
+      text-align: center;
+    }
+  }
+
+  @keyframes animate-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
