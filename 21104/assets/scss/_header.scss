@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: darken($secondary, 5);
+  font-size: 14px;
+  padding: 0;
+  color: rgba($white, .8);
+  height: 40px;
+
+  .contact-info {
+
+    i {
+      font-style: normal;
+      color: $primary;
+
+      a, span {
+        padding-left: 5px;
+        color: #fff;
+      }
+
+      a {
+        line-height: 0;
+        transition: 0.3s;
+        &:hover {
+          color: $primary;
+        }
+      }
+
+    }
+  }
+
+  .cta {
+
+    a {
+      color: $white;
+      background: $primary;
+      padding: 10px 20px;
+      display: inline-block;
+      transition: 0.3s;
+
+      &:hover {
+        background: lighten($primary, 5);
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  background: $white;
+  
+  &.header-fixed {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+
+    h1 {
+      font-size: 28px;
+      margin: 0;
+      line-height: 0;
+      font-weight: 700;
+      font-family: $font-default;
+    }
+
+    h1 a, h1 a:hover {
+      color: lighten($secondary, 10);
+      text-decoration: none;
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 40px;
+    }
+  }
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
+
+#main {
+  z-index: 3;
+}

@@ -1,0 +1,85 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: $secondary;
+  padding: 10px 0;
+  font-size: 14px;
+
+  .contact-info {
+
+    i {
+      font-style: normal;
+      color: $primary;
+
+      a, span {
+        padding-left: 5px;
+        color: #fff;
+      }
+
+      a {
+        line-height: 0;
+        transition: 0.3s;
+        &:hover {
+          color: $primary;
+        }
+      }
+
+    }
+  }
+
+  .social-links {
+    a {
+      color: lighten($secondary, 40);
+      line-height: 0;
+      transition: 0.3s;
+      margin-left: 10px;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 70px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+
+  .logo {
+
+    h1 {
+      font-size: 26px;
+      padding: 0 0 0 8px;
+      margin: 11px 0;
+      line-height: 1;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: $font-secondary;
+      border-left: 8px solid $primary;
+    }
+
+    h1 a, h1 a:hover {
+      color: $secondary;
+      text-decoration: none;
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 40px;
+    }
+  }
+}
+
+
+.scrolled-offset {
+  margin-top: 70px;
+}
