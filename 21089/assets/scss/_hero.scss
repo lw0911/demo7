@@ -1,0 +1,134 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: lighten($primary, 46);
+  border-bottom: 2px solid lighten($primary, 42);
+
+  .container {
+    padding-top: 80px;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    color: $secondary;
+    font-family: $font-secondary;
+  }
+
+  h2 {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+  }
+
+  ul {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 10px 0 0 28px;
+      position: relative;
+    }
+    i {
+      left: 0;
+      top: 7px;
+      position: absolute;
+      font-size: 20px;
+      color: $primary;
+    }
+  }
+
+  .btn-get-started, .btn-get-quote {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    transition: 0.5s;
+    border-radius: 50px;
+  }
+
+  .btn-get-started {
+    background: $primary;
+    color: $white;
+    border: 2px solid $primary;
+    margin-right: 10px;
+    &:hover {
+      background: lighten($primary, 5);
+      border-color: lighten($primary, 5);
+    }
+  }
+  .btn-get-quote {
+    color: $primary;
+    border: 2px solid $primary;
+    &:hover {
+      background: $primary;
+      color: $white;
+    }
+  }
+
+
+  @media (min-width: 1024px) {
+    background-attachment: fixed;
+  }
+
+  @media (max-width: 991px) {
+
+    .hero-img {
+      text-align: center;
+      img {
+        width: 50%;
+      } 
+    }
+  }
+
+  @media (max-width: 768px) {
+
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+
+    h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+
+    .hero-img img {
+      width: 70%;
+    }
+     
+  }
+
+  @media (max-width: 575px) {
+
+    text-align: center;
+
+    ul {
+      text-align: left;
+      font-size: 14px;
+    }
+
+    .hero-img img {
+      width: 80%;
+    }
+
+    .btn-get-started, .btn-get-quote {
+      padding-left: 18px;
+      padding-right: 18px;
+      font-size: 14px;
+      
+    } 
+     
+  }
+
+}
