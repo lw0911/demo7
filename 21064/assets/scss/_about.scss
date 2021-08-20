@@ -1,0 +1,179 @@
+.brand-area{
+    background: #041735;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+// About 02
+.about-area1{
+    // left content
+    .about-caption{
+        @media #{$md}{
+        //   padding-bottom: 50px;
+        }
+        @media #{$sm}{
+        //   padding-bottom: 50px;
+        }
+        @media #{$xs}{
+        //   margin-bottom: 35px;
+        }
+        &.about-caption1{
+            @media #{$md}{
+                padding-top: 50px;
+                // padding-bottom: 50px;
+              }
+              @media #{$sm}{
+                padding-top: 50px;
+                // padding-bottom: 50px;
+              }
+              @media #{$xs}{
+                margin-top: 35px;
+                // padding-bottom:50px;
+              } 
+        }
+        .pera-top {
+            font-size: 16px;
+            font-weight: 500;
+            color: #212025;
+            margin-bottom: 25px;
+        }
+        .pera-bottom {
+            font-size: 16px;
+            color: #212025;
+            font-weight: 300;
+		}
+      
+        .single-about{
+            border-bottom: 1px solid #DBDEE9;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            &:last-child{
+                border-bottom:0 !important;
+            }
+            h5{
+                font-size: 20px;
+                line-height: 1.2;
+                margin-bottom: 16px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+    // Right img
+    .about-img{
+        &.about-img1{
+            img{
+                border-radius: 0;
+            }
+        }
+        img{
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+}
+
+// About 2 
+.project-us{
+    position: relative;
+    // left img
+    .project-right-cap{
+        @media #{$md}{
+            padding-bottom: 50px;
+        }
+        @media #{$lg}{
+            padding-bottom: 50px;
+        }
+        @media #{$sm}{
+            padding-bottom: 40px;
+        }
+        @media #{$xs}{
+            padding-bottom: 40px;
+        }
+        .project-right-img{
+            img{
+                width: 100%;
+            }
+
+        }
+    }
+    
+    /* collapse */
+    .collapse-wrapper{
+        .accordion-item {
+            border: 0;
+            border-radius: 0;
+            border: 1px solid #DBDEE9;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+        .accordion:last-child {
+            margin-bottom: 0px;
+        }
+        .accordion-header {
+            padding: 0;
+            border-radius: 0;
+            background: none;
+            border: 0;
+            .accordion-button{
+                text-align: left;
+                color: $heading-color;
+                border: 0;
+                padding: 20px 10px 21px 34px;
+                font-size: 20px;
+                font-weight: 600;
+                border-bottom: 0;
+                border-radius: 0;
+                background: none;
+                display: block;
+                text-decoration: none;
+                @media #{$xs}{
+                    padding: 20px 35px 21px 13px;
+                }
+                &:focus{
+                    box-shadow:none;
+                    color: $theme-color;
+                }
+                &::after {
+                    position: absolute;
+                    top: 24px;
+                    font-size: 15px;
+                    color: $theme-color;
+                    right: 16px;
+                    font-weight: 600;
+                    content: "\e648";
+                    font-family: 'themify';
+                    background-image: none;
+                    outline: 0;
+                    transform: rotate(0deg);
+                }
+                &.collapsed {
+                    // color: $theme-color;
+                    border: 0;
+                    &::after {
+                        
+                        content: "\e64b";
+                        font-weight: 800;
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+        .accordion-collapse{
+            border: 0;
+            &.show{
+                .accordion-body {
+                    padding: 20px 38px;
+                }
+            }
+            .accordion-body {
+                @include transition(.3s);
+                background: #fff;
+                padding: 20px 38px;
+            }
+        }
+        
+    }
+
+}

@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: darken($primary-dark, 10);
+
+  &.header-scrolled {
+    background: darken($primary-dark, 20);
+    height: 60px;
+  }
+
+  .logo {
+
+    h1 {
+      font-size: 30px;
+      margin: 0;
+      padding: 0;
+      line-height: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h1 a, h1 a:hover {
+      color: #fff;
+      text-decoration: none;
+      line-height: 0;
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+      max-height: 40px;
+    }
+  }
+}
+
+#main {
+  margin-top: 80px;
+}

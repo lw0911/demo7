@@ -1,0 +1,128 @@
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, rgba(29, 224, 153, 0.8), rgba(29, 200, 205, 0.8)), url('../img/hero-bg.jpg') center top no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  @media (min-width: 1025px) {
+    background-attachment: fixed;
+  }
+
+  @media (max-height: 640px) {
+    height: 120vh;
+  }
+
+  .hero-text {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    right: 0;
+    height: calc(50% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    margin: 30px 0 10px 0;
+    padding: 0 15px;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    color: #fff;
+    @media (max-width: 768px) {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  }
+
+  p {
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-size: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .btn-get-started {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover {
+      color: $primary;
+      background: #fff;
+    }
+  }
+
+  .product-screens {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+
+    img {
+      box-shadow: 0px -2px 19px 4px rgba(0,0,0,0.29);
+    }
+
+    .product-screen-1 {
+      position: absolute;
+      z-index: 30;
+      left: calc(50% + 54px);
+      bottom: 0;
+      top: 30px;
+    }
+
+    .product-screen-2 {
+      position: absolute;
+      z-index: 20;
+      left: calc(50% - 154px);
+      bottom: 0;
+      top: 90px;
+    }
+
+    .product-screen-3 {
+      position: absolute;
+      z-index: 10;
+      left: calc(50% - 374px);
+      bottom: 0;
+      top: 150px;
+    }
+
+    @media (max-width: 767px) {
+      .product-screen-1 {
+        position: static;
+        padding-top: 30px;
+      }
+
+      .product-screen-2, .product-screen-3 {
+        display: none;
+      }
+    }
+
+  }
+
+}

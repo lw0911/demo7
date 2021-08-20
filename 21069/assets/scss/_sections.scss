@@ -1,0 +1,472 @@
+/*--------------------------------------------------------------
+# Stats
+--------------------------------------------------------------*/
+.stats-row {
+  margin-top: 65px;
+}
+
+.stats-col {
+  .circle {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    font-family: $font-primary;
+    font-weight: 500;
+    color: #666;
+    border: 6px solid $primary;
+    border-radius: 50%;
+    padding: 55px 25px 0 25px;
+    position: relative;
+
+    .stats-no {
+      color: #fff;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      top: -25px;
+      right: -15px;
+      font-family: $font-primary;
+      font-size: 18px;
+      background-color: $secondary;
+      position: absolute;
+      border-radius: 50%;
+      font-weight: 700;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: #fafafa;
+  min-height: 40px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+    @media (max-width: 992px) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+
+    li + li {
+      padding-left: 10px;
+    }
+
+    li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: #6c757d;
+      content: "/";
+    }
+  }
+
+  @media (max-width: 768px) {
+    .d-flex {
+      display: block !important;
+
+    }
+
+    ol {
+      display: block;
+      li {
+        display: inline-block;
+      }
+
+    }
+  }
+}
+
+/* ==================================================
+  Welcome Styling
+  ================================================== */
+
+.welcome {
+  color: #fff;
+  height: 490px;
+  overflow: hidden;
+  padding-top: 85px;
+  background: url("../img/parallax-bg.jpg") center top no-repeat;
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  p {
+    color: #fff;
+    margin-bottom: 45px;
+  }
+}
+
+/* ==================================================
+  Features Styling
+  ================================================== */
+
+.features {
+  h2 {
+    color: $primary;
+  }
+
+  padding-bottom: 45px;
+}
+
+.feature-col {
+  display: table;
+  padding-bottom: 45px;
+
+  >div>div {
+    display: table-cell;
+    vertical-align: middle;
+
+    &:last-child {
+      padding-left: 20px;
+    }
+  }
+
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    background: $primary;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+  }
+
+  h3 {
+    color: $primary;
+  }
+
+  p {
+    font-family: $font-secondary;
+    font-size: 14px;
+    color: #999;
+  }
+}
+
+/* ==================================================
+  Call-to-action Styling
+  ================================================== */
+
+.cta {
+  background-color: $primary;
+  padding: 25px 0;
+
+  h2 {
+    margin-bottom: 5px;
+  }
+
+  h2,
+  p {
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 0;
+    opacity: .75;
+  }
+
+  .btn-ghost {
+    position: relative;
+    top: 13px;
+  }
+}
+
+/* ==================================================
+  Portfolio Styling
+  ================================================== */
+
+.portfolio {
+  background-color: #edf6ff;
+  padding-bottom: 0;
+
+  h2 {
+    color: $primary;
+    margin-bottom: 25px;
+  }
+}
+
+.portfolio-grid {
+  margin-top: 65px;
+
+  .row {
+    margin: 0;
+  }
+
+  .row>div {
+    padding: 0;
+
+    .card {
+      img {
+        width: 100%;
+      }
+
+      .portfolio-over {
+        position: absolute;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .8);
+        top: 0;
+        left: 0;
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all .3s ease);
+
+        >div {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        .card-title {
+          color: #fff;
+          font-size: $font-size-large;
+        }
+
+        .card-text {
+          color: #fff;
+          opacity: .75;
+          padding: 0 45px;
+        }
+      }
+
+      &:hover .portfolio-over {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+/* ==================================================
+  Team Styling
+  ================================================== */
+
+.team {
+  h2 {
+    color: $primary;
+  }
+
+  .col-sm-3 {
+    padding: 0;
+  }
+
+  .card {
+    >a {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 11px;
+      color: #fff;
+      opacity: .75;
+      margin: 0;
+      padding: 0 35px;
+    }
+
+    .social-nav {
+      margin-bottom: 45px;
+
+      a {
+        color: #fff;
+        font-size: 16px;
+        margin: 0 4px;
+
+        &:hover {
+          opacity: .75;
+        }
+      }
+    }
+
+    &:hover {
+      .team-over {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .card-title-wrap {
+        background-color: $primary;
+
+        .card-title,
+        .card-text {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .team-over {
+    padding-top: 45px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all .3s ease);
+  }
+
+  .card-title-wrap {
+    padding: 15px 25px;
+    position: relative;
+    z-index: 9;
+    background-color: #fff;
+
+    .card-title,
+    .card-text {
+      font-family: $font-primary;
+      display: block;
+      margin: 0;
+    }
+
+    .card-title {
+      font-size: $font-size-sm-medium;
+      color: #333;
+    }
+
+    .card-text {
+      font-size: $font-size-small;
+      color: #999;
+    }
+  }
+}
+
+/* ==================================================
+  Contact Section
+  ================================================== */
+#contact {
+  background: #f7f7f7;
+  padding: 80px 0;
+
+  h2 {
+    font-family: $font-primary;
+    color: $primary;
+  }
+
+  .info {
+
+    i {
+      font-size: 32px;
+      color: $primary;
+      float: left;
+      line-height: 0;
+    }
+
+    p {
+      padding: 0 0 10px 50px;
+      line-height: 24px;
+    }
+
+  }
+
+  .php-email-form {
+
+    .validate {
+      display: none;
+      color: red;
+      margin: 0 0 15px 0;
+      font-weight: 400;
+      font-size: 13px;
+    }
+    
+    .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600;
+      & br + br {
+        margin-top: 25px;
+      }
+    }
+    
+    .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+  
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+  
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+  
+    }
+
+    input, textarea {
+      border-radius: 0;
+      box-shadow: none;
+      &::focus {
+        background-color: $primary;
+      }
+    }
+
+    button[type="submit"] {
+      background: $primary;
+      border: 0;
+      padding: 10px 24px;
+      color: #fff;
+      transition: 0.4s;
+
+      &:hover {
+        background: lighten($primary, 10%);
+      }
+
+    }
+  
+  }
+  
+  @keyframes animate-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

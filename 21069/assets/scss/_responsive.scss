@@ -1,0 +1,106 @@
+/* ==================================================
+  Responsive Styling
+  ================================================== */
+
+@media (max-width: 61.9em) {
+
+  section,
+  .block,
+  .cta {
+    padding: 35px 0;
+  }
+
+  .features {
+    padding-bottom: 5px;
+  }
+
+  p,
+  .block p {
+    margin: 0;
+  }
+
+  .hero-brand {
+    margin-bottom: 35px;
+  }
+
+  .tagline {
+    margin: 35px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  h2,
+  .tagline {
+    font-size: 24px;
+  }
+
+  h2 {
+    margin-bottom: 25px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 75px 0;
+  }
+
+  .stats-col {
+    margin-bottom: 25px;
+  }
+
+  .block {
+    height: auto;
+  }
+
+  .feature-col {
+    padding-bottom: 30px;
+  }
+
+  .portfolio-grid {
+    .card {
+      h3.card-title {
+        font-size: $font-size-small !important;
+      }
+
+      .card-text {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .team .team-over {
+    padding-top: 20px;
+  }
+
+  .team .card .social-nav {
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .site-footer {
+    .social-nav {
+      margin-bottom: 35px;
+    }
+
+    .list-inline {
+      text-align: center;
+      padding-bottom: 15px;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .block {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

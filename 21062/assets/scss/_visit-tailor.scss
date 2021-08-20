@@ -1,0 +1,133 @@
+.visit-tailor-area{
+    display: flex;
+    align-items: center;
+    @media #{$md}{
+      display: block;
+    }
+    @media #{$xs}{
+      display: block;
+    }
+    @media #{$sm}{
+      display: block;
+    }
+
+    // left Contents
+    .tailor-details{
+        width: 35%;
+        padding: 20px 40px 20px 80px;
+        @media #{$lg}{
+            width: 49%;
+            padding: 20px 20px 20px 50px;
+        }
+        @media #{$laptop}{
+            width: 41%
+        }
+        @media #{$md}{
+            width: 82%;
+            padding: 50px 30px;
+            padding-top: 100px;
+        }
+        @media #{$sm}{
+            width: 100%;
+            padding: 50px 30px;
+            padding-top: 100px;
+        }
+        @media #{$xs}{
+            width: 100%;
+            padding: 50px 30px;
+            padding-top: 100px;
+        }
+       // Pricing items
+        .price-items{
+            @include flexbox();
+            justify-content: space-between;
+            padding: 19px 0;
+            border-bottom: 1px solid #EFDCE4;
+            @media #{$xs}{
+                @include flex-wrap(wrap);
+            }
+            @media #{$lg}{
+                padding: 12px 0;
+            }
+            .price-left{
+                @include flexbox();
+                align-items: center;
+                .job-tittle{
+                    a{
+                        h4{
+                            color: $heading-color;
+                            @include transition(.4s);
+                            font-size: 18px;
+                            margin-bottom: 1px;
+                            font-weight: 400;
+                            @media #{$xs}{
+                                font-size: 16px;
+                            }
+                            &:hover{
+                                color:heading-color
+                            }
+                        }
+                    }
+                    p{
+                        margin-bottom: 0;
+                        color: #3F4854;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .price{
+                p{
+                    margin-bottom: 0;
+                    color: #3F4854;
+                    font-size: 18px;
+                    span{
+                        font-family: $font_1;
+                        color: $theme-color;
+                        font-weight: 700;
+                        padding-left: 5px;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    // -Right Contents
+    .barber-team{
+        width: 56%;
+         @media #{$lg}{
+            width: 60%;
+        }
+        @media #{$sm}{
+            width: 100%;
+        }
+        @media #{$md}{
+            width: 100%;
+        }
+        @media #{$xs}{
+            width: 100%;
+        }
+    }
+
+    .team-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .single-barber{
+            flex: 0 0 auto;
+            width: 33.3333333333%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+ 
+
+}
+
+.border-bottom {
+	border-bottom: 1px solid $heading-color !important;
+}
+// Progress Bar
+
+

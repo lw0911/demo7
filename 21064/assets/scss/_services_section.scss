@@ -1,0 +1,108 @@
+.categories-area {
+    .single-cat{
+        background:#F0F3FF;
+        border-radius: 5px;
+        padding: 60px 60px;
+        @include transition(.4s);
+        position: relative;
+        z-index: 1;
+        @media #{$large1}{
+            padding: 60px 40px;
+        }
+        @media #{$large1}{
+            padding: 60px 40px;
+        }
+        @media #{$lg}{
+            padding: 60px 20px;
+        }
+        @media #{$md}{
+            padding: 60px 20px;
+        }
+        @media #{$sm}{
+            padding: 60px 20px;
+        }
+        @media #{$xs}{
+            padding: 60px 20px;
+        }
+        &.single-cat2{
+            background:#FFF3F2;
+        }
+        &.single-cat3{
+            background:#E9FFFD;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            background:#E9FFFD;
+            // @extend %overlay2;
+            transition: .6s;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: 5px;
+        }
+        h5{
+            a{
+                color: $heading-color;
+               font-size: 25px;
+               font-weight: 600;
+               margin-bottom: 21px;
+               display: block;
+               @include transition(.2s);
+               @media #{$sm}{
+                   font-size: 21px;
+               }
+               @media #{$xs}{
+                   font-size: 21px;
+               }
+             }
+           }
+        .cat-icon{
+            margin-bottom: 50px;
+        }
+        .cat-cap{
+            p{
+                margin-bottom: 36px;
+                color: #5C6168;
+                font-size: 18px;
+                @include transition(.2s);
+                margin: 0;
+                @media #{$sm}{
+                    font-size: 15px;
+                }
+            }
+        }
+
+        // Hover Effect In single 
+        &:hover{
+            &::before {
+                height: 100%;
+            }
+            .cat-icon{
+                span{
+                    // background:#fff;
+                }
+            }
+            h5{
+                a{
+                    // color: #fff;
+                }
+            }
+            .cat-cap{
+                h5{
+                    a{
+                        // color: #fff;
+                    }
+                }
+                p{
+                    // color: #fff;
+                }
+                a{
+                    // color: #fff;
+                }
+            }
+       }
+    }
+}

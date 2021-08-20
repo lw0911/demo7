@@ -1,0 +1,143 @@
+// About 02
+.about-area{
+    // left content
+    .about-caption{
+        background: #fff;
+        position: relative;
+        left: -100px;
+        padding: 76px 50px 41px 63px;
+        @media #{$lg}{
+            left: -50px;
+            padding: 58px 24px 28px 35px;
+        }
+        @media #{$md}{
+            left: -30px;
+            padding: 24px 18px 18px 28px;
+        }
+        @media #{$sm}{
+            left: 0px;
+            padding:0;
+            background: none;
+        }
+        @media #{$xs}{
+            left: 0px;
+            padding: 0;
+            background: none;
+        } 
+        h2 {
+
+            font-family: $font_1;
+            font-size: 60px;
+            display: block;
+            font-weight: 500;
+            line-height: 1;
+            margin-bottom: 18px;
+
+            @media #{$large1}{
+                font-size: 40px;
+            }
+            @media #{$lg}{
+                font-size: 30px;
+            }
+            @media #{$md}{
+                font-size: 30px;
+            }
+            @media #{$sm}{
+                font-size: 31px;
+            }
+            @media #{$xs}{
+                font-size: 24px;
+            }
+            br{
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+        }
+        p{
+            color:#656565;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            @media #{$md}{
+                font-size:13px;
+            }
+            br{
+                @media #{$sm}{
+                    display: none;
+                }
+                @media #{$xs}{
+                    display: none;
+                }
+            }
+            a{
+                text-decoration: underline;
+            }
+        }
+        
+        .pera-top {
+            font-size: 16px;
+            font-weight: 500;
+            color: #212025;
+            margin-bottom: 25px;
+        }
+        .pera-bottom {
+            font-size: 16px;
+            color: #212025;
+            font-weight: 300;
+		}
+        &.about-caption2{
+           left: inherit;
+           right: -100px;
+
+           @media #{$lg}{
+            right: -50px;
+            padding: 58px 24px 28px 35px;
+            }
+            @media #{$md}{
+                right: -30px;
+                padding: 24px 18px 18px 28px;
+            }
+            @media #{$sm}{
+                right: 0px;
+                padding:0;
+                background: none;
+                margin-bottom: 40px;
+            }
+            @media #{$xs}{
+                right: 0px;
+                padding:0;
+                background: none;
+                margin-bottom: 40px;
+            } 
+            .about-img{
+                img{
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+    // Right img
+    .about-img{
+        &.about-img2{
+            img{
+                margin: 0 !important;
+            }
+        }
+        img{
+            width: 100%;
+            @media #{$sm}{
+                margin-bottom: 50px;
+            }
+            @media #{$xs}{
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+}
+
+

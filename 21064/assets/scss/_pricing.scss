@@ -1,0 +1,108 @@
+.pricing-card-area{
+    background: #F1F2F6;
+    position: relative;
+    padding: 80px 0;
+    @media #{$xs}{
+        padding: 50px 0;
+    }
+    .card-wrapper{
+       background: #fff;
+       padding: 45px 20px 45px 20px;
+       border-radius: 6px;
+    }
+    .single-card{
+        .card-mid{
+            h4{
+                color:$heading-color;
+                font-size: 40px;
+                font-weight: 700;
+                position: relative;
+                display: inline-block;
+                span{
+                    color:  $heading-color;
+                    font-size: 20px;
+                    font-weight: 700;
+                    position: absolute;
+                    top: 0;
+                    left: -17px;
+                }
+                p{
+                    color: $heading-color;
+                    font-size: 20px;
+                    display: inline-block;
+                    font-weight: 500;
+                }
+            }
+        }
+        .card-bottom{
+            ul{
+                li{
+                    color:#5C6168;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    &:last-child{
+                        margin-bottom: 30px;
+                    }
+                    
+                }
+                
+            }
+            p{
+
+                margin: 0;
+                font-size: 14px;
+
+            }
+        }
+    }
+}
+// Tabs Button Style
+.nav-button{
+    nav{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        padding-bottom: 0px;
+        .nav-tabs{
+            border: 0;
+            border-radius: 6px;
+            .nav-item {
+                display: block;
+                @media #{$xs}{
+                    font-size: 18px;
+                }
+            }
+            .nav-link {
+                background: rgba(74, 168, 198,.1);
+                font-family: $font_1;
+                color:#4AA8C6;
+                font-size: 14px;
+                font-weight: 500;
+                border: 0;
+                padding: 10px 19px;
+                border-radius: 4px 0 0 4px;
+                cursor: pointer;
+                &:last-child{
+                    border-radius: 0px 4px 4px 0;
+                }
+                &.active {
+                    color:#fff;
+                    background: #4AA8C6;
+                    border:0;
+                    @media #{$xs}{
+                        border-bottom: 0;
+                    }
+                   
+                }
+                &:hover {
+                    border: 0;
+                    @media #{$xs}{
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}

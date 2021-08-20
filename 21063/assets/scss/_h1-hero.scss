@@ -1,0 +1,200 @@
+
+// Home page Hero
+.slider-height1 {
+    min-height: 980px;
+    @media #{$lg}{
+        min-height: 680px;
+    }
+    @media #{$md}{
+        min-height: 500px;
+    }
+    @media #{$sm}{
+        min-height: 500px;
+    }
+    @media #{$xs}{
+        min-height:420px;
+    }
+}
+
+.slider-height2 {
+    min-height: 400px;
+    @media #{$sm}{
+        min-height: 300px;
+    }
+    @media #{$xs}{
+        min-height:300px;
+    }
+}
+
+.slider-height3 {
+    height: 400px;
+    @media #{$sm}{
+        height: 400px;
+    }
+    @media #{$xs}{
+        height:350px;
+    }
+}
+
+// Home Page Heor
+.hero-bg1{
+    background-image: url(../img/hero/h1_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-bg2{
+    background-image: url(../img/hero/h2_hero1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-bg3{
+    background-image: url(../img/hero/h2_hero3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-area{
+    .hero-caption{
+        @media #{$lg}{
+            padding-top: 110px;
+        }
+        @media #{$md}{
+            padding-top: 122px;
+        }
+        @media #{$sm}{
+            padding-top: 122px;
+        }
+        @media #{$xs}{
+           padding-top: 100px;
+        }
+        span{
+            color: #31ff7a;
+            font-size: 60px;
+            line-height: 1.2;
+            font-weight: 400;
+            margin-bottom: 30px;
+            display: block;
+            @media #{$xs}{
+                margin-bottom: 30px;
+                font-size: 56px;
+            }
+        }
+        img{
+            @media #{$md}{
+                width: 45px;
+            }
+            @media #{$sm}{
+                width: 37px;
+            }
+            @media #{$xs}{
+                width: 37px;
+                margin-bottom: 20px;
+            }
+        }
+        h1{
+            font-family: $font_1;
+            font-size: 144px;
+            font-weight:500;
+            color: #fff;
+            line-height: 1.3;
+            margin-bottom: 7px;
+            @media #{$lg}{
+                font-size: 100px;
+                line-height: 1.2;
+            }
+            @media #{$md}{
+                font-size: 75px;
+                line-height: 1.2;
+            }
+            @media #{$sm}{
+                font-size: 68px;
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+            @media #{$xs}{
+                font-size: 35px;
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 50px;
+            margin-bottom: 34px;
+            font-weight: 300;
+            @media #{$md}{
+                font-size: 30px;
+            }
+            @media #{$sm}{
+                font-size: 27px;
+            }
+            @media #{$xs}{
+                font-size: 17px;
+            }
+        }
+        &.hero-caption2{
+            padding-bottom: 65px;
+            padding-top: 0;
+            h2{
+                color: #fff;
+                font-size: 80px;
+                font-weight: 500;
+                @media #{$sm}{
+                    font-size: 70px;
+                }
+                @media #{$xs}{
+                    font-size: 55px;
+                }
+            }
+            p{
+                padding: 0;
+            }
+        }
+    }
+}
+
+//overly
+.hero-overly {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        // @extend %overlay1;
+        background-color:rgba(60, 58, 52,.7);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        background-repeat: no-repeat;
+    }
+}
+
+.hero-overly2 {
+    position: relative;
+    z-index: 0;
+    &::before {
+        position: absolute;
+        content: "";
+        background-color:rgba(60, 58, 52,.7);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+// Transparent Header
+.header-transparent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}

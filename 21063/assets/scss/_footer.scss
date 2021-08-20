@@ -1,0 +1,118 @@
+.footer-area{
+    background: #FAFAF8;
+    .footer-pera{
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 22px;
+            line-height: 1.8;
+            color: #686865;
+        }
+        &.footer-pera2 p{
+            padding: 0;
+        }
+    }
+    .footer-tittle{
+        h4{
+            color: #686865;
+            font-size: 25px;
+            margin-bottom: 29px;
+            font-weight: 600;
+        }
+        ul{
+            li{
+                margin-bottom: 6px;
+                 a{
+                     font-family: $font_1;
+                    color: #686865;
+                    font-weight: 300;
+                    text-decoration: underline transparent;
+                    font-size: 24px;
+                    &:hover{
+                        text-decoration: underline;
+                        color: #686865;
+                        padding-left: 2px;
+                    }
+                }
+            }
+        }
+        p{
+            color: #686865;
+            font-weight: 300;
+        }
+    }
+}
+
+//copy Right 
+.footer-bottom-area {
+    .footer-border{
+        border-top: 1px solid rgba(133, 133, 109,.2);
+        padding-top: 25px;
+        padding-bottom: 13px;
+    }
+    .footer-copy-right{
+        p{
+            color:#3C3A34;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 2;
+            margin-bottom: 12px;
+            i{
+                color:$theme-color;
+            }
+            a{
+                color: $theme-color;
+                &:hover{
+                    // color: #686865;
+                }
+            }
+        }
+    }
+}
+
+
+// footer social
+
+ul.footer-social{
+    li{
+        display: inline-block;
+        a{
+    
+            color:#656565;
+            font-size: 25px;
+            display: inline-block;
+            text-align: center;
+            padding: 9px;
+            position: relative;
+            top: 0;
+            @include transition(.4s);
+            &:hover{
+                color:$theme-color;
+                top: -3px;
+            }
+        }
+    }
+}
+
+.number a {
+    font-family: $font_2;
+	font-size: 16px !important;
+	color:$theme-color !important;
+    margin-bottom: 10px;
+    font-weight: 400 !important;
+    display: block;
+
+    @media #{$md}{
+        font-size: 19px !important;
+    }
+}
+.number2 a {
+    font-family: $font_2;
+	font-size: 14px !important;
+	color: $theme-color !important;
+	margin-bottom: 5px;
+    display: block;
+    @media #{$md}{
+        font-size: 19px !important;
+    }
+}

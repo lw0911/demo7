@@ -1,0 +1,282 @@
+
+// Header Bottom
+.main-header{
+    padding: 0px 100px;
+    padding-top: 18px;
+    @media #{$large1}{
+        padding: 0px 40px;
+        padding-top: 18px;
+    }
+    @media #{$lg}{
+        padding: 0px 40px;
+        padding-top: 18px;
+    }
+    // mobile menu show
+    @media #{$md}{
+        padding: 0px 20px;
+        padding-top: 18px;
+    }
+    @media #{$sm}{
+        padding: 0px 10px;
+        padding-top: 18px;
+    }
+    @media #{$xs}{
+        padding: 0px 10px;
+        padding-top: 18px;
+    }
+}
+
+    // ! canvas menu
+    .off-canvas-menu{
+        position: absolute;
+        cursor: pointer;
+        top: 5px;
+        right: 0;
+        @media #{$xs}{
+            right: -13px;
+        }
+        &:before{
+            position: absolute;
+            content: "";
+            height: 31px;
+            width: 55px;
+            right: 0;
+            top: 0px;
+            cursor: pointer;
+            // background: #fff;
+
+            @media #{$xs}{
+                position: absolute;
+                height: 50px;
+                width: 60px;
+                top: -25px;
+            }
+        }
+        span{
+            position: relative;
+            z-index: 1;
+            margin: 17px 0;
+            display: table;
+            &:after{
+                position: absolute;
+                content: "";
+                width: 34px;
+                height: 2px;
+                background-color: #fff;
+                right: 0;
+                @media #{$tab}{
+                    right: 15px;
+                }
+            }
+        }
+    }
+    // ! off-canvas-menu // body style
+    .menu-body {
+        width: 335px;
+        height: 100%;
+        background: #3C3A34;
+        right: 0;
+        z-index: 88;
+        top: 0;
+        padding: 104px 50px 10px 59px;
+        @include transition(.6s);
+        position: fixed;
+        transform: translateX(100%);
+        overflow:auto;
+        @media #{$sm}{
+            width: 330px;
+        }
+        @media #{$xs}{
+            width: 330px;
+            padding: 104px 50px 10px 59px;
+        }
+        button {
+            border: 0;
+            font-size: 21px;
+            color: $theme-color2;
+            cursor: pointer;
+            background: none;
+            &:hover {
+                color:$theme-color;
+            }
+        }
+        .close-icon-menu {
+            position: absolute;
+            right: 34px;
+            top: 32px;
+            background: none;
+        }
+        // open
+        &.menu-open {
+            transform: translateX(0);
+        }
+
+
+        //! off-can menu style
+        .off-can-menu{
+            ul{
+            padding: 0;
+            margin: 0; 
+            li{
+                margin: 24px 0;
+                @media #{$tab}{
+                    margin: 15px 0;
+                }
+                @media #{$medium_device}{
+                    margin: 15px 0;
+                }
+                a{
+                    font-family: $font_1;
+                    font-size: 25px;
+                    color: $theme-color2;
+                    font-family: 600;
+                    text-decoration: underline transparent;
+                    @include flexbox();
+                    // @include justify-content(space-between);
+                    &:Hover{
+                        color: #fff;
+                        text-decoration: underline;
+                        letter-spacing: .5px;
+                    }
+                }
+                .right{
+                    text-decoration: none;
+                    position: relative;
+                    right: -13px;
+                    top: 9px;
+                    font-size: 15px;
+                    &:hover{
+                        text-decoration: transparent !important;
+                    }
+                }
+                ul{
+                    padding-left: 29px;
+                    padding-top: 10px;
+                    li{
+                        list-style: none;
+                        a{
+                            font-size: 20px;
+                            color: $theme-color2;
+                            font-family: 400;
+                            // font-family: $font_style_1;
+                            margin-bottom: 18px;
+                        }
+                        &:last-child{
+                            margin: 24px 0 0;
+                            @media #{$tab}{
+                                margin: 15px 0 0;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+            .click-menu{
+                margin: 6px 0;
+                display: inline-block;
+                width: 100%;
+                &:last-child{
+                    margin: 11px 0 0;
+                }
+            }
+        }
+    }
+
+// footer social
+.sidebar-social{
+    padding-top: 230px;
+    margin-bottom: 30px;
+    @media #{$sm}{
+        adding-top: 100px;
+    }
+    @media #{$xs}{
+        adding-top: 100px;
+    }
+    p{
+        font-family: $font_1;
+        color: $theme-color2;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    a{
+        color:$theme-color2;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 20px;
+        i{
+            @include transition(.4s);
+            display:inline-block;
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+            -moz-transform: rotateY(0deg);
+            -ms-transform: rotateY(0deg);
+            -o-transform: rotateY(0deg)
+        }
+
+        &:hover{
+            color:$theme-color;
+            i{
+                transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -o-transform: rotateY(180deg); 
+            }
+        }
+
+    }
+}
+
+// Hover Show Sub-menu
+.header-transparent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+}
+
+//! header Sticky  & Responsive
+.header-area{
+    .header-sticky{
+        &.sticky-bar{
+            background: #0a0a0a;
+            // Small device sticky show padding
+            @media #{$md}{
+                padding: 15px 0px;
+            }
+            @media #{$sm}{
+                padding: 15px 20px;
+            }
+            @media #{$xs}{
+                padding: 15px 0px;
+            }
+        }
+    }
+}
+
+
+
+.header-right-btn {
+	@media #{$md}{
+		float: left;
+		margin-left: 0;
+	}
+	@media #{$sm}{
+		float: left;
+		margin-left: 0;
+	}
+	@media #{$xs}{
+		float: left;
+		margin-left: 0;
+	}
+}
+
+
+#navigation {
+	display: flex;
+	align-items: center;
+}
+
+

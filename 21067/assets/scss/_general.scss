@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: $font-default;
+  color: $default;
+}
+
+a {
+  text-decoration: none;
+  color: $links;
+}
+
+a:hover  {
+  color: $links-hover;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: $font-primary;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: lighten($primary, 38);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: $default-dark;
+  }
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 20px 0;
+  background-color: lighten($primary, 39);
+  min-height: 40px;
+  margin-top: 80px;
+
+  h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+    @media (max-width: 992px) {
+      margin: 0 0 10px 0;
+    }
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+
+    li + li {
+      padding-left: 10px;
+    }
+
+    li + li::before {
+      display: inline-block;
+      padding-right: 10px;
+      color: #6c757d;
+      content: "/";
+    }
+  }
+
+  @media (max-width: 768px) {
+    .d-flex {
+      display: block !important;
+
+    }
+
+    ol {
+      display: block;
+      li {
+        display: inline-block;
+      }
+
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right:15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: $primary;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+
+  i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+
+  &:hover  {
+    background: lighten($primary, 8);
+    color: #fff;
+  }
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+}
