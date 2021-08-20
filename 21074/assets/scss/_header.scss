@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: #fff;
+  z-index: 997;
+  transition: all 0.5s ease;
+  padding: 20px 0;
+
+  #logo {
+    h1 {
+      color: #505050;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin: 0;
+    }
+
+    h1 a {
+      color: #555;
+      display: inline-block;
+      text-decoration: none;
+      span {
+        color: $primary;
+      }
+    }
+
+    img {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &.header-scrolled {
+    background: #fff;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.1);
+    padding: 12px 0;
+  }
+}

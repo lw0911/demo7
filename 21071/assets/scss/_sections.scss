@@ -1,0 +1,244 @@
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: lighten($primary, 48);
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 15px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.about {
+  .content {
+
+    h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 60px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-weight: 500;
+      line-height: 32px;
+      font-size: 24px;
+    }
+  
+    ul {
+
+      list-style: none;
+      padding: 0;
+
+      li {
+        padding: 10px 0 0 28px;
+        position: relative;
+      }
+      i {
+        left: 0;
+        top: 12px;
+        position: absolute;
+        font-size: 20px;
+        color: $primary;
+      }
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Contact Us
+--------------------------------------------------------------*/
+.contact {
+
+  .info-wrap {
+    background: rgba(#fff, .06);
+    padding: 30px;
+  }
+
+  .info {
+
+    i {
+      font-size: 20px;
+      color: #fff;
+      float: left;
+      width: 44px;
+      height: 44px;
+      background: rgba(#fff, .1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    h4 {
+      padding: 0 0 0 60px;
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    p {
+      padding: 0 0 10px 60px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .email {
+      p {
+        padding-top: 5px;
+      }
+    }
+
+    .social-links {
+      padding-left: 60px;
+      a {
+        font-size: 18px;
+        display: inline-block;
+        background: #333;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+        margin-right: 10px;
+        &:hover {
+          background: $primary;
+          color: #fff;
+        }
+      }
+    }
+
+    .email:hover, .address:hover, .phone:hover {
+      i {
+        background: $primary;
+        color: #fff;
+      }
+    }
+  }
+
+
+  .php-email-form {
+    width: 100%;
+    padding: 30px;
+    padding-top: 0;
+    background: rgba(#fff, .06);
+
+    .form-group {
+      padding-bottom: 8px;
+    }
+
+    .validate {
+      display: none;
+      color: red;
+      margin: 0 0 15px 0;
+      font-weight: 400;
+      font-size: 13px;
+    }
+    
+    .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+    
+    .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600;
+    }
+  
+    .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+  
+      &:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        animation: animate-loading 1s linear infinite;
+      }
+  
+    }
+
+    input, textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+      background: rgba(#fff, .1);
+      border: 1px solid  rgba(#fff, .2);
+      color: #fff;
+      &::placeholder {
+        color: rgba(#fff, .4);
+      }
+    }
+
+    input {
+      height: 44px;
+    }
+
+    textarea {
+      padding: 10px 12px;
+    }
+
+    button[type="submit"] {
+      background: $primary;
+      border: 0;
+      padding: 10px 24px;
+      color: #fff;
+      transition: 0.4s;
+      &:hover {
+        background: lighten($primary, 10%);
+      }
+    }
+  
+  }
+
+  @keyframes animate-loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+

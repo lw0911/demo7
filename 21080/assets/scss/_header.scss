@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: darken($secondary, 15);
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+
+  @media (max-width: 992px) {
+    height: 60px;
+  }
+
+  &.fixed-top {
+    background: rgba(0,0,0,0.85);
+  }
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      height: 50px;
+    }
+  }
+  
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+  @media (max-width: 992px) {
+    margin-top: 60px;
+  }
+}
