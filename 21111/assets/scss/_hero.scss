@@ -1,0 +1,81 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: calc(100vh - 70px);
+  background: url("../img/hero-bg.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+
+  &:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .container {
+    z-index: 2;
+  }
+
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+  }
+
+  h2 {
+    color: rgba($white, .7);
+    margin-bottom: 35px;
+    font-size: 24px;
+  }
+
+  .btn-get-started {
+    font-family: $font-primary;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    &:hover {
+      border-color: $primary;
+      background: $primary;
+    }
+  }
+
+
+  @media (min-width: 1024px) {
+    background-attachment: fixed;
+  }
+
+  @media (max-width: 992px) {
+    margin-top: 60px;
+    height: calc(100vh - 60px);
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+    h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+
+}
