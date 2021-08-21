@@ -1,0 +1,29 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: lighten($primary, 38);
+  border-bottom: 2px solid lighten($primary, 36);
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: $font-secondary;
+
+    a {
+      color:$secondary;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+
+}
