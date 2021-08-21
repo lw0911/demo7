@@ -1,0 +1,79 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+  background: $secondary;
+  font-size: 15px;
+  height: 40px;
+  padding: 0;
+  color: rgba(#fff, .6);
+
+  .contact-info {
+    a {
+      line-height: 0;
+      color: rgba(#fff, .6);
+      transition: 0.3s;
+      &:hover {
+        color: #fff;
+      }
+    }
+
+    i {
+      color: $primary;
+      line-height: 0;
+      margin-right: 5px;
+    }
+    .phone-icon {
+      margin-left: 15px;
+    }
+  }
+
+  .social-links {
+    a {
+      color: rgba(#fff, .6);
+      padding: 4px 12px;
+      display: inline-block;
+      line-height: 1px;
+      transition: 0.3s;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: rgba($secondary, .95);
+  transition: all 0.5s;
+  z-index: 997;
+  height: 70px;
+
+  &.fixed-top {
+    background: $secondary;
+  }
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+}
+
+.scrolled-offset {
+  margin-top: 70px;
+}
