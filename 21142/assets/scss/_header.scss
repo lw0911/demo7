@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  border-bottom: 1px solid rgba($white, .1);
+
+  &.header-scrolled, &.header-inner-pages {
+    background: rgba($secondary, 0.9);
+  }
+
+  .logo {
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    a {
+      color: #fff;
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    border: 0;
+    padding: 15px 0;
+  }
+}
+
+
+/* Get Startet Button */
+.get-started-btn {
+  margin-left: 25px;
+  background: $primary;
+  color: $white;
+  border-radius: 50px;
+  padding: 8px 25px 9px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  &:hover {
+    background: lighten($primary, 5);
+    color: $white;
+  }
+
+  @media (max-width: 992px) {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
+
+}

@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="zxx">
+<!-- Head -->
+
+<head>
+    <title>Home</title>
+    
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+    <!--Style-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+   
+    <!--Font-awesome-icons -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+   
+    <!--Google-fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<!-- //Head -->
+<!-- Body -->
+
+<body>
+
+    <section class="w3l-opening-soon">
+        <div class="opening-soon-info">
+            <div class="wrapper">
+                <div class="header">
+                    <div class="logo">
+                        <a class="brand-logo" href="index.html">Cafe coffee.</a>
+                    </div>
+                    <div class="w3l-btn text-right">
+                        <a href="#url" class="btn-style btn">Contact Us</a>
+                    </div>
+                </div>
+                <div class="coming-block">
+                    <h1>Cafe Opening Soon</h1>
+                    <p class="parahny">Wait is almost over. New cafe near you. Grand opening soon. May your coffee be strong and your monday be short</p>
+                    <div class="countdown">
+                        <div class="countdown__days">
+                            <div class="number"></div>
+                            <span class>Days</span>
+                        </div>
+
+                        <div class="countdown__hours">
+                            <div class="number"></div>
+                            <span class>Hours</span>
+                        </div>
+
+                        <div class="countdown__minutes">
+                            <div class="number"></div>
+                            <span class>Minutes</span>
+                        </div>
+
+                        <div class="countdown__seconds">
+                            <div class="number"></div>
+                            <span class>Seconds</span>
+                        </div>
+                    </div>
+                    <form action="#" method="post">
+                        <input type="text" name="email" required="" placeholder="Subscribe to get notified">
+                        <button class="btn1"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <div class="copyright-footer">
+                    <p>Copyright &copy; 2021.Company name All rights reserved.<a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a></p>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            (() => {
+                // Specify the deadline date
+                const deadlineDate = new Date('May 15, 2023 10:59:59').getTime();
+
+                // Cache all countdown boxes into consts
+                const countdownDays = document.querySelector('.countdown__days .number');
+                const countdownHours = document.querySelector('.countdown__hours .number');
+                const countdownMinutes = document.querySelector('.countdown__minutes .number');
+                const countdownSeconds = document.querySelector('.countdown__seconds .number');
+
+                // Update the count down every 1 second (1000 milliseconds)
+                setInterval(() => {
+                    // Get current date and time
+                    const currentDate = new Date().getTime();
+
+                    // Calculate the distance between current date and time and the deadline date and time
+                    const distance = deadlineDate - currentDate;
+
+                    // Calculations the data for remaining days, hours, minutes and seconds
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Insert the result data into individual countdown boxes
+                    countdownDays.innerHTML = days;
+                    countdownHours.innerHTML = hours;
+                    countdownMinutes.innerHTML = minutes;
+                    countdownSeconds.innerHTML = seconds;
+                }, 1000);
+            })();
+        </script>
+
+    </section>
+    <!-- //coming-61-w3l-vv-section -->
+
+</body>
+<!-- //Body -->
+
+</html>
