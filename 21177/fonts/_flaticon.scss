@@ -1,0 +1,63 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 28/05/2017 21:28
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-point-mark-on-a-circle:before { content: "\f100"; }
+.flaticon-message:before { content: "\f101"; }
+.flaticon-briefcase:before { content: "\f102"; }
+.flaticon-coffee-cup:before { content: "\f103"; }
+.flaticon-emoticon-square-smiling-face-with-closed-eyes:before { content: "\f104"; }
+.flaticon-smiley:before { content: "\f105"; }
+.flaticon-computer:before { content: "\f106"; }
+.flaticon-people:before { content: "\f107"; }
+.flaticon-lightbulb-idea:before { content: "\f108"; }
+.flaticon-gears:before { content: "\f109"; }
+.flaticon-technology:before { content: "\f10a"; }
+.flaticon-monitor:before { content: "\f10b"; }
+    
+    $font-Flaticon-point-mark-on-a-circle: "\f100";
+    $font-Flaticon-message: "\f101";
+    $font-Flaticon-briefcase: "\f102";
+    $font-Flaticon-coffee-cup: "\f103";
+    $font-Flaticon-emoticon-square-smiling-face-with-closed-eyes: "\f104";
+    $font-Flaticon-smiley: "\f105";
+    $font-Flaticon-computer: "\f106";
+    $font-Flaticon-people: "\f107";
+    $font-Flaticon-lightbulb-idea: "\f108";
+    $font-Flaticon-gears: "\f109";
+    $font-Flaticon-technology: "\f10a";
+    $font-Flaticon-monitor: "\f10b";
