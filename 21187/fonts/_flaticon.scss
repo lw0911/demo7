@@ -1,0 +1,75 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 23/04/2017 20:36
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-competition:before { content: "\f100"; }
+.flaticon-content:before { content: "\f101"; }
+.flaticon-html:before { content: "\f102"; }
+.flaticon-cup:before { content: "\f103"; }
+.flaticon-phone-call:before { content: "\f104"; }
+.flaticon-chat:before { content: "\f105"; }
+.flaticon-user:before { content: "\f106"; }
+.flaticon-home-marker:before { content: "\f107"; }
+.flaticon-message:before { content: "\f108"; }
+.flaticon-crown:before { content: "\f109"; }
+.flaticon-handshake:before { content: "\f10a"; }
+.flaticon-target:before { content: "\f10b"; }
+.flaticon-translation-and-localization:before { content: "\f10c"; }
+.flaticon-domain:before { content: "\f10d"; }
+.flaticon-presentation-1:before { content: "\f10e"; }
+.flaticon-medal:before { content: "\f10f"; }
+.flaticon-responsive:before { content: "\f110"; }
+.flaticon-presentation:before { content: "\f111"; }
+    
+    $font-Flaticon-competition: "\f100";
+    $font-Flaticon-content: "\f101";
+    $font-Flaticon-html: "\f102";
+    $font-Flaticon-cup: "\f103";
+    $font-Flaticon-phone-call: "\f104";
+    $font-Flaticon-chat: "\f105";
+    $font-Flaticon-user: "\f106";
+    $font-Flaticon-home-marker: "\f107";
+    $font-Flaticon-message: "\f108";
+    $font-Flaticon-crown: "\f109";
+    $font-Flaticon-handshake: "\f10a";
+    $font-Flaticon-target: "\f10b";
+    $font-Flaticon-translation-and-localization: "\f10c";
+    $font-Flaticon-domain: "\f10d";
+    $font-Flaticon-presentation-1: "\f10e";
+    $font-Flaticon-medal: "\f10f";
+    $font-Flaticon-responsive: "\f110";
+    $font-Flaticon-presentation: "\f111";

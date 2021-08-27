@@ -1,0 +1,59 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  background: $white;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  
+  &.header-scrolled {
+    padding: 12px 0;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+  }
+
+  .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-family: $font-secondary;
+
+    a {
+      color: $secondary;
+      span {
+        color: $primary;
+      }
+    }
+
+    img {
+      max-height: 40px;
+    }
+  }
+}
+
+/*--------------------------------------------------------------
+# Get Startet Button
+--------------------------------------------------------------*/
+.get-started-btn {
+  margin-left: 30px;
+  background: $primary;
+  color: $white;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  &:hover {
+    background: $secondary;
+    color: $white;
+  }
+
+  @media (max-width: 992px) {
+    margin: 0 15px 0 0;
+    padding: 6px 18px;
+  }
+
+}
