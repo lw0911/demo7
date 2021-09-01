@@ -1,0 +1,50 @@
+font-family: 'novecento_widedemibold';font-weight:normal; font-style:normal;
+
+font-family: 'novecento_wide_bookbold';font-weight:normal; font-style:normal;
+
+font-family: 'novecento_widebook';font-weight:normal; font-style:normal;
+
+font-family: 'novecento_widelight';font-weight:normal; font-style:normal;
+
+font-family: 'novecento_widemedium';font-weight:normal; font-style:normal;
+
+font-family: 'novecento_widenormal';font-weight:normal; font-style:normal;
+
+font-family: 'museo300';font-weight:normal; font-style:normal;
+
+font-family: 'museo500';font-weight:normal; font-style:normal;
+
+font-family: 'museo700';font-weight:normal; font-style:normal;
+
+
+12.06em         0.861em
+
+41.33               2.952em
+
+13.78	     0.984em
+
+10.33	   0.738em
+
+15.5         1.075em
+
+9.47      0.676em
+
+31.01     2.215em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
