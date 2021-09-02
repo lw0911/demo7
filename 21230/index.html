@@ -1,0 +1,560 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/modernizr.custom.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<!--- Portfolio Script --->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</head>
+<body class="cbp-spmenu-push" >
+	<!--- Header Starts Here --->
+	<div class="header" id="home" >
+		<div class="header-top">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" alt="" class="logo-img"/></a>
+				</div>
+				<section class="buttonset">
+							<button id="showRightPush"></button>
+						</section>
+				<div class="clearfix"></div>
+				<!--- Push Navigation Starts ---->
+						<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+							<h3>Menu</h3>
+							<a href="#home" class="scroll">Home</a>
+							<a href="#service" class="scroll">Services</a>
+							<a href="#about" class="scroll">About</a>
+							<a href="#portfolio" class="scroll">Portfolio</a>
+							<a href="#blog" class="scroll">Blog Post</a>
+							<a href="#contact" class="scroll">Contact</a>
+						</nav>
+						<!--- Script ----->
+						<script src="js/classie.js"></script>
+							<script>
+								var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+									showRightPush = document.getElementById( 'showRightPush' ),
+									body = document.body;
+					
+								showRightPush.onclick = function() {
+									classie.toggle( this, 'active' );
+									classie.toggle( body, 'cbp-spmenu-push-toleft' );
+									classie.toggle( menuRight, 'cbp-spmenu-open' );
+									disableOther( 'showRightPush' );
+								};
+					
+								function disableOther( button ) {
+									if( button !== 'showRightPush' ) {
+										classie.toggle( showRightPush, 'disabled' );
+									}
+								}
+							</script>
+						<!--- Script ----->
+						<script type="text/javascript" src="js/easing.js"></script>
+						<script type="text/javascript">
+						jQuery(document).ready(function($) {
+							$(".scroll").click(function(event){		
+								event.preventDefault();
+								$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+							});
+						});
+						</script>
+
+				<!--- Push Navigation ends ---->
+				<div class="header-text">
+					<h1>HI, we are belisssimo.</h1>
+					<p>We design amazing <span>websites</span></p>
+					<p>and <span>creative</span> online</p>
+					<p><span>marketing</span> campaigns</p>
+					<ul class="social">
+						<li><i class="fb"></i></li>
+						<li><i class="tw"></i></li>
+						<li><i class="twa"></i></li>
+						<li><i class="gp"></i></li>
+						<li><i class="pt"></i></li>
+						<li><i class="vi"></i></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<!--- Header Ends Here --->
+	<!--- Services Starts Here ---->
+	<div class="services" id="service">
+		<div class="container">
+			<div class="services-top">
+				<h3 class="top-title">Services</h3>
+			</div>
+			<div class="row services-row">
+				<div class="col-md-3 services-column">
+					<h4><i class="pc"></i>Web & App Design</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies urna et nisl pharetra, eu bibendum magna quis</p>
+					<a href="#">Read More<span></span></a>
+				</div>
+				<div class="col-md-3 services-column">
+					<h4><i class="de"></i>Development</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies urna et nisl pharetra, eu bibendum magna quis</p>
+					<a href="#">Read More<span></span></a>
+				</div>
+				<div class="col-md-3 services-column">
+					<h4><i class="cr"></i>Creativity</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies urna et nisl pharetra, eu bibendum magna quis</p>
+					<a href="#">Read More<span></span></a>
+				</div>
+				<div class="col-md-3 services-column">
+					<h4><i class="mr"></i>Marketing</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies urna et nisl pharetra, eu bibendum magna quis</p>
+					<a href="#">Read More<span></span></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--- Services Ends Here ---->
+	<!--- About Us Starts Here --->
+	<div class="about" id="about">
+		<div class="container">
+			<div class="row about-row">
+				<div class="col-md-4 about-column">
+					<h3>About Belisssimo</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ultricies urna et nisl pharetra, eu bibendum magna elementum. Sed aliquet facilisis turpis quis consequat. In egestas lobortis sapien placerat imperdiet. Pellentesque vel facilisis augue, ut egestas risus. Integer tortor massa, adipiscing et velit non, tincidunt eleifend neque. </p>
+					<p class="act">Cras convallis, turpis in vehicula ornare, urna risus semper tortor, porta rhoncus diam magna eu nulla. Aliquam gravida neque nec nulla interdum, in viverra nulla accumsan.</p>
+					<p>Vestibulum posuere varius velit, sed commodo quam convallis ut. Aenean lacus justo, accumsan non mauris luctus, posuere egestas massa.</p>
+					<div class="learn">
+						<a href="#">Learn More</a>
+					</div>
+				</div>
+				<div class="col-md-8 about-column">
+					<img src="images/about-pic.jpg" alt=""/>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--- About Us Ends Here --->
+	<!-- Award Starts here ---->
+	<div class="award">
+		<div class="award-cover">
+			<div class="container">
+				<div class="award-top">
+					<ul class="award-list">
+						<li>
+							<h4>54</h4>
+							<h5>new clients</h5>
+						</li>/
+						<li>
+							<h4>786</h4>
+							<h5>cups of coffee</h5>
+						</li>/
+						<li>
+							<h4>4</h4>
+							<h5>new awards</h5>
+						</li>/
+						<li>
+							<h4>2</h4>
+							<h5>new team members</h5>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Award Ends here ---->
+	<!--- Portfolio Starts Here --->
+	<div class="portfolio" id="portfolio">
+		<div class="container">
+			<div class="portfolio-top">
+				<h3 class="top-title">Our Creative Portfolio.</h3>
+				<p>Aliquam mollis elit et lectus molestie, nec bibendum tellus egestas. Quisque metus augue, porttitor ut lacus non, ornare viverra augue. Duis venenatis neque nibh, id venenatis libero porttitor et. Aliquam erat volutpat. Proin nec elementum sem. Sed id nunc euismod ante volutpat posuere. Sed tristique turpis turpis, ac sodales orci consectetur sit amet. Vestibulum nec nisi sit amet libero pretium pharetra. Vestibulum eu arcu sed tellus pretium rhoncus eu id enim. Integer accumsan ultricies dictum. Duis ornare tellus sed nulla rutrum congue. Vivamus in rutrum eros, lacinia fermentum quam. </p>
+			</div>
+		</div>
+		<div class="portfolio-start">
+			<ul id="filters" class="clearfix">
+						<li><span class="filter" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter" data-filter="app">Web Design</span></li>
+						<li><span class="filter" data-filter="card">Mobile App</span></li>
+						<li><span class="filter active" data-filter="icon">Illustration</span></li>
+						<li><span class="filter" data-filter="logo">PhotoGraphy</span></li>
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/2.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "></h2>
+						  	</div></a>
+		                </div>
+		                <a href="#small-dialog" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/3.jpg" alt="" class="img-responsive" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog1" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/6.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog4" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>				
+					<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/4.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog2" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/5.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog3" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/7.jpg" alt="" class="img-responsive" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	</div></a>
+		                </div>
+		                <a href="#small-dialog5" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/2.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>				
+					<div class="portfolio icon mix_all" data-cat="icon" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/3.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog1" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/6.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog4" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>				
+					<div class="portfolio logo mix_all" data-cat="logo" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="index.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/4.jpg" alt="" class="img-responsive"  /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "> </h2>
+						  	 </div></a>
+		                </div>
+		                <a href="#small-dialog2" class="thickbox play-icon popup-with-zoom-anim">
+		                	<div class="links">
+		                		<h5>Project Title Here</h5>
+		                		<div class="link-right">
+		                			<img src="images/hearty.png" alt="">
+		                			<p>14752</p>
+		                		</div>
+		                		<div class="clearfix"></div>
+		                	</div>
+		                </a>
+					</div>	
+					<div class="clearfix"></div>
+				</div>
+				<!---pop-up-box---->
+					<script type="text/javascript" src="js/modernizr.custom.min.js"></script>    
+					<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<!---//pop-up-box---->
+				<div id="small-dialog" class="mfp-hide">
+					<div class="image-top">
+						<img src="images/2.jpg" alt/>
+						<h3>Project Name Here</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+				</div>
+				<div id="small-dialog1" class="mfp-hide">
+					<div class="image-top">
+						<img src="images/3.jpg" alt/>
+						<h3>Project Name Here</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+				</div>
+				<div id="small-dialog2" class="mfp-hide">
+					<div class="image-top">
+						<img src="images/4.jpg" alt/>
+						<h3>Project Name Here</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+				</div>
+				<div id="small-dialog3" class="mfp-hide">
+					<div class="image-top">
+						<img src="images/5.jpg" alt/>
+						<h3>Project Name Here</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+				</div>
+				<div id="small-dialog4" class="mfp-hide">
+					<div class="image-top">
+						<img src="images/6.jpg" alt/>
+						<h3>Project Name Here</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+				</div>
+				<div id="small-dialog5" class="mfp-hide">
+					<div class="image-top">
+						<img src="images/7.jpg" alt/>
+						<h3>Project Name Here</h3>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+					</div>
+				</div>
+				<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>		
+
+
+
+		</div>
+	</div>
+	<!--- Portfolio Ends Here --->
+	<!--- Blog Starts Here ---->
+	<div class="blog" id="blog">
+		<div class="container">
+			<div class="blog-top">
+				<h3 class="top-title">Latest blog posts</h3>
+				<div class="row blog-row">
+					<div class="col-md-6 blog-column">
+						<img src="images/blog-fall-img.jpg" alt=""/>
+						<div class="blog-bottom">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+							<p>Aliquam mollis elit et lectus molestie, nec bibendum tellus egestas. Quisque metus augue, porttitor ut lacus non, ornare viverra augue. Duis venenatis neque nibh, id venenatis libero porttitor et. Aliquam erat volutpat. Proin nec elementum sem. Sed id nunc euismod ante volutpat posuere. Sed tristique turpis turpis, ac sodales orci consectetur sit amet. Vestibulum nec nisi sit amet libero pretium pharetra.</p>
+						</div>
+					</div>
+					<div class="col-md-6 blog-column">
+						<img src="images/blog-nature-img.jpg" alt=""/>
+						<div class="blog-bottom">
+							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+							<p>Aliquam mollis elit et lectus molestie, nec bibendum tellus egestas. Quisque metus augue, porttitor ut lacus non, ornare viverra augue. Duis venenatis neque nibh, id venenatis libero porttitor et. Aliquam erat volutpat. Proin nec elementum sem. Sed id nunc euismod ante volutpat posuere. Sed tristique turpis turpis, ac sodales orci consectetur sit amet. Vestibulum nec nisi sit amet libero pretium pharetra.</p>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--- Blog Ends Here ---->
+	<!--- Contact Starts Here ---->
+	<div class="contact" id="contact">
+		<div class="map">
+			<iframe src=""  frameborder="0" style="border:0"></iframe>
+		</div>
+		<div class="contact-top">
+			<div class="contact-matter">
+				<h4>We are Here</h4><i class="heart"></i>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+			</div>
+		</div>
+	</div>
+	
+	<!--- Contact Ends Here ---->	
+	<!--- Footer Starts Here ---->
+	<div class="footer">
+		<div class="container">
+			<div class="row footer-row">
+				<div class="col-md-3 footer-column">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quam dui, vestibulum at metus vel, bibendum dictum orci. Pellentesque neque felis, viverra interdum aliquam id, eleifend at urna.</p>
+					<a href="#">Read More</a>
+				</div>
+				<div class="col-md-3 footer-column">
+					<h4>Recent Posts</h4>
+					<p>uspendisse et sollicitudin felis. Cras massa magna ...</p>
+					<p class="red">Curabitur eu scelerisque urna. Phasellus eget neque fringilla</p>
+					<p>Sed ornare condimentum ligula nec convallis. Maecenas at purus diam.</p>
+				</div>
+				<div class="col-md-3 footer-column">
+					<h4>Our Twitter</h4>
+					<p class="tweet"><span>@Belisssimo</span>Aliquam porttitor elementum magna eu auctor ...</p>
+					<small>12 minutes ago</small>
+					<p class="tweet"><span>@Belisssimo</span>Aliquam porttitor elementum magna eu auctor ...</p>
+					<small>3 days ago</small>
+				</div>
+				<div class="col-md-3 footer-column">
+					<h4>Flickr Widget</h4>
+					<img class="flick" src="images/flicka.jpg" alt="" />
+					<img class="flick" src="images/flickb.jpg" alt="" />
+					<img class="flick" src="images/flickc.jpg" alt="" />
+					<img class="flick" src="images/flickd.jpg" alt="" />
+					<div class="clearfix"></div>
+					<img class="flick" src="images/flickd.jpg" alt="" />
+					<img class="flick" src="images/flicka.jpg" alt="" />
+					<img class="flick" src="images/flickb.jpg" alt="" />
+					<img class="flick" src="images/flickc.jpg" alt="" />
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="copyright">
+		<p>Copyright &copy; 2021.Company name All rights reserved.<a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a></p>
+	</div>
+	<!--- Footer Ends Here ---->
+</body>
+</html>

@@ -1,0 +1,860 @@
+/* =========================================
+
+# Template Name: AppCore
+# Author: Themehexa
+# Description: AppCore - App Landing HTML Template
+# Version: 1.0
+
+========================================= */
+
+/*
+=========================================
+Index
+-----------------------------------------
+
+# 01. General Style
+# 02. Typography
+# 03. Custom Style
+# 04. Preloader
+# 05. Buttons
+# 06. Header
+# 07. Navigation
+# 08. Navbar Toggle
+# 09. Services
+# 10. Features
+# 11. More Features
+# 12. Video
+# 13. Extra Features
+# 14. Download
+# 15. Screenshots
+# 16. Newsletter
+# 17. Reviews
+# 18. Pricing
+# 19. Team
+# 20. Contact
+# 21. Footer
+# 22. Scroll Top
+# 23. Media Queries
+
+*/
+
+/* ======================================
+ *  01. General Style
+/* ====================================== */
+
+body {
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+  color: #5A5252;
+  line-height: 1.8em;
+  font-size: 15px;
+  font-weight: 400;  
+}
+
+a {
+  color: #DC3900;
+  outline: 0 none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:focus, 
+a:active,
+a:visited {
+  color: #DC3900;
+  outline: 0;
+  text-decoration: none;
+}
+
+/* ======================================
+ *  02. Typography
+/* ====================================== */
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+h2 {
+  color: #141414; 
+  font-size: 35px;
+}
+
+h3 {
+  color: #141414; 
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 10px;
+}
+
+p {
+  color: #5A5252;
+  line-height: 1.8em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+ul, li {
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+/* ======================================
+ *  03. Custom Style
+/* ====================================== */
+
+.dot {
+  color: #FF7452;
+}
+
+.headline {
+  position: relative;
+  z-index: 600;
+}
+
+.top-pad {
+  padding-top: 40px;
+}
+
+.top-margin {
+  margin-top: 60px;
+}
+
+.custom-style {
+  font-family: 'Montserrat', arial, sans-serif;
+  font-size: 80px;
+  font-weight: bolder;
+  position: absolute;
+  left: 40%;
+  bottom: 0px;
+  color: #E2E2E2;
+  z-index: 300;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background: none repeat scroll 0 0 #FF6309 !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 0 !important;
+}
+
+.owl-pagination {
+  margin-top: 25px;
+}
+
+.common-icon-style {
+  font-size: 25px;
+  color: #FF7452;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 15px;
+  height: 40px;
+  border-radius: 0px;
+}
+
+input {
+  color: #000;
+  background-color: #FFF;
+  border: none;
+  border-radius: 2px;
+  height: 48px;
+  margin-bottom: 15px;
+  border: 1px solid #C5C4C4;
+}
+
+input:focus {
+  box-shadow: none;
+}
+
+/* ======================================
+ * 04. Preloader
+/* ====================================== */
+
+#loader {
+  background-color: #fff;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+#loader .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  background-image: url(../img/preloader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* ======================================
+ *  05. Buttons
+/* ====================================== */
+
+.custom-button-1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #fff;    
+  background-color: #ff0000;
+  border-radius: 2px;
+  padding: 5px 45px;
+  transition : all 0.5s ease 0s;
+}
+
+.custom-button-1:hover,
+.custom-button-1:focus {
+  color: #fff;
+  background-color: #FF7452;
+  outline-style: none;
+}
+
+a.custom-button-2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #141414;    
+}
+
+a.custom-button-2:hover,
+a.custom-button-2:focus {
+  color: #141414;
+  box-shadow: none;  
+}
+
+.custom-button-3 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #fff;    
+  background-color: #ff0000;
+  border-radius: 2px;
+  padding: 5px 45px;
+  margin-top: 15px;
+  transition : all 0.5s ease 0s;
+}
+
+.custom-button-3:hover,
+.custom-button-3:focus {
+  color: #fff;
+  background-color: #FF7452;
+  outline-style: none;
+}
+
+/* ======================================
+ *  06. Header
+/* ====================================== */
+
+.home-fullscreen {
+  height: 100%;
+  overflow: hidden;
+}
+
+.fullscreen {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.fullscreen-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#intro {
+  padding: 0px;
+}
+
+#intro {
+  list-style: none;
+}
+
+#intro li { display: none; }
+
+
+.custom-store {
+  font-size: 20px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+.arrow {
+  color: #fff;
+  font-size: 40px;
+}
+
+/* ======================================
+ * 07. Navigation
+/* ====================================== */
+
+#nav.affix {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.navbar {
+  border: 0;  
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar-default {
+  font-weight: 400;  
+  padding: 0 0;  
+  border-bottom: 1px solid #E7E7E7;
+  background-color: #F7F7F7;
+}
+
+.logo {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  outline-style: none;
+}
+
+.navbar-default .nav li a {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #665B5B;
+  transition: all 0.2s ease-in;
+}
+
+.navbar-default .navbar-nav >.active > a,
+.navbar-default .navbar-nav > li > a:hover  {
+  color: #FF7452;
+  background-color: transparent;
+  outline-style: none;  
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #FF7452;
+  background-color: transparent;
+} 
+
+.navbar-default .navbar-nav> .active> a:hover,
+.navbar-default .navbar-nav> .active> a:focus {
+  color: #FF7452;
+  background-color: transparent;
+}
+
+/* ======================================
+ * 08. Navbar Toggle
+/* ====================================== */
+
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FF7452;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+/* ======================================
+ * 09. Services
+/* ====================================== */
+
+#services {
+  padding: 80px 0;
+}
+
+.services {
+  margin-bottom: 30px;
+}
+
+.services-icon-style {
+  font-size: 25px;
+  color: #FF7452;
+  transition: all 0.3s ease;
+}
+
+.divider {
+  height: 2px;
+  background: #FF7452;
+  width: 30px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.services:hover .divider {
+  width: 100%;
+}
+
+/* ======================================
+ * 10. Features
+/* ====================================== */
+
+#features {
+  padding: 80px 0;
+  background-color: #F6F8F9;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;  
+}
+
+.features:hover .common-icon-style {
+  color: #ff0000;
+}
+
+/* ======================================
+ * 11. More Features
+/* ====================================== */
+
+#more {
+  padding: 80px 0;
+}
+
+/* ======================================
+ * 12. Video
+/* ====================================== */
+
+#video {
+  padding: 60px 0px 100px 0px;
+  background-image: url(../img/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#video h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.play-icon {
+  font-size: 25px;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* ======================================
+ * 13. Extra Features
+/* ====================================== */
+
+#extra {
+  padding: 80px 0;
+}
+
+/* ======================================
+ *  14. Download
+/* ====================================== */
+
+#download {
+  padding: 60px 0; 
+  background-color: #F6F8F9;  
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;    
+}
+
+.download-wrap {
+  background-color: #fff;
+  border: 1px solid #DADADA;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  padding: 20px 0px;
+  margin-bottom: 20px;  
+  box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+
+.download-wrap:hover {
+  transform: translateY(0px);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.download-icon {
+  font-size: 40px;
+  color: #FF7452;
+  margin-right: 15px;
+}
+
+.click {
+  font-size: 8px;
+  margin-left: 10px;
+  color: #fff;
+  background-color: #FF7452;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+a.download {
+  font-family: 'Montserrat', arial, sans-serif;
+  font-size: 20px;
+  color: #141414;
+  font-weight: 700;
+}
+
+a.download:hover,
+a.download:active,
+a.download:focus {
+  color: #141414;
+  box-shadow: none;
+}
+
+/* ======================================
+ *  15. Screenshots
+/* ====================================== */
+
+#screenshots {
+  padding: 80px 0;
+}
+
+.img-wrap {
+  display: inline-block;
+  position: relative;
+}
+
+.overlay a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(66, 107, 133, 0.4);    
+  transition: all 0.3s linear 0s;  
+  opacity: 0;
+}
+
+.overlay a:hover {
+  opacity: 1;
+}
+
+/* ======================================
+ *  16. Newsletter
+/* ====================================== */
+
+#newsletter {
+  padding: 40px 0;
+  background-color: #F6F8F9;  
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;    
+}
+
+.subscribe {
+  margin-right: 15px;
+}
+
+.subscribe-error {
+  font-size: 16px;
+  background-color: #ff0000;
+  color: #fff;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+.subscribe-success {
+  font-size: 16px;
+  background-color: #216839;
+  color: #fff;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+
+/* ======================================
+ *  17. Reviews
+/* ====================================== */
+
+#reviews {
+  padding: 80px 0;
+}
+
+#reviews p {
+  font-style: italic;
+}
+
+#reviews img {
+  border-radius: 3px;
+
+}
+
+.quote-left {
+  font-size: 14px;
+  color: #fff;
+  background-color: #FF7452;
+  margin-right: 15px;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.star-rating {
+  margin-top: 15px;
+}
+
+.rating {
+  color: #FF7452; 
+}
+
+.organization {
+  color: #FF7452;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+/* ======================================
+ *  18. Pricing
+/* ====================================== */
+
+#pricing {
+  padding: 80px 0;
+  background-color: #F6F8F9;  
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;      
+}
+
+.pricing-table {
+  text-align: center;
+  border: 1px solid #DADADA;
+  background-color: #fff;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;  
+  margin-bottom: 25px;
+  transition: all .3s ease;
+}
+
+.pricing-head {
+  position: relative;
+}
+
+.ribbon {
+  position: absolute;
+  margin-top: -31px;
+  margin-left: 15px;
+}
+
+.pricing-table ul {
+  margin: 15px 0;
+  padding: 0;
+}
+.pricing-list {
+  list-style: outside none none;
+}
+
+.pricing-table ul li {
+  border-bottom: 1px solid #E2E0E0;
+  margin: 0 15px;
+  padding: 10px 0;
+}
+
+.pricing-table ul li:last-child {
+  border-bottom: none;
+}
+
+.signup {
+  color: #FF7452;
+  margin-right: 10px;
+}
+
+.pricing-table:hover {
+  box-shadow: 0 22px 43px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px);
+}
+
+a.custom-button-2:hover .signup {
+  color: #ff0000;
+}
+
+.pricing-table:hover .signup {
+  color: #ff0000;
+}
+
+/* ======================================
+ * 19. Team
+/* ====================================== */
+
+#team {
+  padding: 80px 0;
+}
+
+.margin-top-bottom-15 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#team p {
+  font-style: italic;
+}
+
+#team img {
+  border-radius: 2px;
+}
+
+.social {
+  font-size: 15px;
+  border: 1px solid #c8c8c8;
+  color: #FF7452;
+  padding: 5px;
+  transition: all .3s ease;
+}
+
+.social:hover {
+  border: 1px solid #FF7452;
+  background-color: #FF7452;
+  color: #fff;
+}
+
+/* ======================================
+ * 20. Contact
+/* ====================================== */
+
+#contact {
+  padding: 80px 0;
+  background-color: #F6F8F9;  
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;      
+}
+
+.send-success, .send-error {
+  display: none;
+}
+
+/* ======================================
+ * 21. Footer
+/* ====================================== */
+
+footer {
+  padding: 40px 0px 30px 0px;
+}
+
+footer span {
+  color: #fff;
+  font-size: 17px;
+  background-color: #FF7452;
+  padding: 7px;
+  margin: 3px;
+}
+
+/* ======================================
+ * 22. Scroll Top
+/* ====================================== */
+
+.scroll-top {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-top a {
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: #FF7F66;    
+  border-radius: 100%;
+}
+
+/* ======================================
+ * 23. Media Queries
+/* ====================================== */
+
+@media only screen and (min-width : 320px) {
+
+  header h1 {
+    font-size: 30px !important;
+    color: #fff;
+  }
+
+  header h2 {
+    font-size: 13px !important;
+    color: #fff;
+    padding: 20px 0px;
+  }
+
+  .store-margin {
+    margin: 30px 0px;
+  }   
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  header h1 {
+    font-size: 60px !important;
+    color: #fff;
+  }
+
+  header h2 {
+    font-size: 25px !important;
+    color: #fff;
+    padding: 20px 0px;
+  }
+
+  .store-margin {
+    margin: 40px 0px;
+  } 
+
+}
+
+
+@media only screen and (min-width : 992px){
+ 
+  header h1 {
+    font-size: 60px !important;
+    font-weight: 400; 
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 0px;
+  }
+
+  header h2 {
+    font-size: 35px !important;
+    font-weight: 400;
+    line-height: 35px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0px;
+    padding: 20px 0px;
+  } 
+
+  .store-margin {
+    margin: 40px 0px;
+  } 
+
+}
