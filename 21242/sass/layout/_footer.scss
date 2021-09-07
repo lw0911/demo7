@@ -1,0 +1,29 @@
+/*
+ * Footer Styles
+ */
+
+ .site-footer{
+ 	padding: 50px 0;
+ 	text-align: center;
+ 	font-weight: 400;
+ 	color: #5e4c60;
+ 	background-color: #211123;
+ 	@include em(15);
+ }
+.payment-method{
+	margin: 70px 0;
+	img{
+		vertical-align: middle;
+		margin: 0 10px;
+	}
+}
+ .company-info{
+ 	margin-bottom: 20px;
+
+ 	span{
+ 		border-right: 1px solid #5e4c60;
+ 		display: inline-block;
+ 		padding: 0 10px;
+ 		line-height: 20px;
+ 	}
+ }

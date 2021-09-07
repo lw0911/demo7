@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+
+<head>
+    <!-- Load Google font on the first <head> to prevent error in IE -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<title>Burger Bar</title>
+	<meta name="author" content="Burger Bar" />
+	<meta name="description" content="Burger Bar Description" />
+	<meta name="keywords"  content="Burger Bar Keyword" />
+  	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    
+
+    <!-- Using IE Conditional to load stylesheet, Load style.less for all browser except lower than IE 9. Lower than IE9 using style.css -->
+    <!--[if !IE]><!-->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <![endif]-->
+	
+    <!-- Option for Less JS -->
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false
+      };
+    </script>
+
+    <script type="text/javascript" src="js/less.min.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.71422.js"></script>
+</head>
+
+<body>
+    <!-- Main Menu -->
+    <nav class="menu menu-left">
+        <div class="close-menu-btn icon-menu active">&nbsp;</div>    
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="food.html">Our Food</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Menu Button -->
+    <div class="menu-btn"><span class="icon-menu">&nbsp;</span> Menu</div>
+
+    <!-- Entire area of website, menu will dissaper when this area clicked -->
+    <div class="site-overlay"></div>
+
+    <!-- The main page goes here -->
+    <div id="container">
+
+        <!-- Logo, Company Name, and Slogan Area -->
+        <div class="container">
+            <div class="main-container row">
+                <div id="logo">
+                    <a href="index.html">
+                        <div class="logo-icon"><img src="img/logo.png" /></div>
+                        <div class="logo-type">Company Name</div>
+                        <div class="logo-slogan">slogan here</div> 
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider for every page. Slider in homepage using caption and controls, in other page only show image, and in contact page show maps -->
+        <div id="full-width-slider" class="full-width">
+
+            <!-- Triangle top area for slider -->
+            <div class="triangle top"></div>
+
+            <!-- Main slider area -->
+            <div class="inner">
+                <div class="slide">
+                    <div class="inner-slide">
+                        <div class="slide-desc">
+                            <h1>LOREM IPSUM DOLOR</h1>
+                            <span class="sub-title">
+                                <span class="sub-title-line">&nbsp;</span>
+                                <h2>orci es eget</h2>
+                                <span class="sub-title-line">&nbsp;</span>
+                                <div class="clear"></div>
+                            </span>
+                            <h1>Tempus Risus</h1>
+                        </div>
+                        <!-- Image width and height automatically adjust depends on window width in js/slider.js -->
+                        <img src="img/slider/1.jpg" width="1980" height="1040">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="inner-slide">
+                        <div class="slide-desc">
+                            <h1>LOREM IPSUM DOLOR</h1>
+                            <span class="sub-title">
+                                <span class="sub-title-line">&nbsp;</span>
+                                <h2>orci es eget</h2>
+                                <span class="sub-title-line">&nbsp;</span>
+                                <div class="clear"></div>
+                            </span>
+                            <h1>Tempus Risus</h1>
+                        </div>
+                        <img src="img/slider/2.jpg" width="1980" height="1040">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="inner-slide">
+                        <div class="slide-desc">
+                            <h1>LOREM IPSUM DOLOR</h1>
+                            <span class="sub-title">
+                                <span class="sub-title-line">&nbsp;</span>
+                                <h2>orci es eget</h2>
+                                <span class="sub-title-line">&nbsp;</span>
+                                <div class="clear"></div>
+                            </span>
+                            <h1>Tempus Risus</h1>
+                        </div>
+                        <img src="img/slider/3.jpg" width="1980" height="1040">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Control, next and previous button -->
+            <div class="controls">
+                <a href="#" class="left"><span class="icon-slider prev">&nbsp;</span></a>
+                <a href="#" class="right"><span class="icon-slider prev">&nbsp;</span></a>
+            </div>
+
+            <!-- Slider navigation, bullet -->
+            <div class="slide-nav"></div>
+
+            <!-- Triangle bottom area for slider -->
+            <div class="triangle bottom"></div>
+        </div>
+        
+        <!-- Clear used in everypage to fix float problem -->
+        <div class="clear"></div>
+
+        <!-- Container for featured content -->
+        <div class="container">
+            <div id="featured" class="main-container">
+                <div class="row">
+                    <div class="featured-left col">
+                        <div class="title">
+                            <h1>Lorem ipsum dolor</h1>
+                            <h2 class="sub-title">dolor sit amet</h2>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                        </div>
+                        <div class="button-container">
+                            <a class="button grey-button">Read More</a>
+                        </div>
+                    </div>
+                    <div class="featured-right col">
+                        <div class="featured-image">
+                            <img src="img/featured/1.jpg"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="triangle top promotion"></div>
+        <!-- Container for promotion content -->
+        <div class="container promotion">
+            <div id="promotion" class="main-container">
+                <div class="row">
+                    <div class="promotion-title col">
+                        <div class="title">
+                            <h1>Check out our promotions</h1>
+                            <h2 class="sub-title">maecenas sem ultricies lacinia</h2>
+                        </div>
+                    </div>
+                    <div class="promotion-button col">
+                        <div class="button-container">
+                            <a class="button white-button">See all promotions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <ul id="promotion-product" class="row">
+                    <li class="product col">
+                        <div class="promotion-product-container">
+                            <!-- Four dot in promotion box, also used in contact address box in contact page -->
+                            <span class="dot dot-left-top">&nbsp;</span><span class="dot dot-right-top">&nbsp;</span><span class="dot dot-left-bottom">&nbsp;</span><span class="dot dot-right-bottom">&nbsp;</span>
+                            
+                            <!-- Main image for promotion content -->
+                            <div class="promotion-product-image"><a href="#"><img src="img/promotion/1.jpg"/></a></div>
+                            <div class="promotion-product-desc">
+                                <div class="promotion-product-title"><h4><a href="#">Hamburger &amp; chips</a></h4></div>
+                                <div class="promotion-product-content content"><p>Ultricies lacinia non ultricies eget libero vestibulum ultrices.</p></div>
+                            </div>
+                            <div class="price-tag"><span class="price">$5.99</span></div>
+                        </div>
+                    </li>
+                    <li class="product col">
+                        <div class="promotion-product-container">
+                            <div class="promotion-product-container">
+                            <span class="dot dot-left-top">&nbsp;</span><span class="dot dot-right-top">&nbsp;</span><span class="dot dot-left-bottom">&nbsp;</span><span class="dot dot-right-bottom">&nbsp;</span>
+                            <div class="promotion-product-image"><a href="#"><img src="img/promotion/2.jpg" /></a></div>
+                            <div class="promotion-product-desc">
+                                <div class="promotion-product-title"><h4><a href="#">Delicious sandwich</a></h4></div>
+                                <div class="promotion-product-content content"><p>Donec rhoncus odio vitae lacus iaculis viverra sed id lacus.</p></div>
+                            </div>
+                            <div class="price-tag"><span class="price">$6.99</span></div>
+                        </div>
+                    </li>
+                    <li class="product col">
+                        <div class="promotion-product-container">
+                            <span class="dot dot-left-top">&nbsp;</span><span class="dot dot-right-top">&nbsp;</span><span class="dot dot-left-bottom">&nbsp;</span><span class="dot dot-right-bottom">&nbsp;</span>
+                            <div class="promotion-product-image"><a href="#"><img src="img/promotion/3.jpg" /></a></div>
+                            <div class="promotion-product-desc">
+                                <div class="promotion-product-title"><h4><a href="#">Two burgers for one</a></h4></div>
+                                <div class="promotion-product-content content"><p>Donec rhoncus odio vitae lacus iaculis viverra sed id lacus.</p></div>
+                            </div>
+                            <div class="price-tag"><span class="price">$3.99</span></div>
+                        </div>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+
+            <!-- For fix float problem and give space area with height 90px -->
+            <div class="clear space-area"></div>
+        </div>
+        <div class="triangle bottom promotion"></div>
+        
+        <div class="clear"></div>
+
+        <!-- Latest Updates area for latest news and job boards -->
+        <div class="container latest-updates">
+            <div id="latest-updates" class="main-container">
+                <div class="row">
+                    <div class="latest-news col">
+                        <div class="title">
+                            <h3>News</h1>
+                        </div>
+                        <ul id="list-updates">
+                            <li>
+                                <p class="date">30.07.2014</p>
+                                <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
+                                <a href="#" class="icon-link arrow">&nbsp;</a>
+                            </li>
+                            <li>
+                                <p class="date">24.07.2014</p>
+                                <p>Quisque facilisis elit et tincidunt malesuada.</p>
+                                <a href="#" class="icon-link arrow">&nbsp;</a>
+                            </li>
+                            <li>
+                                <p class="date">14.07.2014</p>
+                                <p>Morbi suscipit rhoncus. Maecenas uteros.</p>
+                                <a href="#" class="icon-link arrow">&nbsp;</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="button-container">
+                            <a class="button grey-button">See All</a>
+                        </div>
+                    </div>
+                    <div class="job-boards col">
+                        <div class="title">
+                            <h3>Job Board</h1>
+                        </div>
+                        <ul id="list-updates" class="jobs">
+                            <li>
+                                <p class="date">30.07.2014</p>
+                                <p>Lorem ipsum dolor sit amet adipisicing elit.</p>
+                                <a href="#" class="icon-link arrow">&nbsp;</a>
+                            </li>
+                            <li>
+                                <p class="date">24.07.2014</p>
+                                <p>Quisque facilisis elit et tincidunt malesuada.</p>
+                                <a href="#" class="icon-link arrow">&nbsp;</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                        <div class="button-container">
+                            <a class="button grey-button">See All</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="clear space-area"></div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="triangle top footer"></div>
+        <!-- Footer Area -->
+        <div class="container footer">
+            <div id="footer" class="main-container">
+                <div class="footer-top row">
+                    <div class="footer-info col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"><img src="img/footer-logo.png" /></div>
+                        </div>
+                        <div class="footer-address">
+                            Company name</br>523 Avenue Street, New York
+                        </div>
+                        <div class="footer-contact">
+                            (432) 421 693 812<br/><a href="#">office@companyname.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-newsletter col">
+                        <div class="footer-newsletter-container">
+                            <form id="subscribe-newsletter">
+                                <input type="email" class="footer-input-text" placeholder="Enter your email to join newsletter..."/>
+                                <input type="submit" class="button grey-button footer-input-submit" value="Subscribe"/>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="footer-bottom row">
+                    <div class="footer-copyright col">
+                        <div class="footer-copyright-text">Copyright 2014 Company name. Designed by Themezy. All rights reserved.</div>
+                    </div>
+                    <div class="footer-social-media col">
+                        <div class="social-media-icon">
+                            <span class="icon-social-media icon-facebook">&nbsp;</span>
+                            <span class="icon-social-media icon-twitter">&nbsp;</span>
+                            <span class="icon-social-media icon-google">&nbsp;</span>
+                            <span class="icon-social-media icon-pinterest">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+       
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pushy.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>

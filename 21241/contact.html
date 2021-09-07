@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+
+<head>
+    <!-- Load Google font on the first <head> to prevent error in IE -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+    <title>Burger Bar</title>
+    <meta name="author" content="Burger Bar" />
+    <meta name="description" content="Burger Bar Description" />
+    <meta name="keywords"  content="Burger Bar Keyword" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    
+
+    <!-- Using IE Conditional to load stylesheet, Load style.less for all browser except lower than IE 9. Lower than IE9 using style.css -->
+    <!--[if !IE]><!-->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <![endif]-->
+
+    <!-- Option for Less JS -->
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false
+      };
+    </script>
+    <script type="text/javascript" src="js/less.min.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.71422.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+    function initialize() {
+      //add cordinate here http://www.mapcoordinates.net/en
+      var myLatlng = new google.maps.LatLng(40.7389348,-73.7008329);
+      var mapOptions = {
+        zoom: 15,
+        center: myLatlng
+      }
+
+      var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatlng,
+          map: map,
+          title: 'Company Name'
+      });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="menu menu-left">
+        <div class="close-menu-btn icon-menu active">&nbsp;</div>    
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="food.html">Our Food</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu-btn"><span class="icon-menu">&nbsp;</span>Menu</div>
+
+    
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Your Content -->
+    <div id="container">
+
+        <div class="container">
+            <div class="main-container row">
+                <div id="logo">
+                    <a href="index.html">
+                        <div class="logo-icon"><img src="img/logo.png" /></div>
+                        <div class="logo-type">Company Name</div>
+                        <div class="logo-slogan">slogan here</div> 
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="full-width-header" class="full-width">
+            <div class="triangle top"></div>
+            <div class="inner">
+                <div class="slide">
+                    <div class="inner-slide">
+                        <div id="map-canvas"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="triangle bottom"></div>
+        </div>
+        
+        <div class="clear"></div>
+
+        <div class="container full-page">
+            <div id="contact-us" class="main-container">
+                <div class="row">
+                    <div class="main-content col">
+                        <div class="title">
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="intro">
+                            <h2>Neque porro quisquam est, qui dolorem ipsum quia dolor.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="contact-address col">
+                        <div class="contact-address-container">
+                            <span class="dot dot-left-top">&nbsp;</span><span class="dot dot-right-top">&nbsp;</span><span class="dot dot-left-bottom">&nbsp;</span><span class="dot dot-right-bottom">&nbsp;</span>
+                            Company name<br/>
+                            523 Avenue Street, New York<br/><br/>
+                            (432) 421 693 812<br/>
+                            office@companyname.com<br/>
+                        </div>
+                    </div>
+                    <div class="contact-form-input-data col">
+                        <div class="contact-form-input-container">
+                            <div class="contact-form-input-icon"><span class="input-icon icon-name">&nbsp;</span></div>
+                            <input type="text" class="contact-form-input-text" placeholder="Your name..."/>
+                        </div>
+                        <div class="contact-form-input-container">
+                            <div class="contact-form-input-icon"><span class="input-icon icon-email">&nbsp;</span></div>
+                            <input type="email" class="contact-form-input-text" placeholder="Email..."/>
+                        </div>
+                        <div class="contact-form-input-container">
+                            <div class="contact-form-input-icon"><span class="input-icon icon-website">&nbsp;</span></div>
+                            <input type="url" class="contact-form-input-text" placeholder="Website..."/>
+                        </div>
+                    </div>
+                    <div class="contact-form-input-message col">
+                        <div class="contact-form-input-container">
+                            <div class="contact-form-input-icon"><span class="input-icon icon-message">&nbsp;</span></div>
+                            <textarea placeholder="Message..." class="contact-form-input-text" ></textarea>
+                        </div>
+                        <div class="button-container">
+                            <input type="submit" value="Send Message" class="button grey-button contact-form-input-submit"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clear space-area"></div>
+        
+        <div class="triangle top footer"></div>
+        <div class="container footer">
+            <div id="footer" class="main-container">
+                <div class="footer-top row">
+                    <div class="footer-info col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"><img src="img/footer-logo.png" /></div>
+                        </div>
+                        <div class="footer-address">
+                            Company name</br>523 Avenue Street, New York
+                        </div>
+                        <div class="footer-contact">
+                            (432) 421 693 812<br/><a href="#">office@companyname.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-newsletter col">
+                        <div class="footer-newsletter-container">
+                            <form id="subscribe-newsletter">
+                                <input type="email" class="footer-input-text" placeholder="Enter your email to join newsletter..."/>
+                                <input type="submit" class="button grey-button footer-input-submit" value="Subscribe"/>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="footer-bottom row">
+                    <div class="footer-copyright col">
+                        <div class="footer-copyright-text">Copyright 2014 Company name. Designed by Themezy. All rights reserved.</div>
+                    </div>
+                    <div class="footer-social-media col">
+                        <div class="social-media-icon">
+                            <span class="icon-social-media icon-facebook">&nbsp;</span>
+                            <span class="icon-social-media icon-twitter">&nbsp;</span>
+                            <span class="icon-social-media icon-google">&nbsp;</span>
+                            <span class="icon-social-media icon-pinterest">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+       
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pushy.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>

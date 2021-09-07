@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="lt-ie9"> <![endif]-->
+<!--[if IE 9 ]> <html class="ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+
+<head>
+    <!-- Load Google font on the first <head> to prevent error in IE -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:600,800,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+    <title>Burger Bar</title>
+    <meta name="author" content="Burger Bar" />
+    <meta name="description" content="Burger Bar Description" />
+    <meta name="keywords"  content="Burger Bar Keyword" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    
+
+    <!-- Using IE Conditional to load stylesheet, Load style.less for all browser except lower than IE 9. Lower than IE9 using style.css -->
+    <!--[if !IE]><!-->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <![endif]-->
+    <!--[if gte IE 9]>
+    <link rel="stylesheet/less" type="text/css" href="css/style.less" />
+    <![endif]-->
+   
+    <style>
+    /* Orange text gradient only for Webkit (Chrome and Safari) */
+    .webkit #our-team h4.sub-title, .webkit #foods h4.sub-title {
+        background: #ef9e10; /* Old browsers */
+        background: -moz-linear-gradient(left,  #ef9e10 40%, #ef6910 60%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(40%,#ef9e10), color-stop(60%,#ef6910)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  #ef9e10 40%,#ef6910 60%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  #ef9e10 40%,#ef6910 60%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  #ef9e10 40%,#ef6910 60%); /* IE10+ */
+        background: linear-gradient(to right,  #ef9e10 40%,#ef6910 60%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef9e10', endColorstr='#ef6910',GradientType=1 ); /* IE6-9 */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    </style>
+
+    <!-- Option for Less JS -->
+    <script>
+      less = {
+        env: "development",
+        async: false,
+        fileAsync: false,
+        poll: 1000,
+        functions: {},
+        dumpLineNumbers: "comments",
+        relativeUrls: false
+      };
+    </script>
+    <script type="text/javascript" src="js/less.min.js"></script>
+    <script type="text/javascript" src="js/retina.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.71422.js"></script>
+</head>
+
+<body>
+    <!-- Menu -->
+    <nav class="menu menu-left">
+        <div class="close-menu-btn icon-menu active">&nbsp;</div>    
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class="active"><a href="food.html">Our Food</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu-btn"><span class="icon-menu">&nbsp;</span>Menu</div>
+
+    
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Your Content -->
+    <div id="container">
+
+        <div class="container">
+            <div class="main-container row">
+                <div id="logo">
+                    <a href="index.html">
+                        <div class="logo-icon"><img src="img/logo.png" /></div>
+                        <div class="logo-type">Company Name</div>
+                        <div class="logo-slogan">slogan here</div> 
+                    </a> 
+                </div>
+            </div>
+        </div>
+
+        <div id="full-width-header" class="full-width">
+            <div class="triangle top"></div>
+            <div class="inner">
+                <div class="slide">
+                    <div class="inner-slide">
+                        <img src="img/single/food.jpg" width="1980" height="560">
+                    </div>
+                </div>
+            </div>
+            <div class="triangle bottom"></div>
+        </div>
+        
+        <div class="clear"></div>
+
+        <div class="container full-page">
+            <div id="our-food" class="main-container">
+                <div class="row">
+                    <div class="main-content col">
+                        <div class="title">
+                            <h1>Our Food</h1>
+                        </div>
+                        <div class="intro">
+                            <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</h2>
+                        </div>
+                        <div class="content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div id="filter-foods">
+                    <div class="filter button .grey-button" data-filter="all">Show All</div>
+                    <div class="filter button .grey-button" data-filter=".burgers">Burgers</div>
+                    <div class="filter button .grey-button" data-filter=".sandwiches">Sandwiches</div>
+                    <div class="filter button .grey-button" data-filter=".sets">Sets</div>
+                </div>
+                <div class="clear"></div>
+                <div class="row">
+                    <div id="foods">
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/1.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>Lorem ipsum dolor</h3>
+                                <h4 class="sub-title">$3.50</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col burgers">
+                            <div class="food-picture">
+                                <img src="img/food/2.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>Nemo enim ipsam</h3>
+                                <h4 class="sub-title">$6.00</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col burgers">
+                            <div class="food-picture">
+                                <img src="img/food/3.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>quia voluptas</h3>
+                                <h4 class="sub-title">$3.00</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sets">
+                            <div class="food-picture">
+                                <img src="img/food/4.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>aspernatur aut odit</h3>
+                                <h4 class="sub-title">$5.50</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/5.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>voluptatem sequi</h3>
+                                <h4 class="sub-title">$2.50</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col burgers">
+                            <div class="food-picture">
+                                <img src="img/food/6.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>Neque porro</h3>
+                                <h4 class="sub-title">$3.50</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/7.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>quisquam est</h3>
+                                <h4 class="sub-title">$4.00</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/8.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>qui dolorem ipsum</h3>
+                                <h4 class="sub-title">$2.50</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/9.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>quia dolor sit amet</h3>
+                                <h4 class="sub-title">$5.00</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/10.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>quaerat voluptatem</h3>
+                                <h4 class="sub-title">$5.00</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/11.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>Quis autem vello</h3>
+                                <h4 class="sub-title">$3.50</h4>
+                            </div>
+                        </div>
+                        <div class="food mix col sandwiches">
+                            <div class="food-picture">
+                                <img src="img/food/12.jpg" />
+                            </div>
+                            <div class="food-name">
+                                <h3>corporis suscipit</h3>
+                                <h4 class="sub-title">$4.50</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="clear space-area"></div>
+        
+        <div class="triangle top footer"></div>
+        <div class="container footer">
+            <div id="footer" class="main-container">
+                <div class="footer-top row">
+                    <div class="footer-info col">
+                        <div class="footer-logo">
+                            <div class="logo-icon"><img src="img/footer-logo.png" /></div>
+                        </div>
+                        <div class="footer-address">
+                            Company name</br>523 Avenue Street, New York
+                        </div>
+                        <div class="footer-contact">
+                            (432) 421 693 812<br/><a href="#">office@companyname.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-newsletter col">
+                        <div class="footer-newsletter-container">
+                            <form id="subscribe-newsletter">
+                                <input type="email" class="footer-input-text" placeholder="Enter your email to join newsletter..."/>
+                                <input type="submit" class="button grey-button footer-input-submit" value="Subscribe"/>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="footer-bottom row">
+                    <div class="footer-copyright col">
+                        <div class="footer-copyright-text">Copyright 2014 Company name. Designed by Themezy. All rights reserved.</div>
+                    </div>
+                    <div class="footer-social-media col">
+                        <div class="social-media-icon">
+                            <span class="icon-social-media icon-facebook">&nbsp;</span>
+                            <span class="icon-social-media icon-twitter">&nbsp;</span>
+                            <span class="icon-social-media icon-google">&nbsp;</span>
+                            <span class="icon-social-media icon-pinterest">&nbsp;</span>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+       
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/pushy.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/browser.selector.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        $('#foods').mixItUp();
+    </script>
+</body>
