@@ -1,0 +1,105 @@
+/*
+ * Header Styles
+ */
+
+ .site-header{
+ 	@include clearfix;
+ 	background: white;
+ 	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+ 	margin-top: 30px;
+ 	margin-bottom: 30px;
+ }
+
+ #branding{
+ 	float: left;
+ 	margin: 20px;
+	color: $body-color;
+
+ 	.logo,.logo-copy{
+ 		display: inline-block;
+ 		vertical-align: middle;
+ 	}
+	.logo{ margin-right: 10px}
+ 	.site-title{
+ 		@include em(14);
+ 		font-weight: 600;
+ 		text-transform: uppercase;
+ 		margin: 0;
+ 	}
+ 	.site-description{
+ 		@include em(10);
+ 		text-transform: uppercase;
+ 	}
+ }
+
+ .menu-toggle{
+ 	border: none;
+ 	background: none;
+ 	color: $body-color;
+ 	padding: 30px;
+ 	outline: none;
+
+ 	&:active,&:focus{background-color: $accent-color; color: white}
+ 	@media screen and (min-width: 991px){ display: none !important }
+ 	@media screen and (max-width: 990px){ display: block }
+ }
+
+ .main-navigation{
+ 	float: right;
+
+ 	.menu{
+ 		list-style: none;
+ 		padding-left: 0;
+ 		margin: 0;
+ 		display: inline-block;
+ 		@media screen and (min-width: 991px){ display: block!important }
+ 		@media screen and (max-width: 990px){ display: none }
+
+ 		.menu-item{
+ 			display: inline-block;
+ 			margin: 0 20px;
+
+ 			a{
+ 				padding: 30px 0 30px;
+ 				display: block;
+ 				text-transform: uppercase;
+ 				@include em(12);
+ 				color: $body-color;
+ 				font-weight: 400;
+ 				border-top: 3px solid transparent;
+ 				transition: .3s ease;
+ 			}
+
+ 			&.current-menu-item a,&:hover a{
+ 				border-color: $accent-color;
+ 				color: $accent-color;
+ 			}
+ 		}
+ 	}
+ }
+ .mobile-navigation{
+ 	display: none;
+ 	clear: both;
+ 	padding: 20px;
+	@media screen and (min-width: 991px){ display: none !important }
+
+ 	.menu{
+ 		list-style: none;
+ 		padding-left:  0;
+ 		margin: 0;
+
+ 		a{
+ 			display: block;
+ 			padding: 10px 0;
+ 			text-transform: uppercase;
+ 			color: $body-color;
+ 			@include em(12);
+ 		}
+
+ 		.current-menu-item a{color: $accent-color;}
+ 	}
+ }
+
+ .slider{
+
+ }

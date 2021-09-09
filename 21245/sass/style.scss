@@ -1,0 +1,35 @@
+/*!
+ * Project_Name: Financial Advicing Template
+ * Author: Ariona, Rian
+ * Email: yans_fied[at]yahoo.com
+ * Url: http://www.ariona.net
+ */
+
+/*=========================================== 
+ * Importing Third Party Style
+ *===========================================*/
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+@import "fonts/font-awesome.min.css";
+
+/*=========================================== 
+ * Importing CSS Libraries
+ *===========================================*/
+ @import 	"libs/settings",
+ 			"libs/mixins",
+ 			"libs/normalize",
+			"libs/components",
+ 			
+ 			// bootstrap libraries
+ 			"libs/bootstrap-grid/settings",
+ 			"libs/bootstrap-grid/mixins",
+ 			"libs/bootstrap-grid/grid",
+
+			// Layout partials
+ 			"layout/header",
+ 			"layout/content",
+ 			"layout/footer";
+
+html,body{
+	min-height:100%;
+	font-weight: 100;
+}

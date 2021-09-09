@@ -1,0 +1,132 @@
+/*
+ * Header Styles
+ */
+
+.site-header{
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	padding: 95px 0;
+	text-align: center;
+
+	.home &{ padding-bottom: 300px }
+
+	&:after{
+		content:" ";
+		position: absolute;
+		left:0;
+		right:0;
+		top:0;
+		bottom: 0;
+		background-image: $gradient;
+		opacity: .8;
+		z-index: -1;
+	}
+
+	.container{position: relative;}
+}
+
+.main-navigation{
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	.menu-toggle{
+		background-color: white;
+		padding: 5px 10px;
+		color: #888;
+		border: none;
+		@include em(24);
+		outline: none;
+	}
+
+	.menu{
+		position: absolute;
+		left:0;
+		top: 40px;
+		background: white;
+		list-style: none;
+		padding-left: 0;
+		text-align: left;
+		padding: 20px;
+		visibility: hidden;
+		opacity: 0;
+		transition: .3s ease;
+		transform: translateY(30px);
+		box-shadow: 0 1px 3px rgba(0,0,0,.1);
+
+		&.active{
+			visibility: visible;
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		&:before{
+			content:" ";
+			width: 0;
+			border-style:solid;
+			border-width: 10px;
+			border-color: transparent transparent white;
+			position: absolute;
+			bottom: 100%;
+			left: 10px;
+		}
+
+		.menu-item{
+			border-bottom: 1px solid #ccc;
+
+			&:last-child{border-bottom: none}
+		}
+
+		a{
+			padding: 10px;
+			display: block;
+			white-space: nowrap;
+			font-family: $primary-font;
+			text-transform: uppercase;
+			color: $body-color;
+			@include em(12);
+		}
+		.current-menu-item a{color: $accent-color;}
+	}
+}
+
+.branding{
+	margin-bottom: 50px;
+	.site-title{
+		text-transform : uppercase;
+		color          : white;
+		margin         : 0;
+		font-family    : $primary-font;
+		@include em(69);
+		line-height: 1;
+	}
+	.site-description{
+		text-transform : uppercase;
+		color          : white;
+		margin         : 0;
+		font-family    : $primary-font;
+		@include em(24);
+		font-weight    : 300;
+	}
+
+}
+
+.social-links{
+	a{
+		display: inline-block;
+		width: 48px;
+		height : 48px;
+		border: 2px solid white;
+		border-radius: 50%;
+		line-height: 1.8;
+		color: white;
+		@include em(24);
+		transition: .3s ease;
+
+		&:hover{
+			color: #b0e092;
+			border-color: #b0e092;
+		}
+	}
+}

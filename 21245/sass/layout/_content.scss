@@ -1,0 +1,51 @@
+body{
+	font-family: $body-font;
+}
+
+.content, .fullwidth-block{
+	overflow: hidden;
+}
+
+.fullwidth-block{
+	padding:50px 0;
+}
+
+.hero{
+	padding:100px 0;
+	h2,h3,h4{
+		margin:0;
+		font-size: 48px;
+
+		&.text-light{
+			font-weight: 100;
+
+			strong{font-weight: 700}
+		}
+	}
+}
+
+.primary-color{
+	background-color:$primary-color;
+	color:white;
+}
+
+.secondary-color{
+	background-color:$secondary-color;
+	color:$mute-color;
+	font-size:15px;
+	line-height: 33px;
+
+	h1,h2,h3,h4,h5,h6{
+		color:white;
+	}
+	p{
+
+	}
+}
+
+.leading{
+	font-weight:100;
+	font-size:30px;
+	color:white;
+	line-height: 40px;
+}

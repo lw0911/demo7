@@ -1,0 +1,163 @@
+/*
+ * Content Styles
+ */
+
+.section-title{
+	text-align: center;
+	text-transform: uppercase;
+	@include em(48);
+	color: $strong-color;
+	margin: 0;
+}
+.section-desc{
+	text-align: center;
+	text-transform: uppercase;
+	@include em(18);
+	letter-spacing: 2px;
+	margin: 0;
+	margin-bottom: 50px;
+}
+.boxed-title{
+	text-transform: uppercase;
+	border: 1px solid #ccc;
+	border-radius:5px;
+	display: inline-block;
+	padding: 10px 20px;
+	@include em(30);
+	line-height: 1;
+}
+
+.author-image{
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+	border: 5px solid white;
+	box-shadow: 0 2px 1px rgba(0,0,0,.2);
+	overflow: hidden;
+	z-index: 2;
+	position: relative;
+	margin: -250px auto 50px;
+
+	img{
+		display: block;
+	}
+
+}
+
+#package{
+	position: relative;
+	z-index: 1;
+	.section-title,.section-desc{color: white}
+}
+
+#principles{
+	color: white;
+
+	.section-title,.section-desc{color: white}
+}
+
+
+#contact{
+	position: relative;
+	z-index: 1;
+	color: white;
+
+	.section-title,.section-desc{color: white;}
+}
+
+.featured-image{
+	margin-bottom: 30px;
+	img{
+		display: block;
+		max-width: 100%;
+	}
+}
+.breadcrumbs{
+	padding: 30px 0;
+	margin-bottom: 50px;
+	@include em(10);
+	text-transform: uppercase;
+
+	a{
+		color: $strong-color;
+
+		&:after{
+			content:" ";
+			width: 7px;
+			height: 5px;
+			background: url(images/arrow.png) no-repeat;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 5px;
+		}
+	}
+}
+.page{
+	p{margin-bottom: 30px}
+}
+.entry-title{
+	@include em(48);
+	text-transform: uppercase;
+	margin-top: 0;
+	margin-bottom: 0;
+	color: $strong-color;
+}
+.entry-subtitle{
+	@include em(18);
+	text-transform: uppercase;
+	font-weight: 300;
+	font-family: $primary-font;
+	margin-bottom: 30px;
+	display: block;
+}
+
+.pricing-table{
+	border: 2px solid #e5e5e5;
+	border-radius: 5px;
+	padding: 30px;
+	text-align: center;
+	margin-bottom: 30px;
+
+	.check{
+		text-align: left;
+		list-style: none;
+		padding-left: 0;
+		margin: 30px 0;
+
+		li{
+			padding: 5px 5px 5px 30px;
+			position: relative;
+
+			&:before{
+				content:"\f00c";
+				font-family: "FontAwesome";
+				color: $accent-color;
+				position: absolute;
+				left: 0;
+				top: 5px;
+			}
+		}
+	}
+
+	.pricing-title{
+		color: $strong-color;
+		text-transform: uppercase;
+		margin: 0;
+		@include em(24);
+	}
+	.price{
+		@include em(36);
+		color: $accent-color;
+		margin: 0;
+	}
+	.button{
+		background-color: #e5e5e5;
+		color: $body-color;
+		border-radius: 5px;
+		transition: .3s ease;
+
+		&:hover{
+			background-color: darken(#e5e5e5, 10%);
+		}
+	}
+}

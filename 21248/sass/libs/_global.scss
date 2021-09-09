@@ -1,0 +1,24 @@
+/*
+ * Global Styles
+ */
+
+body {
+	font-family: $primary-font;
+	font-size   : 16px;
+	font-weight : 300;
+	line-height : normal;
+	background: $bg-color;
+	color: $body-color;
+
+}
+
+a { text-decoration: none }
+
+address { font-style: normal }
+
+p{ margin-top: 0 }
+
+#site-content{ overflow: hidden }
+
+.text-center{text-align: center }
+.text-right{text-align: right }

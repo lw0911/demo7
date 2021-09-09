@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px"
+	 height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+
+	<g id="icon-17" viewBox="original-file's-viewBox">
+		<g>
+			<g>
+				<rect x="18.888" y="30.229" fill="#FFFFFF" width="3.171" height="3.171"/>
+			</g>
+			<g>
+				<rect x="25.23" y="30.229" fill="#FFFFFF" width="3.171" height="3.171"/>
+			</g>
+			<g>
+				<rect x="31.573" y="30.229" fill="#FFFFFF" width="3.171" height="3.171"/>
+			</g>
+			<g>
+				<rect x="18.888" y="36.57" fill="#FFFFFF" width="3.171" height="3.172"/>
+			</g>
+			<g>
+				<rect x="25.23" y="36.57" fill="#FFFFFF" width="3.171" height="3.172"/>
+			</g>
+			<g>
+				<rect x="31.573" y="36.57" fill="#FFFFFF" width="3.171" height="3.172"/>
+			</g>
+			<g>
+				<circle fill="#FFFFFF" cx="35.529" cy="50.4" r="2.039"/>
+			</g>
+			<path fill="#FFFFFF" d="M58.389,23.18c-0.253-3.479-3.314-6.325-6.803-6.325h-5.539v-2.893h5.168c0.874,0,1.585-0.71,1.585-1.585
+				V5.813c0-0.875-0.711-1.585-1.585-1.585H37.317c-0.876,0-1.585,0.71-1.585,1.585v6.564c0,0.875,0.709,1.585,1.585,1.585h5.559
+				v2.893H19.471c-3.488,0-6.549,2.846-6.802,6.325l-1.206,16.599h3.179l1.189-16.369c0.134-1.835,1.8-3.385,3.639-3.385h32.115
+				c1.839,0,3.506,1.55,3.639,3.384l1.19,16.369h3.179L58.389,23.18z M38.903,7.398h10.726v3.394H38.903V7.398z"/>
+			<g>
+				<rect x="37.618" y="23.74" fill="#FFFFFF" width="13.695" height="3.171"/>
+			</g>
+			<path fill="#FFFFFF" d="M59.923,43.037H11.134c-1.994,0-3.625,1.631-3.625,3.624v7.479c0,1.992,1.631,3.624,3.625,3.624h48.789
+				c1.994,0,3.624-1.632,3.624-3.624v-7.479C63.547,44.668,61.917,43.037,59.923,43.037z M60.376,54.14
+				c0,0.24-0.211,0.453-0.453,0.453H11.134c-0.241,0-0.453-0.213-0.453-0.453v-7.479c0-0.241,0.212-0.453,0.453-0.453h48.789
+				c0.242,0,0.453,0.212,0.453,0.453V54.14z"/>
+		</g>
+	</g>
+
+</svg>
